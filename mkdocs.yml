@@ -1,0 +1,12 @@
+site_name: Greengage Documentation
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+nav:
+  - Home: index.md
+  - Keycloak: tools/keycload
+locale:
+  - en
