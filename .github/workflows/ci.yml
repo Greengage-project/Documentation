@@ -3,7 +3,7 @@ name: deploy-docs
 on:
   push:
     branches:
-      - mkdocs # Set this to your default branch
+      - main # Set this to your default branch
 
 jobs:
   deploy:
