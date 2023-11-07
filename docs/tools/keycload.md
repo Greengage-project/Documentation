@@ -141,7 +141,7 @@ In this example, we'll demonstrate how to integrate Keycloak with a Node.js appl
 
 ### Project Structure
 
-Source: [example](/tools/examples/keycloak)
+Source: [example](https://github.com/Greengage-project/Documentation/tree/main/docs/examples/keycloak)
 
 ```
 example/

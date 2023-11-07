@@ -7,6 +7,8 @@ theme:
     - rust
 nav:
   - Home: index.md
-  - Keycloak: tools/keycload
+  - Guidelines: guidelines
+  - Tools:
+      - Keycloak: tools/keycload
 locale:
   - en
