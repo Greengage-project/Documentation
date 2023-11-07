@@ -1,5 +1,3 @@
-# Welcome to MkDocs
-
 # Technical Guide for GREENGAGE Project Integration
 
 ### Project
