@@ -9,6 +9,9 @@ nav:
   - Home: index.md
   - Guidelines: guidelines
   - Tools:
-      - Keycloak: tools/keycload
+      - Keycloak:
+          - Description: tools/keycloak
+          - Integration: tools/keycloak/integration
+          - Example: tools/keycloak/example
 locale:
   - en
