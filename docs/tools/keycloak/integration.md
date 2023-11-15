@@ -7,10 +7,10 @@ To facilitate a centralized user management system, we are utilizing Keycloak as
 - Send an email to greengage.admin@deusto.es with the subject line: "[GREENGAGE] Request for Keycloak Client Credentials".
 - In the body of the email, please provide the following information:
 
-  * Tool name:
-  * Description: (no more than 200 characters):
-  * Contact name:(for technical propose)
-  * Contact email:(for technical propose)
+  - Tool name:
+  - Description: (no more than 200 characters):
+  - Contact name:(for technical propose)
+  - Contact email:(for technical propose)
 
 **Step 2: Receiving Your Credentials**
 
@@ -26,6 +26,8 @@ To facilitate a centralized user management system, we are utilizing Keycloak as
 
 - After configuring your service, conduct thorough testing to ensure that the authentication process works correctly.
 - If you encounter any issues during testing, please reach out to us via email for support.
+
+If you have any questions about Keycloak integration, please contact us at greengage.admin@deusto.es with the subject "[Greengage] Keycloak support request"
 
 **Important Notes:**
 
