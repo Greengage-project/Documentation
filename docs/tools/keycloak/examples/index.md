@@ -175,4 +175,89 @@ This tutorial provides a high-level overview of the steps involved in integratin
 
 ---
 
+## Python Flask Application with Keycloak Integration
+
+#### Prerequisites
+
+- Docker and Docker Compose installed.
+- Python and pip installed.
+- Basic understanding of Keycloak, Docker, Flask, and Python.
+- Access the application over HTTPS and accept the self-signed certificate warning: "The certificate is not trusted because it is self-signed."
+
+### Project Structure
+
+Source: [example](https://github.com/Greengage-project/Documentation/tree/main/docs/examples/python)
+
+```
+example/
+|-- docker-compose.yml
+|-- realm-export.json
+|-- client_secrets.json
+|-- requirements.txt
+|-- index.py
+|-- run.sh         (for Linux/macOS)
+|-- run.bat        (for Windows)
+```
+
+### Step 1: Setting Up Keycloak
+
+1. **docker-compose.yml**:
+
+   - This file contains the configuration to run a Keycloak container.
+   - Ensure it's set up as provided in your project.
+
+2. **realm-export.json**:
+   - Configure this file according to your Keycloak realm requirements.
+   - It contains realm, client, user, and role configurations.
+
+### Step 2: Setting Up Python Flask Application
+
+1. **requirements.txt**:
+
+   - Lists the necessary Python packages, including Flask and Flask-OIDC.
+
+2. **client_secrets.json**:
+
+   - Contains Keycloak client configuration.
+   - Update the `client_id`, `client_secret`, and URLs according to your Keycloak setup.
+
+3. **index.py**:
+   - Contains your Flask application.
+   - Sets up routes for login, logout, and home page displaying user information.
+
+### Step 3: Installing Dependencies
+
+- Run the following command to install necessary Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Running the Services
+
+1. **Linux/macOS**:
+
+   - Make `run.sh` executable: `chmod +x run.sh`.
+   - Execute `run.sh` to start the services: `./run.sh`.
+
+2. **Windows**:
+   - Execute `run.bat` to start the services.
+
+### Accessing the Application
+
+1. Navigate to `https://localhost:3000/` (accept the self-signed certificate warning).
+2. Use the Keycloak authentication process to log in.
+3. Once logged in, user information will be displayed on the home page.
+4. To logout, navigate to `https://localhost:3000/logout`.
+
+---
+
+### Important Notes
+
+- Ensure all URLs in `client_secrets.json` and `realm-export.json` match your Keycloak configuration.
+- Remember to access the application via HTTPS and accept the browser warning about the self-signed certificate.
+- Modify the `index.py` file to suit your application's specific Flask and OIDC needs.
+
+---
+
 **For more information you can visit the official documentation in [https://www.keycloak.org/documentation](https://www.keycloak.org/documentation)**
