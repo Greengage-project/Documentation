@@ -1,6 +1,6 @@
 # Examples
 
-## Nodejs
+## [Nodejs](#Nodejs)
 
 #### Prerequisites
 
@@ -10,7 +10,7 @@
 
 ### Project Structure
 
-Source: [example](https://github.com/Greengage-project/Documentation/tree/main/docs/examples/keycloak)
+Source: [example](https://github.com/Greengage-project/Documentation/tree/main/docs/tools/keycloak/examples/node)
 
 ```
 example/
@@ -175,7 +175,7 @@ This tutorial provides a high-level overview of the steps involved in integratin
 
 ---
 
-## Python Flask Application with Keycloak Integration
+## [Python](#Python)
 
 #### Prerequisites
 
@@ -186,7 +186,7 @@ This tutorial provides a high-level overview of the steps involved in integratin
 
 ### Project Structure
 
-Source: [example](https://github.com/Greengage-project/Documentation/tree/main/docs/examples/python)
+Source: [example](https://github.com/Greengage-project/Documentation/tree/main/docs/tools/keycloak/examples/python)
 
 ```
 example/

@@ -6,7 +6,7 @@
 
 In today's rapidly evolving tech landscape, ensuring the security of your applications is paramount. As you venture into developing or enhancing your application, integrating a robust authentication and authorization mechanism is crucial. This tutorial aims to guide you through setting up a development environment by integrating Keycloak, an open-source Identity and Access Management solution. Whether you're working on a brand new project or improving an existing one, following this guide will provide a solid foundation for securing your application using Keycloak.
 
-### Advantages of Utilizing Keycloak:
+### Features Keycloak:
 
 1. **Single Sign-On (SSO) & Sign-Out:** Keycloak facilitates SSO and Single Sign-Out, allowing users to log in once and access various applications without needing to log in again.
 
