@@ -12,6 +12,6 @@ nav:
       - Keycloak:
           - Description: tools/keycloak
           - Integration: tools/keycloak/integration
-          - Example: tools/keycloak/examples
+          - Examples: tools/keycloak/examples
 locale:
   - en
