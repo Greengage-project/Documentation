@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Writing Guidelines for Documenting a Tool Integration Process - Greengage Documentation</title>
+    <title>Guidelines - Greengage Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Writing Guidelines for Documenting a Tool Integration Process";
+        var mkdocs_page_name = "Guidelines";
         var mkdocs_page_input_path = "guidelines.md";
         var mkdocs_page_url = null;
       </script>
@@ -57,7 +57,13 @@
                 </li>
                 <li class="toctree-l2"><a class="" href="../tools/keycloak/integration">Integration</a>
                 </li>
-                <li class="toctree-l2"><a class="" href="../tools/keycloak/examples">Examples</a>
+                <li class="toctree-l2"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../tools/keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../tools/keycloak/examples#python">Python</a>
+                </li>
+    </ul>
                 </li>
     </ul>
                   </li>
@@ -76,7 +82,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Writing Guidelines for Documenting a Tool Integration Process</li>
+      <li class="breadcrumb-item active">Guidelines</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -85,84 +91,64 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="writing-guidelines-for-documenting-a-tool-integration-process">Writing Guidelines for Documenting a Tool Integration Process</h1>
-<p>The following guidelines are designed to help you document the process of integrating a new tool into your existing system. Whether it's a tool for monitoring, analytics, deployment, or any other purpose, these guidelines will help you create a clear and comprehensive integration guide.</p>
-<h2 id="overview">Overview</h2>
-<p>Start with a brief overview of what the tool does and why it's beneficial to integrate it into your system. This section should answer the "what" and "why" of the tool.</p>
-<h3 id="example">Example:</h3>
-<p><em>This guide will provide an overview of integrating [Tool Name], a powerful [functionality of the tool], into our current system. [Tool Name] enhances our system by providing [key benefits], ensuring [specific improvements].</em></p>
-<h2 id="prerequisites">Prerequisites</h2>
-<p>List any prerequisites that are necessary before beginning the integration process, such as account creation, software dependencies, or access rights.</p>
-<h3 id="example_1">Example:</h3>
-<p><em>Before integrating [Tool Name], ensure you have:</em>
-1. <em>An active [Tool Name] account.</em>
-2. <em>Required permissions for system changes.</em>
-3. <em>Installed [necessary software/dependencies].</em></p>
-<h2 id="integration-advantages">Integration Advantages</h2>
-<p>Highlight the advantages of integrating this tool. Be specific about how it will improve your system's functionality, reliability, security, or user experience.</p>
-<h3 id="example_2">Example:</h3>
-<p><em>Integrating [Tool Name] with our system offers multiple advantages:</em>
-1. <em>Enhanced [feature/performance].</em>
-2. <em>Improved [specific system aspect].</em>
-3. <em>Streamlined [process/workflow].</em></p>
-<h2 id="step-by-step-integration-process">Step-by-Step Integration Process</h2>
-<h3 id="1-installation-or-setup">1. Installation or Setup</h3>
-<p>Provide detailed steps on how to install or set up the tool.</p>
-<h4 id="example_3">Example:</h4>
-<p><em>a. Navigate to [installation page].</em>
-<em>b. Select the appropriate [version/system].</em>
-<em>c. Follow the on-screen instructions to install.</em></p>
-<h3 id="2-configuration">2. Configuration</h3>
-<p>Detail how to configure the tool for initial use, including setting preferences, connecting to your system, or modifying settings.</p>
-<h4 id="example_4">Example:</h4>
-<p><em>a. Open the configuration file located at [path].</em>
-<em>b. Set [parameter] to [value].</em>
-<em>c. Save changes and exit.</em></p>
-<h3 id="3-authentication-and-authorization-if-applicable">3. Authentication and Authorization (if applicable)</h3>
-<p>If the tool requires authentication, give instructions on how to set up user accounts or API keys.</p>
-<h4 id="example_5">Example:</h4>
-<p><em>a. Generate an API key by going to [settings page].</em>
-<em>b. Store the API key in a secure location.</em></p>
-<h3 id="4-integration-with-the-system">4. Integration with the System</h3>
-<p>Describe the process of connecting the tool to your system, such as modifying code, updating environment variables, or using plugins.</p>
-<h4 id="example_6">Example:</h4>
-<p><em>a. In your system's environment file, add the following variable: [variable].</em>
-<em>b. If using a plugin, install it via [plugin installation method].</em></p>
-<h3 id="5-testing-the-integration">5. Testing the Integration</h3>
-<p>Explain how to verify that the tool has been successfully integrated.</p>
-<h4 id="example_7">Example:</h4>
-<p><em>a. Perform a test by [method].</em>
-<em>b. Check for [expected outcome].</em></p>
-<h3 id="6-troubleshooting">6. Troubleshooting</h3>
-<p>Provide some common issues that might occur during integration and their solutions.</p>
-<h4 id="example_8">Example:</h4>
-<p><em>If you encounter [issue], try the following solutions:</em>
-1. <em>Check if [condition] is met.</em>
-2. <em>Ensure [configuration] is set correctly.</em></p>
-<h3 id="7-maintenance-and-updates">7. Maintenance and Updates</h3>
-<p>Give recommendations on maintaining the integration, handling updates, and where to find changelogs or update instructions.</p>
-<h4 id="example_9">Example:</h4>
-<p><em>Regularly check [Tool Name]'s official website for updates. Follow the update guide [link to update guide] to ensure seamless tool functionality.</em></p>
-<h2 id="additional-resources">Additional Resources</h2>
-<p>List additional resources, such as official documentation, community forums, or support channels.</p>
-<h4 id="example_10">Example:</h4>
-<p><em>For more information or support, you can refer to:</em>
-1. <em><a href="link">Official Documentation</a>.</em>
-2. <em><a href="link">Community Forums</a>.</em>
-3. <em><a href="link">Support Channels</a>.</em></p>
-<h2 id="example-integration-tool-name-with-system-name">Example Integration: [Tool Name] with [System Name]</h2>
-<h3 id="overview_1">Overview</h3>
-<p>Provide a brief description of how the tool will be used with a specific example system.</p>
-<h3 id="prerequisites_1">Prerequisites</h3>
-<p>List the prerequisites specific to the example.</p>
-<h3 id="step-by-step-guide">Step-by-Step Guide</h3>
-<p>Detail the process of integrating the tool with the example system, tailored to the system's characteristics.</p>
-<h3 id="accessing-the-application">Accessing the Application</h3>
-<p>Instructions on how to access or use the tool once integrated into the example system.</p>
-<h3 id="troubleshooting-specific-to-the-example">Troubleshooting Specific to the Example</h3>
-<p>Address any issues that are unique to the integration with the example system.</p>
-<hr />
-<p>By following these guidelines, you will create a useful document that will enable others to understand the purpose of the tool and integrate it effectively into their systems. Remember to keep your documentation updated as both the tool and your system evolve.</p>
+                <h3 id="comprehensive-guidelines-for-documenting-and-integrating-tools">Comprehensive Guidelines for Documenting and Integrating Tools</h3>
+<h4 id="1-duplicating-the-documentation-template">1. Duplicating the Documentation Template</h4>
+<ul>
+<li><strong>Action</strong>: Begin by duplicating the folder <code>docs/tools/TOOLNAME_template</code>.</li>
+<li><strong>Purpose</strong>: This template serves as a foundational structure for documenting new tools, ensuring consistency across your documentation.</li>
+</ul>
+<h4 id="2-describing-the-tool-in-indexmd">2. Describing the Tool in <code>index.md</code></h4>
+<ul>
+<li><strong>Content Requirements</strong>: In <code>index.md</code>, offer a comprehensive overview of the tool. This should include its purpose, key features, and any unique aspects that make it beneficial for your project.</li>
+<li><strong>Incorporating External Documentation</strong>: If there are external resources or official documentation for the tool, link them. This helps users understand the broader context and capabilities of the tool.</li>
+<li><strong>Example Structure</strong>:</li>
+</ul>
+<p>```markdown
+  # Tool Name</p>
+<p>## Introduction to Tool Name</p>
+<p>[Detailed introduction, including the tool's purpose and general functionality.]</p>
+<p>## Features</p>
+<p>[Detailed list of features, explaining how each aspect adds value to the project.]</p>
+<p>## Use Case Illustration</p>
+<p><img alt="Use Case Diagram" src="./assets/use_case.png" /></p>
+<p>[Detailed description of a use case, demonstrating how the tool integrates into workflows or solves specific problems.]
+  ```</p>
+<h4 id="3-integration-guide-in-integrationmd">3. Integration Guide in <code>integration.md</code></h4>
+<ul>
+<li><strong>Content</strong>: Provide a clear, step-by-step guide for integrating the tool with third-party services. Remember provide a channel to ask for support about the tool.</li>
+<li><strong>Structure</strong>:</li>
+<li><strong>Requesting Credentials</strong>: Outline the process for obtaining necessary access credentials.</li>
+<li><strong>Configuration Steps</strong>: Detail the steps for integrating the tool within their systems, including any specific settings or parameters.</li>
+<li><strong>Testing and Validation</strong>: Emphasize the importance of testing the integration and provide guidance on troubleshooting common issues.</li>
+</ul>
+<h4 id="4-proof-of-concept-code-in-examples">4. Proof of Concept Code in <code>examples</code></h4>
+<ul>
+<li><strong>Purpose</strong>: Supply ready-to-use code examples in various programming languages to demonstrate practical integration.</li>
+<li><strong>Details</strong>: Each example should include comprehensive comments explaining each step and its relevance to the integration process.</li>
+</ul>
+<h4 id="5-documenting-examples-in-examplesindexmd">5. Documenting Examples in <code>examples/index.md</code></h4>
+<ul>
+<li><strong>Structure</strong>: For each example, include prerequisites, a detailed walkthrough of the project structure, and step-by-step instructions for setup and execution.</li>
+<li><strong>Clarity</strong>: Ensure that the instructions are clear, concise, and suitable for users with varying levels of expertise.</li>
+</ul>
+<h4 id="6-summarizing-tool-in-docsindexmd">6. Summarizing Tool in <code>docs/index.md</code></h4>
+<ul>
+<li><strong>Overview</strong>: Provide a brief yet informative summary of the tool, highlighting its significance and utility within the project.</li>
+<li><strong>Example Entry</strong>:</li>
+</ul>
+<p>```markdown
+  ### Tool Name</p>
+<ul>
+<li><strong>Directory</strong>: <code>/tools/toolname</code></li>
+<li><strong>Documentation Link</strong>: <a href="tools/toolname">Tool Documentation</a></li>
+<li><strong>Description</strong>: A concise summary highlighting the key features and benefits of the tool. Insight into how it integrates with and enhances the project.<ul>
+<li><a href="/tools/toolname/examples#Nodejs">Integration Example: Node.js</a></li>
+<li><a href="/tools/toolname/examples#Python">Integration Example: Python</a>
+  ```</li>
+</ul>
+</li>
+</ul>
+<p>These guidelines aim to provide a thorough and user-friendly approach to documenting and integrating tools, thereby enhancing the accessibility and usability of your project's documentation.</p>
               
             </div>
           </div><footer>
