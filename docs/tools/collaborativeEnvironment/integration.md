@@ -26,7 +26,7 @@ This guide explains the process for integrating third-party services into the Co
 
 **Support and Contact**
 
-- For additional support or assistance with the integration process, please refer to the Collaborative Environment’s online resources, or contact via https://github.com/Greengage-project/interlink-project/issues. (Technical Issues)
+- For additional support or assistance with the integration process, please refer to the Collaborative Environment’s online resources, or contact via [https://github.com/Greengage-project/interlink-project/issues](https://github.com/Greengage-project/interlink-project/issues). (Technical Issues)
 
 **Important Notes:**
 
