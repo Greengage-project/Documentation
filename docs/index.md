@@ -20,4 +20,15 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 ---
 
+#### Collaborative Environment
+
+- **Directory**: `/tools`
+- **Link**: [tools/collaborativeEnvironment](tools/collaborativeEnvironment)
+- **Description**: The Collaborative Environment is a comprehensive platform designed to facilitate co-production, asset management, and enhanced collaboration among users. It incorporates various interlinkers and modules to streamline workflows and improve organizational processes, supporting integration with different technologies and frameworks.
+
+  - **Examples of integration**:
+    - [Deploy example](/tools/collaborativeEnvironment/examples)
+
+---
+
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.

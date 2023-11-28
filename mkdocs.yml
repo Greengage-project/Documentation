@@ -5,6 +5,11 @@ theme:
   hljs_languages:
     - yaml
     - rust
+extra_javascript:
+  - javascripts/custom.js
+extra_css:
+  - css/custom.css
+
 nav:
   - Home: index.md
   - Guidelines: guidelines
@@ -15,5 +20,10 @@ nav:
           - Examples:
               - Node: tools/keycloak/examples#nodejs
               - Python: tools/keycloak/examples#python
+      - Collaborative Environment:
+          - Description: tools/collaborativeEnvironment
+          - Integration: tools/collaborativeEnvironment/integration
+          - Example of deployment: tools/collaborativeEnvironment/examples
+
 locale:
   - en
