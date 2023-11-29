@@ -8,7 +8,7 @@
 #### 2. Describing the Tool in `index.md`
 
 - **Content Requirements**: In `index.md`, offer a comprehensive overview of the tool. This should include its purpose, key features, and any unique aspects that make it beneficial for your project.
-- **Incorporating External Documentation**: If there are external resources or official documentation for the tool, link them. This helps users understand the broader context and capabilities of the tool.
+- **Incorporating External Documentation**: If there are external resources or official documentation for the tool, link them. This helps users understand the broader context and capabilities of the tool. They should be listed in the References section at the end of index.md, check the template provided. Notice that resources like images or PDFs should be stored in subfolder assets. 
 - **Example Structure**:
 
   ```markdown
