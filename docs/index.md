@@ -31,4 +31,15 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 ---
 
+#### MODE
+
+- **Directory**: `/tools`
+- **Link**: [tools/mode](tools/mode)
+- **Description**: This module allows to determine the transport mode of a user based on GPS data provided.
+
+  - **Examples of integration**:
+    - [Deploy example](/tools/mode/examples)
+
+---
+
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
