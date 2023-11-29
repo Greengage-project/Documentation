@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>[Tool Name] Integration Guide for Third-Party Services - GREENGAGE Documentation</title>
+    <title>MODE Integration Guide for Third-Party Services - GREENGAGE Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "[Tool Name] Integration Guide for Third-Party Services";
+        var mkdocs_page_name = "MODE Integration Guide for Third-Party Services";
         var mkdocs_page_input_path = "tools/mode/integration.md";
         var mkdocs_page_url = null;
       </script>
@@ -103,7 +103,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">[Tool Name] Integration Guide for Third-Party Services</li>
+      <li class="breadcrumb-item active">MODE Integration Guide for Third-Party Services</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -112,38 +112,119 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="tool-name-integration-guide-for-third-party-services">[Tool Name] Integration Guide for Third-Party Services</h1>
-<p>Introduction explaining the importance of integrating [Tool Name] for centralized management in your system.</p>
-<p><strong>Step 1: Requesting Access Credentials</strong></p>
+                <h1 id="mode-integration-guide-for-third-party-services">MODE Integration Guide for Third-Party Services</h1>
+<p>Since MODE is a distributed system with multiple components,
+it can (or must) be implemented at various levels, mostly
+in the frontend (Android, iOS apps) and the backend (server)
+which processes the trips. Therefore this integration
+document is split in two sections Frontend and Backend.</p>
+<h2 id="frontend">Frontend</h2>
+<p>The MODE smartphone library (<code>libMODE</code>) provides a complete, out-of-the-box solution for mobility data collection via smartphones. It is built as an autonomous component that can easily be integrated into third party apps. For the standard use-case (trip data collection) the library can be integrated into existing Apps with little effort:</p>
+<p><strong>Step 1: Add the library to the App as a build dependency</strong></p>
+<p>The most recent version of the libMODE library will be provided by AIT <a href="mailto:martin.stubenschrott@ait.ac.at">upon request</a>. The library can be added to the App by adding a corresponding dependency to the build. The following example shows how to add libMODE to the <code>build.gradle</code> of an Android App.</p>
+<p>TODO: Show example.</p>
+<p><strong>Step 2: Initialize the library and start data collection</strong></p>
+<p>The library needs to be initialized before it can start recording data: </p>
+<pre><code class="language-java">@Override
+protected void onCreate(Bundle savedInstanceState) {
+    Context ctx = getApplicationContext();
+
+    Mode.initialize(ctx);
+
+    // Optional: allow data uploading via cellular network (otherwise data only gets uploaded when on WiFi)
+    Mode.getConfigurationEntry(Configuration.CONFIG_METERED_UPLOADING_ALLOWED).setBooleanValue(ctx, true);
+
+    // set Backend Server
+    Mode.setBaseServerURL(&quot;http://localhost:8080&quot;);
+
+    // Set OAUTH2 token manually
+    Mode.setAuthorizationToken(&quot;MY_OAUTH2_TOKEN&quot;);
+
+    // ... OR use libMODE authentication to login a user
+    /*
+    String USERNAME = &quot;hannes&quot;;
+    String PASSWORD = &quot;somepassword&quot;;
+
+    Mode.getUser(USERNAME, userResult -&gt; {
+        Mode.provideUserPassword(PASSWORD, userResult, passwordResult -&gt; {
+            if (passwordResult.isSuccess()) {
+                System.out.println(&quot;Logged in&quot;);
+            } else {
+                throw new IllegalStateException(&quot;Login failed&quot;);
+            }
+        });
+    }); */
+
+
+    // Start
+    Mode.startSurvey();
+}
+</code></pre>
+<p>The following steps must be taken by the client code: 
+-   request permission to record location data ANDROID_PERMISSION_ACCESS_FINE_LOCATION
+-   initialize libMODE 
+-   start recording</p>
+<p>We provide an example demo-project on demand.</p>
+<h2 id="backend">Backend</h2>
+<p>The backend is provided <a href="mailto:martin.stubenschrott@ait.ac.at">on demand</a> as a Docker image which opens
+the rest service on port 8080.</p>
+<p><strong>Step 1: Configuring Your Service</strong>
+TODO: How to 
+- Steps to incorporate the received credentials into the service.
+- Guidelines on setting up the service for proper communication with the [Tool Name].</p>
+<p><strong>Step 2: Testing the Integration</strong>
+TODO!! (we will provide sample data)</p>
+<h1 id="-instructions-for-testing-the-integration-to-ensure-everything-is-set-up-correctly">- Instructions for testing the integration to ensure everything is set up correctly.</h1>
+<h1 id="-contact-information-for-support-in-case-of-issues-during-testing">- Contact information for support in case of issues during testing.</h1>
+<h2 id="output">Output</h2>
+<p>If the front end and backend works correctly, the backend will
+spit out the resulting trips as a JSON file:</p>
+<pre><code class="language-json">{
+    &quot;message&quot;: &quot;success&quot;,
+    &quot;activities&quot;: [
+        {
+            &quot;begin&quot;: &quot;2020-07-15T13:20:41.059Z&quot;,
+            &quot;end&quot;: &quot;2020-07-15T13:45:37.059Z&quot;,
+            &quot;mode&quot;: &quot;WALK&quot;,
+            &quot;modeDetails&quot;: &quot; | Sensor mode Walk | GPSQuality(AVERAGE : time gap)&quot;,
+            &quot;distanceMeters&quot;: 1253.2470899042082,
+            &quot;route&quot;: &quot;ue`eHkddcB??????????rCrAj@Vj@Vh@Th@Vp@Xj@Xp@Xh@Tl@Vl@XJDp@Xn@Xp@Vp@XJDl@Tn@Rp@RRB@@D@?@?@???@???@@????????@???A?????????????????????????????????@????????????????????????Nh@??@E??@??@@B@B@B@@ACAAAC?AM]EICGCE?A???@?@BFBH@DP`A@F?D???B????A@A???EA??A??A????A@??????A????AA????CAI@??A@????A????????@?????B@B?D?B?F@D?B?H@H?F?D@B?@?@????C?CAC?CAGAGCG?CAA?AAA@??ABABCBABAB?@?@?BBBBD@D@F?DCDCBCBEBEBC@EBEBC@EBEBC@EBC@CBCBCBCBCBEBC@EBE@C@C@ABCBCBEBCBE@E@G@G@EBEBEBGBEBG@GBG@G?G?E?ECCEAEAEAECEECECEEECEECECCCCECCECCACACAEACAECECEEECEECCEEECECECECECEEECECECEAECEAECGCGCEEECE?C@CBE@C?CCECC?E?CBCFADCFCDABC@A@A?@A????A?A??@A???@A??@A??????@??A?@@?@??????A?A?AA???????????A?@???????@??@???@A??@?A???A@A?A??????@A??A??@A@???@???@?B????@??A?AA????A?????????A???@?????@?@?@?@?@A??@??????A???@@?A?A???????????A???A?A??????????@??@???A??@A???A@?A??@?@A@?@?@????@????A?????A?A?A?????A??????A????DA??????A??@????A???@??@?????@??A?????????@??????A?????CAAA?AAAA@???@A?????????@@@@?@????@@???????????????A?????????A???AA????????A?????A???@@@??@A?????A?@?????@??A?A@A@A@????@I@????B?@?A@??@?@ABCBA@A???&quot;
+        },
+        {
+            &quot;begin&quot;: &quot;2020-07-15T13:45:38.059Z&quot;,
+            &quot;end&quot;: &quot;2020-07-15T13:51:20.059Z&quot;,
+            &quot;mode&quot;: &quot;BUS&quot;,
+            &quot;modeDetails&quot;: &quot;Line 69A (Hauptbahnhof - Simmering) (BUS) from Am Kanal to Arsenalsteg | Sensor mode Bus routed to Bus | GPSQuality(GOOD)&quot;,
+            &quot;distanceMeters&quot;: 2143.843162687046,
+            &quot;route&quot;: &quot;ch_eHk_dcB????yA`ByAxA??gBbB??}AlA??{BrA??cBp@uBn@??cBZ??s@`C????????????????????AnD??ElC??EjCGlC??EtB??EtBGtB??IxD??KpC????????????????????A`D??IdE????c@xC??_AlB??CzC??m@lC??_AbB????????????qA`C????wBxD??_BfC??wAzB????}A~B????????????????iAbB??gAdB??gB`C??q@~@s@~@s@~@KW&quot;
+        },
+        {
+            &quot;begin&quot;: &quot;2020-07-15T13:51:29.059Z&quot;,
+            &quot;end&quot;: &quot;2020-07-15T14:32:45.059Z&quot;,
+            &quot;mode&quot;: &quot;WALK&quot;,
+            &quot;modeDetails&quot;: &quot; | Sensor mode Walk | GPSQuality(BAD : large time gap)&quot;,
+            &quot;distanceMeters&quot;: 1435.4269300101091,
+            &quot;route&quot;: &quot;mhaeHq{_cBE^@?AAACEAEAE?E?C?CACCCAC?E?CACCAG?CBEBABA@CBCBAB?@D?@?BCFA@C@CBAB?B@B@@@A@C@C@A@@@B?DABAB?B?@@@??@?BABA@?@?@B?D?D@D@F@D@D@F@F@D@FBD@F@FBH@FBHBFBFBFBHBF@HBF@DBF@FBDBDBDBFBD@FBD@D?B?@???????A??????????????@@?B@DBDBF@DBFBDBFBD@FBDBFBFBDBDBDBFBDBFBFBDBFBD@F@FBFBDB@DAD?DAB@D@B@@@A@CBC@CB?BDBFBF@FBD@BDBB@F@F@H?H@H@H@HBHBF@DBF@DBFBBDDDBDBDBDDBDBFBDDFBD@FBFBD@FBFBDBFBDDDDFDFBDDDBDBDBBBBBDBBBBD@B@DABABEBCBCBE@G@G@G@GBE@EBG@E?G@G?E@G?E@GBE@IBGBGDGBGBEBG@E@E@G@E@G@G@G@E@G@G?E@G?G@EBEBEBEBAD?D@FBDBBDDD@F@B@D?D@B?B@B@B??DJ?@@@?@B@LLDBFB@@@?@@@???@@@?@@@???@@@???@@@?@?@@??@@@?@?@@??@?@@@@DBB@NZ?@?@@@?@@??@?@?@@??@??@B??????????????AA???????A????EM??AC????AC?A???A????CG?AAC????????CI?AAA?A???????A??A????A??AE?????AA????A?????AAA?AAC?????A??????AAAE???A????M_@AACEAA??A??AAA??AAA?AA??MKAACCCACCECCCCACCEECCEAE?E@EDEDEFCDAHCHAHAHAH?FAF?DADCBADADAF?FAHAFAFAFAF?H?FAF?FAFCFCDCFCDCDCDEDCBEDCBCDAFCF?FAF@F?FAD?DADAFADCBADCDCDCDAFCDAFADAFCDCDCDCBADADADCDADCDADCFAH?HAF?HAF?F?H?F@FAD?FCFADAHAFAFAFAHAFADCFAF?D?F?D?D?FADADAFAFCFCHAFCFCHCDCFCDEBEDEBEDC@E?EACCEECACCCACCCCCCACCCCCCECCACCCACACA@A@A@?@?@?@?@?????????A??A?A?A?A?@@@?????????@?????@A@ABU??EH?@A@?@ABEJ?@ABA@CHW|@K^ADAH?@?????C?????A???@?????A?E?A?C?????J?@????A?@????????@???A????????????&quot;
+        }
+    ]
+}
+</code></pre>
+<p>The format uses google encoded strings for the polylines of the trips.
+We will, however, for the project also try to output GeoJSON
+files directly, which might be easier to consume.</p>
+<h2 id="support-and-contact">Support and Contact</h2>
 <ul>
-<li>Instructions on how to request access credentials.</li>
-<li>Contact details (e.g., email address) for credential requests.</li>
-<li>Information to be provided in the request (e.g., tool name, description, contact details).</li>
+<li>For any questions, contact Martin Stubenschrott directly at
+  <a href="mailto:martin.stubenschrott@ait.ac.at">martin.stubenschrott@ait.ac.at</a></li>
 </ul>
-<p><strong>Step 2: Receiving Credentials</strong></p>
+<h2 id="important-notes">Important Notes</h2>
 <ul>
-<li>Process description after the request is made.</li>
-<li>Information on how credentials will be received.</li>
-</ul>
-<p><strong>Step 3: Configuring Your Service</strong></p>
-<ul>
-<li>Steps to incorporate the received credentials into the service.</li>
-<li>Guidelines on setting up the service for proper communication with the [Tool Name].</li>
-</ul>
-<p><strong>Step 4: Testing the Integration</strong></p>
-<ul>
-<li>Instructions for testing the integration to ensure everything is set up correctly.</li>
-<li>Contact information for support in case of issues during testing.</li>
-</ul>
-<p><strong>Support and Contact</strong></p>
-<ul>
-<li>Additional support contact details.</li>
-<li>Encouragement to reach out with questions or for further assistance.</li>
-</ul>
-<p><strong>Important Notes:</strong></p>
-<ul>
-<li>Security reminders and best practices (e.g., keeping credentials confidential).</li>
-<li>Instructions on what to do if credentials are compromised.</li>
+<li>You might get an API key for third-party routing services
+  (e.g. Google Router). Make sure to keep that confident
+  and <strong>only</strong> use it for testing and sparsingly.
+  Overuse of the API key may result in high fees, as only
+  about 20.000 requests/per month are free! For production,
+  we must use a different key being used for billing.</li>
 </ul>
               
             </div>

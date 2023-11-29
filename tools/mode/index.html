@@ -115,18 +115,30 @@
                 <h1 id="mode">MODE</h1>
 <h2 id="setting-up-a-development-environment-guide-to-integrating-mode">Setting Up a Development Environment: Guide to Integrating MODE</h2>
 <h3 id="introduction">Introduction</h3>
-<pre><code>Description: Provide an overview of the tool's purpose and its importance in modern tech environments.
-Objective: Explain how integrating this tool can benefit development and enhance application security or functionality.
-
-TODO: This was just copied from the template, need to fill it with real info!
-</code></pre>
-<h3 id="features-of-tool-name">Features of [Tool Name]</h3>
-<pre><code>List of Features: Outline key features and capabilities of the tool, emphasizing how each contributes to its effectiveness and utility in development projects.
-</code></pre>
+<p>MODE software technology uses smartphones to automatically track the distances travelled and transport modes used, thus enabling software developers, system integrators and transport operators to design innovative mobility services. MODE provides the missing link for the development of innovative mobility services: automatic, reliable recognition of the means of transport used, and travelled routes using smartphones.</p>
+<h3 id="features-of-mode">Features of MODE</h3>
+<p>MODE is a trip recording and mode detection framework. It consists of two main software components:
+1. A data recording module for iOS and Android Apps
+2. A backend data analysis module</p>
+<p><img alt="Overview" src="img/Overview.png" /></p>
+<p>The above figure shows a high-level overview and demonstrates how to embed the MODE components into a system (AIT components are highlighted in blue, other components must be provided by a partner).
+Client-side tracking and data recording functionality can be added to an existing App by including the <code>libMODE</code> library. 
+Once the library is configured and activated
+(see <a href="integration/#Frontend">Frontend</a>), it tracks user activity and records relevant movement data.
+The library transmits completed trips to a backend server using REST calls (REST API, see section "REST API").</p>
+<p>On the server side, the transmitted trip data can be processed using the AIT JMDCA library.
+The JMDCA library is written in Java and provides core data structures, processing routines and analysis algorithms which allow application programmers to easily analyse trips and perform mode detection on the recorded data (JMDCA API, see section <a href="integration/#Backend">Backend</a>).
+To deliver high-quality results, the JMDCA mode detection algorithm requires access to a third-party public transit routing engine (such as HERE or Google routing).</p>
+<p>The result of using MODE are trips. These trips can include multiple segments ("legs") which make up a trip. E.g. if
+a user walks to his or her car, then drives to a transit station and then takes the train to reach the destination it would yield three legs, each with:</p>
+<ol>
+<li>Start and end times</li>
+<li>The travel mode (e.g. bike, car, public transport, walking, etc.)  </li>
+<li>The probability of the "correctness" (e.g. it could be "LOW; Reason: Bad GPS signal")</li>
+</ol>
 <h3 id="use-case-scenario">Use Case Scenario</h3>
-<pre><code>Description: Detail a typical use case scenario, demonstrating how the tool operates within a workflow or system.
-(if possible) Visual Aid: Include a diagram or flowchart to illustrate the use case, making it easier to understand the tool's application in a real-world scenario.
-</code></pre>
+<p>The main usage of MODE is to be integrated in smartphone apps to track user travel behavior. E.g. it was used in apps which incentivize "green" transport modes where you start the app and if it detects that you did the trip via bicycle or public transport you could earn "tokens" which could be spent on culture events.</p>
+<p><img alt="Output" src="img/Output.png" /></p>
               
             </div>
           </div><footer>
