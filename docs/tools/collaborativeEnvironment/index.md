@@ -32,5 +32,5 @@ Integrating the Collaborative Environment into development projects can signific
 A typical use case for the Collaborative Environment involves setting up and managing a co-production process within a Citizen Observatory. Users can create organizations, form teams, and develop processes, each with clearly defined phases, objectives, and tasks. The platform allows for resource management, tracking progress, and engaging communities effectively. It also supports integration with external tools, enhancing its utility in diverse scenarios.
 
 ## References
-[User manual of Collaborative Environment]([https://example.com](https://demo.greengage-project.eu/docs/en/)https://demo.greengage-project.eu/docs/en/)
-[Documentation in GREENGAGE catalogue](https://aitonline.sharepoint.com/:b:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/catalogue/CollaborativeEnvironment/GREENGAGE-Academy_CollaborativeEnv.pdf?csf=1&web=1&e=mY87Mk)
+- [User manual of Collaborative Environment](https://demo.greengage-project.eu/docs/en/)
+- [Documentation in GREENGAGE catalogue](https://aitonline.sharepoint.com/:b:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/catalogue/CollaborativeEnvironment/GREENGAGE-Academy_CollaborativeEnv.pdf?csf=1&web=1&e=mY87Mk)
