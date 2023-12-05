@@ -14,7 +14,7 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Link**: [tools/keycloak](tools/keycloak)
 - **Description**: Keycloak is an open-source Identity and Access Management solution aimed at modern applications and services. It facilitates the secure transmission of identity information between applications and services, even across different domains.
 
-  - **Examples of integration**:
+  - **Examples of programmatic integration/usage**:
     - [Node](/tools/keycloak/examples#node)
     - [Python](/tools/keycloak/examples#python)
 
@@ -26,7 +26,7 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Link**: [tools/collaborativeEnvironment](tools/collaborativeEnvironment)
 - **Description**: The Collaborative Environment is a comprehensive platform designed to facilitate co-production, asset management, and enhanced collaboration among users. It incorporates various interlinkers and modules to streamline workflows and improve organizational processes, supporting integration with different technologies and frameworks.
 
-  - **Examples of integration**:
+  - **Examples of programmatic integration/usage**:
     - [Deploy example](/tools/collaborativeEnvironment/examples)
 
 ---
@@ -37,7 +37,7 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Link**: [tools/mode](tools/mode)
 - **Description**: This module allows to determine the transport mode of a user based on GPS data provided.
 
-  - **Examples of integration**:
+  - **Examples of programmatic integration/usage**:
     - [Deploy example](/tools/mode/examples)
 
 ---
