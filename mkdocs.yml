@@ -28,5 +28,9 @@ nav:
           - Description: tools/mode
           - Integration: tools/mode/integration
           - Example of integration: tools/mode/examples
+      - Discourse:
+          - Description: tools/Discourse
+          - Integration: tools/Discourse/integration
+          - Example of integration: tools/Discourse/examples
 locale:
   - en

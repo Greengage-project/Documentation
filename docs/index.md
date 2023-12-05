@@ -42,4 +42,15 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 ---
 
+#### Discourse
+
+- **Directory**: `/tools`
+- **Link**: [tools/Discourse](tools/Discourse)
+- **Description**: Discourse is a modern, open-source discussion platform designed for building and managing community forums. Known for its user-friendly interface and robust features, it supports real-time discussions, multimedia integration, and comprehensive moderation tools. Ideal for a wide range of communities, from small groups to large enterprises, Discourse fosters engagement, knowledge sharing, and collaboration.
+
+  - **Examples of programmatic integration/usage**:
+    - [Deploy example](/tools/Discourse/examples)
+
+---
+
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
