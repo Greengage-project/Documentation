@@ -1,11 +1,10 @@
-# Collaborative Environment Integration Guide for Third-Party Services
+# Collaborative Environment Usage Guide for Third-Party Services
 
 This guide explains the process for integrating third-party services into the Collaborative Environment, a platform centralizing organizational management and enhancing collaborative workflows.
 
-**Initial Setup and Configuration**
+**Initial Login and registration**
 
-- Download the code from [the repository](https://github.com/Greengage-project/interlink-project) and follow the [development and demo instructions](https://interlink-project.github.io/interlink-project/environments/overview.html#development-and-demo).
-- Create an account either by registering with an email or using a Google account at Collaborative Environment > Login.
+- Create an account either by registering with an email or using a Google account at [Collaborative Environment](https://demo.greengage-project.eu/dashboard) > Login.
 
 **Organization and Team Setup**
 
@@ -35,3 +34,8 @@ This guide explains the process for integrating third-party services into the Co
 - For further assistance or troubleshooting, refer to the Collaborative Environment’s resources or community forums.
 
 By following these steps, third-party services can be effectively integrated into the Collaborative Environment, leveraging its capabilities to improve organizational efficiency and collaboration.
+
+**References**
+Further details about the usage of this tool are available in the following references:
+- [https://demo.greengage-project.eu/docs/en/)(Collaborative Environment's User Manual)
+
