@@ -8,7 +8,7 @@ Integrating Discourse into the GREENGAGE engine amplifies its capabilities by en
 
 **Requesting Access Credentials**
 
-- To integrate Discourse with Keycloak SSO, you'll need to request access credentials. ([Follow this guide](tools/keycloak))
+- To integrate Discourse with Keycloak SSO, you'll need to request access credentials. ([Follow this guide](/tools/keycloak))
 
 **Receiving Credentials**
 
@@ -17,9 +17,8 @@ Integrating Discourse into the GREENGAGE engine amplifies its capabilities by en
 
 **Configuring Your Service**
 
-
-
 1. **Installing OpenID Connect Plugin for Keycloak Integration**:
+
    - Navigate to the Discourse installation directory:
      ```
      cd /opt/bitnami/discourse
@@ -32,7 +31,7 @@ Integrating Discourse into the GREENGAGE engine amplifies its capabilities by en
      ```
      RAILS_ENV=production bundle exec rake assets:precompile
      ```
-   Detailed guide for installing plugins on Discourse over Bitnami can be found [here](https://docs.bitnami.com/virtual-machine/apps/discourse/configuration/install-plugins/).
+     Detailed guide for installing plugins on Discourse over Bitnami can be found [here](https://docs.bitnami.com/virtual-machine/apps/discourse/configuration/install-plugins/).
 
 2. **Disabling Email Verification**:
    - To disable the email verification typically sent upon first-time registration in Discourse, use the following plugin:
@@ -54,7 +53,6 @@ These steps will set up Discourse for Keycloak SSO and disable the default email
 **Support and Contact**
 
 - For additional support, please reach out to greengage.admin@deusto.es.
-
 
 **Important Notes:**
 
