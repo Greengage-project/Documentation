@@ -1,5 +1,5 @@
 # MODE
-## Setting Up a Development Environment: Guide to Integrating MODE
+
 ### Introduction
 
 MODE software technology uses smartphones to automatically track the distances travelled and transport modes used, thus enabling software developers, system integrators and transport operators to design innovative mobility services. MODE provides the missing link for the development of innovative mobility services: automatic, reliable recognition of the means of transport used, and travelled routes using smartphones.
