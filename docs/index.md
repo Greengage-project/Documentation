@@ -56,6 +56,17 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 ---
 
+#### DataHub
+
+- **Directory**: `/tools`
+- **Link**: [tools/DataHub](tools/datahub)
+- **Deployed in**: [https://datahub.16.171.94.204.nip.io](https://datahub.16.171.94.204.nip.io)
+- **Description**: DataHub is an open-source metadata platform designed to democratise data discovery. It acts as a centralised system for companies and teams to track, manage, and find data within their organisation. Its primary aim is to streamline the process of accessing and understanding data assets, making it easier for teams to derive insights and make informed decisions.
+
+
+  - **Examples of programmatic integration**:
+    - [Integration example](/tools/datahub/examples)
+
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
 
 ##### Source code in: [https://github.com/Greengage-project/Documentation](https://github.com/Greengage-project/Documentation)
