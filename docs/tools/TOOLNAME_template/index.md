@@ -1,5 +1,5 @@
 # Tool Name
-## Setting Up a Development Environment: Guide to Integrating [Tool Name]
+
 ### Introduction
 
     Description: Provide an overview of the tool's purpose and its importance in modern tech environments.
