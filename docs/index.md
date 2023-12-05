@@ -24,8 +24,8 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 #### Collaborative Environment
 
 - **Directory**: `/tools`
-- **Deployed in**: [https://demo.greengage-project.eu](https://demo.greengage-project.eu)
 - **Link**: [tools/collaborativeEnvironment](tools/collaborativeEnvironment)
+- **Deployed in**: [https://demo.greengage-project.eu](https://demo.greengage-project.eu)
 - **Description**: The Collaborative Environment is a comprehensive platform designed to facilitate co-production, asset management, and enhanced collaboration among users. It incorporates various interlinkers and modules to streamline workflows and improve organizational processes, supporting integration with different technologies and frameworks.
 
   - **Examples of programmatic integration/usage**:
@@ -47,8 +47,8 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 #### Discourse
 
 - **Directory**: `/tools`
-- **Deployed in**: [https://discourse.16.171.94.204.nip.io](https://discourse.16.171.94.204.nip.io)
 - **Link**: [tools/Discourse](tools/Discourse)
+- **Deployed in**: [https://discourse.16.171.94.204.nip.io](https://discourse.16.171.94.204.nip.io)
 - **Description**: Discourse is a modern, open-source discussion platform designed for building and managing community forums. Known for its user-friendly interface and robust features, it supports real-time discussions, multimedia integration, and comprehensive moderation tools. Ideal for a wide range of communities, from small groups to large enterprises, Discourse fosters engagement, knowledge sharing, and collaboration.
 
   - **Examples of programmatic integration/usage**:
