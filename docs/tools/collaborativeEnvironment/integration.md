@@ -37,5 +37,5 @@ By following these steps, third-party services can be effectively integrated int
 
 **References**
 Further details about the usage of this tool are available in the following references:
-- [https://demo.greengage-project.eu/docs/en/)(Collaborative Environment's User Manual)
+- [https://demo.greengage-project.eu/docs/en/](Collaborative Environment's User Manual)
 
