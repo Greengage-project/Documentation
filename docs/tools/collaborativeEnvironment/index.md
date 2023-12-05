@@ -1,7 +1,5 @@
 # Collaborative Environment
 
-## Setting Up a Development Environment: Guide to Integrating Collaborative Environment
-
 ### Introduction
 
 #### Description
