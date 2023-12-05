@@ -27,15 +27,15 @@
   ![Use Case Diagram](./assets/use_case.png)
 
   [Detailed description of a use case, demonstrating how the tool integrates into workflows or solves specific problems.]
-  ```
 
   ## References
 
   [Detailed list of references, include as one reference PDF version of catalogue entry for your tool.]
+  ```
 
 #### 3. Usage and Integration Guide in `integration.md`
 
-- **Content**: Provide some brief description on how the tools is supposed to be used. If your tool is going to be offered as a SaaS extend such usage highlights, always referring to further documentation. In case your app, it is designed to be integrated with third party tools, then provide a clear, step-by-step guide for integrating the tool with third-party services. Remember provide a channel to ask for support about the tool.  
+- **Content**: Provide some brief description on how the tools is supposed to be used. If your tool is going to be offered as a SaaS extend such usage highlights, always referring to further documentation. In case your app is designed to be integrated with third party tools, then provide a clear, step-by-step guide for integrating the tool with third-party services. Remember provide a channel to ask for support about the tool.  
 - **Structure**:
   - **Usage instructions**: Brief usage instructions of the tool. Add references to external resources where further details about usage are given if available. Otherwise, try to make these descriptions self-contained, including snaphshots, URLs and other usage tips.
   - **Requesting Credentials**: Outline the process for obtaining necessary access credentials.
@@ -44,8 +44,8 @@
 
 #### 4. Proof of Concept Code in `examples`
 
-- **Purpose**: Supply ready-to-use code examples in various programming languages to demonstrate practical integration.
-- **Details**: Each example should include comprehensive comments explaining each step and its relevance to the integration process.
+- **Purpose**: Supply ready-to-use code examples in various programming languages to demonstrate practical integration or programmatic consumption/usage of the tool documented.
+- **Details**: Each example should include comprehensive comments explaining each step and its relevance to the integration/usage process.
 
 #### 5. Documenting Examples in `examples/index.md`
 
