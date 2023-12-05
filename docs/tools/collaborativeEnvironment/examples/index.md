@@ -1,8 +1,8 @@
-# Collaborative Environment Integration Guide
+# Collaborative Environment Installation Guide
 
-## Integrating Collaborative Environment with Node.js and Python Environments
+## Deploying Collaborative Environment 
 
-This guide provides detailed instructions for setting up and integrating the Collaborative Environment with Node.js and Python applications using Docker and Docker Compose.
+This guide provides detailed instructions for setting up the Collaborative Environment using Docker and Docker Compose.
 
 ### Prerequisites
 
