@@ -1,5 +1,7 @@
 # Examples
 
+This section includes examples in different programming languages on how integration with the provided KeyCloak can be performed.
+
 ## [Nodejs](#Nodejs)
 
 #### Prerequisites
