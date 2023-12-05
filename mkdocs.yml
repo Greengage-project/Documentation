@@ -22,7 +22,7 @@ nav:
               - Python: tools/keycloak/examples#python
       - Collaborative Environment:
           - Description: tools/collaborativeEnvironment
-          - Integration: tools/collaborativeEnvironment/integration
+          - Usage: tools/collaborativeEnvironment/integration
           - Example of deployment: tools/collaborativeEnvironment/examples
       - MODE:
           - Description: tools/mode
