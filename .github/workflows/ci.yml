@@ -3,7 +3,10 @@ name: deploy-docs
 on:
   push:
     branches:
-      - main # Set this to your default branch
+      - main
+  merge:
+    branches:
+      - main
 
 jobs:
   deploy:
