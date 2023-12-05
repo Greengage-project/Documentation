@@ -27,6 +27,6 @@ nav:
       - MODE:
           - Description: tools/mode
           - Integration: tools/mode/integration
-          - Example of deployment: tools/mode/examples
+          - Example of integration: tools/mode/examples
 locale:
   - en
