@@ -31,6 +31,6 @@ nav:
       - Discourse:
           - Description: tools/Discourse
           - Integration: tools/Discourse/integration
-          - Example of integration: tools/Discourse/examples
+          - Example of deployment: tools/Discourse/examples
 locale:
   - en
