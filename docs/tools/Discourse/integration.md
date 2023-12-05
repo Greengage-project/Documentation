@@ -8,7 +8,7 @@ Integrating Discourse into the GREENGAGE engine amplifies its capabilities by en
 
 **Requesting Access Credentials**
 
-- To integrate Discourse with Keycloak SSO, you'll need to request access credentials. ([Follow this guide](/tools/keycloak))
+- To integrate Discourse with Keycloak SSO, you'll need to request access credentials. ([Follow this guide](/documentation/tools/keycloak))
 
 **Receiving Credentials**
 
