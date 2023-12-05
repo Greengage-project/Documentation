@@ -131,7 +131,7 @@
 <p>Integrating Discourse into the GREENGAGE engine amplifies its capabilities by enabling seamless Single Sign-On (SSO) authentication through Keycloak. This guide provides steps to integrate Discourse with Keycloak SSO, ensuring a smooth authentication process for users across various GREENGAGE services.</p>
 <p><strong>Requesting Access Credentials</strong></p>
 <ul>
-<li>To integrate Discourse with Keycloak SSO, you'll need to request access credentials. (<a href="tools/keycloak">Follow this guide</a>)</li>
+<li>To integrate Discourse with Keycloak SSO, you'll need to request access credentials. (<a href="/tools/keycloak">Follow this guide</a>)</li>
 </ul>
 <p><strong>Receiving Credentials</strong></p>
 <ul>
@@ -140,15 +140,19 @@
 </ul>
 <p><strong>Configuring Your Service</strong></p>
 <ol>
-<li><strong>Installing OpenID Connect Plugin for Keycloak Integration</strong>:</li>
-<li>Navigate to the Discourse installation directory:
-     <code>cd /opt/bitnami/discourse</code></li>
+<li>
+<p><strong>Installing OpenID Connect Plugin for Keycloak Integration</strong>:</p>
+</li>
+<li>
+<p>Navigate to the Discourse installation directory:
+     <code>cd /opt/bitnami/discourse</code></p>
+</li>
 <li>Install the OpenID Connect plugin:
      <code>RAILS_ENV=production bundle exec rake plugin:install repo=https://github.com/discourse/discourse-openid-connect</code></li>
 <li>
 <p>Precompile the assets for the plugin to take effect:
      <code>RAILS_ENV=production bundle exec rake assets:precompile</code>
-   Detailed guide for installing plugins on Discourse over Bitnami can be found <a href="https://docs.bitnami.com/virtual-machine/apps/discourse/configuration/install-plugins/">here</a>.</p>
+     Detailed guide for installing plugins on Discourse over Bitnami can be found <a href="https://docs.bitnami.com/virtual-machine/apps/discourse/configuration/install-plugins/">here</a>.</p>
 </li>
 <li>
 <p><strong>Disabling Email Verification</strong>:</p>
