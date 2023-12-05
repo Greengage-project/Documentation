@@ -1,0 +1,40 @@
+# DataHub example of Integration
+
+## Creating an Ingestion Source
+
+### Introduction
+
+In this example we will show how to create an ingestion source that pulls data from the desired platform to DataHub.
+
+### Prerequisites
+
+- Access to [DataHub](https://datahub.16.171.94.204.nip.io/)
+- Access to the platform to be integrated with DataHub
+- Check if the platform to be integrated with DataHub is already supported by Datahub. [List of ingestion sources](https://datahubproject.io/integrations)
+
+### Creating the recipe
+
+1) Access to [DataHub](https://datahub.16.171.94.204.nip.io/)
+2) Go to the [Ingestion view](https://datahub.16.171.94.204.nip.io/ingestion) and click in create new source.
+3) Select the platform to be integrated with DataHub.
+4) Fill the form with the information of the platform to be integrated with DataHub. Some of the platforms have forms to be fulfilled with the information of the platform to be integrated with DataHub. In other cases, the information is provided in a yaml style as shown in the following figure:
+
+![Creation of new recipe](../assets/other_recipe.png)
+
+5) Schedule the ingestion of data as shown in the following figure:
+
+![Schedule of ingestion](../assets/schedule_ingestion.png)
+
+6) Click in *Save & Run* source and the ingestion will start.
+
+## Adding metadata to the datasets
+
+1) Access to [DataHub](https://datahub.16.171.94.204.nip.io/)
+2) Access to the desired dataset
+3) You can edit the metadata of the dataset in the column shown at the right side of the following figure and *descriptions*, *tags* and *glossary terms* can be added to the dataset fields: 
+
+![Dataset example](../assets/dataset_metadata.png)
+
+4) In the documenation tab, the documentation of the dataset can be added directly in formatted text or via a link to the documentation of it.
+5) The lineage tab allows to edit the lineage of the dataset. 
+6) The queries tab allows to add the most common queries conducted to the dataset. However, this queries cannot be executed from DataHub.
