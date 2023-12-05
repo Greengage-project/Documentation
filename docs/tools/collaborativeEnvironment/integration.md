@@ -35,7 +35,8 @@ This guide explains the process for integrating third-party services into the Co
 
 By following these steps, third-party services can be effectively integrated into the Collaborative Environment, leveraging its capabilities to improve organizational efficiency and collaboration.
 
-**References**
+## References
+
 Further details about the usage of this tool are available in the following references:
 - [Collaborative Environment's Usage Manual](https://demo.greengage-project.eu/docs/en/)
 
