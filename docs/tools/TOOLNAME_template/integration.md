@@ -1,6 +1,11 @@
-# [Tool Name] Integration Guide for Third-Party Services
+# [Tool Name] Usage & Integration Guide for Third-Party Services
 
-Introduction explaining the importance of integrating [Tool Name] for centralized management in your system.
+**Generic usage instructions for [Tool Name]**
+- Instructions on how to use the tool.
+  - In case there is external user manual make a small summary and refer to it.
+  - Otherwise, provide enough explanations and snapshots to let a user get started with the tool usage. Include links to URLs where the tool might be deployed.
+    
+Introduction explaining the importance of integrating [Tool Name] to make your tool part of the GREENGAGE engine. This implies that your tool has to use the single sign on (SSO) service provided by GREENGAGE. However, you should also describe not only how your tool is integrated with GREENGAGE's SSO but also how other GREENGAGE tools may integrate with your tools. Feel free to add and rename the integrate steps listed below:
 
 **Step 1: Requesting Access Credentials**
 
