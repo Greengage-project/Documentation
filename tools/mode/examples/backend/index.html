@@ -160,9 +160,8 @@ docker create --name modesrv -p 8080:8080 --restart=unless-stopped ait/modesrv:1
 <pre><code class="language-sh">docker start modesrv
 docker logs -f modesrv
 </code></pre>
-<h2 id="testing-the-image">Testing the image</h2>
-<p>Start the container and use the provided <code>test_container.sh</code> script from this
-directory to send example data to <code>localhost:8080</code> and see some JSON output.</p>
+<p><strong>Step 5: Test the image</strong></p>
+<p>Follow <a href="../../integration/#testing">these instructions</a> to send example data to <code>localhost:8080</code> and see some JSON output.</p>
 <h2 id="important-notes">Important Notes</h2>
 <p>The MODE backend service uses third-party routing services (e.g. Google Router).
 At this stage, a sample API key is hardcoded in the project.

@@ -167,13 +167,13 @@ MODE within the project.</p>
 <h2 id="testing">Testing</h2>
 <p>Testing the setup with real data can be cumbersome, as someone
 would need to walk/drive around to see the data pushed from the
-frontend to the backend. Therefore we provide some <a href="data/2020-06-27-PT.dat.gz">sample data</a> which can be sent to the backend to be processed
+frontend to the backend. Therefore we provide some <a href="assets/2020-06-27-PT.dat.gz">sample data</a> which can be sent to the backend to be processed
 using a simple <a href="../examples/test_container.sh">test script</a>.
 Note that the backend server requires an API key which must be changed
 in the test script and is provided <a href="mailto:martin.stubenschrott@ait.ac.at">on demand</a>.</p>
 <h3 id="output">Output</h3>
 <p>If the front end and backend works correctly, the backend will
-spit out the resulting trips as a <a href="data/trip1.json">JSON file</a>:</p>
+spit out the resulting trips as a <a href="../assets/trip1.json">JSON file</a>:</p>
 <pre><code class="language-json">{
     &quot;message&quot;: &quot;success&quot;,
     &quot;activities&quot;: [
@@ -204,7 +204,7 @@ spit out the resulting trips as a <a href="data/trip1.json">JSON file</a>:</p>
     ]
 }
 </code></pre>
-<p>The format uses the <a href="https://developers.google.com/maps/documentation/utilities/polylinealgorithm">encoded polyline algorithm</a> for encoding the polylines of the trips.
+<p>The format uses the <a href="https://developers.google.com/maps/documentation/utilities/polylinealgorithm">encoded polyline algorithm</a> for encoding the polylines of the trips (<a href="https://stackoverflow.com/questions/39851243/android-ios-decode-polyline-string">sample code</a>).
 We will, however, for the project also try to output GeoJSON
 files directly, which might be easier to consume.</p>
 <h2 id="support-and-contact">Support and Contact</h2>
