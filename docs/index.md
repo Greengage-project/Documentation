@@ -16,8 +16,8 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Description**: Keycloak is an open-source Identity and Access Management solution aimed at modern applications and services. It facilitates the secure transmission of identity information between applications and services, even across different domains.
 
   - **Examples of programmatic integration/usage**:
-    - [Node](/tools/keycloak/examples#node)
-    - [Python](/tools/keycloak/examples#python)
+    - [Node](tools/keycloak/examples#node)
+    - [Python](tools/keycloak/examples#python)
 
 ---
 
@@ -29,7 +29,7 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Description**: The Collaborative Environment is a comprehensive platform designed to facilitate co-production, asset management, and enhanced collaboration among users. It incorporates various interlinkers and modules to streamline workflows and improve organizational processes, supporting integration with different technologies and frameworks.
 
   - **Examples of programmatic integration/usage**:
-    - [Deploy example](/tools/collaborativeEnvironment/examples)
+    - [Deploy example](tools/collaborativeEnvironment/examples)
 
 ---
 
@@ -40,9 +40,9 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Description**: This module allows to determine the transport mode of a user based on GPS data provided.
 
   - **Examples of programmatic integration/usage**:
-    - [iOS example](/tools/mode/examples/ios)
-    - [Android example](/tools/mode/examples/android)
-    - [Backend example](/tools/mode/examples/backend)
+    - [iOS example](tools/mode/examples/ios)
+    - [Android example](tools/mode/examples/android)
+    - [Backend example](tools/mode/examples/backend)
 
 ---
 
@@ -54,7 +54,7 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Description**: Discourse is a modern, open-source discussion platform designed for building and managing community forums. Known for its user-friendly interface and robust features, it supports real-time discussions, multimedia integration, and comprehensive moderation tools. Ideal for a wide range of communities, from small groups to large enterprises, Discourse fosters engagement, knowledge sharing, and collaboration.
 
   - **Examples of programmatic integration/usage**:
-    - [Deploy example](/tools/Discourse/examples)
+    - [Deploy example](tools/Discourse/examples)
 
 ---
 
@@ -67,7 +67,7 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 
   - **Examples of programmatic integration**:
-    - [Integration example](/tools/datahub/examples)
+    - [Integration example](tools/datahub/examples)
 
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
 
