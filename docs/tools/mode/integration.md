@@ -3,8 +3,7 @@
 Since MODE is a distributed system with multiple components,
 it can (or must) be implemented at various levels, mostly
 in the frontend (Android, iOS apps) and the backend (server)
-which processes the trips. Therefore this integration
-document is split in two sections Frontend and Backend.
+which processes the trips.
 
 ## Frontend
 

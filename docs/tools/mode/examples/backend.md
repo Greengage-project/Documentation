@@ -2,7 +2,7 @@
 
 We provide a basic REST entpoint as a Docker image which listens
 on an endpoint `/analyze`. The input is binary movement data gathered
-from the smartphone apps (see [here](ios) and [here](android)).
+from the smartphone apps (see [here](ios.md) and [here](android.md)).
 
 Output is a [JSON string](../integration.md#output) of the taken activities.
 
@@ -12,24 +12,24 @@ Output is a [JSON string](../integration.md#output) of the taken activities.
 
 2. Import image on server
 
-   ```sh
-   docker load -i modesrv-1.0.0.tar.gz
-   ```
+```sh
+docker load -i modesrv-1.0.0.tar.gz
+```
 
 3. Create Docker container
  
-   ```sh
-   # docker stop modesrv
-   # docker rm modesrv
-   docker create --name modesrv -p 8080:8080 --restart=unless-stopped ait/modesrv:1.0.0
-   ```
+```sh
+# docker stop modesrv
+# docker rm modesrv
+docker create --name modesrv -p 8080:8080 --restart=unless-stopped ait/modesrv:1.0.0
+```
 
 4. Run Docker image and follow its logs
 
-   ```sh
-   docker start modesrv
-   docker logs -f modesrv
-   ```
+```sh
+docker start modesrv
+docker logs -f modesrv
+```
 
 ## Testing the image
 Start the container and use the provided `test_container.sh` script from this
