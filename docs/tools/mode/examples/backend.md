@@ -8,15 +8,17 @@ Output is a [JSON string](../integration.md#output) of the taken activities.
 
 
 ## Using the image
-1. Copy exported image to server
+**Step 1: Copy exported image to server**
 
-2. Import image on server
+Use your tool of choice.
+
+**Step 2: Import image on server**
 
 ```sh
 docker load -i modesrv-1.0.0.tar.gz
 ```
 
-3. Create Docker container
+**Step 3: Create Docker container**
  
 ```sh
 # docker stop modesrv
@@ -24,7 +26,7 @@ docker load -i modesrv-1.0.0.tar.gz
 docker create --name modesrv -p 8080:8080 --restart=unless-stopped ait/modesrv:1.0.0
 ```
 
-4. Run Docker image and follow its logs
+**Step 4: Run Docker image and follow its logs**
 
 ```sh
 docker start modesrv
