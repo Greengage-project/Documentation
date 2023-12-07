@@ -40,7 +40,9 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Description**: This module allows to determine the transport mode of a user based on GPS data provided.
 
   - **Examples of programmatic integration/usage**:
-    - [Deploy example](/tools/mode/examples)
+    - [iOS example](/tools/mode/examples/ios)
+    - [Android example](/tools/mode/examples/android)
+    - [Backend example](/tools/mode/examples/backend)
 
 ---
 
