@@ -143,7 +143,7 @@
                 <h1 id="mode-integration-guide-for-backend-data-analysis">MODE Integration Guide for backend data analysis</h1>
 <p>We provide a basic REST entpoint as a Docker image which listens
 on an endpoint <code>/analyze</code>. The input is binary movement data gathered
-from the smartphone apps (see <a href="ios">here</a> and <a href="android">here</a>).</p>
+from the smartphone apps (see <a href="../ios/">here</a> and <a href="../android/">here</a>).</p>
 <p>Output is a <a href="../../integration/#output">JSON string</a> of the taken activities.</p>
 <h2 id="using-the-image">Using the image</h2>
 <ol>
@@ -154,21 +154,21 @@ from the smartphone apps (see <a href="ios">here</a> and <a href="android">here<
 <p>Import image on server</p>
 </li>
 </ol>
-<p><code>sh
-   docker load -i modesrv-1.0.0.tar.gz</code></p>
+<pre><code class="language-sh">docker load -i modesrv-1.0.0.tar.gz
+</code></pre>
 <ol>
 <li>Create Docker container</li>
 </ol>
-<p><code>sh
-   # docker stop modesrv
-   # docker rm modesrv
-   docker create --name modesrv -p 8080:8080 --restart=unless-stopped ait/modesrv:1.0.0</code></p>
+<pre><code class="language-sh"># docker stop modesrv
+# docker rm modesrv
+docker create --name modesrv -p 8080:8080 --restart=unless-stopped ait/modesrv:1.0.0
+</code></pre>
 <ol>
 <li>Run Docker image and follow its logs</li>
 </ol>
-<p><code>sh
-   docker start modesrv
-   docker logs -f modesrv</code></p>
+<pre><code class="language-sh">docker start modesrv
+docker logs -f modesrv
+</code></pre>
 <h2 id="testing-the-image">Testing the image</h2>
 <p>Start the container and use the provided <code>test_container.sh</code> script from this
 directory to send example data to <code>localhost:8080</code> and see some JSON output.</p>
