@@ -33,7 +33,7 @@ MODE within the project.
 ## Testing
 Testing the setup with real data can be cumbersome, as someone
 would need to walk/drive around to see the data pushed from the
-frontend to the backend. Therefore we provide some [sample data](assets/2020-06-27-PT.dat.gz) which can be sent to the backend to be processed
+frontend to the backend. Therefore we provide some [sample data](assets/2020-07-20-PT.dat.gz) which can be sent to the backend to be processed
 using a simple [test script](examples/test_container.sh).
 Note that the backend server requires an API key which must be changed
 in the test script and is provided [on demand](mailto:martin.stubenschrott@ait.ac.at).
