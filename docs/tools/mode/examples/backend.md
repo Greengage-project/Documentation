@@ -33,9 +33,9 @@ docker start modesrv
 docker logs -f modesrv
 ```
 
-## Testing the image
-Start the container and use the provided `test_container.sh` script from this
-directory to send example data to `localhost:8080` and see some JSON output.
+**Step 5: Test the image**
+
+Follow [these instructions](../integration.md#testing) to send example data to `localhost:8080` and see some JSON output.
 
 ## Important Notes
 
