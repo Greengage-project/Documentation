@@ -146,26 +146,17 @@ on an endpoint <code>/analyze</code>. The input is binary movement data gathered
 from the smartphone apps (see <a href="../ios/">here</a> and <a href="../android/">here</a>).</p>
 <p>Output is a <a href="../../integration/#output">JSON string</a> of the taken activities.</p>
 <h2 id="using-the-image">Using the image</h2>
-<ol>
-<li>
-<p>Copy exported image to server</p>
-</li>
-<li>
-<p>Import image on server</p>
-</li>
-</ol>
+<p><strong>Step 1: Copy exported image to server</strong></p>
+<p>Use your tool of choice.</p>
+<p><strong>Step 2: Import image on server</strong></p>
 <pre><code class="language-sh">docker load -i modesrv-1.0.0.tar.gz
 </code></pre>
-<ol>
-<li>Create Docker container</li>
-</ol>
+<p><strong>Step 3: Create Docker container</strong></p>
 <pre><code class="language-sh"># docker stop modesrv
 # docker rm modesrv
 docker create --name modesrv -p 8080:8080 --restart=unless-stopped ait/modesrv:1.0.0
 </code></pre>
-<ol>
-<li>Run Docker image and follow its logs</li>
-</ol>
+<p><strong>Step 4: Run Docker image and follow its logs</strong></p>
 <pre><code class="language-sh">docker start modesrv
 docker logs -f modesrv
 </code></pre>
