@@ -1,47 +1,76 @@
-# MODE Integration Guide for Third-Party Services
+# MODE Integration Guide for data collection on iOS devices
 
-Since MODE is a distributed system with multiple components,
-it can (or must) be implemented at various levels, mostly
-in the frontend (Android, iOS apps) and the backend (server)
-which processes the trips. Therefore this integration
-document is split in two sections Frontend and Backend.
+The MODE smartphone library (`libmode`) provides a complete, out-of-the-box
+solution for mobility data collection via smartphones. It is built as an
+autonomous component that can easily be integrated into third party apps. For
+the standard use-case (trip data collection) the library can be integrated into
+existing Apps with little effort:
 
-## Frontend
+The most recent version of the MODE library will be provided by AIT
+[upon request](mailto:martin.stubenschrott@ait.ac.at). 
 
-The MODE smartphone libraries (`libmode` for [Android](examples/android.md) and [iOS](examples/ios.md)) must be integrated in a host app which takes
-care about user authentication, and starting/stopping the MODE
-service. While MODE can run continuously in the background, it can adversely
-affect battery consumption (especially on iOS devices). It should therefore
-only be started when the user agrees to track a trip.
+You will also be granted Git access to 
+https://gitlab.ait.ac.at/energy/commons/smartsurvey/ios/SmartSurveyDemoApp/
+which hosts a very basic demo app, showing how to use the MODE library.
 
-When MODE is running, it will detect when activities start or end
-(e.g. due to GPS signals, or when it detects, that the phone is not
-moving anymore). Once an activity end, the binary data of the trip
-is sent to a REST server in the background, which does the processing.
+**Step 1: Add the library to the App as a build dependency**
+
+To make it easy to use libmode, we have published the library on our
+Gitlab in https://gitlab.ait.ac.at/energy/commons/smartsurvey/ios/Libmode.git
+
+You can then [add the swift package as a dependency](https://alexandersandberg.com/articles/managing-package-dependencies-with-swift-package-manager-in-xcode/)
+in XCode.
+
+
+**Step 2: Initialize the library and start data collection**
+
+The library needs to be initialized before it can start recording data: 
+
+```swift
+func initLibMode() {
+    // Allow uploading of trips also on cellular connection (default is Wi-Fi only)
+    UserDefaultsStore.cellularUploadAllowed = true
+    
+    // Set the OAUTH2 token and the server address where trips are uploaded and analyzed.
+    Mode.setAuthorizationToken(token: "myuser:abcdef123456")
+
+    // Define where the backend server is located, waiting for the trips to be
+    // uploaded
+    //
+    // By default, access to non-https is disabled by iOS. For development purposes one can change
+    // Info.plist like described here, but that might not allow the app to be
+    // accepted in the app store, so only use during development or install a local
+    // SSL certificate:
+    // https://stackoverflow.com/questions/63597760/not-allowed-to-make-request-to-local-host-swift
+    Mode.setBaseServerURL(surveyUrl: "http://localhost:8080")
+    
+    // This call starts recording trip data. Once it has detected a trip, it is uploaded and analyzed
+    Mode.startSurvey()
+}
+```
+
+Also make sure that you request background location access in the manifest of the
+project.
 
 ## Backend
 
-The [backend](examples/backend.md) is provided as a
-Docker image which opens the rest service on port 8080.
-Its sole purpose is to listen to the binary data from the frontend,
-process the data, and return JSON output of trips.
+The backend is provided [on demand](mailto:martin.stubenschrott@ait.ac.at) as a Docker image which opens
+the rest service on port 8080.
 
-If advanced logic is needed, like storing the returned trips in a
-database, this must be done by some kind of middleware which details
-are yet to be determined, depending on the concrete use cases of
-MODE within the project.
+**Step 1: Configuring Your Service**
+TODO: How to 
+- Steps to incorporate the received credentials into the service.
+- Guidelines on setting up the service for proper communication with the [Tool Name].
 
-## Testing
-Testing the setup with real data can be cumbersome, as someone
-would need to walk/drive around to see the data pushed from the
-frontend to the backend. Therefore we provide some [sample data](data/2020-06-27-PT.dat.gz) which can be sent to the backend to be processed
-using a simple [test script](examples/test_container.sh).
-Note that the backend server requires an API key which must be changed
-in the test script and is provided [on demand](mailto:martin.stubenschrott@ait.ac.at).
+**Step 2: Testing the Integration**
+TODO!! (we will provide sample data)
 
-### Output
+# - Instructions for testing the integration to ensure everything is set up correctly.
+# - Contact information for support in case of issues during testing.
+
+## Output
 If the front end and backend works correctly, the backend will
-spit out the resulting trips as a [JSON file](data/trip1.json):
+spit out the resulting trips as a JSON file:
 ```json
 {
 	"message": "success",
@@ -74,7 +103,7 @@ spit out the resulting trips as a [JSON file](data/trip1.json):
 }
 ```
 
-The format uses the [encoded polyline algorithm](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) for encoding the polylines of the trips.
+The format uses google encoded strings for the polylines of the trips.
 We will, however, for the project also try to output GeoJSON
 files directly, which might be easier to consume.
 
@@ -89,6 +118,5 @@ files directly, which might be easier to consume.
   (e.g. Google Router). Make sure to keep that confident
   and **only** use it for testing and sparsingly.
   Overuse of the API key may result in high fees, as only
-  about 20.000 requests/per month are free!
-  
-  **For production, we must use a different key being used for billing!**
+  about 20.000 requests/per month are free! For production,
+  we must use a different key being used for billing.

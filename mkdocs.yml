@@ -27,7 +27,10 @@ nav:
       - MODE:
           - Description: tools/mode
           - Integration: tools/mode/integration
-          - Example of integration: tools/mode/examples
+          - Examples:
+              - iOS: tools/mode/ios
+              - Android: tools/mode/android
+              - Backend: tools/mode/backend
       - Discourse:
           - Description: tools/Discourse
           - Integration: tools/Discourse/integration

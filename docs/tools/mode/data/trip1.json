@@ -1,48 +1,3 @@
-# MODE Integration Guide for Third-Party Services
-
-Since MODE is a distributed system with multiple components,
-it can (or must) be implemented at various levels, mostly
-in the frontend (Android, iOS apps) and the backend (server)
-which processes the trips. Therefore this integration
-document is split in two sections Frontend and Backend.
-
-## Frontend
-
-The MODE smartphone libraries (`libmode` for [Android](examples/android.md) and [iOS](examples/ios.md)) must be integrated in a host app which takes
-care about user authentication, and starting/stopping the MODE
-service. While MODE can run continuously in the background, it can adversely
-affect battery consumption (especially on iOS devices). It should therefore
-only be started when the user agrees to track a trip.
-
-When MODE is running, it will detect when activities start or end
-(e.g. due to GPS signals, or when it detects, that the phone is not
-moving anymore). Once an activity end, the binary data of the trip
-is sent to a REST server in the background, which does the processing.
-
-## Backend
-
-The [backend](examples/backend.md) is provided as a
-Docker image which opens the rest service on port 8080.
-Its sole purpose is to listen to the binary data from the frontend,
-process the data, and return JSON output of trips.
-
-If advanced logic is needed, like storing the returned trips in a
-database, this must be done by some kind of middleware which details
-are yet to be determined, depending on the concrete use cases of
-MODE within the project.
-
-## Testing
-Testing the setup with real data can be cumbersome, as someone
-would need to walk/drive around to see the data pushed from the
-frontend to the backend. Therefore we provide some [sample data](data/2020-06-27-PT.dat.gz) which can be sent to the backend to be processed
-using a simple [test script](examples/test_container.sh).
-Note that the backend server requires an API key which must be changed
-in the test script and is provided [on demand](mailto:martin.stubenschrott@ait.ac.at).
-
-### Output
-If the front end and backend works correctly, the backend will
-spit out the resulting trips as a [JSON file](data/trip1.json):
-```json
 {
 	"message": "success",
 	"activities": [
@@ -72,23 +27,3 @@ spit out the resulting trips as a [JSON file](data/trip1.json):
 		}
 	]
 }
-```
-
-The format uses the [encoded polyline algorithm](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) for encoding the polylines of the trips.
-We will, however, for the project also try to output GeoJSON
-files directly, which might be easier to consume.
-
-## Support and Contact
-
-- For any questions, contact Martin Stubenschrott directly at
-  [martin.stubenschrott@ait.ac.at](mailto:martin.stubenschrott@ait.ac.at)
-
-## Important Notes
-
-- You might get an API key for third-party routing services
-  (e.g. Google Router). Make sure to keep that confident
-  and **only** use it for testing and sparsingly.
-  Overuse of the API key may result in high fees, as only
-  about 20.000 requests/per month are free!
-  
-  **For production, we must use a different key being used for billing!**
