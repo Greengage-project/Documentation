@@ -28,9 +28,9 @@ nav:
           - Description: tools/mode
           - Integration: tools/mode/integration
           - Examples:
-              - iOS: tools/mode/ios
-              - Android: tools/mode/android
-              - Backend: tools/mode/backend
+              - iOS: tools/mode/examples/ios
+              - Android: tools/mode/examples/android
+              - Backend: tools/mode/examples/backend
       - Discourse:
           - Description: tools/Discourse
           - Integration: tools/Discourse/integration

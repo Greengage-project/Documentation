@@ -11,7 +11,7 @@ MODE is a trip recording and mode detection framework. It consists of two main s
 1. A data recording module for iOS and Android Apps
 2. A backend data analysis module
 
-![Overview](img/Overview.png)
+![Overview](assets/Overview.png)
 
 The above figure shows a high-level overview and demonstrates how to embed the MODE components into a system (AIT components are highlighted in blue, other components must be provided by a partner).
 Client-side tracking and data recording functionality can be added to an existing App by including the `libmode` library. 
