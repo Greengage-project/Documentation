@@ -10,7 +10,7 @@ The most recent version of the MODE library will be provided by AIT
 [upon request](mailto:martin.stubenschrott@ait.ac.at). 
 
 You will also be granted Git access to 
-[https://gitlab.ait.ac.at/energy/commons/smartsurvey/android/smartsurvey_demo_app/]()
+[https://gitlab.ait.ac.at/energy/commons/smartsurvey/android/smartsurvey_demo_app/](https://gitlab.ait.ac.at/energy/commons/smartsurvey/android/smartsurvey_demo_app/)
 which hosts a very basic demo app, showing how to use the MODE library.
 
 **Step 1: Add the library to the App as a build dependency**
