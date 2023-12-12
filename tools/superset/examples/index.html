@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>[Tool Name] - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "[Tool Name]";
+        var mkdocs_page_input_path = "tools/superset/examples/index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Keycloak</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../keycloak">Description</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../collaborativeEnvironment/integration">Usage</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">MODE</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../mode">Description</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Discourse</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../Discourse">Description</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">DataHub</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../datahub">Description</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">[Tool Name]</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="tool-name">[Tool Name]</h1>
+<h2 id="integrating-tool-name-in-environment">Integrating [Tool Name] in [Environment]</h2>
+<h3 id="introduction">Introduction</h3>
+<pre><code>Description: Provide an overview of the tool's purpose and significance in development.
+Objective: Explain how this tool enhances the application's functionality or security.
+</code></pre>
+<h3 id="prerequisites">Prerequisites</h3>
+<pre><code>List the prerequisites needed to use the tool effectively.
+</code></pre>
+<h3 id="project-structure">Project Structure</h3>
+<pre><code>Source: Link to the example project.
+Directory Layout: Describe the structure of the example project.
+</code></pre>
+<h3 id="step-by-step-setup-and-configuration">Step-by-Step Setup and Configuration</h3>
+<pre><code>Outline the steps to set up the tool in the chosen environment.
+</code></pre>
+<h3 id="detailed-configuration-steps">Detailed Configuration Steps</h3>
+<pre><code>Provide detailed instructions for each configuration file and setting.
+</code></pre>
+<h3 id="running-the-services">Running the Services</h3>
+<pre><code>Instructions for starting the services on different operating systems.
+</code></pre>
+<h3 id="accessing-the-application">Accessing the Application</h3>
+<pre><code>Guide on how to access the application once it is running.
+</code></pre>
+<h3 id="additional-configuration-optional">Additional Configuration (Optional)</h3>
+<pre><code>Discuss any optional configuration steps for advanced users.
+</code></pre>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<pre><code>Provide common troubleshooting steps or issues and their solutions.
+</code></pre>
+<h3 id="support-and-additional-resources">Support and Additional Resources</h3>
+<pre><code>Support Channels: List available support channels.
+External Documentation: Link to the official documentation or other helpful resources.
+</code></pre>
+<h2 id="languageframework-integration-eg-python-nodejs">[Language/Framework Integration] (e.g., Python, Node.js)</h2>
+<h3 id="introduction_1">Introduction</h3>
+<pre><code>Brief introduction to integrating the tool with the specific language or framework.
+</code></pre>
+<h3 id="prerequisites_1">Prerequisites</h3>
+<pre><code>List any prerequisites specific to this language/framework.
+</code></pre>
+<h3 id="project-structure_1">Project Structure</h3>
+<pre><code>Describe the structure of the example integration project.
+</code></pre>
+<h3 id="steps-for-integration">Steps for Integration</h3>
+<pre><code>Step-by-step guide for integrating the tool into projects using this language/framework.
+</code></pre>
+<h3 id="running-the-example">Running the Example</h3>
+<pre><code>Instructions on how to run the example project.
+</code></pre>
+<h3 id="accessing-the-application_1">Accessing the Application</h3>
+<pre><code>How to access and test the application once it's running.
+</code></pre>
+<p>Replace sections marked with [brackets] with the relevant information for your specific tool and environment.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../javascripts/custom.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
