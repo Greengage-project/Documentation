@@ -81,6 +81,14 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
   - **Examples of integration of sources with Superset**:
     - [Integration example](tools/superset/examples)
 
+---
+
+#### Libelium MQTT sensor integration
+
+- **Directory**: `/tools`
+- **Link**: [tools/Superset](tools/sensors_integration)
+- **Description**: This documentation contains all the information necessary to connect and configure the IoT sensors provided by Libelium to MQTT broker and integrate it in other platforms or architectures.
+
     
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
 
