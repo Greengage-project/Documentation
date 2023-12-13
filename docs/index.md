@@ -69,6 +69,19 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
   - **Examples of programmatic integration**:
     - [Integration example](tools/datahub/examples)
 
+---
+
+#### Apache Superset
+
+- **Directory**: `/tools`
+- **Link**: [tools/Superset](tools/superset)
+- **Deployed in**: [https://superset.16.171.94.204.nip.io](https://superset.16.171.94.204.nip.io)
+- **Description**: Apache Superset is a sophisticated, open-source data exploration and visualisation platform designed to transform the way analysts and businesses interact with their data. As a versatile web application, it empowers users with tools for deep data exploration and the creation of beautifully rendered visualisations and dashboards. Superset is renowned for its user-friendly interface, democratising data analysis by enabling users of all skill levels to engage with complex datasets, design compelling visual narratives, and derive actionable insights. Offering a rich array of features, including a variety of chart types, interactive dashboards, and an integrated SQL editor, Apache Superset stands out as a comprehensive solution for modern data analytics and business intelligence needs.
+
+  - **Examples of integration of sources with Superset**:
+    - [Integration example](tools/superset/examples)
+
+    
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
 
 ##### Source code in: [https://github.com/Greengage-project/Documentation](https://github.com/Greengage-project/Documentation)
