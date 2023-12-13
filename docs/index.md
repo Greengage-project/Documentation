@@ -86,7 +86,7 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 #### Libelium MQTT sensor integration
 
 - **Directory**: `/tools`
-- **Link**: [tools/Superset](tools/sensors_integration)
+- **Link**: [tools/sensors_integration](tools/sensors_integration)
 - **Description**: This documentation contains all the information necessary to connect and configure the IoT sensors provided by Libelium to MQTT broker and integrate it in other platforms or architectures.
 
     
