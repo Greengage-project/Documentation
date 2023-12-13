@@ -43,5 +43,8 @@ nav:
           - Description: tools/superset
           - Usage: tools/superset/usage
           - Example of integration: tools/superset/examples
+      - Libelium sensor integration:
+          - Description: tools/sensor_integration
+
 locale:
   - en
