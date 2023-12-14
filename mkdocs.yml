@@ -46,6 +46,10 @@ nav:
       - Libelium sensor integration:
           - Description: tools/sensorsIntegration
           - Integration: tools/sensorsIntegration/integration
+      - Wordpress:
+          - Description: tools/wordpress
+          - Integration: tools/wordpress/integration
+          - Example of deployment: tools/wordpress/examples
 
 locale:
   - en

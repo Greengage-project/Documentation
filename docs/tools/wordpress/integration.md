@@ -19,7 +19,7 @@ Integrating Keycloak with WordPress enhances security by implementing Single Sig
 - Ensure you have a `clientid` and `secret` from Keycloak.
 - Follow the instructions provided in the setup wizard to integrate these credentials into WordPress.
 
-## [WordPress + Discourse Integration](#wpDiscourse)
+## [WordPress + Discourse Integration](#wpdiscourse)
 
 ### Introduction
 

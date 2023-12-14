@@ -49,6 +49,8 @@ The provided [docker-compose.yml](https://github.com/Greengage-project/Documenta
    - Use Keycloak's `clientid` and `secret`.
    - Follow the setup wizard in WordPress for Keycloak integration.
 
+![mini_orange_setup_wizard](../assets/mini_orange_setup_wizard.jpeg)
+
 ### Discourse + Keycloak
 
 1. **Enable Keycloak SSO in Discourse**:
@@ -70,6 +72,22 @@ The provided [docker-compose.yml](https://github.com/Greengage-project/Documenta
 2. **Configure Discourse Integration**:
    - Use the Discourse API key.
    - Set up publishing and commenting settings in WordPress to synchronize with Discourse.
+
+## Example of Post Integration from WordPress to Discourse
+
+This example demonstrates the seamless integration of posting on WordPress and how it reflects on Discourse.
+
+- First, we create a post in WordPress. As soon as the post is published, it automatically generates a corresponding thread in Discourse.
+  ![Creating Post in WordPress](../assets/wordpress_example_post.jpeg)
+  ![Post as Seen in Discourse](../assets/view_of_wordpress_post_in_discourse.jpeg)
+
+- Now, the post made in WordPress can be viewed as a thread in Discourse.
+
+  ![Viewing Thread in Discourse](../assets/wordpress_post_in_discussion_in_discourse.jpeg)
+
+- Additionally, users can engage with the post by commenting directly in the Discourse thread.
+
+  ![Commenting on the Thread](../assets/example_comment_discourse.jpeg)
 
 ## Additional Configuration and Troubleshooting
 

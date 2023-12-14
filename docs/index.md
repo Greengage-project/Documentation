@@ -65,7 +65,6 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Deployed in**: [https://datahub.16.171.94.204.nip.io](https://datahub.16.171.94.204.nip.io)
 - **Description**: DataHub is an open-source metadata platform designed to democratise data discovery. It acts as a centralised system for companies and teams to track, manage, and find data within their organisation. Its primary aim is to streamline the process of accessing and understanding data assets, making it easier for teams to derive insights and make informed decisions.
 
-
   - **Examples of programmatic integration**:
     - [Integration example](tools/datahub/examples)
 
@@ -86,10 +85,19 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 #### Libelium MQTT sensor integration
 
 - **Directory**: `/tools`
-- **Link**: [tools/sensors_integration](tools/sensors_integration)
+- **Link**: [tools/sensorsIntegration](tools/sensorsIntegration)
 - **Description**: This documentation contains all the information necessary to connect and configure the IoT sensors provided by Libelium to MQTT broker and integrate it in other platforms or architectures.
 
-    
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
+
+#### Wordpress
+
+- **Directory**: `/tools`
+- **Link**: [tools/wordpress](tools/wordpress)
+- **Description**: WordPress is a highly popular and versatile Content Management System (CMS) renowned for its ease of use and flexibility. It's an ideal platform for creating a wide range of websites, from personal blogs to large corporate portals. WordPress is known for its extensive theme and plugin ecosystem, which allows users to customize their sites to fit their specific needs and enhance functionality.
+
+  - **Examples of programmatic integration/usage**:
+    - [With Keycloak](tools/wordpress/integration/#wpKeycloak)
+    - [With Discourse](tools/wordpress/integration/#wpdiscourse)
 
 ##### Source code in: [https://github.com/Greengage-project/Documentation](https://github.com/Greengage-project/Documentation)
