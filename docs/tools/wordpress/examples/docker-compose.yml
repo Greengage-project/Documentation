@@ -139,6 +139,8 @@ services:
       # ALLOW_EMPTY_PASSWORD is recommended only for development.
       - ALLOW_EMPTY_PASSWORD=yes
       - DISCOURSE_HOST=localhost
+      - DISCOURSE_HOSTNAME=localhost
+      - DISCOURSE_PORT_NUMBER=3000
       - DISCOURSE_DATABASE_HOST=postgresqldiscourse
       - DISCOURSE_DATABASE_PORT_NUMBER=5432
       - DISCOURSE_DATABASE_USER=bn_discourse
@@ -155,8 +157,8 @@ services:
       - DISCOURSE_PASSWORD=bitnami123bitnami123bitnami123
       - DISCOURSE_SMTP_HOST=smtp.gmail.com
       - DISCOURSE_SMTP_PORT=587
-      - DISCOURSE_SMTP_USER=felipe.vergara@deusto.es
-      - DISCOURSE_SMTP_PASSWORD="yebx xsdb ulab sgli"
+      - DISCOURSE_SMTP_USER=aaaaaaaaaa@bbbbbbbbbbb.com
+      - DISCOURSE_SMTP_PASSWORD=xxxxxxxxxxxxxxxxxxxxxx
       - DISCOURSE_SMTP_PROTOCOL=tls
       - DISCOURSE_PRECOMPILE_ASSETS=no
 
@@ -212,6 +214,6 @@ volumes:
 
 networks:
   public-network:
-    external: true
+    driver: bridge
   discourse-network:
     driver: bridge
