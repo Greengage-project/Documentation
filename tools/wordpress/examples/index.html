@@ -134,6 +134,16 @@
                 </li>
     </ul>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Wordpress</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="..">Description</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../integration">Integration</a>
+                </li>
+                <li class="toctree-l2"><a class="" href=".">Example of deployment</a>
+                </li>
+    </ul>
+                  </li>
               </ul>
       </div>
     </div>
@@ -216,6 +226,7 @@
 <li>Use Keycloak's <code>clientid</code> and <code>secret</code>.</li>
 <li>Follow the setup wizard in WordPress for Keycloak integration.</li>
 </ol>
+<p><img alt="mini_orange_setup_wizard" src="../assets/mini_orange_setup_wizard.jpeg" /></p>
 <h3 id="discourse-keycloak">Discourse + Keycloak</h3>
 <ol>
 <li>
@@ -250,6 +261,23 @@
 <li>Use the Discourse API key.</li>
 <li>Set up publishing and commenting settings in WordPress to synchronize with Discourse.</li>
 </ol>
+<h2 id="example-of-post-integration-from-wordpress-to-discourse">Example of Post Integration from WordPress to Discourse</h2>
+<p>This example demonstrates the seamless integration of posting on WordPress and how it reflects on Discourse.</p>
+<ul>
+<li>
+<p>First, we create a post in WordPress. As soon as the post is published, it automatically generates a corresponding thread in Discourse.
+  <img alt="Creating Post in WordPress" src="../assets/wordpress_example_post.jpeg" />
+  <img alt="Post as Seen in Discourse" src="../assets/view_of_wordpress_post_in_discourse.jpeg" /></p>
+</li>
+<li>
+<p>Now, the post made in WordPress can be viewed as a thread in Discourse.</p>
+</li>
+</ul>
+<p><img alt="Viewing Thread in Discourse" src="../assets/wordpress_post_in_discussion_in_discourse.jpeg" /></p>
+<ul>
+<li>Additionally, users can engage with the post by commenting directly in the Discourse thread.</li>
+</ul>
+<p><img alt="Commenting on the Thread" src="../assets/example_comment_discourse.jpeg" /></p>
 <h2 id="additional-configuration-and-troubleshooting">Additional Configuration and Troubleshooting</h2>
 <ul>
 <li><strong>Email Setup</strong>: Ensure SMTP settings are correctly configured in both WordPress and Discourse for email functionalities.</li>
