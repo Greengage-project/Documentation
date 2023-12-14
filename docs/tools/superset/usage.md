@@ -55,3 +55,17 @@ Introduction explaining the importance of integrating [Tool Name] to make your t
 - Accessing to the SQL view using the button at the top left menu you can access a SQL statement executor against the datasets imported in Superset.
 
 ![SQL lab](./assets/sql.png)
+
+**Creating a chart from geo sources**
+
+- First of all, create a chart with the desired data source. For geographical sources, the best is to put the "map" word into the search bar to find all the map-based charts.
+
+![Map charts](./assets/map_charts.png)
+
+- Once in the chart editing view, you should identify the fields regarding latitude and longitude. Note that if both fields are in one field they may be inverted.
+
+![Lat & Long fields](./assets/lat_long.png)
+
+- Once the settings are set, create or update the chart to visualise it.
+
+![Lat & Long fields](./assets/map_done.png)
