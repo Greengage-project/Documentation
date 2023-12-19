@@ -1,2 +1,4 @@
+.DS_Store
+.env
 docs/tools/wordpress/examples/wordpress_data
 docs/tools/wordpress/examples/database
