@@ -14,30 +14,45 @@ nav:
   - Home: index.md
   - Guidelines: guidelines
   - Tools:
-      - Keycloak:
+      - Backbone:
+        - Keycloak:
           - Description: tools/keycloak
           - Integration: tools/keycloak/integration
           - Examples:
               - Node: tools/keycloak/examples#nodejs
               - Python: tools/keycloak/examples#python
-      - Collaborative Environment:
-          - Description: tools/collaborativeEnvironment
-          - Usage: tools/collaborativeEnvironment/integration
-          - Example of deployment: tools/collaborativeEnvironment/examples
-      - MODE:
-          - Description: tools/mode
-          - Integration: tools/mode/integration
-          - Examples:
-              - iOS: tools/mode/examples/ios
-              - Android: tools/mode/examples/android
-              - Backend: tools/mode/examples/backend
-      - Discourse:
+      - Community and Co-production process Management: 
+        - Wordpress:
+            - Description: tools/wordpress
+            - Integration: tools/wordpress/integration
+            - Example of deployment: tools/wordpress/examples
+        - Discourse:
           - Description: tools/Discourse
           - Integration: tools/Discourse/integration
           - Example of deployment: tools/Discourse/examples
-      - DataHub:
-          - Description: tools/datahub
-          - Usage: tools/datahub/usage
-          - Example of integration: tools/datahub/examples
+        - Collaborative Environment:
+          - Description: tools/collaborativeEnvironment
+          - Usage: tools/collaborativeEnvironment/integration
+          - Example of deployment: tools/collaborativeEnvironment/examples
+      - Data crowdsourcing and capture: 
+        - MODE:
+            - Description: tools/mode
+            - Integration: tools/mode/integration
+            - Examples:
+                - iOS: tools/mode/examples/ios
+                - Android: tools/mode/examples/android
+                - Backend: tools/mode/examples/backend
+        - Libelium sensor integration:
+            - Description: tools/sensorsIntegration
+            - Integration: tools/sensorsIntegration/integration
+      - Data analysis and insights generation:
+        - DataHub:
+            - Description: tools/datahub
+            - Usage: tools/datahub/usage
+            - Example of integration: tools/datahub/examples
+        - Apache Superset:
+            - Description: tools/superset
+            - Usage: tools/superset/usage
+            - Example of integration: tools/superset/examples
 locale:
   - en

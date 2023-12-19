@@ -65,10 +65,39 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Deployed in**: [https://datahub.16.171.94.204.nip.io](https://datahub.16.171.94.204.nip.io)
 - **Description**: DataHub is an open-source metadata platform designed to democratise data discovery. It acts as a centralised system for companies and teams to track, manage, and find data within their organisation. Its primary aim is to streamline the process of accessing and understanding data assets, making it easier for teams to derive insights and make informed decisions.
 
-
   - **Examples of programmatic integration**:
     - [Integration example](tools/datahub/examples)
 
+---
+
+#### Apache Superset
+
+- **Directory**: `/tools`
+- **Link**: [tools/Superset](tools/superset)
+- **Deployed in**: [https://superset.16.171.94.204.nip.io](https://superset.16.171.94.204.nip.io)
+- **Description**: Apache Superset is a sophisticated, open-source data exploration and visualisation platform designed to transform the way analysts and businesses interact with their data. As a versatile web application, it empowers users with tools for deep data exploration and the creation of beautifully rendered visualisations and dashboards. Superset is renowned for its user-friendly interface, democratising data analysis by enabling users of all skill levels to engage with complex datasets, design compelling visual narratives, and derive actionable insights. Offering a rich array of features, including a variety of chart types, interactive dashboards, and an integrated SQL editor, Apache Superset stands out as a comprehensive solution for modern data analytics and business intelligence needs.
+
+  - **Examples of integration of sources with Superset**:
+    - [Integration example](tools/superset/examples)
+
+---
+
+#### Libelium MQTT sensor integration
+
+- **Directory**: `/tools`
+- **Link**: [tools/sensorsIntegration](tools/sensorsIntegration)
+- **Description**: This documentation contains all the information necessary to connect and configure the IoT sensors provided by Libelium to MQTT broker and integrate it in other platforms or architectures.
+
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
+
+#### Wordpress
+
+- **Directory**: `/tools`
+- **Link**: [tools/wordpress](tools/wordpress)
+- **Description**: WordPress is a highly popular and versatile Content Management System (CMS) renowned for its ease of use and flexibility. It's an ideal platform for creating a wide range of websites, from personal blogs to large corporate portals. WordPress is known for its extensive theme and plugin ecosystem, which allows users to customize their sites to fit their specific needs and enhance functionality.
+
+  - **Examples of programmatic integration/usage**:
+    - [With Keycloak](tools/wordpress/integration/#wpKeycloak)
+    - [With Discourse](tools/wordpress/integration/#wpdiscourse)
 
 ##### Source code in: [https://github.com/Greengage-project/Documentation](https://github.com/Greengage-project/Documentation)
