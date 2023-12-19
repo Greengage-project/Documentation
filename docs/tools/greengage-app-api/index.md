@@ -67,3 +67,14 @@ mutation RegisterAccount {
 }
 ``````
 
+For an overview of all the current data sets and mutations please vistit api-stage.greengage.dev where you can find the complete schema and the interactive documentation.
+
+## Examples for useage or integratoin
+
+An example to provide a restful api via graphql endpoint can be seen [here](examples/restful-to-graphql/). The link includes a demo implementation and can be used for further useages.
+
+For a client side approach to use the graphql endpoint please follow [this link](examples/client-js/).
+
+## Integration
+
+If you want to be integrated into the greengage api or need further support please send an email to support@sushi.dev
