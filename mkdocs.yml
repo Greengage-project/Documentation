@@ -13,6 +13,7 @@ extra_css:
 nav:
   - Home: index.md
   - Guidelines: guidelines
+  - Thematic co-exploration example: thematic_coexploration_example.md
   - Tools:
       - Backbone:
         - Keycloak:
@@ -58,5 +59,9 @@ nav:
             - Description: tools/druid
             - Usage: tools/druid/usage
             - Example of integration: tools/druid/examples
+        - Apache NiFi:
+            - Description: tools/nifi
+            - Usage: tools/nifi/usage
+            - Example of integration: tools/nifi/examples
 locale:
   - en
