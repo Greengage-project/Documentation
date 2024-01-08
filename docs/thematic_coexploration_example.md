@@ -2,7 +2,7 @@
 
 In this example, we will explain the steps to conduct a complete thematic co-exploration process using the tools provided by the Greengage platform. To support the explanation, we will use the following video. The steps described below will be timestamped in the video to facilitate the understanding of them.
 
-![Thematic co-exploration example](https://aitonline.sharepoint.com/:v:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/GREEN%20Engine/Sprint3/DEMO_GreengageDatamanager.mp4?csf=1&web=1&e=Yh7rDm)
+[Thematic co-exploration example](https://aitonline.sharepoint.com/:v:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/GREEN%20Engine/Sprint3/DEMO_GreengageDatamanager.mp4?csf=1&web=1&e=Yh7rDm)
 
 ## Steps conducted in this thematic co-exploration
 
