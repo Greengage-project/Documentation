@@ -94,6 +94,18 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 ---
 
+#### Apache NiFi
+
+- **Directory**: `/tools`
+- **Link**: [tools/NiFi](tools/nifi)
+- **Deployed in**: [https://nifi.16.171.94.204.nip.io](https://nifi.16.171.94.204.nip.io/nifi)
+- **Description**: Apache NiFi is a robust, open-source software solution designed for efficient and reliable data ingestion, processing, and distribution. It is particularly noted for its user-friendly graphical interface that simplifies the design, management, and monitoring of data flows. NiFi supports highly configurable and flexible data routing, system mediation, and transformation capabilities, enabling the handling of diverse data formats and systems. Key features include its scalability to accommodate large volumes of data, built-in data security measures, and extensive audit trails for data provenance. Primarily used in scenarios requiring complex data pipelines, such as real-time data processing and integration across varied systems, Apache NiFi stands out for its ease of use and comprehensive data management capabilities.
+
+  - **Examples of integration of sources with NiFi**:
+    - [Integration example](tools/nifi/examples)
+
+---
+
 #### Libelium MQTT sensor integration
 
 - **Directory**: `/tools`
