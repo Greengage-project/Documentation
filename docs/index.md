@@ -82,6 +82,18 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 ---
 
+#### Apache Druid
+
+- **Directory**: `/tools`
+- **Link**: [tools/Druid](tools/druid)
+- **Deployed in**: [https://druid.16.171.94.204.nip.io](https://druid.16.171.94.204.nip.io)
+- **Description**: Apache Druid is a high-performance, distributed data store designed for real-time analytics on large-scale datasets. It excels in scenarios where fast queries and ingest are crucial, such as in business intelligence applications, operational analytics, and real-time monitoring. Druid is known for its ability to handle high concurrency, its columnar storage format, and its ability to scale horizontally. It supports streaming and batch data ingestion, and its architecture allows for efficient data summarisation, fast aggregation queries, and low-latency data access. Druid is often used in conjunction with big data technologies like Hadoop and Kafka, making it a popular choice for organisations looking to implement real-time analytics solutions.
+
+  - **Examples of integration of sources with Druid**:
+    - [Integration example](tools/druid/examples)
+
+---
+
 #### Libelium MQTT sensor integration
 
 - **Directory**: `/tools`
