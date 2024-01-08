@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>WordPress - GREENGAGE Documentation</title>
+    <title>Apache Druid - GREENGAGE Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "WordPress";
-        var mkdocs_page_input_path = "tools/wordpress/index.md";
+        var mkdocs_page_name = "Apache Druid";
+        var mkdocs_page_input_path = "tools/druid/index.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -76,11 +76,11 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="#">Wordpress</a>
     <ul>
-                <li class="toctree-l3"><a class="" href=".">Description</a>
+                <li class="toctree-l3"><a class="" href="../wordpress">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="integration">Integration</a>
+                <li class="toctree-l3"><a class="" href="../wordpress/integration">Integration</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="examples">Example of deployment</a>
+                <li class="toctree-l3"><a class="" href="../wordpress/examples">Example of deployment</a>
                 </li>
     </ul>
                 </li>
@@ -160,11 +160,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Apache Druid</a>
     <ul>
-                <li class="toctree-l3"><a class="" href="../druid">Description</a>
+                <li class="toctree-l3"><a class="" href=".">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../druid/usage">Usage</a>
+                <li class="toctree-l3"><a class="" href="usage">Usage</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../druid/examples">Example of integration</a>
+                <li class="toctree-l3"><a class="" href="examples">Example of integration</a>
                 </li>
     </ul>
                 </li>
@@ -185,7 +185,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">WordPress</li>
+      <li class="breadcrumb-item active">Apache Druid</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -194,30 +194,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="wordpress">WordPress</h1>
+                <h1 id="apache-druid">Apache Druid</h1>
 <h3 id="introduction">Introduction</h3>
-<h4 id="description">Description</h4>
-<p>WordPress is a versatile Content Management System (CMS). It initially gained popularity for blog creation but has since evolved into a key tool for developing a wide range of websites, including commercial ones. Its flexibility and user-friendly interface make it a go-to solution for website creation.</p>
-<h4 id="objective">Objective</h4>
-<p>The primary objective of WordPress is to simplify the process of website creation and management. Its user-friendly design, combined with powerful features, makes it an ideal choice for users ranging from novices to seasoned web developers. WordPress aims to enhance website functionality, improve user experience, and provide robust website management tools.</p>
-<h3 id="features-of-wordpress">Features of WordPress</h3>
-<h4 id="list-of-features">List of Features</h4>
-<ol>
-<li><strong>Easy Installation, Update, and Customization</strong>: Streamlines the setup and maintenance process.</li>
-<li><strong>Automatic System Updates</strong>: Ensures the CMS stays current and secure.</li>
-<li><strong>Multiple Authors and User Roles</strong>: Allows for collaborative work with various permission levels.</li>
-<li><strong>Support for Multiple Blogs</strong>: Facilitates the management of several blogs within a single site.</li>
-<li><strong>Static Page Creation Capability</strong>: Enhances the flexibility of content management.</li>
-<li><strong>Additional Features</strong>: Includes categorization of articles and pages, password protection, WYSIWYG editor, email publishing, import options from various platforms, auto-save drafts, comment and communication tools, permalink support, content and comment distribution via RSS and Atom, link management, multimedia file management, plugin and widget support, integrated search functionality, and theme creation system.</li>
-</ol>
-<h3 id="use-case-scenario">Use Case Scenario</h3>
-<h4 id="description_1">Description</h4>
-<p>A typical use case for WordPress involves creating and managing a professional blog or a commercial website. In this scenario, WordPress serves as the backbone, offering tools for content creation, theme customization, and audience engagement through comments and social media integrations. The scenario demonstrates WordPress' versatility in handling diverse web development needs.</p>
-<h2 id="references">References</h2>
-<h4 id="description_2">Description</h4>
-<p>For comprehensive guides and technical details about WordPress, the following resources are available:</p>
+<p>Apache Druid is a high-performance, distributed data store designed for real-time analytics on large-scale datasets. It excels in scenarios where fast queries and ingest are crucial, such as in business intelligence applications, operational analytics, and real-time monitoring. Druid is known for its ability to handle high concurrency, its columnar storage format, and its ability to scale horizontally. It supports streaming and batch data ingestion, and its architecture allows for efficient data summarisation, fast aggregation queries, and low-latency data access. Druid is often used in conjunction with big data technologies like Hadoop and Kafka, making it a popular choice for organisations looking to implement real-time analytics solutions.</p>
+<p>Apache Druid is intended to be used by data engineers or data scientists who are familiar with data warehousing concepts and are looking for a high-performance, scalable solution for real-time analytics. Thus, this tool will be handled by the Greengage team and the data stored in it will be employed by non-tech users through Apache Superset or other tools.</p>
+<h3 id="features-of-apache-druid">Features of Apache Druid</h3>
 <ul>
-<li><strong>Support guides</strong>: <a href="https://wordpress.org/documentation/support-guides/">https://wordpress.org/documentation/support-guides/</a> - Provides step-by-step instructions for using WordPress effectively.</li>
+<li><strong>Real-time Data Ingestion:</strong> Druid can ingest data in real-time, allowing for immediate data querying and analysis. This feature is crucial for applications that require up-to-the-minute data, like monitoring and event-driven systems.</li>
+<li><strong>Horizontal Scalability:</strong> It can scale horizontally across commodity servers, enhancing performance and storage capacity linearly with the addition of more resources. This makes it well-suited for handling large and growing datasets.</li>
+<li><strong>Columnar Storage Format:</strong> Druid stores data in a columnar format, which is optimised for fast querying. This format allows for efficient data compression and rapid aggregation, making it ideal for analytics workloads.</li>
+<li><strong>Highly Concurrent:</strong> The system can handle a high number of concurrent queries, making it suitable for environments with multiple users or applications accessing the data simultaneously.</li>
+<li><strong>Fast Aggregations and Filters:</strong> Druid is designed for quick data aggregations and filtering, enabling rapid, on-the-fly data analysis. This is particularly beneficial for business intelligence and reporting use cases.</li>
+<li><strong>Approximate Queries:</strong> It supports approximate queries, such as top-N and count-distinct, which can be executed faster than exact computations at the cost of some accuracy. This is useful for large-scale data exploration.</li>
+<li><strong>Data Summarization and Roll-up:</strong> Druid can automatically summarise and roll-up data at ingestion time, reducing the data volume and speeding up query times. This is particularly useful for time-series data.</li>
+<li><strong>Fault Tolerance:</strong> The system is designed to be fault-tolerant, with data replication and recovery mechanisms in place. This ensures high availability and data integrity.</li>
+<li><strong>Flexible Data Model:</strong> Druid supports a flexible schema-on-read model, allowing ingestion of semi-structured data and different data types.</li>
+</ul>
+<h3 id="use-case-scenario">Use Case Scenario</h3>
+<h4 id="context">Context:</h4>
+<p>In an urban citizen observatory, members of the community actively participate in monitoring and analysing environmental conditions. One of the critical concerns in many cities is air quality, which directly impacts public health and quality of life.</p>
+<h4 id="objective">Objective:</h4>
+<p>To monitor, analyse, and visualise air quality data across different parts of the city to identify pollution hotspots, understand temporal trends, and engage the public in environmental awareness and decision-making processes.</p>
+<h4 id="implementation-using-apache-druid">Implementation Using Apache Druid:</h4>
+<p>1) Data Collection:</p>
+<pre><code>- Deploy IoT sensors across the city to measure air quality indicators like PM2.5, PM10, NO2, CO2, and Ozone.
+</code></pre>
+<p>2) Data Ingestion and Storage with Apache Druid:</p>
+<pre><code>- Stream the sensor data into Apache Druid for real-time ingestion and storage.
+- Configure Druid to handle the high volume of time-series data from the sensors, optimising for fast access and query performance.
+</code></pre>
+<p>3) Real-time Data Analysis and Aggregation:</p>
+<pre><code>- Perform real-time data analysis using Druid's fast aggregation and filtering capabilities.
+- Aggregate data at various time intervals to observe trends and detect anomalies in air quality.
+</code></pre>
+<p>4) Integration with Apache Superset for Visualisation:</p>
+<pre><code>- Connect Apache Superset to Apache Druid to leverage its advanced visualisation capabilities.
+- Ensure real-time data is accessible in Superset for immediate analysis and dashboarding.
+</code></pre>
+<p>5) Dashboard Creation and Data-Driven Decision Making (Out of Scope of Apache Druid):</p>
+<pre><code>- Develop an interactive dashboard in Superset, powered by the real-time data processed in Druid.
+- Use insights from the Superset dashboard, underpinned by Apache Druid's real-time analytics, to guide community actions and policy recommendations.
+</code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://druid.apache.org/docs/latest/design/">Apache Druid documentation</a></li>
 </ul>
               
             </div>
