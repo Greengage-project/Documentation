@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Guidelines - GREENGAGE Documentation</title>
+    <title>Thematic co-exploration example - GREENGAGE Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Guidelines";
-        var mkdocs_page_input_path = "guidelines.md";
+        var mkdocs_page_name = "Thematic co-exploration example";
+        var mkdocs_page_input_path = "thematic_coexploration_example.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -47,11 +47,15 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href=".">Guidelines</a>
+                <li class="toctree-l1"><a class="" href="../guidelines">Guidelines</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../thematic_coexploration_example/">Thematic co-exploration example</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Thematic co-exploration example</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#steps-conducted-in-this-thematic-co-exploration">Steps conducted in this thematic co-exploration</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Tools</span></p>
@@ -199,7 +203,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Guidelines</li>
+      <li class="breadcrumb-item active">Thematic co-exploration example</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -208,70 +212,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h3 id="comprehensive-guidelines-for-documenting-and-integrating-tools">Comprehensive Guidelines for Documenting and Integrating Tools</h3>
-<h4 id="1-duplicating-the-documentation-template">1. Duplicating the Documentation Template</h4>
-<ul>
-<li><strong>Action</strong>: Begin by duplicating the folder <code>docs/tools/TOOLNAME_template</code>.</li>
-<li><strong>Purpose</strong>: This template serves as a foundational structure for documenting new tools, ensuring consistency across your documentation.</li>
-</ul>
-<h4 id="2-describing-the-tool-in-indexmd">2. Describing the Tool in <code>index.md</code></h4>
-<ul>
-<li><strong>Content Requirements</strong>: In <code>index.md</code>, offer a comprehensive overview of the tool. This should include its purpose, key features, and any unique aspects that make it beneficial for your project.</li>
-<li><strong>Incorporating External Documentation</strong>: If there are external resources or official documentation for the tool, link them. This helps users understand the broader context and capabilities of the tool. External resources should be listed in the References section at the end of index.md, check the template provided. Notice that resources like images or PDFs should be stored in subfolder <code>assets</code>. </li>
-<li><strong>Example Structure</strong>:</li>
-</ul>
-<p>```markdown
-  # Tool Name</p>
-<p>## Introduction to Tool Name</p>
-<p>[Detailed introduction, including the tool's purpose and general functionality.]</p>
-<p>## Features</p>
-<p>[Detailed list of features, explaining how each aspect adds value to the project.]</p>
-<p>## Use Case Illustration</p>
-<p><img alt="Use Case Diagram" src="./assets/use_case.png" /></p>
-<p>[Detailed description of a use case, demonstrating how the tool integrates into workflows or solves specific problems.]</p>
-<p>## References</p>
-<p>[Detailed list of references, include as one reference PDF version of catalogue entry for your tool.]
-  ```</p>
-<h4 id="3-usage-and-integration-guide-in-integrationmd">3. Usage and Integration Guide in <code>integration.md</code></h4>
-<ul>
-<li><strong>Content</strong>: Provide some brief description on how the tools is supposed to be used. If your tool is going to be offered as a SaaS extend such usage highlights, always referring to further documentation. In case your app is designed to be integrated with third party tools, then provide a clear, step-by-step guide for integrating the tool with third-party services. Remember provide a channel to ask for support about the tool.  </li>
-<li><strong>Structure</strong>:</li>
-<li><strong>Usage instructions</strong>: Brief usage instructions of the tool. Add references to external resources where further details about usage are given if available. Otherwise, try to make these descriptions self-contained, including snaphshots, URLs and other usage tips.</li>
-<li><strong>Requesting Credentials</strong>: Outline the process for obtaining necessary access credentials.</li>
-<li><strong>Configuration Steps</strong>: Detail the steps for integrating the tool within their systems, including any specific settings or parameters.</li>
-<li><strong>Testing and Validation</strong>: Emphasize the importance of testing the integration and provide guidance on troubleshooting common issues.</li>
-</ul>
-<h4 id="4-proof-of-concept-code-in-examples">4. Proof of Concept Code in <code>examples</code></h4>
-<ul>
-<li><strong>Purpose</strong>: Supply ready-to-use code examples in various programming languages to demonstrate practical integration or programmatic consumption/usage of the tool documented.</li>
-<li><strong>Details</strong>: Each example should include comprehensive comments explaining each step and its relevance to the integration/usage process.</li>
-</ul>
-<h4 id="5-documenting-examples-in-examplesindexmd">5. Documenting Examples in <code>examples/index.md</code></h4>
-<ul>
-<li><strong>Structure</strong>: For each example, include objective of example, prerequisites, a detailed walkthrough of the project structure, and step-by-step instructions for setup and execution.</li>
-<li><strong>Clarity</strong>: Ensure that the instructions are clear, concise, and suitable for users with varying levels of expertise.</li>
-</ul>
-<h4 id="6-summarizing-tool-in-docsindexmd">6. Summarizing Tool in <code>docs/index.md</code></h4>
-<ul>
-<li><strong>Overview</strong>: Provide a brief yet informative summary of the tool, highlighting its significance and utility within the project.</li>
-<li><strong>Example Entry</strong>:</li>
-</ul>
-<p>```markdown
-  ### Tool Name</p>
-<ul>
-<li><strong>Directory</strong>: <code>/tools/toolname</code></li>
-<li><strong>Documentation Link</strong>: <a href="tools/toolname">Tool Documentation</a></li>
-<li><strong>Description</strong>: A concise summary highlighting the key features and benefits of the tool. Insight into how it integrates with and enhances the project.<ul>
-<li><a href="/tools/toolname/examples#Nodejs">Integration Example: Node.js</a></li>
-<li><a href="/tools/toolname/examples#Python">Integration Example: Python</a>
-  ```</li>
-</ul>
+                <h1 id="thematic-co-exploration-example">Thematic co-exploration example</h1>
+<p>In this example, we will explain the steps to conduct a complete thematic co-exploration process using the tools provided by the Greengage platform. To support the explanation, we will use the following video. The steps described below will be timestamped in the video to facilitate the understanding of them.</p>
+<p><img alt="Thematic co-exploration example" src="https://aitonline.sharepoint.com/:v:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/GREEN%20Engine/Sprint3/DEMO_GreengageDatamanager.mp4?csf=1&amp;web=1&amp;e=Yh7rDm" /></p>
+<h2 id="steps-conducted-in-this-thematic-co-exploration">Steps conducted in this thematic co-exploration</h2>
+<ol>
+<li>
+<p><strong>Data collection</strong>: In this step, we will collect the data from the different sensors that we have deployed in the city. In this example, we will use the <a href="https://nifi.16.171.94.204.nip.io/nifi">Apache NiFi</a> tool to collect the data from the open API because it cannot be accessed by <a href="https://druid.16.171.94.204.nip.io/">Apache Druid</a> directly. Thus, we created a NiFi flow that iteratively gathers the data from the API and stores in a local file. The description of this process is timestamped in the video from 00:00 to 03:35.</p>
 </li>
-</ul>
-<p>These guidelines aim to provide a thorough and user-friendly approach to documenting and integrating tools, thereby enhancing the accessibility and usability of your project's documentation.</p>
+<li>
+<p><strong>Data ingestion and storage</strong>: In this step, we will ingest the data from the local file to the database. In this example, we will use the <a href="https://druid.16.171.94.204.nip.io/">Apache Druid</a> tool to ingest the data from the local file. The description of this process is timestamped in the video from 03:35 to 05:45.</p>
+</li>
+<li>
+<p><strong>Data visualisation and dashboard creation</strong>: In this step, we will load the data from the database into <a href="https://superset.16.171.94.204.nip.io/">Apache Superset</a> to create visualisations that may support the decision-making process. Furthermore, we will create a dashboard aggregating the different visualisations to facilitate the understanding of the data. The description of this process is timestamped in the video from 05:45 to 07:30.</p>
+</li>
+<li>
+<p><strong>Data catalogue</strong>: In this step, we will add references to the data and the visualisations created in previous steps to the <a href="https://datahub.16.171.94.204.nip.io/">DataHub</a> tool. DataHub allows to create a catalog of data that shows the schema, documentation, lineage, properties and common queries that can be done to the data. Furthermore, the visualisations can also be referenced from this catalog and the connections between them can be established.The description of this process is timestamped in the video from 07:30 to 11:00.</p>
+</li>
+</ol>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
 
   <hr/>
 
@@ -292,6 +256,8 @@
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>
