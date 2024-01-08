@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Apache Druid - GREENGAGE Documentation</title>
+    <title>Apache NiFi Usage Guide - GREENGAGE Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Apache Druid";
-        var mkdocs_page_input_path = "tools/druid/examples/index.md";
+        var mkdocs_page_name = "Apache NiFi Usage Guide";
+        var mkdocs_page_input_path = "tools/nifi/usage.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -160,11 +160,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Apache Druid</a>
     <ul>
-                <li class="toctree-l3"><a class="" href="..">Description</a>
+                <li class="toctree-l3"><a class="" href="../../druid">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../usage">Usage</a>
+                <li class="toctree-l3"><a class="" href="../../druid/usage">Usage</a>
                 </li>
-                <li class="toctree-l3"><a class="" href=".">Example of integration</a>
+                <li class="toctree-l3"><a class="" href="../../druid/examples">Example of integration</a>
                 </li>
     </ul>
                 </li>
@@ -185,7 +185,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Apache Druid</li>
+      <li class="breadcrumb-item active">Apache NiFi Usage Guide</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -194,10 +194,53 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="apache-druid">Apache Druid</h1>
-<p>The integration of Apache Druid are done from other tools like Apache Superset or DataHub. Thus, you can access to the intregration guides of Apache Druid from the guides of the other tools:
-- <a href="../../superset/usage/">Apache Superset</a>
-- <a href="../../datahub/usage/">DataHub</a></p>
+                <h1 id="apache-nifi-usage-guide">Apache NiFi Usage Guide</h1>
+<p>These instructions will guide you through the basic process of setting up a simple data flow.</p>
+<p><strong>Step 1: Log In</strong>
+- Access to the <a href="https://nifi.16.171.94.204.nip.io/nifi">NiFi</a> deploy of Greengage.
+- First of all, you should login using your Greengage login in the keycloak authentication webpage that will appear.
+- You will reach to the main view of the tool as shown in the figure below.</p>
+<p><img alt="Main view" src="../assets/main_view.png" /></p>
+<p><strong>Step 2: Creating a New Process Group:</strong></p>
+<ul>
+<li>Drag and drop a <strong>Process Group</strong> onto the canvas by selecting the fourth icon from the top menu. Process groups are containers for data flows. They allow you to group together related processors and other components. Give your process group a meaningful name, this helps in organizing different data flows.</li>
+</ul>
+<p><img alt="Create process group" src="../assets/new_process_group.png" /></p>
+<ul>
+<li>When you create the group it will show in the canvas like this.</li>
+</ul>
+<p><img alt="Process group" src="../assets/process_group.png" /></p>
+<ul>
+<li>Now you can double click on it to access it and start adding new processors.</li>
+</ul>
+<p><strong>Step 3: Adding Processors to Your Flow</strong></p>
+<ul>
+<li>Drag and drop processors from the components toolbar onto the canvas within your process group.</li>
+</ul>
+<p><img alt="Add processor" src="../assets/add_processor.png" /></p>
+<ul>
+<li>Use processors like 'GetFile' to read data from a file system or 'ListenHTTP' for receiving data over HTTP.</li>
+</ul>
+<p><img alt="Processor added" src="../assets/processor_added.png" /></p>
+<ul>
+<li>Double-click a processor to configure it. Set properties like file path for 'GetFile' or listening port for 'ListenHTTP'. Apply and save the configuration.</li>
+</ul>
+<p><img alt="Processor configuration" src="../assets/processor_configuration.png" /></p>
+<p><strong>Step 4: Connecting Processors</strong></p>
+<p>Draw connections between processors by dragging the arrow from one processor to another. This defines the flow of data between processors.</p>
+<p><img alt="Connect processors" src="../assets/connect.png" /></p>
+<p><strong>Step 5: Setting Up Processor Scheduling</strong></p>
+<ul>
+<li>Configure how often each processor runs (e.g., every 5 seconds, on an event basis). This is crucial for managing the flow and processing of data.</li>
+</ul>
+<p><img alt="Schedule processors" src="../assets/schedule.png" /></p>
+<p><strong>Step 6: Starting and Stopping Processors</strong></p>
+<p>Start individual processors or the entire process group to initiate data flow. Stop processors to make configuration changes or for maintenance.</p>
+<p><img alt="Start &amp; Stop processors" src="../assets/start_stop.png" /></p>
+<p><strong>Step 7: Securing Your Data Flow</strong></p>
+<p>If dealing with sensitive data, explore NiFi’s security options, like configuring users, groups, and policies for access control.</p>
+<p><img alt="Policies" src="../assets/security.png" /></p>
+<p>Remember, Apache NiFi has a steep learning curve, but its flexibility and power are unmatched for data flow management. Experiment with different processors and configurations to understand how they impact your specific use case.</p>
               
             </div>
           </div><footer>
