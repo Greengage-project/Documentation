@@ -1,11 +1,6 @@
 # Apache Superset Usage Guide 
 
-**Generic usage instructions for Apache Superset**
-- Instructions on how to use the tool.
-  - In case there is external user manual make a small summary and refer to it.
-  - Otherwise, provide enough explanations and snapshots to let a user get started with the tool usage. Include links to URLs where the tool might be deployed.
-    
-Introduction explaining the importance of integrating [Tool Name] to make your tool part of the GREENGAGE engine. This implies that your tool has to use the single sign on (SSO) service provided by GREENGAGE. However, you should also describe not only how your tool is integrated with GREENGAGE's SSO but also how other GREENGAGE tools may integrate with your tools. Feel free to add and rename the integrate steps listed below:
+Superset allows you to create charts and dashboards from a wide variety of data sources. In this guide we will show you how to create charts and dashboards from the data sources that we have available in Greengage:
 
 **Step 1: Log In**
 - Access to the [Superset](https://superset.16.171.94.204.nip.io/) deploy of Greengage.

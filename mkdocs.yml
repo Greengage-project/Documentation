@@ -54,5 +54,9 @@ nav:
             - Description: tools/superset
             - Usage: tools/superset/usage
             - Example of integration: tools/superset/examples
+        - Apache Druid:
+            - Description: tools/druid
+            - Usage: tools/druid/usage
+            - Example of integration: tools/druid/examples
 locale:
   - en
