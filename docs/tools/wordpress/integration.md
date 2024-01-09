@@ -37,15 +37,23 @@ Integrating Discourse with WordPress allows seamless connectivity between WordPr
 3. **Activate and Configure**: After installation, click "Activate". A "Discourse" option will appear in the sidebar.
 4. **Configure Plugin Settings**:
 
-   - Set the 'Discourse URL'.
-   - Use the API Key created in Discourse.
-   - In the "Publishing" section, enable relevant options.
-   - In the "Commenting" tab, configure Discourse comments settings.
+   - In the "Connection" section
+     - Set the 'Discourse URL'.
+     - Use the API Key created in Discourse.
+     - Define the "Publishing Username"
+   - In the "Publishing" section, enable the following options
+     - "Default Discourse Category"
+     - "Use Full Post Content"
+     - "Auto Publish"
+     - "Send Email Notification on Publish Failure"
+     - (Optional) Set "Email Address for Failure Notification"
+     - "Auto Track Published Topics" 
+   - In the "Commenting" tab, enable the following
+      - **[IMPORTANT]** "Enable Discourse Comments"
+      - "Show Existing WP Comments"
    - In the "Webhook" tab, enable "Sync Comment Data".
 
    For more information on configuring the WP Discourse plugin, visit the [Discourse WordPress Plugin Guide](https://meta.discourse.org/t/install-and-configure-the-wp-discourse-wordpress-plugin-for-discourse/50752).
-
-
 
 **Important Notes:**
 
