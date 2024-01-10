@@ -4,6 +4,9 @@ In this example, we will explain the steps to conduct a complete thematic co-exp
 
 [Thematic co-exploration example](https://aitonline.sharepoint.com/:v:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/GREEN%20Engine/Sprint3/DEMO_GreengageDatamanager.mp4?csf=1&web=1&e=Yh7rDm)
 
+[![Citizen Observer Journey](./assets/citizen_observer_journey.png)](https://www.youtube.com/watch?v=6VZLyuLVSPQ)
+
+
 ## Steps conducted in this thematic co-exploration
 
 1. **Data collection**: In this step, we will collect the data from the different sensors that we have deployed in the city. In this example, we will use the [Apache NiFi](https://nifi.16.171.94.204.nip.io/nifi) tool to collect the data from the open API because it cannot be accessed by [Apache Druid](https://druid.16.171.94.204.nip.io/) directly. Thus, we created a NiFi flow that iteratively gathers the data from the API and stores in a local file. The description of this process is timestamped in the video from 00:00 to 03:35.

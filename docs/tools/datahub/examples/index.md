@@ -38,3 +38,15 @@ In this example we will show how to create an ingestion source that pulls data f
 4) In the documenation tab, the documentation of the dataset can be added directly in formatted text or via a link to the documentation of it.
 5) The lineage tab allows to edit the lineage of the dataset. 
 6) The queries tab allows to add the most common queries conducted to the dataset. However, this queries cannot be executed from DataHub.
+
+
+## Dataset Usage & Query History
+
+Altough is not possible to execute queries from DataHub, it is possible to add the usage and query history of the dataset. Some ingestion sources have the option to add the usage and query history. To see if our desired source has this option enabled we should check the documentation for it in the [DataHub website](https://datahubproject.io/docs/). This figure shows the option that should be present to have the Dataset Usage enabled:
+
+![Dataset usage](../assets/source-snowflake-capabilities.png)
+
+If the option is enabled, the usage and query history of the dataset will be shown in the dataset view as shown in the following figure:
+
+![Queries](../assets/feature-query-history-page.png)
+
