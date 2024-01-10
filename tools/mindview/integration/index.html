@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>MindView Usage & Integration Guide for Third-Party Services - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "MindView Usage \u0026 Integration Guide for Third-Party Services";
+        var mkdocs_page_input_path = "tools/mindview/integration.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../thematic_coexploration_example/">Thematic co-exploration example</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../collaborativeEnvironment/integration">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../mode">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../sensorsIntegration">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../sensorsIntegration/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../superset">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../superset/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../superset/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Apache Druid</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../druid">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../druid/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../druid/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Apache NiFi</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../nifi">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../nifi/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../nifi/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">MindView Usage & Integration Guide for Third-Party Services</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="mindview-usage-integration-guide-for-third-party-services">MindView Usage &amp; Integration Guide for Third-Party Services</h1>
+<h2 id="mindearth-app-greengage-edition">MindEarth App (GREENGAGE Edition)</h2>
+<p>If you're interested in participating in the MindView project by using the MindEarth App, here's a detailed guide to help you get started:</p>
+<h3 id="step-1-downloading-and-installing-the-app">Step 1. Downloading and Installing the App</h3>
+<p><strong>Download the app</strong>: Download the MindEarth App on the Google Play Store, or if it’s not yet available there, download the APK file from the link provided in the resources section.
+[download app][#]
+<strong>Install the App</strong>: Install the app on your Android smartphone. If you're installing via an APK file, make sure to allow installation from unknown sources in your phone's settings.</p>
+<h3 id="step-2-setting-up-your-account">Step 2. Setting Up Your Account</h3>
+<p><strong>Launch the App</strong>: Open the MindEarth App on your device. Please note that for the app to function correctly, you need to give it permission to track your precise location, access your camera, microphone, and storage.
+<strong>Register or Log In</strong>: Create a new account if you're a first-time user, providing necessary information including payment details to receive compensation for completed missions. If you're a returning user, simply log in with your credentials.
+<img alt="Login page" src="../assets/mindearthapp_screenshots/MindEarth-app_02.jpg" />
+<img alt="Registration page" src="../assets/mindearthapp_screenshots/MindEarth-app_16.jpg" /></p>
+<h3 id="step-3-exploring-available-missions">Step 3. Exploring Available Missions</h3>
+<p><strong>Browse Missions</strong>: Once logged in, you can browse through the list of available missions. These missions are typically commissioned by third parties for research, urban planning, or commercial purposes.
+<strong>View Mission Details</strong>: For each mission, you can view detailed information such as the location, the task involved, duration, the device required, deadline, and the compensation offered.
+<img alt="Main mission browse page" src="../assets/mindearthapp_screenshots/MindEarth-app_02.jpg" />
+<img alt="Available missions list" src="../assets/mindearthapp_screenshots/MindEarth-app_03.jpg" />
+<img alt="Available missions map" src="../assets/mindearthapp_screenshots/MindEarth-app_04.jpg" /></p>
+<h3 id="step-4-selecting-and-carry-out-a-mission">Step 4. Selecting and Carry out a Mission</h3>
+<p><strong>Choose a Mission</strong>: Select a mission that interests you and fits your availability. Carefully read the mission instructions, including any specific routes to follow or objects to photograph.
+<strong>Start the Mission</strong>: When you're ready and at the mission's start location, begin the mission by tapping the 'Start' button. This action automatically activates your camera, and it starts taking pictures as per the mission's requirements.
+<strong>Complete the Tasks</strong>: Follow the app's instructions closely, ensuring that all necessary photos are taken as per the mission guidelines.
+<img alt="Select mission" src="../assets/mindearthapp_screenshots/MindEarth-app_05.jpg" />
+<img alt="Book mission" src="../assets/mindearthapp_screenshots/MindEarth-app_06.jpg" />
+<img alt="Begin mission" src="../assets/mindearthapp_screenshots/MindEarth-app_08.jpg" />
+<img alt="Carry out mission" src="../assets/mindearthapp_screenshots/MindEarth-app_09.jpg" />
+<img alt="Complete mission" src="../assets/mindearthapp_screenshots/MindEarth-app_10.jpg" /></p>
+<h3 id="step-5-uploading-data-and-getting-rewards">Step 5. Uploading Data and Getting Rewards</h3>
+<p><strong>Upload Your Data</strong>: After completing the mission, follow the prompts to upload the images collected to the MindEarth servers.
+<strong>Receive Compensation</strong>: Based on the mission's guidelines and your performance, you will be compensated. This could be in monetary form or other rewards as specified in the mission details. Compensation for the mission will be processed on monthly bases based on the payment information provided during registration.
+<img alt="Completed mission" src="../assets/mindearthapp_screenshots/MindEarth-app_11.jpg" />
+<img alt="Review completed mission" src="../assets/mindearthapp_screenshots/MindEarth-app_12.jpg" />
+<img alt="Upload completed mission" src="../assets/mindearthapp_screenshots/MindEarth-app_13.jpg" /></p>
+<h3 id="step-6-review-and-repeat">Step 6. Review and Repeat</h3>
+<p><strong>Track Your Performance and Progress</strong>: You can review your completed missions and rewards in the app and track your performance statistics in terms of km walked, missions completed, accuracy and more.
+<strong>Participate in More Missions</strong>: Feel free to engage in more missions as they become available.</p>
+<h3 id="additional-tips">Additional Tips</h3>
+<p><strong>Stay Charged</strong>: Ensure your device is sufficiently charged, especially for longer missions.
+<strong>Follow Guidelines</strong>: Always adhere to the guidelines for each mission to ensure the quality of data and secure your reward.
+<strong>Privacy Compliance</strong>: Be mindful of privacy regulations, especially when photographing in public spaces. Do not deviate from the path associated with your mission.</p>
+<h2 id="mission-control">Mission Control</h2>
+<p>Mission Control serves as the back-end component of MindView, designed for the generation and monitoring of mapping campaigns and missions. The platform is typically managed directly by authorized MindEarth team members, or by authorized third parties, each granted access through a secure Keycloak authentication method, functioning as the operational hub of all active campaigns. If you want to use Mission Control, here's a detailed guide to help you get started:</p>
+<h3 id="step-1-accessing-mission-control">Step 1: Accessing Mission Control</h3>
+<p><strong>Receive access credentials</strong>: You will need authorized credentials to log in, so ensure you have them beforehand. If you do not have access, please contact [support@mindearth.ch] (support@mindearth.ch)
+<strong>Log In</strong>: Access Mission Control through the platform link and using the login credentials provided.
+<img alt="Login to mission control" src="./assets/missioncontrol_screenshots/missioncontrol_01.jpg" /></p>
+<h3 id="step-2-setting-up-a-new-mapping-campaign">Step 2. Setting Up a New Mapping Campaign</h3>
+<p><strong>Create a New Campaign</strong>: Start by creating a new mapping campaign. This involves specifying the overarching goals and objectives of the campaign.
+<strong>Define Area of Interest (AOI)</strong>: Use the tools available in Mission Control to define the geographic boundaries of your campaign's Area of Interest.</p>
+<p><img alt="View active campaigns" src="./assets/missioncontrol_screenshots/missioncontrol_02.jpg" />
+<img alt="Create a new campaign" src="./assets/missioncontrol_screenshots/missioncontrol_04.jpg" /></p>
+<h3 id="step-3-designing-missions">Step 3: Designing Missions</h3>
+<p><strong>Creating missions</strong>: Within a campaign, you can add individual missions. For each mission, provide specific details such as:
+A title of the mission
+A description of the tasks to be performed
+The path to be followed by the users, defined in a GeoJson format.
+Time constraints for the mission, including start and end dates and times.
+<img alt="View active missions" src="./assets/missioncontrol_screenshots/missioncontrol_03.jpg" />
+<img alt="Create a new mission" src="./assets/missioncontrol_screenshots/missioncontrol_06.jpg" /></p>
+<h3 id="step-4-setting-rewards-and-effort-estimations">Step 4. Setting Rewards and Effort Estimations</h3>
+<p><strong>Effort Estimation</strong>: Time and distance effort associated with the mission is automatically calculated and displayed based on the provided path.
+<strong>Reward setting</strong>: A monetary reward can be manually assigned to the mission.</p>
+<p><img alt="View active missions" src="./assets/missioncontrol_screenshots/missioncontrol_03.jpg" />
+<img alt="Draw mission path" src="./assets/missioncontrol_screenshots/missioncontrol_05.jpg" />
+<img alt="Create a new mission" src="./assets/missioncontrol_screenshots/missioncontrol_06.jpg" /></p>
+<h3 id="step-5-publishing-missions">Step 5. Publishing Missions</h3>
+<p><strong>Publish campaigns and missions</strong>: Once you have finalized campaigns and missions with all necessary details, publish them to make them available to MindEarth App users.</p>
+<h3 id="step-6-monitoring-and-managing-missions">Step 6. Monitoring and Managing Missions</h3>
+<p><strong>Track Progress</strong>: Use Mission Control’s dashboard to monitor the progress of each mission in real-time.
+<strong>Manage Data Collection</strong>: Ensure that the data collected meets the quality standards and requirements of the campaign.</p>
+<h3 id="step-7-confirm-mission-data">Step 7. Confirm Mission Data</h3>
+<p><strong>Review and Analysis</strong>: Review data collected from completed missions and, if quality is satisfactory to the campaign goals, confirm it to send if for AI processing.</p>
+<h2 id="dataview-rest-api">Dataview REST API</h2>
+<p>DataView is an integral part of the MindView system, offering a suite of interactive REST APIs that enable interaction with data collected via the MindEarth App and processed by MindEarth.</p>
+<p>Note: DataView is still under development and no final link to the resource nor a final outline of the data endpoints is available.</p>
+<h3 id="authentication">Authentication</h3>
+<p><strong>KeyCloak Authentication</strong>: Secure access control for using DataView APIs.
+<strong>SSL Encryption</strong>: All API interactions are SSL encrypted for data security during transmission.</p>
+<h3 id="get-list-of-campaigns">Get List of Campaigns</h3>
+<p><strong>Description</strong>: Retrieve a list of available campaigns
+<strong>Endpoint</strong>: https://greengage-mindview.mindearth.ai/list/campaign
+<strong>Method</strong>: GET
+<strong>Header</strong>: Bearer <token>
+<strong>Output Example</strong>:
+[
+   {
+      "id": 1,
+      "campaignName": "Test 1",
+      "features": [
+         { "id": 6, "type": [1, 2] },
+         { "id": 2, "type": [2] }
+      ]
+   },
+   {
+      "id": 2,
+      "campaignName": "Test 2"
+   }
+]</p>
+<h3 id="accessing-geospatial-layers">Accessing Geospatial Layers</h3>
+<p><strong>Description</strong>: Within the selected campaign, define the features of interest and other applicable parameters (e.g., results spatial aggregation methods).
+<strong>Endpoint</strong>: https://greengage-mindview.mindearth.ai/results/<campaign_id>/<features_id>/<geometry_type>
+<strong>Method</strong>: GET
+<strong>Header</strong>: Bearer <token></p>
+<p><strong>Features ID</strong> (Example of typical socio-demographic features extractable through the GREENGAGE project, as discussed with Pilot cities):
+9 → Footfall
+10 → Gender
+11 → Age
+...
+<strong>Geometry Type</strong>:
+Examples of different geometry types:
+1 → Point
+2 → Line
+3 → Raster Grid
+4 → Vector Polygon</p>
+<h3 id="data-export">Data Export</h3>
+<p>DataView provides options to export data in formats like JSON, CSV, etc., facilitating easy integration with external data processing tools.</p>
+<h2 id="single-sign-on-sso-service">Single Sign On (SSO) Service</h2>
+<p>To facilitate a centralized user management system, MindEarth App utilizes the Keycloak system provided by Deusto as our identity and access management solution.Please refer to the relevant documentation available at this [link] (https://greengage-project.github.io/Documentation/tools/keycloak/).</p>
+<h2 id="integrating-mindview-with-the-greengage-app">Integrating MindView with the Greengage App</h2>
+<p>To streamline user interactions and mission management between different crowd-based data collection tools, a dedicated integration protocol of the MindEarth App and the GREENGAGE App will be implemented. The implementation of a dedicated protocol ensures availability and visibility of MindEarth’s missions across both apps, with seamless redirection for mission execution. This means that any mission available in the MindEarth App will also be visible in the GREENGAGE App and that users of the GREENGAGE App will be able to select a MindEarth App mission and be redirected to the MindEarth app to complete the booking and mission execution and upload process, as well as to know, in real time the status, duration, reward and deadline of MindEarth App’s missions. This involves using two main systems.
+Webhook: A webhook functionality for actions like booking, canceling, and completing missions. These webhook interactions use the base path https://mindearth.greengage.dev/ (example url).
+Mission Booking Interaction:
+Action: Booking a Mission on MindEarth App
+URL: https://mindearth.greengage.dev/mission/<mission_id>/book
+Method: PUT
+Header: Bearer <token>
+Mission Cancellation Interaction:
+Action: Canceling a Mission Reservation on MindEarth App
+URL: https://mindearth.greengage.dev/mission/<mission_id>/book/cancel
+Method: PUT
+Header: Bearer <token>
+Mission Completion Interaction:
+Action: Completing a Mission on MindEarth App
+URL: https://mindearth.greengage.dev/mission/<mission_id>/complete
+Method: PUT
+Header: Bearer <token>
+Back-Office Integration:
+Action: Adding New Missions
+URL: https://mindearth.greengage.dev/mission
+Method: POST
+Header: Bearer <token>
+Body: Details provided in the relevant JSON structure documentation.</p>
+<p>Deep linking is planned to facilitate user transition between GREENGAGE and MindEarth apps. Deep links in each mission would enable seamless transition from the GREENGAGE App and engagement with the MindEarth App. A query URL will provide a unique webhook link for each mission, eliminating the need for an Auth-Header due to the signed nature of the request. Example of Deep Link:
+ mindearth://mission/23?callback=https%3A%2F%2Fmindearth.greengage.dev%2Fmission%2F23%3Fsignature%3Df834ed8570e05de6c50ad10bd6abcf71e9867fcb14bdf2670b4bf572ce346f3b</p>
+<h1 id="testing">Testing</h1>
+<p>You can find here some [sample output data] (assets/sample_data)
+We can give you [early access to the APK] () and create sample missions around your location if you want to test the app and there are no active missions in your vicinity</p>
+<h1 id="support-and-contact">Support and Contact</h1>
+<p>If you have any questions or require technical support, do not hesitate to contact our support team at [support@mindearth.ch] (support@mindearth.ch).</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../javascripts/custom.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
