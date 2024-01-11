@@ -65,6 +65,8 @@ Note that **not** all the fields are present in all the rows.
 
 ### Video
 
+Some of the steps below are linked to the time in the video where they are covered. You can find the video in the following [link](https://www.youtube.com/watch?v=6VZLyuLVSPQ) or by clicking on the image below:
+
 [<img src='./assets/citizen_observer_journey.png' width='50%'>](https://www.youtube.com/watch?v=6VZLyuLVSPQ)
 
 
