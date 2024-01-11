@@ -53,7 +53,21 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Thematic co-exploration example</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#steps-conducted-in-this-thematic-co-exploration">Steps conducted in this thematic co-exploration</a>
+    <li class="toctree-l2"><a class="reference internal" href="#thematic-co-exploration-contextualisation">Thematic co-exploration contextualisation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#citizen-observer-journey">Citizen Observer Journey</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example-of-a-simple-thematic-co-exploration">Example of a simple thematic co-exploration</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#objective">Objective</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dataset">Dataset</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#video">Video</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#steps-covered-in-this-thematic-co-exploration">Steps covered in this thematic co-exploration</a>
+    </li>
+        </ul>
     </li>
     </ul>
                 </li>
@@ -213,22 +227,79 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="thematic-co-exploration-example">Thematic co-exploration example</h1>
-<p>In this example, we will explain the steps to conduct a complete thematic co-exploration process using the tools provided by the Greengage platform. To support the explanation, we will use the following video. The steps described below will be timestamped in the video to facilitate the understanding of them.</p>
-<p><a href="https://aitonline.sharepoint.com/:v:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/GREEN%20Engine/Sprint3/DEMO_GreengageDatamanager.mp4?csf=1&amp;web=1&amp;e=Yh7rDm">Thematic co-exploration example</a></p>
-<p><a href="https://www.youtube.com/watch?v=6VZLyuLVSPQ"><img alt="Citizen Observer Journey" src="../assets/citizen_observer_journey.png" /></a></p>
-<h2 id="steps-conducted-in-this-thematic-co-exploration">Steps conducted in this thematic co-exploration</h2>
+<h2 id="thematic-co-exploration-contextualisation">Thematic co-exploration contextualisation</h2>
+<p>Thematic co-exploration in the context of Citizen Observatories refers to a collaborative approach where citizens actively participate alongside scientists and other stakeholders in exploring specific themes or topics related to environmental monitoring and observation. Citizen Observatories are platforms or frameworks that leverage the collective efforts of individuals, often non-scientists, to gather, share, and analyse environmental data, typically facilitated by digital tools and technologies.</p>
+<p>In thematic co-exploration, the focus is on a particular theme or subject matter, such as air quality, water pollution, biodiversity, or climate change phenomena. The key aspects of this approach include:</p>
+<ul>
+<li><strong>Collaborative Research:</strong> Citizens collaborate with scientists, environmental experts, policy-makers, and other stakeholders. This collaboration is not just about data collection but also involves jointly defining research questions, methodologies, and analysis.</li>
+<li><strong>Citizen Engagement:</strong> Citizens are not merely data collectors; they are integral to the research process. They contribute through observations, local knowledge, and experiences, thereby adding valuable context and richness to scientific data.</li>
+<li><strong>Mutual Learning:</strong> There is a reciprocal transfer of knowledge. Scientists can learn from the lived experiences and local knowledge of citizens, while citizens gain a better understanding of scientific methods and environmental issues.</li>
+<li><strong>Empowerment and Ownership:</strong> By engaging in the research process, citizens gain a sense of ownership and empowerment. This can lead to increased awareness and action on environmental issues at the local level.</li>
+<li><strong>Technology Use:</strong> Digital tools such as mobile apps, online platforms, and sensor technologies often facilitate thematic co-exploration. These tools enable easy data collection, sharing, and visualisation.</li>
+<li><strong>Community Building:</strong> This approach fosters community engagement and networking, as it brings together people with shared interests in specific environmental issues.</li>
+<li><strong>Policy Impact:</strong> The insights gained from thematic co-exploration can inform environmental policies and decision-making processes, making them more reflective of local needs and conditions.</li>
+</ul>
+<p>In summary, thematic co-exploration in Citizen Observatories represents a participatory, inclusive approach to environmental research and monitoring, emphasising collaboration, mutual learning, and community engagement.</p>
+<h2 id="citizen-observer-journey">Citizen Observer Journey</h2>
+<p>In GREENGAGE we propose a Citizen Observer Journey that represents the journey that the citizen observers follow when conducting a thematic co-exploration. This journey is a structured pathway designed to empower citizens and stakeholders to actively engage in environmental observation and decision-making processes. It unfolds in three distinct yet interconnected phases, each integral to the overall success and impact of the GREENGAGE thematic co-explorations. These phases are:</p>
+<p>1) <strong>Community and Co-production Process Management:</strong> Throughout this phase, the emphasis is on building a strong, informed, and active community which collaborates through a co-production process.
+2) <strong>Data Crowdsourcing and Capture:</strong> In this phase is where the groundwork of previous phase materialises into concrete data collection activities. This phase is characterized by active participation, leveraging technology to gather vital environmental data.
+3) <strong>Data Analysis and Insights Generation:</strong> In this phase the collected data is transformed into actionable insights. This phase is where the data becomes a powerful tool for understanding and influencing environmental policy. </p>
+<p>The following figure shows the Citizen Observer Journey and the tools that are used in the different phases that it comprises:</p>
+<p><img src='./assets/citizen_observer_journey.png' width='50%'></p>
+<h2 id="example-of-a-simple-thematic-co-exploration">Example of a simple thematic co-exploration</h2>
+<p>In this example, we will explain the steps to conduct a complete thematic co-exploration process using some of the tools provided by the Greengage platform. To support the explanation we will employ a video, however, in the video only covered steps in the third phase of the Citizen Observer Journey. Thus, we will complement the video with a textual explanation of the steps covered in the first and second phases.</p>
+<h3 id="objective">Objective</h3>
+<p>The main objective of this thematic co-exploration is to <strong>analyse the air quality data</strong> from the city of Bristol. The analysis will be conducted to identify the air quality in the city and the different factors that may affect it. Thus, we will <strong>gather the data</strong> from the different sensors deployed in the city and <strong>load</strong> them into the database. Then we will <strong>analyse the data and create visualisations</strong> to facilitate the understanding of the data. Finally, we will load the data and visualisations into the <strong>data catalogue</strong> to facilitate the access to them.</p>
+<h3 id="dataset">Dataset</h3>
+<p>For this example we employed a single dataset from the <a href="https://services2.arcgis.com/a4vR8lmmksFixzmB/arcgis/rest/services/Air_Quality_Data_Continuous_2023/FeatureServer/0/">Air Quality Data Continuous</a> dataset. This dataset contains the air quality data from the city of Bristol. The data is collected from the different sensors deployed in the city. The data is collected every hour and it is stored in the dataset. The dataset contains the following fields:</p>
+<ul>
+<li>Date_Time</li>
+<li>Site_ID </li>
+<li>NOx </li>
+<li>NO2 </li>
+<li>NO </li>
+<li>PM10 </li>
+<li>O3 </li>
+<li>Temperature </li>
+<li>ObjectId </li>
+<li>ObjectId2 </li>
+<li>NVPM10 </li>
+<li>VPM10 </li>
+<li>NVPM2_5 </li>
+<li>PM2_5 </li>
+<li>VPM2_5 </li>
+<li>CO </li>
+<li>RH </li>
+<li>Pressure </li>
+<li>SO2 </li>
+</ul>
+<p>Note that <strong>not</strong> all the fields are present in all the rows.</p>
+<h3 id="video">Video</h3>
+<p>Some of the steps below are linked to the time in the video where they are covered. You can find the video in the following <a href="https://www.youtube.com/watch?v=6VZLyuLVSPQ">link</a> or by clicking on the image below:</p>
+<p><a href="https://www.youtube.com/watch?v=6VZLyuLVSPQ"><img src='./assets/citizen_observer_journey.png' width='50%'></a></p>
+<h3 id="steps-covered-in-this-thematic-co-exploration">Steps covered in this thematic co-exploration</h3>
 <ol>
 <li>
-<p><strong>Data collection</strong>: In this step, we will collect the data from the different sensors that we have deployed in the city. In this example, we will use the <a href="https://nifi.16.171.94.204.nip.io/nifi">Apache NiFi</a> tool to collect the data from the open API because it cannot be accessed by <a href="https://druid.16.171.94.204.nip.io/">Apache Druid</a> directly. Thus, we created a NiFi flow that iteratively gathers the data from the API and stores in a local file. The description of this process is timestamped in the video from 00:00 to 03:35.</p>
+<p><strong>Thematic co-exploration specification</strong>: In this step, we will specify the thematic co-exploration that we want to conduct. By employing the <a href="../tools/collaborativeEnvironment/">Collaborative Environment</a> tool, the thematic co-exploration owners will be able to specify the phases, objectives and tasks that should be conducted in the thematic co-exploration. Furthermore, the tool will allow to specify the different roles that will participate in the thematic co-exploration and the users that will be assigned to each role.</p>
 </li>
 <li>
-<p><strong>Data ingestion and storage</strong>: In this step, we will ingest the data from the local file to the database. In this example, we will use the <a href="https://druid.16.171.94.204.nip.io/">Apache Druid</a> tool to ingest the data from the local file. The description of this process is timestamped in the video from 03:35 to 05:45.</p>
+<p><strong>Community building</strong>: Through <a href="../tools/Discourse/">Discourse</a> and <a href="../tools/wordpress/">Wordpress</a> tools, the thematic co-exploration owners will be able to create a community around the thematic co-exploration. The community will be able to discuss the different aspects of the thematic co-exploration and the different tasks that should be conducted. Furthermore, the community will be able to share the results of the thematic co-exploration and discuss them.</p>
 </li>
 <li>
-<p><strong>Data visualisation and dashboard creation</strong>: In this step, we will load the data from the database into <a href="https://superset.16.171.94.204.nip.io/">Apache Superset</a> to create visualisations that may support the decision-making process. Furthermore, we will create a dashboard aggregating the different visualisations to facilitate the understanding of the data. The description of this process is timestamped in the video from 05:45 to 07:30.</p>
+<p><a href="https://www.youtube.com/watch?v=6VZLyuLVSPQ"><strong>Data collection</strong></a>: In this step, we will collect the data from the different sensors that we have deployed in the city. In this example, we will use the <a href="https://nifi.16.171.94.204.nip.io/nifi">Apache NiFi</a> tool to collect the data from the open API because it cannot be accessed by <a href="https://druid.16.171.94.204.nip.io/">Apache Druid</a> directly. Thus, we created a NiFi flow that iteratively gathers the data from the API and stores in a local file. However, in another scenario, tools as <a href="../tools/mindview/">MindEarth</a>, <a href="../tools/mode/">MODE</a> or GREENGAGEs <a href="../tools/sensorsIntegration/">IoT sensors</a> could be used to collect the data.</p>
 </li>
 <li>
-<p><strong>Data catalogue</strong>: In this step, we will add references to the data and the visualisations created in previous steps to the <a href="https://datahub.16.171.94.204.nip.io/">DataHub</a> tool. DataHub allows to create a catalog of data that shows the schema, documentation, lineage, properties and common queries that can be done to the data. Furthermore, the visualisations can also be referenced from this catalog and the connections between them can be established.The description of this process is timestamped in the video from 07:30 to 11:00.</p>
+<p><a href="https://youtu.be/6VZLyuLVSPQ?t=216"><strong>Data ingestion and storage</strong></a>: In this step, we will ingest the data from the local file to the database. In this example, we will use the <a href="https://druid.16.171.94.204.nip.io/">Apache Druid</a> tool to ingest the data from the local file.</p>
+</li>
+<li>
+<p><a href="https://youtu.be/6VZLyuLVSPQ?t=345"><strong>Data visualisation and dashboard creation</strong></a>: In this step, we will load the data from the database into <a href="https://superset.16.171.94.204.nip.io/">Apache Superset</a> to create visualisations that may support the decision-making process. Furthermore, we will create a dashboard aggregating the different visualisations to facilitate the understanding of the data. This visualisations can also be created using the <a href="../tools/DataQualityDashboard/">Data Quality Dashboard</a> tool.</p>
+</li>
+<li>
+<p><a href="https://youtu.be/6VZLyuLVSPQ?t=448"><strong>Data catalogue</strong></a>: In this step, we will add references to the data and the visualisations created in previous steps to the <a href="https://datahub.16.171.94.204.nip.io/">DataHub</a> tool. DataHub allows to create a catalog of data that shows the schema, documentation, lineage, properties and common queries that can be done to the data. Furthermore, the visualisations can also be referenced from this catalog and the connections between them can be established.</p>
+</li>
+<li>
+<p><strong>Insights generation</strong>: In this step the participants of the thematic co-exploration will analyse the data and the visualisations generated from it and extract insights from it. These insights will be shared with the community by using the tools covered in the <em>Community and Co-production Process Management</em> phase of the Citizen Observer Journey.</p>
 </li>
 </ol>
               
