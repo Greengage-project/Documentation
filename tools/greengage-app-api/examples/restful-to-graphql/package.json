@@ -1,0 +1,29 @@
+{
+  "name": "greengage-graphql-restful-adaptor",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "setup": "npm run compile",
+    "start": "npm run compile && node ./dist/index.js",
+    "dev": "tsc -w & nodemon ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/datasource-rest": "^6.0.0",
+    "@apollo/server": "^4.7.1",
+    "@apollo/subgraph": "^2.6.1",
+    "@graphql-tools/schema": "^10.0.0",
+    "@graphql-tools/utils": "^10.0.11",
+    "dotenv": "^16.3.1",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.2",
+    "typescript": "^5.0.4"
+  }
+}
