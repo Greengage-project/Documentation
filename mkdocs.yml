@@ -35,9 +35,7 @@ nav:
           - Description: tools/collaborativeEnvironment
           - Usage: tools/collaborativeEnvironment/integration
           - Example of deployment: tools/collaborativeEnvironment/examples
-      - Data crowdsourcing and capture: 
-        - Data Quality Dashboard:
-            - Description: tools/DataQualityDashboard
+      - Data crowdsourcing and capture:
         - MODE:
             - Description: tools/mode
             - Integration: tools/mode/integration
@@ -45,7 +43,7 @@ nav:
                 - iOS: tools/mode/examples/ios
                 - Android: tools/mode/examples/android
                 - Backend: tools/mode/examples/backend
-        - mindview:
+        - MindView:
             - Description: tools/mindview
             - Integration: tools/mindview/integration
         - Libelium sensor integration:
@@ -68,5 +66,7 @@ nav:
             - Description: tools/nifi
             - Usage: tools/nifi/usage
             - Example of integration: tools/nifi/examples
+        - Data Quality Dashboard:
+            - Description: tools/DataQualityDashboard
 locale:
   - en
