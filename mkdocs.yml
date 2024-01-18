@@ -33,7 +33,7 @@ nav:
           - Example of deployment: tools/Discourse/examples
         - Collaborative Environment:
           - Description: tools/collaborativeEnvironment
-          - Usage: tools/collaborativeEnvironment/integration
+          - Usage: tools/collaborativeEnvironment/usage
           - Example of deployment: tools/collaborativeEnvironment/examples
       - Data crowdsourcing and capture:
         - MODE:
