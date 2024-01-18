@@ -114,6 +114,12 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
 
+#### Greengage APP
+
+- **Directory**: `/tools`
+- **Link**: [tools/greengage-app-api](tools/greengage-app-api)
+- **Description**: The greengage app api is mesh of multiple services which are provided via a single gateway. This underlying docuemntation will show you in a simple way how you can interact with application and how you can adopt your application to fit in the ecosystem.
+
 #### Wordpress
 
 - **Directory**: `/tools`
