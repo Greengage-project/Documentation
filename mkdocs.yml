@@ -49,8 +49,8 @@ nav:
         - UrbanTEP / VISAT:
           - Description: tools/urbantep-visat
           - Deployment: tools/urbantep-visat/deployment
-          - Usage: tools/urbantep-visat/usage
-          - Example: tools/urbantep-visat/example
+          - Integration: tools/urbantep-visat/integration
+          - Example: tools/urbantep-visat/examples
         - DataHub:
             - Description: tools/datahub
             - Usage: tools/datahub/usage

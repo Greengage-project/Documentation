@@ -1,74 +1,28 @@
-# [Tool Name]
+# UrbanTEP / VISAT
 
-## Integrating [Tool Name] in [Environment]
+## Integrating technological product in GREEN Engine environment
 
 ### Introduction
 
-    Description: Provide an overview of the tool's purpose and significance in development.
-    Objective: Explain how this tool enhances the application's functionality or security.
+The technological offer provided by GISAT is a part of data analysis and insights generation pipeline inside the GREEN Engine.
+The purpose of the tool and significance as a part of GREEN Engine is to support main 3 things:
+- Integration
+- Data visualization
+- Analysys
+
+**Objective**:
+
+The primary objective of UrbanTEP/VISAT within the GREEN Engine is to empower users with a versatile toolset for handling complex urban datasets. This integration supports advanced data manipulation, insightful visualization, and in-depth analysis, thereby enhancing the overall functionality and security of applications within the GREEN Engine ecosystem.
 
 ### Prerequisites
 
-    List the prerequisites needed to use the tool effectively.
-
-### Project Structure
-
-    Source: Link to the example project.
-    Directory Layout: Describe the structure of the example project.
-
-### Step-by-Step Setup and Configuration
-
-    Outline the steps to set up the tool in the chosen environment.
-
-### Detailed Configuration Steps
-
-    Provide detailed instructions for each configuration file and setting.
-
-### Running the Services
-
-    Instructions for starting the services on different operating systems.
-
-### Accessing the Application
-
-    Guide on how to access the application once it is running.
-
-### Additional Configuration (Optional)
-
-    Discuss any optional configuration steps for advanced users.
-
-### Troubleshooting
-
-    Provide common troubleshooting steps or issues and their solutions.
+- Hosting Platform: cloud-based services, local servers.
+- Disk Space: Minimum disk space requirements for installation and operation depends on the final product complexity
+- Technical Capabilities: Necessary technical specifications are requiring RAM, and CPU for optimal performance.
 
 ### Support and Additional Resources
 
-    Support Channels: List available support channels.
-    External Documentation: Link to the official documentation or other helpful resources.
+**Support Channels**:
 
-## [Language/Framework Integration] (e.g., Python, Node.js)
-
-### Introduction
-
-    Brief introduction to integrating the tool with the specific language or framework.
-
-### Prerequisites
-
-    List any prerequisites specific to this language/framework.
-
-### Project Structure
-
-    Describe the structure of the example integration project.
-
-### Steps for Integration
-
-    Step-by-step guide for integrating the tool into projects using this language/framework.
-
-### Running the Example
-
-    Instructions on how to run the example project.
-
-### Accessing the Application
-
-    How to access and test the application once it's running.
-
-Replace sections marked with [brackets] with the relevant information for your specific tool and environment.
+- GISAT technical support - andrii.khrystodulov@gisat.cz
+- GISAT UrbanTEP product owner - tomas.soukup@gisat.cz
