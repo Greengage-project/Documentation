@@ -1,6 +1,13 @@
-## #2: Registration of available (statistical) and required datasets’ metadata in DataHub from available and to be generated datasets
+## #0: Define research questions/hypothesis to be validated to enable policy making
 
-### Responsible: Pilot Owners
+## #1: Preparation of co-production process including configuration of COb's community's teams 
+
+## #2: Setup of the discussion and thematic co-exploration collection platform
+
+## #3: Inventory of available (statistical) and required datasets’ metadata in DataHub from available and to be generated datasets
+
+### Responsible:
+Pilot Owners
 
 ### Objective
 The primary goal of this step is to establish a comprehensive and organised system for managing datasets relevant to our project. By requiring pilot owners to register both existing and forthcoming datasets, we aim to create a centralised repository of metadata that will serve as a foundational resource for the technical team. This registration process will facilitate the subsequent uploading and integration of these datasets into the project's infrastructure. The overarching objective is to develop a detailed and accessible catalog of data, which will not only streamline project operations but also enhance the efficacy of data analysis and decision-making processes. This initiative is instrumental in ensuring that all stakeholders have a clear and consistent understanding of the available resources, thereby optimising the utilisation and impact of the data within the scope of the project.
@@ -12,7 +19,11 @@ To achieve the following objective Pilot Owners should conduct a comprehensive i
 - [Dataset Inventory](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B632ec461-1851-463e-87de-01eedb9d2263%7D&action=edit&wdinitialsession=c2406669-913f-4a32-b5b5-3334b3429bd4&wdrldsc=2&wdrldc=1&wdrldr=OnSaveAsWebMethodComplete): Make a copy of the document and add any column if needed.
 
 
-## #3: Data clean up, loading and understanding
+## #4a: Design of Citizen Science campaigns for data capturing by employing tools to capture crowdsourced data
+
+## #4b: Gather Open Data and government datasets to gain bird's eye view for thematic co-exploration
+
+## #5: Generation of data workflows (Data cleaning, loading and understanding)
 
 ### Responsible: Technical Team
 
@@ -27,8 +38,7 @@ To successfully load data from an API into Apache Druid using Apache NiFi, a wel
 - [Apache Druid documentation](https://druid.apache.org/docs/latest/)
 
 
-
-## #4: Conector of dataset X with DataHub (one new row for each dataset)
+## #6: Conector of dataset X with DataHub (one new row for each dataset)
 
 ### Objective
 
@@ -41,7 +51,8 @@ To achieve the following objective we should follow several steps that will have
 - [Documentation of DataHub](https://datahubproject.io/docs/)
 - Video of how to create datahub sources (?)
 
-## #4: Data clean up  and understanding, e.g. Queries to distill information and views from the set of heterogenous datasets collected
+## #7: Generation of thematic co-exploration dashboards
 
+## #8: Generation of storylines
 
-z
+## #9: Generation of policy briefs' inputs
