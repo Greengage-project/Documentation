@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Low Emissions Zones - GREENGAGE Documentation</title>
+    <title>Downscaling - GREENGAGE Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Low Emissions Zones";
-        var mkdocs_page_input_path = "tools/low_emissions_zones/index.md";
+        var mkdocs_page_name = "Downscaling";
+        var mkdocs_page_input_path = "tools/downscaling/index.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -227,7 +227,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Low Emissions Zones</li>
+      <li class="breadcrumb-item active">Downscaling</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -236,9 +236,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="low-emissions-zones">Low Emissions Zones</h1>
+                <h1 id="downscaling">Downscaling</h1>
 <h3 id="introduction">Introduction</h3>
-<p>Low Emissions Zones is a numerical modeling tool that allows quantifying the level of pollution in cities. This tool is capable of integrating different data sources such as geospatial information, traffic data, COPERNICUS data, and regional atmospheric (WRF) and pollution (CHIMERE) models to calculate pollution levels in cities with high street-level resolution.</p>
+<p>Downscaling is a numerical modeling tool that allows quantifying the level of pollution in cities. This tool is capable of integrating different data sources such as geospatial information, traffic data, COPERNICUS data, and regional atmospheric (WRF) and pollution (CHIMERE) models to calculate pollution levels in cities with high street-level resolution.</p>
 <p>This tool assists administrations in decision-making and plays a crucial role in the era of digital transformation by creating digital twins of cities.</p>
 <h3 id="features-of-low-emissions-zones">Features of Low Emissions Zones</h3>
 <ol>
@@ -247,22 +247,22 @@
 <p>The tool is capable of integrating traffic data from various cities, pollution data from COPERNICUS or satellite sources (SENTINEL 5 and 7), terrain elevation, building geometry, among other information.</p>
 <div style="text-align: center;">
   <img src="assets/munich_sources.png" alt="Differents kinds of sources that the tool are availabe to use." style="width: 650px;" />
-  <figcaption>Example of real use case in the city of Lindau</figcaption>
+  <figcaption>Differents kinds of sources that the tool are availabe to use</figcaption>
 </div>
 
 <p>These input data are typically provided in netCDF file format for the model to recognize and integrate.</p>
 <ol>
 <li>Advanced numerical model MUNICH.</li>
 </ol>
-<p>Based on all received data sources, Low Emissions Zones utilizes <em>MUNICH</em> (Model of Urban Network of Intersecting Canyons and Highways), an advanced numerical model that calculates the concentration of pollutants such as CO, NO, CO2, O3, NO2, and particulate matter.</p>
+<p>Based on all received data sources, Downscaling tool utilizes <em>MUNICH</em> (Model of Urban Network of Intersecting Canyons and Highways), an advanced numerical model that calculates the concentration of pollutants such as CO, NO, CO2, O3, NO2, and particulate matter.</p>
 <div style="text-align: center;">
   <img src="assets/munich_diagram.png" alt="General diagram of downscaling superresolution architecture." style="width: 650px;" />
-  <figcaption>Example of real use case in the city of Lindau</figcaption>
+  <figcaption>General diagram of downscaling superresolution architecture.</figcaption>
 </div>
 
 <div style="text-align: center;">
   <img src="assets/MUNICH1.png" alt="Example of MUNICH pollutant calculation." style="width: 650px;" />
-  <figcaption>Example of real use case in the city of Lindau</figcaption>
+  <figcaption>Example of MUNICH pollutant calculation.</figcaption>
 </div>
 
 <ol>
@@ -279,7 +279,7 @@
 <p>The model provides results in netCDF files, which are subsequently processed to offer an interactive visualization showing the concentration of various pollutants in the city. Concentration values are displayed for each street.</p>
 <div style="text-align: center;">
   <img src="assets/diagrama1.png" alt="Workflow of the tool." style="width: 600px;" />
-  <figcaption>Example of real use case in the city of Lindau</figcaption>
+  <figcaption>Workflow of the tool.</figcaption>
 </div>
 
 <h3 id="use-case">Use case</h3>
