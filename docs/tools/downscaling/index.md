@@ -1,11 +1,11 @@
 
 
-# Low Emissions Zones
+# Downscaling
 
 
 ### Introduction
 
-Low Emissions Zones is a numerical modeling tool that allows quantifying the level of pollution in cities. This tool is capable of integrating different data sources such as geospatial information, traffic data, COPERNICUS data, and regional atmospheric (WRF) and pollution (CHIMERE) models to calculate pollution levels in cities with high street-level resolution.
+Downscaling is a numerical modeling tool that allows quantifying the level of pollution in cities. This tool is capable of integrating different data sources such as geospatial information, traffic data, COPERNICUS data, and regional atmospheric (WRF) and pollution (CHIMERE) models to calculate pollution levels in cities with high street-level resolution.
 
 This tool assists administrations in decision-making and plays a crucial role in the era of digital transformation by creating digital twins of cities.
 
@@ -19,7 +19,7 @@ The tool is capable of integrating traffic data from various cities, pollution d
 
 <div style="text-align: center;">
   <img src="assets/munich_sources.png" alt="Differents kinds of sources that the tool are availabe to use." style="width: 650px;" />
-  <figcaption>Example of real use case in the city of Lindau</figcaption>
+  <figcaption>Differents kinds of sources that the tool are availabe to use</figcaption>
 </div>
 
 
@@ -28,19 +28,19 @@ These input data are typically provided in netCDF file format for the model to r
 
 2. Advanced numerical model MUNICH.
 
-Based on all received data sources, Low Emissions Zones utilizes *MUNICH* (Model of Urban Network of Intersecting Canyons and Highways), an advanced numerical model that calculates the concentration of pollutants such as CO, NO, CO2, O3, NO2, and particulate matter.
+Based on all received data sources, Downscaling tool utilizes *MUNICH* (Model of Urban Network of Intersecting Canyons and Highways), an advanced numerical model that calculates the concentration of pollutants such as CO, NO, CO2, O3, NO2, and particulate matter.
 
 
 <div style="text-align: center;">
   <img src="assets/munich_diagram.png" alt="General diagram of downscaling superresolution architecture." style="width: 650px;" />
-  <figcaption>Example of real use case in the city of Lindau</figcaption>
+  <figcaption>General diagram of downscaling superresolution architecture.</figcaption>
 </div>
 
 
 
 <div style="text-align: center;">
   <img src="assets/MUNICH1.png" alt="Example of MUNICH pollutant calculation." style="width: 650px;" />
-  <figcaption>Example of real use case in the city of Lindau</figcaption>
+  <figcaption>Example of MUNICH pollutant calculation.</figcaption>
 </div>
 
 3. Geospatial analysis.
@@ -60,7 +60,7 @@ The model provides results in netCDF files, which are subsequently processed to 
 
 <div style="text-align: center;">
   <img src="assets/diagrama1.png" alt="Workflow of the tool." style="width: 600px;" />
-  <figcaption>Example of real use case in the city of Lindau</figcaption>
+  <figcaption>Workflow of the tool.</figcaption>
 </div>
 
 
