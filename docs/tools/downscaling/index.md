@@ -14,12 +14,12 @@ This tool assists administrations in decision-making and plays a crucial role in
 
 1. Multisources data integration.
 
-The tool is capable of integrating traffic data from various cities, pollution data from COPERNICUS or satellite sources (SENTINEL 5 and 7), terrain elevation, building geometry, among other information.
+The tool is capable of integrating traffic data from various cities, pollution data from COPERNICUS or satellite sources (SENTINEL 5 and 7), terrain elevation, and building geometry, among other information.
 
 
 <div style="text-align: center;">
-  <img src="assets/munich_sources.png" alt="Differents kinds of sources that the tool are availabe to use." style="width: 650px;" />
-  <figcaption>Differents kinds of sources that the tool are availabe to use</figcaption>
+  <img src="assets/munich_sources.png" alt="Differents kinds of sources that the tool are available to use." style="width: 650px;" />
+  <figcaption> Different kinds of sources that the tool are available to use</figcaption>
 </div>
 
 
@@ -28,7 +28,7 @@ These input data are typically provided in netCDF file format for the model to r
 
 2. Advanced numerical model MUNICH.
 
-Based on all received data sources, Downscaling tool utilizes *MUNICH* (Model of Urban Network of Intersecting Canyons and Highways), an advanced numerical model that calculates the concentration of pollutants such as CO, NO, CO2, O3, NO2, and particulate matter.
+Based on all received data sources, Downscaling tool utilizes *MUNICH* (Model of Urban Network of Intersecting Canyons and Highways), an advanced numerical model that calculates the concentration of pollutants such as CO, NO, CO2, O3, NO2, particulate matter and black carbon.
 
 
 <div style="text-align: center;">
@@ -68,7 +68,7 @@ The model provides results in netCDF files, which are subsequently processed to 
 
 This is a case study in the city of Lindau (Germany) that illustrates how the tool operates, the results it produces, and the visualization it provides.
 
-In this visualiser you can see the concentration level of each street, as well as apply different types of restrictions in the city to see the effect they have.
+In this visualizer you can see the concentration level of each street, as well as apply different types of restrictions in the city to see the effect they have.
 
 
 <div style="text-align: center;">
