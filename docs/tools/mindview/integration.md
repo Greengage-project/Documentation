@@ -45,14 +45,14 @@ Mission Control serves as the back-end component of MindView, designed for the g
 ### Step 1: Accessing Mission Control
 **Receive access credentials**: You will need authorized credentials to log in, so ensure you have them beforehand. If you do not have access, please contact [support@mindearth.ch] (support@mindearth.ch)
 **Log In**: Access Mission Control through the platform link and using the login credentials provided.
-![Login to mission control](./assets/missioncontrol_screenshots/missioncontrol_01.jpg)
+![Login to mission control](./assets/missioncontrol_screenshots/missioncontrol_01.png)
 
 ### Step 2. Setting Up a New Mapping Campaign
 **Create a New Campaign**: Start by creating a new mapping campaign. This involves specifying the overarching goals and objectives of the campaign.
 **Define Area of Interest (AOI)**: Use the tools available in Mission Control to define the geographic boundaries of your campaign's Area of Interest.
 
-![View active campaigns](./assets/missioncontrol_screenshots/missioncontrol_02.jpg)
-![Create a new campaign](./assets/missioncontrol_screenshots/missioncontrol_04.jpg)
+![View active campaigns](./assets/missioncontrol_screenshots/missioncontrol_02.png)
+![Create a new campaign](./assets/missioncontrol_screenshots/missioncontrol_04.png)
 
 ### Step 3: Designing Missions
 **Creating missions**: Within a campaign, you can add individual missions. For each mission, provide specific details such as:
@@ -60,16 +60,16 @@ A title of the mission
 A description of the tasks to be performed
 The path to be followed by the users, defined in a GeoJson format.
 Time constraints for the mission, including start and end dates and times.
-![View active missions](./assets/missioncontrol_screenshots/missioncontrol_03.jpg)
-![Create a new mission](./assets/missioncontrol_screenshots/missioncontrol_06.jpg)
+![View active missions](./assets/missioncontrol_screenshots/missioncontrol_03.png)
+![Create a new mission](./assets/missioncontrol_screenshots/missioncontrol_06.png)
 
 ### Step 4. Setting Rewards and Effort Estimations
 **Effort Estimation**: Time and distance effort associated with the mission is automatically calculated and displayed based on the provided path.
 **Reward setting**: A monetary reward can be manually assigned to the mission.
 
-![View active missions](./assets/missioncontrol_screenshots/missioncontrol_03.jpg)
-![Draw mission path](./assets/missioncontrol_screenshots/missioncontrol_05.jpg)
-![Create a new mission](./assets/missioncontrol_screenshots/missioncontrol_06.jpg)
+![View active missions](./assets/missioncontrol_screenshots/missioncontrol_03.png)
+![Draw mission path](./assets/missioncontrol_screenshots/missioncontrol_05.png)
+![Create a new mission](./assets/missioncontrol_screenshots/missioncontrol_06.png)
 
 ### Step 5. Publishing Missions
 **Publish campaigns and missions**: Once you have finalized campaigns and missions with all necessary details, publish them to make them available to MindEarth App users.
