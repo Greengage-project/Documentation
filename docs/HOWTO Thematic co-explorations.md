@@ -8,14 +8,20 @@ Next, the set of steps that should be in carried in a logical sequence to co-del
 Pilot Owners
 
 #### Objective
-The primary objective of this step is to formulate precise research questions and hypotheses that are anchored in the needs and priorities of policy-making. These questions and hypotheses should be actionable, measurable, and capable of being empirically tested within the project's scope. They should be designed to fill knowledge gaps, address current challenges, and generate evidence to translate into effective policy interventions. 
+The primary objective of this step is to formulate precise research questions and hypotheses that are anchored in the needs and priorities of policy-making. These questions and hypotheses should be actionable, measurable, and capable of being empirically tested within the thematic co-exploration’sscope. They should be designed to fill knowledge gaps, address current challenges, and generate evidence to translate into effective policy interventions. 
 
 The process will involve a thorough analysis of the current policy landscape, consultation with stakeholders, and a review of the existing literature to ensure that the research is targeted and relevant. This foundational step sets the stage for the subsequent research and data collection efforts, ensuring that the project outcomes align with the strategic goals of influencing and enabling policy-making.
 
 #### How can we achieve it?
-Utilising tools like the Data Quality Dashboard for data analysis and the CE(Collaborative Environment), we can identify gaps in current research and align our inquiries with the pressing policy development needs. In this way, the pilot ensures a standardised approach to gathering comprehensive feedback.
+Guided by the [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document, a group of Citizen Observers (CObs) who will manage and moderate a thematic co-exploration answer, in collaboration with owners of the Citizen Observatory,  the following questions:
+ - WHY – Reason why this Citizen Observatory’ thematic co-exploration is needed (arguments for promoting the execution of this Citizen Observatory’s campaign)
+ - WHO – Involved and affected stakeholders’ groups in Citizen Observatory’s thematic co-exploration (describe the target groups and their possible motivation)
+ - WHAT – Actual endeavours of the Citizen Observatory’s thematic co-exploration (describe what will exactly be done in this Citizen Observatory)
+ - WHEN – Planning of activities and period when Citizen Observatory’s thematic co-exploration will be executed (indicate for how long, what activities, where and for whom will be realized)
+ - WHERE – Geographical locations where Citizen Observatory’s thematic co-exploration will take place (actual geographical areas where data collection and analysis will be carried out)
+ - WHICH – Materials and resources (actual materials and resources needed to execute the Citizen Observatory’s thematic co-exploration)
+ - HOW – Data analysis process to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration
 
-After that, an interdisciplinary team will review the stakeholder input alongside a thorough literature review conducted using our project's repository of resources. This team will employ analytical tools mentioned in our guidelines, like data visualisation software and documentation tools, to synthesise insights and frame them into research questions and hypotheses. The usability and evaluation exercises documented in our repository will be instrumental in refining these questions to ensure they are clear, measurable, and ethically sound.
 
 #### Resources
  - [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment) --> to have a centralised repository of resources and a collaborative space for the team to work together in the first steps of the thematic co-exploration
