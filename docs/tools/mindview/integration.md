@@ -29,7 +29,7 @@ If you're interested in participating in the MindView project by using the MindE
 ### Step 5. Uploading Data and Getting Rewards
 **Upload Your Data**: After completing the mission, follow the prompts to upload the images collected to the MindEarth servers.
 **Receive Compensation**: Based on the mission's guidelines and your performance, you will be compensated. This could be in monetary form or other rewards as specified in the mission details. Compensation for the mission will be processed on monthly bases based on the payment information provided during registration.
-![Review and upload mission](./assets/mindearthapp_screenshots/MindEarth-app_MindEarth-app_review-upload.png)
+![Review and upload mission](./assets/mindearthapp_screenshots/MindEarth-app_review-upload.png)
 
 ### Step 6. Review and Repeat
 **Track Your Performance and Progress**: You can review your completed missions and rewards in the app and track your performance statistics in terms of km walked, missions completed, accuracy and more.
@@ -142,7 +142,8 @@ To facilitate a centralized user management system, MindEarth App utilizes the K
 
 
 ## Integrating MindView with the Greengage App
-To streamline user interactions and mission management between different crowd-based data collection tools, a dedicated integration protocol of the MindEarth App and the GREENGAGE App is implemented. The implementation of a dedicated protocol ensures availability and visibility of MindEarth’s missions across both apps, with seamless redirection for mission execution. Please refer to the relevant documentation available at this [link] (https://github.com/Greengage-project/Documentation/tree/main/docs/tools/mindview/examples/index.md).
+To streamline user interactions and mission management between different crowd-based data collection tools, a dedicated integration protocol of the MindEarth App and the GREENGAGE App is implemented. The implementation of a dedicated protocol ensures availability and visibility of MindEarth’s missions across both apps, with seamless redirection for mission execution. Please refer to the relevant documentation available at this [link](https://github.com/Greengage-project/Documentation/tree/main/docs/tools/mindview/examples/index.md).
+
 # Testing
 - You can find here some [sample output data](assets/sample_data)
 - We can give you [early access to the APK] () and create sample missions around your location if you want to test the app and there are no active missions in your vicinity.
