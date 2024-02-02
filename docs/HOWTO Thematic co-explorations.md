@@ -23,7 +23,7 @@ After that, an interdisciplinary team will review the stakeholder input alongsid
  - Metrics and insights foresight (TBD) --> 
 
 
-## #1: Preparation of the co-production process, including the configuration of COb's community teams (Felipe)
+## #1: Preparation of the co-production process, including the configuration of COb's community teams
 
 #### Responsible
 Pilot Owners
@@ -60,7 +60,8 @@ To achieve the following objective, Pilot Owners should comprehensively identify
 #### Responsible
 Pilot Support Team
 
-#### Objective (TODO: indicate the different questions that need to be answered base on the template of the resource, including even METRICS)
+#### Objective 
+(TODO: indicate the different questions that need to be answered base on the template of the resource, including even METRICS)
 The core objective of co-designing the thematic co-exploration is to establish a structured and engaging framework that directly aligns with the defined research questions and hypotheses. This approach aims to actively involve a diverse citizen group in data collection, observation, and analytical processes, ensuring that their contributions are impactful and directly address the core research queries. Central to this initiative is the implementation of cutting-edge digital tools, facilitating efficient data collection, management, and analysis, thereby aligning citizen contributions with the overarching goals of the project. Furthermore, the campaign is designed to foster a community-driven approach, significantly enhancing public understanding and participation in scientific research while promoting a collaborative ethos in problem-solving. This strategy is intended to leverage collective efforts and insights, thereby facilitating a comprehensive and inclusive approach to addressing the project's research objectives.
 
 #### How can we achieve it?

@@ -13,6 +13,7 @@ extra_css:
 nav:
   - Home: index.md
   - Guidelines: guidelines
+  - HOWTO Thematic co-exploration: HOWTO Thematic co-explorations.md
   - Thematic co-exploration example: thematic_coexploration_example.md
   - Tools:
       - Backbone:
