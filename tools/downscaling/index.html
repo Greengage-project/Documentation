@@ -238,16 +238,24 @@
               
                 <h1 id="downscaling">Downscaling</h1>
 <h3 id="introduction">Introduction</h3>
-<p>Downscaling is a numerical modeling tool that allows quantifying the level of pollution in cities. This tool is capable of integrating different data sources such as geospatial information, traffic data, COPERNICUS data, and regional atmospheric (WRF) and pollution (CHIMERE) models to calculate pollution levels in cities with high street-level resolution.</p>
+<p>Downscaling is a numerical modeling tool that allows quantifying the level of pollution in cities. This tool is capable of integrating different data sources such as geospatial information, traffic data, COPERNICUS data, and regional atmospheric (WRF) and pollution (CHIMERE) models to calculate pollution levels in cities with high street-level resolution using a street canyon model MUNICH.</p>
 <p>This tool assists administrations in decision-making and plays a crucial role in the era of digital transformation by creating digital twins of cities.</p>
-<h3 id="features-of-low-emissions-zones">Features of Low Emissions Zones</h3>
+<h3 id="features-of-downscaling">Features of Downscaling</h3>
+<h4 id="prerequisites">Prerequisites</h4>
+<p>To compile the tool, some prerequisites relating to the computing resources are necessary.</p>
+<ul>
+<li>Linux system operating system</li>
+<li>CPU with 8-16 cores</li>
+<li>32 GB RAM</li>
+</ul>
+<p>To download the MUNICH model, please, see the documentation <a href="https://github.com/cerea-lab/munich">here</a>, where you can find all the dependencies and libraries necessary.</p>
 <ol>
 <li>Multisources data integration.</li>
 </ol>
 <p>The tool is capable of integrating traffic data from various cities, pollution data from COPERNICUS or satellite sources (SENTINEL 5 and 7), terrain elevation, and building geometry, among other information.</p>
 <div style="text-align: center;">
-  <img src="assets/munich_sources.png" alt="Differents kinds of sources that the tool are available to use." style="width: 650px;" />
-  <figcaption> Different kinds of sources that the tool are available to use</figcaption>
+  <img src="assets/munich_sources.png" alt="Different kinds of sources that the tool are available to use." style="width: 650px; display: block; margin: 0 auto;" />
+  <p style="text-align: center;">Figure 1: Different kinds of sources that the tool are available to use</p>
 </div>
 
 <p>These input data are typically provided in netCDF file format for the model to recognize and integrate.</p>
@@ -256,13 +264,13 @@
 </ol>
 <p>Based on all received data sources, Downscaling tool utilizes <em>MUNICH</em> (Model of Urban Network of Intersecting Canyons and Highways), an advanced numerical model that calculates the concentration of pollutants such as CO, NO, CO2, O3, NO2, particulate matter and black carbon.</p>
 <div style="text-align: center;">
-  <img src="assets/munich_diagram.png" alt="General diagram of downscaling superresolution architecture." style="width: 650px;" />
-  <figcaption>General diagram of downscaling superresolution architecture.</figcaption>
+  <img src="assets/munich_diagram.png" alt="Different kinds of sources that the tool are available to use." style="width: 650px; display: block; margin: 0 auto;" />
+  <p style="text-align: center;">Figure 2: General diagram of downscaling superresolution architecture.</p>
 </div>
 
 <div style="text-align: center;">
-  <img src="assets/MUNICH1.png" alt="Example of MUNICH pollutant calculation." style="width: 650px;" />
-  <figcaption>Example of MUNICH pollutant calculation.</figcaption>
+  <img src="assets/MUNICH1.png" alt="Different kinds of sources that the tool are available to use." style="width: 600px; display: block; margin: 0 auto;" />
+  <p style="text-align: center;">Figure 3: Example of MUNICH pollutant calculation.</p>
 </div>
 
 <ol>
@@ -278,17 +286,22 @@
 </ol>
 <p>The model provides results in netCDF files, which are subsequently processed to offer an interactive visualization showing the concentration of various pollutants in the city. Concentration values are displayed for each street.</p>
 <div style="text-align: center;">
-  <img src="assets/diagrama1.png" alt="Workflow of the tool." style="width: 600px;" />
-  <figcaption>Workflow of the tool.</figcaption>
+  <img src="assets/diagrama1.png" alt="Different kinds of sources that the tool are available to use." style="width: 600px; display: block; margin: 0 auto;" />
+  <p style="text-align: center;">Figure 4: Workflow of the tool.</p>
 </div>
 
 <h3 id="use-case">Use case</h3>
 <p>This is a case study in the city of Lindau (Germany) that illustrates how the tool operates, the results it produces, and the visualization it provides.</p>
-<p>In this visualizer you can see the concentration level of each street, as well as apply different types of restrictions in the city to see the effect they have.</p>
+<p>In this visualizer, you can see the concentration level of each street, as well as apply different types of restrictions in the city to see the effect they have.</p>
 <div style="text-align: center;">
-  <img src="assets/lindau_usecase.png" alt="Example of real use case in the city of Lindau" style="width: 850px;" />
-  <figcaption>Example of real use case in the city of Lindau</figcaption>
+  <img src="assets/lindau_usecase.png" alt="Different kinds of sources that the tool are available to use." style="width: 800px; display: block; margin: 0 auto;" />
+  <p style="text-align: center;">Figure 5: Example of real use case in the city of Lindau.</p>
 </div>
+
+<h3 id="references">References</h3>
+<ul>
+<li>MUNICH documentation can be found <a href="https://cerea.enpc.fr/munich/doc/munich-guide-v2.pdf">here</a></li>
+</ul>
               
             </div>
           </div><footer>
