@@ -10,8 +10,8 @@ URL: https://mindearth.greengage.dev/mission/add
 Method: POST 
 Header: Bearer <token>
 payload:
-![Code_1](./assets/snippets/code_1.png)
-![Code_2](./assets/snippets/code_2.png)
+![Code_1](../assets/snippets/code_1.png)
+![Code_2](../assets/snippets/code_2.png)
  
 2. Mission Booking Interaction: 
 Action: Booking a Mission on MindEarth App 
