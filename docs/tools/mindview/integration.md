@@ -146,6 +146,6 @@ To streamline user interactions and mission management between different crowd-b
 
 # Testing
 - You can find here some [sample output data](assets/sample_data)
-- We can give you [early access to the APK] () and create sample missions around your location if you want to test the app and there are no active missions in your vicinity.
+- We can give you [early access to the APK](#) and create sample missions around your location if you want to test the app and there are no active missions in your vicinity.
 # Support and Contact
 If you have any questions or require technical support, do not hesitate to contact our support team at [support@mindearth.ch](support@mindearth.ch).
