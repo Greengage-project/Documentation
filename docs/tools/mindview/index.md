@@ -9,14 +9,17 @@ MindView plays an integral role in the "Data Crowdsourcing and Curation" phase o
 
 ### Features of MindView
 MindView is built upon several key components, each playing a vital role in its functionality:
+
 **The MindEarth App (GREENGAGE Edition)**: This is an Android-based mobile application, currently available as a standalone APK file and soon to be launched on the Google Play Store. The MindEarth App provides users with access to a variety of missions, which are commissioned by third parties for purposes such as research, urban planning, or commercial objectives. These missions involve diverse tasks, including:
-Moving from one place to another along a predetermined route, typically ranging from 500 meters to 2 kilometers.
-Capturing photographs of specific objects at designated times of the day, such as shopfronts, monuments, or building facades.
-Staying at a certain location for a fixed period, usually between 15 to 30 minutes.
+
+- Moving from one place to another along a predetermined route, typically ranging from 500 meters to 2 kilometers.
+- Capturing photographs of specific objects at designated times of the day, such as shopfronts, monuments, or building facades.
+- Staying at a certain location for a fixed period, usually between 15 to 30 minutes.
 
 Some missions come with strict deadlines, while others can be completed at the user's convenience. The app allows users to view details of each mission, including the location, duration, required device, deadline, and compensation. Users can select missions based on their interests and availability. For instance, they might be tasked with photographing particular street scenes at specific times or days. The app is developed on a Flutter codebase with customized views and routers, facilitating each phase of the mission from reservation to image upload. Missions are designed modularly, with the possibility of integrating custom procedures to meet specific data collection needs.
 
-**Mission Contol:** This dedicated back-end platform is crucial for defining, designing, and monitoring the missions available in the MindEarth App. It handles several key functions:
+**Mission Contol:** 
+This dedicated back-end platform is crucial for defining, designing, and monitoring the missions available in the MindEarth App. It handles several key functions:
 Generating Mapping Campaigns, each linked to a particular Area of Interest (AOI) that requires surveying.
 Designing individual Missions for each Campaign, utilizing GeoJson format to outline the specific path mappers will follow.
 Setting specific time constraints for each Campaign and Mission, including the start and end dates, as well as the times and dates for data collection.
