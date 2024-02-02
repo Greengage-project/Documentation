@@ -23,7 +23,7 @@ If you're interested in participating in the MindView project by using the MindE
 ![Select and book a mission](./assets/mindearthapp_screenshots/MindEarth-app_view-book.png)
 
 
-![Begin and carry out a mission](./assets/mindearthapp_screenshots/MindEarth-app_do-mission.png)
+![Begin and carry out a mission](./assets/mindearthapp_screenshots/MindEarth-app_do-missions.png)
 
 
 ### Step 5. Uploading Data and Getting Rewards
