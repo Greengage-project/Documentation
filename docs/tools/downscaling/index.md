@@ -87,6 +87,10 @@ In this visualizer, you can see the concentration level of each street, as well 
   <p style="text-align: center;">Figure 5: Example of real use case in the city of Lindau.</p>
 </div>
 
+Online visualizer can be found in this [link](https://lez.hopu.eu/d/azOD3G7Sz/cuadro-de-mando-medio-ambiente?orgId=1&kiosk)
+
+Another example in the city of Cartagena is available in this [link](https://lez.hopu.eu/d/RD2OiEgIk/cuadro-de-mando-medio-ambiente?orgId=1&kiosk)
+
 
 ### References
 
