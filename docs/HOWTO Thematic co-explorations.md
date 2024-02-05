@@ -17,7 +17,7 @@ This document describes  the collaborative process, i.e. set of steps that shoul
 - [9. Generation of storylines for wide dissemination)](#step9)
 - [10. Generation of policy briefs' inputs for policy makers)](#step10)
      
-## 0: Choose thematic co-exploration area and define research questions&hypothesis to be validated to enable policy- <a name="step0"></a>
+## Step 0: Choose thematic co-exploration area and define research questions&hypothesis to be validated to enable policy- <a name="step0"></a>
 
 #### Responsible
 GREENGAGE Observers (GOs) and PST members
@@ -55,7 +55,7 @@ Notice that some additional optional resources are listed below which could be u
  - [Thematic Co-Exploration for GREENGAGE Observatory (GO) Specification Template](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/ThematicCoExplorationSpec.docx?d=wb2395027626c44cc98dc124e9dc5750b&csf=1&web=1&e=uT1gDq) – this resource is the most important one in this stage since it allows to answer the WHY, WHO, WHAT, WHEN, WHERE, with WHICH and HOW questions associated to the organization and planning of a thematic co-exploration. It is designed to compile all the information needed to get started with a thematic co-exploration. It gets information from the CONCEPTUALISING and PREPARING phases of the GREENGAGE methodology for Citizen Observatories. 
 
 
-## 1: Preparation of the co-production process, teams and community dialogue mechanism<a name="step1"></a>
+## Step 1: Preparation of the co-production process, teams and community dialogue mechanism<a name="step1"></a>
 
 #### Responsible
 GREENGAGE Observers (GOs) and PST members
@@ -77,7 +77,7 @@ To facilitate discussions and community engagement, Discourse will be integrated
  - [Stakeholder Mapping Canvas](https://demo.greengage-project.eu/dashboard/interlinkers/a976a58e-60c7-40c4-9af3-ceec2db08277) – document to help you understand who are the stakeholders of your thematic co-exploration
 
 
-## 2: Invitation, onboarding and training of selected users to take part in a Citizen Observatory’s thematic co-exploration<a name="step2"></a>
+## Step 2: Invitation, onboarding and training of selected users to take part in a Citizen Observatory’s thematic co-exploration<a name="step2"></a>
  
 #### Responsible
 Pilot support team members
@@ -114,7 +114,7 @@ Training materials for the following topics have been made ready by the project 
 [Folder where trainings are currently uploaded](https://aitonline.sharepoint.com/:f:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP3%20GREENGAGE%20Citizen%20Observatory%20Academy/06_Tasks/3.2%20Training%20%26%20recruitment%20material/Final%20Training%20Material?csf=1&web=1&e=OU8jg9) which will be published as part of the [Knowledge Base aka GREENGAGE Academy](https://www.greengage-project.eu/knowledge-base/) of the main project’s website
 
 
-## 3: Inventory of available datasets and data gaps identification to explore a problem domain<a name="step3"></a>
+## Step 3: Inventory of available datasets and data gaps identification to explore a problem domain<a name="step3"></a>
 
 #### Responsible:
 PST members  and GREENGAGE Observers (GOs)
@@ -130,7 +130,7 @@ To achieve the following objective, PST members  should comprehensively identify
  - [DataHub](https://greengage-project.github.io/Documentation/tools/datahub/) – HOWTO for tool used to register, search and view metatada about what datasets of a given thematic area are already available in the catalogue of such Citizen Observatory. The dataset inventory template completed for a given thematic co-exploration shoudl be used as input to complete the datasets metadata in DataHub.
 
 
-## 4: Co-preparation of the thematic co-exploration to make it ready for launch<a name="step4"></a>
+## Step 4: Co-preparation of the thematic co-exploration to make it ready for launch<a name="step4"></a>
 
 #### Responsible
 PST members and GREENGAGE Observers (GOs)
@@ -178,7 +178,7 @@ Finally, detailed planning for the thematic co-exploration’s piloting and the 
  - [Example of metrics defined for a pilot](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/GREEN%20Engine/Metrics/Bristol%20Pilot%20Metrics.docx?d=we4778df0ebd34fe8b72334d41c383456&csf=1&web=1&e=J8tOQB) – document illustrating the reasoning for the establishment of a set of metrics and measurement mechanisms.
 
 
-## 5: Management of data workflow process for the thematic co-exploration<a name="step5"></a>
+## Step 5: Management of data workflow process for the thematic co-exploration<a name="step5"></a>
 
 #### Responsible
 PST members and GREENGAGE Observers (GOs) with technical skills
@@ -205,7 +205,7 @@ PST members and the technical members of the thematic co-exploration’s partici
  - [Data Management Plan Template](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/Libro.xlsx?d=w0a19b821efd94d55ba8f50d10bd6fd17&csf=1&web=1&e=XEUvCF) –  to define the data management plan for each dataset and the associated data protocol to be followed by observers
 
 
-### 5a: Gather Copernicus and Open Data from government datasets to gain bird's eye view for thematic co-exploration<a name="step5a"></a>
+### Step 5a: Gather Copernicus and Open Data from government datasets to gain bird's eye view for thematic co-exploration<a name="step5a"></a>
 
 #### Responsible
 PST members and GREENGAGE Observers (GOs) with technical skills
@@ -224,7 +224,7 @@ This step can be achieved in many ways depending on the data source to be retrie
  - [Apache Druid GREENGAGE documentation](https://greengage-project.github.io/Documentation/tools/druid/) – HOWTO explaining how to load data directly into the project's database
 
 
-### 5b: Organise and gather crowdsourcing of data by citizens through data capture apps<a name="step5b"></a>
+### Step 5b: Organise and gather crowdsourcing of data by citizens through data capture apps<a name="step5b"></a>
 
 #### Responsible
 PST members and GREENGAGE Observers (GOs) with technical skills
@@ -244,7 +244,7 @@ First, the thematic co-exploration’s moderators should identify and design the
 - [Sensors integration in GREENGAGE] (https://greengage-project.github.io/Documentation/tools/sensorsIntegration/) – HOWTO to off-the-shelf sensors (ATMOtube and sensing apps, e.g. [Noisetube](https://scistarter.org/noisetube)) to be used in the project
 
 
-## 6: Cataloguing and storage of captured data<a name="step6"></a>
+## Step 6: Cataloguing and storage of captured data<a name="step6"></a>
 
 #### Responsible
 PST members and GREENGAGE Observers (GOs) with technical skills
@@ -263,7 +263,7 @@ Besides, technical participants in the thematic co-exploration aided by the PST 
  - Druid – video explaining how to store and/or access and query the actual data to be used within the themaci co-exploration through Apache Druid (TO BE DONE)
 
 
-## 7: Generation of data analysis workflows (Data cleaning, pipelining and analysis)<a name="step7"></a>
+## Step 7: Generation of data analysis workflows (Data cleaning, pipelining and analysis)<a name="step7"></a>
 
 #### Responsible: 
 PST members and GREENGAGE Observers (GOs) with technical skills
@@ -286,7 +286,7 @@ Once the data is preprocessed and cleaned the analysis may be conducted by combi
  - [Apache Superset documentation](https://superset.apache.org/docs/intro) – HOWTO for tool to create dashboards and visualizations
 
 
-## 8: Generation of thematic co-exploration dashboards<a name="step8"></a>
+## Step 8: Generation of thematic co-exploration dashboards<a name="step8"></a>
 
 #### Responsible
 PST members and GREENGAGE Observers (GOs) with technical skills
@@ -304,7 +304,7 @@ To accomplish this, we will leverage tools like Apache Superset and Apache Druid
  - HOWTO GISAT tool to do these visualizatons (TBD)
 
 
-## 9: Generation of storylines for wide dissemination<a name="step9"></a>
+## Step 9: Generation of storylines for wide dissemination<a name="step9"></a>
 
 #### Responsible
 Pilot owners and GREENGAGE Observers (GOs)
@@ -319,7 +319,7 @@ To effectively generate storylines for wide dissemination, we will utilize a ran
  - Revise if there are storyline guidelines in https://zenodo.org/records/10119036(https://aitonline.sharepoint.com/sites/HEUGREENGAGE337/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources%2FVUB%5FScience%5FStarterkit%5FFinaal%202%2Epdf&viewid=8d5e58b2%2Da28d%2D4eae%2Dbac9%2D69afab2f27ff&parent=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources) create new template to upload into REPO
 
 
-## #10: Generation of policy briefs' inputs for policy makers
+## Step 10: Generation of policy briefs' inputs for policy makers
 
 #### Responsible
 Policy Analysis Team, Pilot Owners and GREENGAGE Observers (GOs)
