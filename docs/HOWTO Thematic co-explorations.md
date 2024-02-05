@@ -332,4 +332,4 @@ To achieve this, we will first aggregate and analyze the data collected and insi
 
 #### Resources
 - [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) – HOWTO about environment to collaborate in the policy briefs' generation in a centralised repository. The CE will suggest templates to guide the ellaboration of policy briefs.
-- Revise if there are POLICY BRIEFS guidelines in https://zenodo.org/records/10119036  (TBD)
+- [Policy brief guideline](https://www.quorum.us/blog/write-policy-brief/) – web document explaining how to format a policy brief
