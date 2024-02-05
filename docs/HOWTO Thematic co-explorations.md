@@ -319,7 +319,7 @@ To effectively generate storylines for wide dissemination, we will utilize a ran
  - Revise if there are storyline guidelines in https://zenodo.org/records/10119036(https://aitonline.sharepoint.com/sites/HEUGREENGAGE337/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources%2FVUB%5FScience%5FStarterkit%5FFinaal%202%2Epdf&viewid=8d5e58b2%2Da28d%2D4eae%2Dbac9%2D69afab2f27ff&parent=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources) create new template to upload into REPO
 
 
-## Step 10: Generation of policy briefs' inputs for policy makers
+## Step 10: Generation of policy briefs' inputs for policy makers<a name="step10"></a>
 
 #### Responsible
 Policy Analysis Team, Pilot Owners and GREENGAGE Observers (GOs)
