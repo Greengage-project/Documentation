@@ -110,8 +110,8 @@ Training materials for the following topics have been made ready by the project 
 - Analysis & Visualisation
 
 #### Resources
-[Materials for thematic co-exploration and citizen onboarding](https://www.greengage-project.eu/knowledge-base/) – TO BE PREPARED
-[Folder where trainings are currently uploaded](https://aitonline.sharepoint.com/:f:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP3%20GREENGAGE%20Citizen%20Observatory%20Academy/06_Tasks/3.2%20Training%20%26%20recruitment%20material/Final%20Training%20Material?csf=1&web=1&e=OU8jg9) which will be published as part of the [Knowledge Base aka GREENGAGE Academy](https://www.greengage-project.eu/knowledge-base/) of the main project’s website
+- [Materials for thematic co-exploration and citizen onboarding](https://www.greengage-project.eu/knowledge-base/) – TO BE PREPARED
+- [Folder where trainings are currently uploaded](https://aitonline.sharepoint.com/:f:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP3%20GREENGAGE%20Citizen%20Observatory%20Academy/06_Tasks/3.2%20Training%20%26%20recruitment%20material/Final%20Training%20Material?csf=1&web=1&e=OU8jg9) which will be published as part of the [Knowledge Base aka GREENGAGE Academy](https://www.greengage-project.eu/knowledge-base/) of the main project’s website
 
 
 ## Step 3: Inventory of available datasets and data gaps identification to explore a problem domain<a name="step3"></a>
