@@ -136,7 +136,7 @@ To achieve the following objective, PST members  should comprehensively identify
 PST members and GREENGAGE Observers (GOs)
 
 #### Objective 
-The core objective of this mission is to get the community of observers, their collaboration process management, the tools and reources needed for the succesful execution of the thematic co-exploration ready for operation. It will entail completing the following steps: 
+The core objective of this task is to get the community of observers, their collaboration process management, the tools and reources needed for the succesful execution of the thematic co-exploration ready for operation. It will entail completing the following steps: 
 - Select GREENGAGE tools and knowledge assets to co-produce thematic co-exploration
 - Agree on indicators, metrics and methods for measurement needed
 - Define data protocol to be used in thematic co-exploration
