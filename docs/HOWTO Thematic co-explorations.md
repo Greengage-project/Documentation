@@ -40,12 +40,12 @@ After having chosen an area of high priority to tackle a thematic co-exploration
  * HOW – Data analysis process to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration
 
 The [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document does not need to be completed thoroughly in this step. It is paramount that the first questions of this document are filled in. It is the WHAT question the one that actually addresses the following aspects essential to start with the co-production of a thematic co-exploration:
-* The problem (describe the problem statement and the challenge that you are addressing)
-* Objectives (describe the intended result)
-* Added value (describe the potential benefits for the Citizen Observatory’s thematic co-exploration’s stakeholders)
-* Current and desired situation (describe the current approach including existing practices, and the desired situation)
-* CS hypothesis and research questions (to be validated by the outcomes of the execution of the Citizen Observatory’s thematic co-exploration)
-* Metrics definition (of indicators of success for the Citizen Observatory’s thematic co-exploration)
+ * The problem (describe the problem statement and the challenge that you are addressing)
+ * Objectives (describe the intended result)
+ * Added value (describe the potential benefits for the Citizen Observatory’s thematic co-exploration’s stakeholders)
+ * Current and desired situation (describe the current approach including existing practices, and the desired situation)
+ * CS hypothesis and research questions (to be validated by the outcomes of the execution of the Citizen Observatory’s thematic co-exploration)
+ * Metrics definition (of indicators of success for the Citizen Observatory’s thematic co-exploration)
 
 Notice that some additional optional resources are listed below which could be used before filling in the thematic co-exploration’s specification, to help narrowing the problem and reflecting about the suitability of the problem to be addressed through a thematic co-exploration. 
 
@@ -65,16 +65,16 @@ The primary objective of this step is to establish a robust and effective co-pro
 
 #### How can we achieve it?
 To facilitate discussions and community engagement, Discourse will be integrated, providing a modern and user-friendly forum for exchange and collaboration. In parallel, WordPress will serve as our content management system, offering a versatile platform for information dissemination and interaction with the broader community.  Finally and, most importantly, a new co-production process will be set up in GREENGAGE Collaborative Environment. Hence, the accomplishment of this step requires usage of all the tools belonging to the “Community and co-production process management” layer of GREEN Engine. 
-* A new entry should be created within the parent pilot / Citizen Observatory page, for the newly specified thematic co-exploration. The [instructions to use Wordpress](https://greengage-project.github.io/Documentation/tools/wordpress/) should be followed to achieve this.
-* A new set of categories for topics of discussion following the instructions of usage of the [Discourse tool](https://greengage-project.github.io/Documentation/tools/Discourse/), should be created by the GObs leading and managing the thematic co-exploration. This will serve to foster the collaboration and dialogue among participants in the thematic co-exploration.
-* A new co-production process based on the “GREENGAGE way” co-production process schema or blueprint already loaded into [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) should be instantiated. 
+ * A new entry should be created within the parent pilot / Citizen Observatory page, for the newly specified thematic co-exploration. The [instructions to use Wordpress](https://greengage-project.github.io/Documentation/tools/wordpress/) should be followed to achieve this.
+ * A new set of categories for topics of discussion following the instructions of usage of the [Discourse tool](https://greengage-project.github.io/Documentation/tools/Discourse/), should be created by the GObs leading and managing the thematic co-exploration. This will serve to foster the collaboration and dialogue among participants in the thematic co-exploration.
+ * A new co-production process based on the “GREENGAGE way” co-production process schema or blueprint already loaded into [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) should be instantiated. 
 
 #### Resources
-* [WordPress](https://greengage-project.github.io/Documentation/tools/wordpress/) – HOWTO for tool essential to communicate the existance of a thematic co-exploration and allow dissemination of its results to the broader community* [Discourse](https://greengage-project.github.io/Documentation/tools/Discourse/) –  HOWTO for tool necessary to foster discussions and dialogue among GObs and allow them to request help and support each other 
-* [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) – HOWTO for essential tool to govern, guide and trace the co-production process executed during the co-design and co-delivery of the thematic co-exploration
-* [CS-CO-schema-process-specification](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B3D2E1BC5-96E9-4C2F-AC70-DAD6DD88D83C%7D&file=CS-CO-schema-process-specification.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1) –  to specify the process of the thematic co-exploration ala “GREENGAGE way”
-* [Problem Statement Questionnaire](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B2A0A5854-8F2F-41A8-821B-4ED300A86BE2%7D&file=ProblemStatementQuestionnaire.xlsx&action=default&mobileredirect=true) document – after instantiation of the co-production proces for the the thematic co-exploration, this main outcome of stage #0 will be uploaded into the new process. Important to review and further complete questions WHO, WHEN, WHERE and WHICH which will be tackled in the following steps to co-produce the thematic co-exploration. 
-* [Stakeholder Mapping Canvas](https://demo.greengage-project.eu/dashboard/interlinkers/a976a58e-60c7-40c4-9af3-ceec2db08277) – document to help you understand who are the stakeholders of your thematic co-exploration
+ * [WordPress](https://greengage-project.github.io/Documentation/tools/wordpress/) – HOWTO for tool essential to communicate the existance of a thematic co-exploration and allow dissemination of its results to the broader community* [Discourse](https://greengage-project.github.io/Documentation/tools/Discourse/) –  HOWTO for tool necessary to foster discussions and dialogue among GObs and allow them to request help and support each other 
+ * [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) – HOWTO for essential tool to govern, guide and trace the co-production process executed during the co-design and co-delivery of the thematic co-exploration
+ * [CS-CO-schema-process-specification](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B3D2E1BC5-96E9-4C2F-AC70-DAD6DD88D83C%7D&file=CS-CO-schema-process-specification.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1) –  to specify the process of the thematic co-exploration ala “GREENGAGE way”
+ * [Problem Statement Questionnaire](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B2A0A5854-8F2F-41A8-821B-4ED300A86BE2%7D&file=ProblemStatementQuestionnaire.xlsx&action=default&mobileredirect=true) document – after instantiation of the co-production proces for the the thematic co-exploration, this main outcome of stage #0 will be uploaded into the new process. Important to review and further complete questions WHO, WHEN, WHERE and WHICH which will be tackled in the following steps to co-produce the thematic co-exploration. 
+ * [Stakeholder Mapping Canvas](https://demo.greengage-project.eu/dashboard/interlinkers/a976a58e-60c7-40c4-9af3-ceec2db08277) – document to help you understand who are the stakeholders of your thematic co-exploration
 
 
 ## Step 2: Invitation, onboarding and training of selected users to take part in a Citizen Observatory’s thematic co-exploration<a name="step2"></a>
@@ -84,12 +84,12 @@ Pilot support team members
 
 #### Objective
 A thematic co-exploration is structured to engage and empower citizens, enabling their active involvement in data collection, observation, and analysis. It strives to ensure that contributions from citizens are meaningful and pivotal in addressing key research questions. This step assumes that the following questions have been previously been answered when tackling the WHO question of the [Problem Statement Questionnaire](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B2A0A5854-8F2F-41A8-821B-4ED300A86BE2%7D&file=ProblemStatementQuestionnaire.xlsx&action=default&mobileredirect=true) document:
-* Who is the **promoter and/or sponsor** of this Citizen Observatory’s thematic co-exploration?
-* Who are **responsible for the Citizen Observatory’s thematic co-exploration**?
-* Who are the **domain experts and leaders of the Citizen Observatory’s community** to be involved in this thematic co-exploration?
-* Who will be the **participants in this CS campaign of the Citizen Observatory** and what will be their **collaborative duties**?
-* What **social collectives, influencers, societal representatives** could help you disseminating the outcomes of this Citizen Observatory’s thematic co-exploration?
-* Who will be the **multi stakeholder members affected** by the Citizen Observatory’s **thematic co-exploration’s results**?
+ * Who is the **promoter and/or sponsor** of this Citizen Observatory’s thematic co-exploration?
+ * Who are **responsible for the Citizen Observatory’s thematic co-exploration**?
+ * Who are the **domain experts and leaders of the Citizen Observatory’s community** to be involved in this thematic co-exploration?
+ * Who will be the **participants in this CS campaign of the Citizen Observatory** and what will be their **collaborative duties**?
+ * What **social collectives, influencers, societal representatives** could help you disseminating the outcomes of this Citizen Observatory’s thematic co-exploration?
+ * Who will be the **multi stakeholder members affected** by the Citizen Observatory’s **thematic co-exploration’s results**?
 
 #### How can we achieve it?
 To achieve the objectives, the Collaborative Environment will be the key to enhanced collaboration and asset management and will be instrumental in coordinating the efforts of different stakeholders and managing campaign assets effectively. Indeed, different teams of stakeholder types will be configured in the environment and granted different rights over the phases, objectives and tasks of the co-production process. The thematic co-exploration promoters will co-design different communication assets based on the templates in the form of knowledge assets or GO enablers already loaded into the Collaborative Environment. 
@@ -97,17 +97,17 @@ To achieve the objectives, the Collaborative Environment will be the key to enha
 For community engagement and discussion, Discourse will serve as our primary platform, fostering a space for open, structured communication among participants. Groups for each co-producer team will be assembled in the tool. Several topics to foster onboarding and training for the new thematic co-exploration will be promoted through Discourse. 
 
 Training materials for the following topics have been made ready by the project and should be extended and customized for each thematic co-exploration:
-* Data I
-* Data II
-* Co-design I
-* Co-design II
-* Co-design III
-* Air quality & Mobility Monitoring
-* Technology I
-* Technology II
-* Technology III
-* Policy-making & Governance
-* Analysis & Visualisation
+ * Data I
+ * Data II
+ * Co-design I
+ * Co-design II
+ * Co-design III
+ * Air quality & Mobility Monitoring
+ * Technology I
+ * Technology II
+ * Technology III
+ * Policy-making & Governance
+ * Analysis & Visualisation
 
 #### Resources
 * [Materials for thematic co-exploration and citizen onboarding](https://www.greengage-project.eu/knowledge-base/) – TO BE PREPARED
@@ -137,18 +137,18 @@ PST members and GREENGAGE Observers (GOs)
 
 #### Objective 
 The core objective of this task is to get the community of observers, their collaboration process management, the tools and reources needed for the succesful execution of the thematic co-exploration ready for operation. It will entail completing the following steps: 
-* Select GREENGAGE tools and knowledge assets to co-produce thematic co-exploration
-* Agree on indicators, metrics and methods for measurement needed
-* Define data protocol to be used in thematic co-exploration
-* Adapt selected tools for data management 
-* Adapt selected communication and evaluation materials
-* Test process and community management tools
-* Test data capture tools and instruments
-* Test data analysis tools and visualizations
-* Test monitoring and evaluation instruments 
-* Test community support mechanisms
-* Report lessons learnt and improvements needed detected in the preparation process
-* Planning of work activities and engagement events for execution and evaluation
+ * Select GREENGAGE tools and knowledge assets to co-produce thematic co-exploration
+ * Agree on indicators, metrics and methods for measurement needed
+ * Define data protocol to be used in thematic co-exploration
+ * Adapt selected tools for data management 
+ * Adapt selected communication and evaluation materials
+ * Test process and community management tools
+ * Test data capture tools and instruments
+ * Test data analysis tools and visualizations
+ * Test monitoring and evaluation instruments 
+ * Test community support mechanisms
+ * Report lessons learnt and improvements needed detected in the preparation process
+ * Planning of work activities and engagement events for execution and evaluation
 
 Once all the steps above listed are completed, it can be considered that the GO’s thematic co-exploration is ready for operation and evaluation. Central to GREENGAGE  is the utilisation of innovative digital tools and platforms, which are devised for efficient data collection, management, and analysis. Besides, in GREENGAGE it is aimed to foster a community spirit and shared purpose among participants, thereby enhancing their understanding and engagement in scientific research. This approach is expected to yield reliable and high-quality data, instrumental in influencing policy-making, supporting community initiatives, and furthering scientific inquiries. Additionally, the CS campaign or thematic co-exploration co-designed should be scalable, replicable, and adaptable to a variety of contexts and research domains, setting a model for future citizen science endeavours.
 
@@ -156,10 +156,10 @@ Once all the steps above listed are completed, it can be considered that the GO�
 To realize this step, the Collaborative Environment (CE) and the “GREENGAGE way” blueprint instantiated for the thematic co-exploration, should guide the  interaction and management of the campaign's activities. In this process, Discourse will also be used for community engagement and open communication, facilitating a structured and inclusive dialogue among participants. For data collection, tools such as GREENGAGE app, MindEarth app, or  sensors for environmental monitoring will be employed. The data collected will be organized and analyzed using DataHub, Apache Superset, and Apache Druid for advanced data storage, analysis and visualization. Apache NiFi will be instrumental in ensuring a streamlined and efficient data processing pipelines. The synergy of these tools and platforms, as specified in our technical guide (layers “Community and co-production process management”, “Data crowdsourcing and capture” and “Data analysis and insights generation”), will ensure a comprehensive, secure, and effective Citizen Science campaign, addressing the research questions while empowering citizen participants.
 
 Once more, the [Problem Statement Questionnaire](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B2A0A5854-8F2F-41A8-821B-4ED300A86BE2%7D&file=ProblemStatementQuestionnaire.xlsx&action=default&mobileredirect=true) document should be revisited. This time special attention should be paid to sections:
-* WHEN – Planning of activities and period when Citizen Observatory’s thematic co-exploration will be executed
-* WHERE – Geographical locations where Citizen Observatory’s thematic co-exploration will take place (actual geographical areas where data collection and analysis will be carried out)
-* WHICH – Materials and resources (actual materials and resources needed to execute the Citizen Observatory’s thematic co-exploration)
-* HOW – Data analysis process to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration
+ * WHEN – Planning of activities and period when Citizen Observatory’s thematic co-exploration will be executed
+ * WHERE – Geographical locations where Citizen Observatory’s thematic co-exploration will take place (actual geographical areas where data collection and analysis will be carried out)
+ * WHICH – Materials and resources (actual materials and resources needed to execute the Citizen Observatory’s thematic co-exploration)
+ * HOW – Data analysis process to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration
 
 Each of the above mentioned tools contains a page in the [Technical guide for GREENGAGE](https://greengage-project.github.io/Documentation/). Thematic co-exploration’s participants guided by the PST should choose the best fitting tools for the considered thematic co-exploration. Following the examples included in each tool page, they should configure the tools and test their readiness for being used during the operation of the thematic co-exploration. 
 
@@ -170,12 +170,12 @@ The evaluation strategy of the thematic co-exploration should be defined. This e
 Finally, detailed planning for the thematic co-exploration’s piloting and the engagement plan to ensure continuous involvement of community members should also be established. 
 
 #### Resources
-* [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) – tool to follow the process defined, have a centralised repository of resources and a collaborative space for the team to work together in the different phases and tasks of the thematic co-exploration
-* [Thematic Co-Exploration for Citizen Observatory (CO) Specification Template](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) – knowledge asset to be used in the increasing formalization and clarification of the thematic co-exploration. 
-* [Thematic co-exploration’s workplan template](https://docs.google.com/spreadsheets/d/1bU_d92OC-cyjh4u_L1kCDtMc2ljDNwYi/edit?usp=sharing&ouid=112425199079566228482&rtpof=true&sd=true) – example of spreadsheet that should be completed by organizers of a thematic co-exploration to plan the activities that should be carried out for the succesful execution and evaluation of the thematic co-exploration.
-* [Community Building plan template](https://docs.google.com/spreadsheets/d/1hog3HzWnOgXMMbPgdIZD6FNnTK10pwN9T_wJ6MQvrnY/edit?usp=sharing) – example of spreadsheet that should be completed by organizers of a thematic co-exploration to plan how the engagements of Citizen Observers and stakeholders will take place.
-* [Resources and budget template](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B7c6e2319-112e-498c-a90e-8286cc147e9d%7D&action=edit&wdLOR=c48D37653-5FAE-4175-914D-060F1B6542AC&wdPid=6b868768) – convenient resource to help you planning what materials and budget will be needed to run the CS experiment or thematic co-exploration
-* [Example of metrics defined for a pilot](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/GREEN%20Engine/Metrics/Bristol%20Pilot%20Metrics.docx?d=we4778df0ebd34fe8b72334d41c383456&csf=1&web=1&e=J8tOQB) – document illustrating the reasoning for the establishment of a set of metrics and measurement mechanisms.
+ * [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) – tool to follow the process defined, have a centralised repository of resources and a collaborative space for the team to work together in the different phases and tasks of the thematic co-exploration
+ * [Thematic Co-Exploration for Citizen Observatory (CO) Specification Template](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) – knowledge asset to be used in the increasing formalization and clarification of the thematic co-exploration. 
+ * [Thematic co-exploration’s workplan template](https://docs.google.com/spreadsheets/d/1bU_d92OC-cyjh4u_L1kCDtMc2ljDNwYi/edit?usp=sharing&ouid=112425199079566228482&rtpof=true&sd=true) – example of spreadsheet that should be completed by  organizers of a thematic co-exploration to plan the activities that should be carried out for the succesful execution and evaluation of the thematic co-exploration.
+ * [Community Building plan template](https://docs.google.com/spreadsheets/d/1hog3HzWnOgXMMbPgdIZD6FNnTK10pwN9T_wJ6MQvrnY/edit?usp=sharing) – example of spreadsheet that should be completed by organizers of a thematic co-exploration to plan how the engagements of Citizen Observers and stakeholders will take place.
+ * [Resources and budget template](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B7c6e2319-112e-498c-a90e-8286cc147e9d%7D&action=edit&wdLOR=c48D37653-5FAE-4175-914D-060F1B6542AC&wdPid=6b868768) – convenient resource to help you planning what materials and budget will be needed to run the CS experiment or thematic co-exploration
+ * [Example of metrics defined for a pilot](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/GREEN%20Engine/Metrics/Bristol%20Pilot%20Metrics.docx?d=we4778df0ebd34fe8b72334d41c383456&csf=1&web=1&e=J8tOQB) – document illustrating the reasoning for the establishment of a set of metrics and measurement mechanisms.
 
 
 ## Step 5: Management of data workflow process for the thematic co-exploration<a name="step5"></a>
@@ -187,7 +187,7 @@ PST members and GREENGAGE Observers (GOs) with technical skills
 This step aims to establish a robust and efficient data management process for the Citizen Science campaign or thematic co-exploration. This process will involve the planning of data collection based on the data identified in [Step 3](#step3). The data management plan should depict the data collection process for each dataset, the stakeholders involved in their collection, and the tools and platforms used. Furthermore, the plan should include the workflow that will be followed for each dataset, from collection to analysis and visualisation. Through this process, the technical team and the PST will have a well-defined and structured plan for each dataset, facilitating the subsequent steps.
 
 The following aspects of data management for the thematic co-exploration will be defined at this step and its substeps:
-* Data **protocol for your Citizen Observatory’s** thematic co-exploration:
+ * Data **protocol for your Citizen Observatory’s** thematic co-exploration:
   * What type of data do you need?
   * Does it involve objective or subjective measurements?
   * Do you focus on one or more parameters?
@@ -195,8 +195,8 @@ The following aspects of data management for the thematic co-exploration will be
   * What is the geographical and temporal scope of the data collection process?
   * Do you need a representative sample?
   * How will participants have to collect the data: via one or several measuring instruments?
-* Analytical **methods** which should be applied within the Citizen Observatory’s thematic co-exploration.
-* Visualization and **metrics to generate to support the decision-making** through Citizen Observatory’s realization.
+ * Analytical **methods** which should be applied within the Citizen Observatory’s thematic co-exploration.
+ * Visualization and **metrics to generate to support the decision-making** through Citizen Observatory’s realization.
 
 #### How can we achieve it?
 PST members and the technical members of the thematic co-exploration’s participants should work together to fulfil a template that defines the data management plan for each dataset in the data inventory realised in [Step 3](#step3). 
