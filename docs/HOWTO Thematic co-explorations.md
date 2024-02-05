@@ -17,7 +17,7 @@ This document describes  the collaborative process, i.e. set of steps that shoul
 - [9. Generation of storylines for wide dissemination)](#step9)
 - [10. Generation of policy briefs' inputs for policy makers)](#step10)
      
-## Step 0: Choose thematic co-exploration area and define research questions&hypothesis to be validated to enable policy- <a name="step0"></a>
+## Step 0: Choose thematic co-exploration area and define research questions&hypothesis to be validated to enable policy-making <a name="step0"></a>
 
 #### Responsible
 GREENGAGE Observers (GOs) and PST members
