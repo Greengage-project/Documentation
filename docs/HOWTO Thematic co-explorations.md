@@ -31,13 +31,13 @@ This step will involve a thorough analysis of the current policy landscape, cons
 
 #### How can we achieve it?
 After having chosen an area of high priority to tackle a thematic co-exploration, guided by the [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document, a group of GREENGAGE Observers (GObs), citizens, civil servants and other stakeholders, who will manage and moderate the thematic co-exploration, answer, in collaboration with owners of the Citizen Observatory,  the following core questions:
-* WHY – Reason why this Citizen Observatory’ thematic co-exploration is needed (arguments for promoting the execution of this Citizen Observatory’s campaign)
-* WHO – Involved and affected stakeholders’ groups in Citizen Observatory’s thematic co-exploration (describe the target groups and their possible motivation)
-* WHAT – Actual endeavours of the Citizen Observatory’s thematic co-exploration (describe what will exactly be done in this Citizen Observatory)
-* WHEN – Planning of activities and period when Citizen Observatory’s thematic co-exploration will be executed (indicate for how long, what activities, where and for whom will be realized)
-* WHERE – Geographical locations where Citizen Observatory’s thematic co-exploration will take place (actual geographical areas where data collection and analysis will be carried out)
-* WHICH – Materials and resources (actual materials and resources needed to execute the Citizen Observatory’s thematic co-exploration)
-* HOW – Data analysis process to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration
+ * WHY – Reason why this Citizen Observatory’ thematic co-exploration is needed (arguments for promoting the execution of this Citizen Observatory’s campaign)
+ * WHO – Involved and affected stakeholders’ groups in Citizen Observatory’s thematic co-exploration (describe the target groups and their possible motivation)
+ * WHAT – Actual endeavours of the Citizen Observatory’s thematic co-exploration (describe what will exactly be done in this Citizen Observatory)
+ * WHEN – Planning of activities and period when Citizen Observatory’s thematic co-exploration will be executed (indicate for how long, what activities, where and for whom will be realized)
+ * WHERE – Geographical locations where Citizen Observatory’s thematic co-exploration will take place (actual geographical areas where data collection and analysis will be carried out)
+ * WHICH – Materials and resources (actual materials and resources needed to execute the Citizen Observatory’s thematic co-exploration)
+ * HOW – Data analysis process to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration
 
 The [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document does not need to be completed thoroughly in this step. It is paramount that the first questions of this document are filled in. It is the WHAT question the one that actually addresses the following aspects essential to start with the co-production of a thematic co-exploration:
 * The problem (describe the problem statement and the challenge that you are addressing)
