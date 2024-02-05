@@ -317,7 +317,7 @@ To effectively generate storylines for wide dissemination, we will utilize a ran
 
 #### Resources
 - [Course on Storytelling for Citizen Science](https://eu-citizen.science/resource/250) – this course gives some tips about how to perform storytelling for Citizen Science projects
-- [Presentation of Storytelling and Citizen Science](https://eu-citizen.science/resource/282) – this presentation describes about the value of storytelling in Citizen Science. It takes us through several viewpoints and tools you can use to tell your story, considering the needs of the audience, the human instinct for storytelling, how to use it to make your Citizen Science project exciting and meaningful to other people, and encourages you to think about ways to use these tools to reach more audiences
+- [Presentation of Storytelling and Citizen Science](https://eu-citizen.science/resource/282) – this presentation brings about the value of storytelling in Citizen Science. It takes us through several viewpoints and tools you can use to tell your story, considering the needs of the audience, the human instinct for storytelling, how to use it to make your Citizen Science project exciting and meaningful to other people, and encourages you to think about ways to use these tools to reach more audiences
 
 
 ## Step 10: Generation of policy briefs' inputs for policy makers<a name="step10"></a>
@@ -334,4 +334,4 @@ To achieve this, we will first aggregate and analyze the data collected and insi
 #### Resources
 - [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) – HOWTO about environment to collaborate in the policy briefs' generation in a centralised repository. The CE will suggest templates to guide the ellaboration of policy briefs.
 - [Policy brief guideline](https://www.quorum.us/blog/write-policy-brief/) – web document explaining how to format a policy brief
-- [Example of Polciy brief](https://zenodo.org/records/7752561) – in the domain of Citizen Science that could inspire those embarking in the preparation of a policy brief 
+- [Example of Policy brief](https://zenodo.org/records/7752561) – in the domain of Citizen Science that could inspire those embarking in the preparation of a policy brief 
