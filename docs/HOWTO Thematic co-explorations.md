@@ -3,19 +3,20 @@
 This document describes  the collaborative process, i.e. set of steps that should be carried out in a logical sequence to co-deliver a thematic co-exploration. Importantly, these steps are indicative and there could be different journeys through them, i.e. some may be skipped and some new steps added if the co-producers of a thematic co-exploration so consider. Besides, a thematic co-exploration is a collaborative and iterative process, i.e. several iterations over some of the steps of the collaborative process may be needed. Indeed, the process indicated below should not be understood as a one way rigid top down process but as an iterative process where some steps may be executed more than once. 
 
 ## Steps to follow to co-deliver thematic co-exploration
-1. [0. Choose thematic co-exploration area and define research questions&hypothesis to be validated to enable policy-making](#step0)
-2. [1. Preparation of the co-production process, teams and community dialogue mechanism](#step1)
-3. [2. Invitation, onboarding and training of selected users to take part in a Citizen Observatory’s thematic co-exploration](#step2)
-4. [3. Inventory of available datasets and data gaps identification to explore a problem domain](#step3)
-5. [4. Co-preparation of the thematic co-exploration to make it ready for launch](#step4)
-6. [5. Management of data workflow process for the thematic co-exploration](#step5)
-    1. [5a. Gather Copernicus and Open Data from government datasets to gain bird's eye view for thematic co-exploration](#step5a)
-    2. [5b. Organise and gather crowdsourcing of data by citizens through data capture apps](#step5b)
-7. [6. Cataloguing and storage of captured data](#step6)
-8. [7. Generation of data analysis workflows (Data cleaning, pipelining and analysis)](#step7)
-9. [8. Generation of thematic co-exploration dashboards)](#step8)
-10. [9. Generation of storylines for wide dissemination)](#step9)
-   
+- [0. Choose thematic co-exploration area and define research questions&hypothesis to be validated to enable policy-making](#step0)
+- [1. Preparation of the co-production process, teams and community dialogue mechanism](#step1)
+- [2. Invitation, onboarding and training of selected users to take part in a Citizen Observatory’s thematic co-exploration](#step2)
+- [3. Inventory of available datasets and data gaps identification to explore a problem domain](#step3)
+- [4. Co-preparation of the thematic co-exploration to make it ready for launch](#step4)
+- [5. Management of data workflow process for the thematic co-exploration](#step5)
+    - [5a. Gather Copernicus and Open Data from government datasets to gain bird's eye view for thematic co-exploration](#step5a)
+    - [5b. Organise and gather crowdsourcing of data by citizens through data capture apps](#step5b)
+- [6. Cataloguing and storage of captured data](#step6)
+- [7. Generation of data analysis workflows (Data cleaning, pipelining and analysis)](#step7)
+- [8. Generation of thematic co-exploration dashboards)](#step8)
+- [9. Generation of storylines for wide dissemination)](#step9)
+- [10. Generation of policy briefs' inputs for policy makers)](#step10)
+     
 ## 0: Choose thematic co-exploration area and define research questions&hypothesis to be validated to enable policy- <a name="step0"></a>
 
 #### Responsible
