@@ -31,13 +31,13 @@ This step will involve a thorough analysis of the current policy landscape, cons
 
 #### How can we achieve it?
 After having chosen an area of high priority to tackle a thematic co-exploration, guided by the [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document, a group of GREENGAGE Observers (GObs), citizens, civil servants and other stakeholders, who will manage and moderate the thematic co-exploration, answer, in collaboration with owners of the Citizen Observatory,  the following core questions:
- * WHY – Reason why this Citizen Observatory’ thematic co-exploration is needed (arguments for promoting the execution of this Citizen Observatory’s campaign)
- * WHO – Involved and affected stakeholders’ groups in Citizen Observatory’s thematic co-exploration (describe the target groups and their possible motivation)
- * WHAT – Actual endeavours of the Citizen Observatory’s thematic co-exploration (describe what will exactly be done in this Citizen Observatory)
- * WHEN – Planning of activities and period when Citizen Observatory’s thematic co-exploration will be executed (indicate for how long, what activities, where and for whom will be realized)
- * WHERE – Geographical locations where Citizen Observatory’s thematic co-exploration will take place (actual geographical areas where data collection and analysis will be carried out)
- * WHICH – Materials and resources (actual materials and resources needed to execute the Citizen Observatory’s thematic co-exploration)
- * HOW – Data analysis process to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration
+* WHY – Reason why this Citizen Observatory’ thematic co-exploration is needed (arguments for promoting the execution of this Citizen Observatory’s campaign)
+* WHO – Involved and affected stakeholders’ groups in Citizen Observatory’s thematic co-exploration (describe the target groups and their possible motivation)
+* WHAT – Actual endeavours of the Citizen Observatory’s thematic co-exploration (describe what will exactly be done in this Citizen Observatory)
+* WHEN – Planning of activities and period when Citizen Observatory’s thematic co-exploration will be executed (indicate for how long, what activities, where and for whom will be realized)
+* WHERE – Geographical locations where Citizen Observatory’s thematic co-exploration will take place (actual geographical areas where data collection and analysis will be carried out)
+* WHICH – Materials and resources (actual materials and resources needed to execute the Citizen Observatory’s thematic co-exploration)
+* HOW – Data analysis process to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration
 
 The [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document does not need to be completed thoroughly in this step. It is paramount that the first questions of this document are filled in. It is the WHAT question the one that actually addresses the following aspects essential to start with the co-production of a thematic co-exploration:
  * The problem (describe the problem statement and the challenge that you are addressing)
@@ -211,7 +211,7 @@ PST members and the technical members of the thematic co-exploration’s partici
 PST members and GREENGAGE Observers (GOs) with technical skills
 
 #### Objective
-This step aims to retrieve the datasets identified in [Step 3](#step3) that are already available in Open Data portals or provided by [Copernicus data](https://www.copernicus.eu/en/access-data). This process will involve the creation of ingestion sources for each dataset in DataHub, which will allow us to retrieve the data from the source and store it in the centralised repository. The technical team should create the ingestion sources with the pilot owners' support.
+This step aims to retrieve the datasets identified in [Step 3](#step3) that are already available in Open Data portals or provided by [Copernicus data](https://www.copernicus.eu/en/access-data). This process will involve the creation of the pipelines (ingestion sources) that will introduce each dataset in DataHub, which will allow us to retrieve the data from the source and store it in the centralised repository. The technical team should create the ingestion sources with the pilot owners' support.
 
 #### How can we achieve it?
 This step can be achieved in many ways depending on the data source to be retrieved. The ingestion sources can be created using Apache NiFi, allowing us to retrieve data from APIs, FTP servers, and other sources. Alternatively, other ingestion sources, such as Python scripts, may require programmatic solutions. Finally, the ingestion sources can also be configured  using Apache Druid, allowing us to load data directly into the project's database. The technical team will be responsible for creating the ingestion sources, while the pilot owners will be responsible for providing the necessary information.
