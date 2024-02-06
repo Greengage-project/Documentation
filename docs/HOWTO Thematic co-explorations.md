@@ -31,6 +31,7 @@ This step will involve a thorough analysis of the current policy landscape, cons
 
 #### How can we achieve it?
 After having chosen an area of high priority to tackle a thematic co-exploration, guided by the [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document, a group of GREENGAGE Observers (GObs), citizens, civil servants and other stakeholders, who will manage and moderate the thematic co-exploration, answer, in collaboration with owners of the Citizen Observatory,  the following core questions:
+
 * WHY – Reason why this Citizen Observatory’ thematic co-exploration is needed (arguments for promoting the execution of this Citizen Observatory’s campaign)
 * WHO – Involved and affected stakeholders’ groups in Citizen Observatory’s thematic co-exploration (describe the target groups and their possible motivation)
 * WHAT – Actual endeavours of the Citizen Observatory’s thematic co-exploration (describe what will exactly be done in this Citizen Observatory)
