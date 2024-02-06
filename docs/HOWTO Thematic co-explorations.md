@@ -41,6 +41,7 @@ After having chosen an area of high priority to tackle a thematic co-exploration
 * HOW – Data analysis process to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration
 
 The [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document does not need to be completed thoroughly in this step. It is paramount that the first questions of this document are filled in. It is the WHAT question the one that actually addresses the following aspects essential to start with the co-production of a thematic co-exploration:
+
  * The problem (describe the problem statement and the challenge that you are addressing)
  * Objectives (describe the intended result)
  * Added value (describe the potential benefits for the Citizen Observatory’s thematic co-exploration’s stakeholders)
@@ -66,6 +67,7 @@ The primary objective of this step is to establish a robust and effective co-pro
 
 #### How can we achieve it?
 To facilitate discussions and community engagement, Discourse will be integrated, providing a modern and user-friendly forum for exchange and collaboration. In parallel, WordPress will serve as our content management system, offering a versatile platform for information dissemination and interaction with the broader community.  Finally and, most importantly, a new co-production process will be set up in GREENGAGE Collaborative Environment. Hence, the accomplishment of this step requires usage of all the tools belonging to the “Community and co-production process management” layer of GREEN Engine. 
+
  * A new entry should be created within the parent pilot / Citizen Observatory page, for the newly specified thematic co-exploration. The [instructions to use Wordpress](https://greengage-project.github.io/Documentation/tools/wordpress/) should be followed to achieve this.
  * A new set of categories for topics of discussion following the instructions of usage of the [Discourse tool](https://greengage-project.github.io/Documentation/tools/Discourse/), should be created by the GObs leading and managing the thematic co-exploration. This will serve to foster the collaboration and dialogue among participants in the thematic co-exploration.
  * A new co-production process based on the “GREENGAGE way” co-production process schema or blueprint already loaded into [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) should be instantiated. 
@@ -85,6 +87,7 @@ Pilot support team members
 
 #### Objective
 A thematic co-exploration is structured to engage and empower citizens, enabling their active involvement in data collection, observation, and analysis. It strives to ensure that contributions from citizens are meaningful and pivotal in addressing key research questions. This step assumes that the following questions have been previously been answered when tackling the WHO question of the [Problem Statement Questionnaire](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B2A0A5854-8F2F-41A8-821B-4ED300A86BE2%7D&file=ProblemStatementQuestionnaire.xlsx&action=default&mobileredirect=true) document:
+
  * Who is the **promoter and/or sponsor** of this Citizen Observatory’s thematic co-exploration?
  * Who are **responsible for the Citizen Observatory’s thematic co-exploration**?
  * Who are the **domain experts and leaders of the Citizen Observatory’s community** to be involved in this thematic co-exploration?
@@ -98,6 +101,7 @@ To achieve the objectives, the Collaborative Environment will be the key to enha
 For community engagement and discussion, Discourse will serve as our primary platform, fostering a space for open, structured communication among participants. Groups for each co-producer team will be assembled in the tool. Several topics to foster onboarding and training for the new thematic co-exploration will be promoted through Discourse. 
 
 Training materials for the following topics have been made ready by the project and should be extended and customized for each thematic co-exploration:
+
  * Data I
  * Data II
  * Co-design I
@@ -138,6 +142,7 @@ PST members and GREENGAGE Observers (GOs)
 
 #### Objective 
 The core objective of this task is to get the community of observers, their collaboration process management, the tools and reources needed for the succesful execution of the thematic co-exploration ready for operation. It will entail completing the following steps: 
+
  * Select GREENGAGE tools and knowledge assets to co-produce thematic co-exploration
  * Agree on indicators, metrics and methods for measurement needed
  * Define data protocol to be used in thematic co-exploration
@@ -157,6 +162,7 @@ Once all the steps above listed are completed, it can be considered that the GO�
 To realize this step, the Collaborative Environment (CE) and the “GREENGAGE way” blueprint instantiated for the thematic co-exploration, should guide the  interaction and management of the campaign's activities. In this process, Discourse will also be used for community engagement and open communication, facilitating a structured and inclusive dialogue among participants. For data collection, tools such as GREENGAGE app, MindEarth app, or  sensors for environmental monitoring will be employed. The data collected will be organized and analyzed using DataHub, Apache Superset, and Apache Druid for advanced data storage, analysis and visualization. Apache NiFi will be instrumental in ensuring a streamlined and efficient data processing pipelines. The synergy of these tools and platforms, as specified in our technical guide (layers “Community and co-production process management”, “Data crowdsourcing and capture” and “Data analysis and insights generation”), will ensure a comprehensive, secure, and effective Citizen Science campaign, addressing the research questions while empowering citizen participants.
 
 Once more, the [Problem Statement Questionnaire](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B2A0A5854-8F2F-41A8-821B-4ED300A86BE2%7D&file=ProblemStatementQuestionnaire.xlsx&action=default&mobileredirect=true) document should be revisited. This time special attention should be paid to sections:
+
  * WHEN – Planning of activities and period when Citizen Observatory’s thematic co-exploration will be executed
  * WHERE – Geographical locations where Citizen Observatory’s thematic co-exploration will take place (actual geographical areas where data collection and analysis will be carried out)
  * WHICH – Materials and resources (actual materials and resources needed to execute the Citizen Observatory’s thematic co-exploration)
@@ -188,6 +194,7 @@ PST members and GREENGAGE Observers (GOs) with technical skills
 This step aims to establish a robust and efficient data management process for the Citizen Science campaign or thematic co-exploration. This process will involve the planning of data collection based on the data identified in [Step 3](#step3). The data management plan should depict the data collection process for each dataset, the stakeholders involved in their collection, and the tools and platforms used. Furthermore, the plan should include the workflow that will be followed for each dataset, from collection to analysis and visualisation. Through this process, the technical team and the PST will have a well-defined and structured plan for each dataset, facilitating the subsequent steps.
 
 The following aspects of data management for the thematic co-exploration will be defined at this step and its substeps:
+
  * Data **protocol for your Citizen Observatory’s** thematic co-exploration:
   * What type of data do you need?
   * Does it involve objective or subjective measurements?
@@ -274,9 +281,10 @@ The objective of this step is a critical phase in the data management process, p
 
 #### How can we achieve it?
 To successfully create workflows that can process the data into the desired format we have several ways to do it: creating a NiFi Flow, creating a python script or manually.
-* **NiFi flow:** Apache NiFi is a powerful tool that allows us to create data pipelines that can be scheduled to run periodically. This tool is very useful for data ingestion, as it allows us to fetch data from APIs, FTP servers, and other sources. Additionally, NiFi can be used to clean and transform data, ensuring that it is in the desired format and structure. Finally, NiFi can be used to load data into Apache Druid, ensuring that the data is correctly ingested into the database.
-* **Python script:** Develop Python scripts for more complex data transformations that might not be directly feasible within NiFi. This can include data cleaning, normalization, or feature engineering tasks. It can also be integrated with Apache NiFi to run as part of the flow. Furthermore, by using the Apache Druid API we can directly load data into the database.
-* **Manually:** For simple data transformations, it might be more efficient to perform them manually. This can include tasks such as renaming columns, changing data types, or removing columns. However, this approach is not scalable and should only be used for simple tasks.
+
+ * **NiFi flow:** Apache NiFi is a powerful tool that allows us to create data pipelines that can be scheduled to run periodically. This tool is very useful for data ingestion, as it allows us to fetch data from APIs, FTP servers, and other sources. Additionally, NiFi can be used to clean and transform data, ensuring that it is in the desired format and structure. Finally, NiFi can be used to load data into Apache Druid, ensuring that the data is correctly ingested into the database.
+ * **Python script:** Develop Python scripts for more complex data transformations that might not be directly feasible within NiFi. This can include data cleaning, normalization, or feature engineering tasks. It can also be integrated with Apache NiFi to run as part of the flow. Furthermore, by using the Apache Druid API we can directly load data into the database.
+ * **Manually:** For simple data transformations, it might be more efficient to perform them manually. This can include tasks such as renaming columns, changing data types, or removing columns. However, this approach is not scalable and should only be used for simple tasks.
 
 Once the data is preprocessed and cleaned the analysis may be conducted by combining and exploring the data using Apache Superset and Apache Druid. Apache Superset is a powerful tool that allows us to create interactive dashboards and visualizations that will be explained in the next step. Apache Druid allows us to perform real-time analytics on large datasets. These tools will be used to explore the data and generate insights that will be used to answer the research questions.
 
