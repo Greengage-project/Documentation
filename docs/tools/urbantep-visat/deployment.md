@@ -11,7 +11,7 @@ Before proceeding with the deployment, ensure the following prerequisites are me
 
 1. **Docker Installation**: Docker must be installed on the host machine. For installation instructions, refer to the [official Docker documentation](https://docs.docker.com/).
 
-2. **Docker Compose (Optional)**: For managing multi-container Docker applications, Docker Compose is recommended. Installation instructions can be found on the [Docker Compose documentation page](https://docs.docker.com/compose/).
+2. **Docker Compose**: For managing multi-container Docker applications, Docker Compose is recommended. Installation instructions can be found on the [Docker Compose documentation page](https://docs.docker.com/compose/).
 
 3. **Access to UrbanTEP/VISAT Docker Images**: Ensure access to the repository containing the Docker images for UrbanTEP/VISAT.
 
@@ -50,9 +50,8 @@ After successfully deploying UrbanTEP/VISAT, perform any necessary post-deployme
 
 To update UrbanTEP/VISAT, pull the latest Docker images and re-run the Docker Compose:
 
-    docker-compose down
     docker-compose pull
-    docker-compose up -d
+    docker-compose up -d --force-recreate
 
 This will ensure that you are running the latest version of the application with all the necessary updates and security patches.
 
