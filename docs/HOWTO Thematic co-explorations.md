@@ -13,9 +13,9 @@ This document describes  the collaborative process, i.e. set of steps that shoul
   * [5b. Organise and gather crowdsourcing of data by citizens through data capture apps](#step5b)
 * [6. Cataloguing and storage of captured data](#step6)
 * [7. Generation of data analysis workflows (Data cleaning, pipelining and analysis)](#step7)
-* [8. Generation of thematic co-exploration dashboards)](#step8)
-* [9. Generation of storylines for wide dissemination)](#step9)
-* [10. Generation of policy briefs' inputs for policy makers)](#step10)
+* [8. Generation of thematic co-exploration dashboards](#step8)
+* [9. Generation of storylines for wide dissemination](#step9)
+* [10. Generation of policy briefs' inputs for policy makers](#step10)
      
 ## Step 0: Choose thematic co-exploration area and define research questions&hypothesis to be validated to enable policy-making <a name="step0"></a>
 
