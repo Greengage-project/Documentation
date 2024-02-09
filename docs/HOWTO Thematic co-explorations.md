@@ -9,8 +9,10 @@ This document describes  the collaborative process, i.e. set of steps that shoul
 * [3. Inventory of available datasets and data gaps identification to explore a problem domain](#step3)
 * [4. Co-preparation of the thematic co-exploration to make it ready for launch](#step4)
 * [5. Management of data workflow process for the thematic co-exploration](#step5)
+
   * [5a. Gather Copernicus and Open Data from government datasets to gain bird's eye view for thematic co-exploration](#step5a)
   * [5b. Organise and gather crowdsourcing of data by citizens through data capture apps](#step5b)
+
 * [6. Cataloguing and storage of captured data](#step6)
 * [7. Generation of data analysis workflows (Data cleaning, pipelining and analysis)](#step7)
 * [8. Generation of thematic co-exploration dashboards](#step8)
