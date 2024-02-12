@@ -82,6 +82,30 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 ---
 
+#### Apache Druid
+
+- **Directory**: `/tools`
+- **Link**: [tools/Druid](tools/druid)
+- **Deployed in**: [https://druid.16.171.94.204.nip.io](https://druid.16.171.94.204.nip.io)
+- **Description**: Apache Druid is a high-performance, distributed data store designed for real-time analytics on large-scale datasets. It excels in scenarios where fast queries and ingest are crucial, such as in business intelligence applications, operational analytics, and real-time monitoring. Druid is known for its ability to handle high concurrency, its columnar storage format, and its ability to scale horizontally. It supports streaming and batch data ingestion, and its architecture allows for efficient data summarisation, fast aggregation queries, and low-latency data access. Druid is often used in conjunction with big data technologies like Hadoop and Kafka, making it a popular choice for organisations looking to implement real-time analytics solutions.
+
+  - **Examples of integration of sources with Druid**:
+    - [Integration example](tools/druid/examples)
+
+---
+
+#### Apache NiFi
+
+- **Directory**: `/tools`
+- **Link**: [tools/NiFi](tools/nifi)
+- **Deployed in**: [https://nifi.16.171.94.204.nip.io](https://nifi.16.171.94.204.nip.io/nifi)
+- **Description**: Apache NiFi is a robust, open-source software solution designed for efficient and reliable data ingestion, processing, and distribution. It is particularly noted for its user-friendly graphical interface that simplifies the design, management, and monitoring of data flows. NiFi supports highly configurable and flexible data routing, system mediation, and transformation capabilities, enabling the handling of diverse data formats and systems. Key features include its scalability to accommodate large volumes of data, built-in data security measures, and extensive audit trails for data provenance. Primarily used in scenarios requiring complex data pipelines, such as real-time data processing and integration across varied systems, Apache NiFi stands out for its ease of use and comprehensive data management capabilities.
+
+  - **Examples of integration of sources with NiFi**:
+    - [Integration example](tools/nifi/examples)
+
+---
+
 #### Libelium MQTT sensor integration
 
 - **Directory**: `/tools`
@@ -89,6 +113,12 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Description**: This documentation contains all the information necessary to connect and configure the IoT sensors provided by Libelium to MQTT broker and integrate it in other platforms or architectures.
 
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
+
+#### Greengage APP
+
+- **Directory**: `/tools`
+- **Link**: [tools/greengage-app-api](tools/greengage-app-api)
+- **Description**: The greengage app api is mesh of multiple services which are provided via a single gateway. This underlying docuemntation will show you in a simple way how you can interact with application and how you can adopt your application to fit in the ecosystem.
 
 #### Wordpress
 

@@ -13,51 +13,71 @@ extra_css:
 nav:
   - Home: index.md
   - Guidelines: guidelines
+  - HOWTO Thematic co-exploration: HOWTO Thematic co-explorations.md
+  - Thematic co-exploration example: thematic_coexploration_example.md
   - Tools:
       - Backbone:
-        - Keycloak:
-          - Description: tools/keycloak
-          - Integration: tools/keycloak/integration
-          - Examples:
-              - Node: tools/keycloak/examples#nodejs
-              - Python: tools/keycloak/examples#python
-      - Community and Co-production process Management: 
-        - Wordpress:
-            - Description: tools/wordpress
-            - Integration: tools/wordpress/integration
-            - Example of deployment: tools/wordpress/examples
-        - Discourse:
-          - Description: tools/Discourse
-          - Integration: tools/Discourse/integration
-          - Example of deployment: tools/Discourse/examples
-        - Collaborative Environment:
-          - Description: tools/collaborativeEnvironment
-          - Usage: tools/collaborativeEnvironment/integration
-          - Example of deployment: tools/collaborativeEnvironment/examples
-      - Data crowdsourcing and capture: 
-        - MODE:
-            - Description: tools/mode
-            - Integration: tools/mode/integration
-            - Examples:
-                - iOS: tools/mode/examples/ios
-                - Android: tools/mode/examples/android
-                - Backend: tools/mode/examples/backend
-        - Libelium sensor integration:
-            - Description: tools/sensorsIntegration
-            - Integration: tools/sensorsIntegration/integration
+          - Keycloak:
+              - Description: tools/keycloak
+              - Integration: tools/keycloak/integration
+              - Examples:
+                  - Node: tools/keycloak/examples#nodejs
+                  - Python: tools/keycloak/examples#python
+      - Community and Co-production process Management:
+          - Wordpress:
+              - Description: tools/wordpress
+              - Integration: tools/wordpress/integration
+              - Example of deployment: tools/wordpress/examples
+          - Discourse:
+              - Description: tools/Discourse
+              - Integration: tools/Discourse/integration
+              - Example of deployment: tools/Discourse/examples
+          - Collaborative Environment:
+              - Description: tools/collaborativeEnvironment
+              - Usage: tools/collaborativeEnvironment/usage
+              - Example of deployment: tools/collaborativeEnvironment/examples
+      - Data crowdsourcing and capture:
+          - MODE:
+              - Description: tools/mode
+              - Integration: tools/mode/integration
+              - Examples:
+                  - iOS: tools/mode/examples/ios
+                  - Android: tools/mode/examples/android
+                  - Backend: tools/mode/examples/backend
+          - MindView:
+              - Description: tools/mindview
+              - Integration: tools/mindview/integration
+          - Libelium sensor integration:
+              - Description: tools/sensorsIntegration
+              - Integration: tools/sensorsIntegration/integration
+          - Greengage App:
+              - Description: tools/greengage-app-api
+              - Examples:
+                  - clientJs: tools/greengage-app-api/examples/client-js
+                  - client Restful to graphql: tools/greengage-app-api/examples/restful-to-graphql
       - Data analysis and insights generation:
-        - UrbanTEP / VISAT:
-          - Description: tools/urbantep-visat
-          - Deployment: tools/urbantep-visat/deployment
-          - Integration: tools/urbantep-visat/integration
-          - Example: tools/urbantep-visat/examples
-        - DataHub:
-            - Description: tools/datahub
-            - Usage: tools/datahub/usage
-            - Example of integration: tools/datahub/examples
-        - Apache Superset:
-            - Description: tools/superset
-            - Usage: tools/superset/usage
-            - Example of integration: tools/superset/examples
+          - UrbanTEP / VISAT:
+              - Description: tools/urbantep-visat
+              - Deployment: tools/urbantep-visat/deployment
+              - Integration: tools/urbantep-visat/integration
+              - Example: tools/urbantep-visat/examples
+          - DataHub:
+              - Description: tools/datahub
+              - Usage: tools/datahub/usage
+              - Example of integration: tools/datahub/examples
+          - Apache Superset:
+              - Description: tools/superset
+              - Usage: tools/superset/usage
+              - Example of integration: tools/superset/examples
+          - Apache Druid:
+              - Description: tools/druid
+              - Usage: tools/druid/usage
+              - Example of integration: tools/druid/examples
+          - Apache NiFi:
+              - Description: tools/nifi
+              - Usage: tools/nifi/usage
+              - Example of integration: tools/nifi/examples
+          - Data Quality Dashboard:
+              - Description: tools/DataQualityDashboard
 locale:
   - en
