@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>MQTT - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "MQTT";
+        var mkdocs_page_input_path = "tools/sensorsIntegration/index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../collaborativeEnvironment/integration">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../mode">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href=".">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">UrbanTEP / VISAT</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../urbantep-visat">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../urbantep-visat/deployment">Deployment</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../urbantep-visat/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../urbantep-visat/examples">Example</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../superset">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../superset/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../superset/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">MQTT</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="mqtt">MQTT</h1>
+<h3 id="introduction">Introduction</h3>
+<p>MQTT is one of the most wide IoT protocols used both due to its scalable capabilities and the
+number of platforms for Smart Cities accepting this protocol. For that reason, MQTT has been
+introduced in the Smart Spot to be a protocol to report values to 3rd party platforms.
+Nowadays, it can be used only to report values, while managing it will be carried out using the
+original Smart Spot protocol, which is LwM2M. The management can be used both from the
+platform provided by Libelium so called Homard.</p>
+<p>This version of MQTT also includes significant security and reliability improvements compared to
+earlier versions. For example, authentication and authorization mechanisms were added to enable
+safer and more controlled communication between devices. Session management was also
+improved, and a "last will and testament" mechanism was added to ensure that devices disconnect
+properly in case of a network failure.</p>
+<p>Overall, MQTT v3.1.1 is considered a mature and stable version of the MQTT protocol and is widely
+used in a variety of IoT applications, such as environmental monitoring, vehicle telemetry, asset
+tracking, and more.</p>
+<h3 id="features-of-mqtt">Features of MQTT</h3>
+<ol>
+<li>
+<p>Supported Security
+MQTT v3.1.1 supports the two main security mechanisms to ensure secure communication between
+devices. These include:</p>
+<ul>
+<li>
+<p>User and password-based authentication: MQTT devices can be authenticated using user and
+password credentials stored on the MQTT server.</p>
+</li>
+<li>
+<p>1.2 Digital certificates: MQTT devices can be authenticated using digital certificates, which
+provides greater security and mutual authentication between devices.
+Both of them can be configured using the remote device management platform Homard provided by
+Libelium.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>MQTT Ports</p>
+<p>MQTT uses by default two different ports for communication:</p>
+<ul>
+<li>
+<p>TCP port 1883: This is the default port used for unencrypted connection. MQTT clients
+connect to the MQTT server using this port. The communication between the client and the
+server is performed without encryption, meaning that the exchanged data is not protected.</p>
+</li>
+<li>
+<p>TCP port 8883: This is the port used for encrypted connection. MQTT clients can connect to
+the MQTT server using this port and establish a secure connection over TLS (Transport
+Layer Security). TLS provides an additional layer of security to MQTT communication,
+protecting the exchanged data between the client and the server</p>
+</li>
+</ul>
+<p>It is important to note that default ports may vary depending on the MQTT provider or the MQTT
+server configuration. Therefore, the MQTT server documentation should be consulted to confirm      the ports used in MQTT communication and ensure that clients are properly configured to connect
+to the server. </p>
+</li>
+<li>
+<p>Configuration</p>
+<p>The vertical data concept involves grouping and organising the data reported by the device into
+different verticals depending on the transmitted data set. The grouping of this data aligns        with the definition of the official Data Models of the FIWARE platform described on the website     https://smartdatamodels.org/. Given the versatility of the Smart Spot to be configurable at the     hardware level during the order with different types of sensors, not all data verticals have to     be active on the device. The device transmits data using the necessary verticals depending on      the hardware configuration of the device. Additionally, it is possible to enable or disable        specific verticals separately through the Homard device remote platform as indicated in the        next section.</p>
+<p>The definition of a vertical at MQTT integration level is mainly composed of two elements:</p>
+<ul>
+<li>Topic: The topic for publishing each data set of the vertical will be composed based on a
+  default prefix or a topic prefix specified by the client through the Homard device remote
+  platform. The topic prefix must have the following format</li>
+</ul>
+<p><center>
+    <br></p>
+<p><code>/{base_apikey}/{device_id}</code></p>
+<pre><code>&lt;br&gt;
+</code></pre>
+<p></center></p>
+<p>where 'base_apikey' is usually an identifying key for a set of devices and 'device_id' is a
+specific name for the device. If a topic prefix is not configured, the device will use a           default one.</p>
+<p>This topic prefix will be internally modified by the SmartSpot depending on the vertical.         Specifically, the SmartSpot will add both the ‘/attrs’ postfix corresponding to the one
+required by the FIWARE IoT Agents to receive data and the 'lower_vertical_suffix' and
+'upper_vertical_suffix' fields within the topic prefix to separate the data into different        topics, one for each vertical, resulting in the final topic being composed in the following       way:</p>
+<p><center>
+    <br></p>
+<p><code>/{base_apikey}{lower_vertical_suffix}/{device_id}_{upper_vertical_suffix}/attrs</code></p>
+<pre><code>&lt;br&gt;
+</code></pre>
+<p></center></p>
+<p>The following table illustrates an example of the prefix formation according to the
+publication vertical. </p>
+<p><center>
+<br></p>
+<p><img src="assets/table1.png" alt="Texto alternativo" width="600"></p>
+<p><br>
+</center></p>
+<ul>
+<li>Message: The data published through JSON-encoded text messages on each of the specified
+topics contain at least the data from the different sensors included in your Smart Spot device
+for each vertical, and may also include extra information regarding how the device is
+configured. This extra information is provided as it may be useful to the user and may enable          device configuration via MQTT protocol in the future, although this feature is not currently
+implemented. The following table illustrate the information that can be included in each
+vertical depending on your device's configuration.</li>
+</ul>
+<p><center>
+<br></p>
+<p><img src="assets/FIGURE2.png" alt="Texto alternativo" width="600"></p>
+<p><br>
+</center></p>
+<p>The example message will be:</p>
+<p><br></p>
+<pre><code>  ```{
+      "TimeInstant": "2023-03-20T13:50:00Z",
+      "period": 5,
+      "status": "connected",
+      "no2-a4": 0.640869140625,
+      "ox-a431": 28.586013793945312,
+      "co-a4": 91.760452270507812,
+      "so2-a4": 0.927800178527832,
+      "pm10": 49.334125518798828,
+      "pm2": 15.33404541015625,
+      "pm1": 2.1444158554077148
+    } ```
+</code></pre>
+<p></br></p>
+<p>It is important to note that if a sensor is not connected or not working properly, the field           is still included in the transmitted message, but its value is set to 'null'. The reasons for          carrying out this procedure are mainly to:</p>
+<ul>
+<li>
+<p>Help identify device malfunctions for maintenance tasks.</p>
+</li>
+<li>
+<p>Prevent the introduction of '0' or repetitive non-real values that can cause confusion when          data persists in databases or is represented in graphs.</p>
+</li>
+</ul>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/custom.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

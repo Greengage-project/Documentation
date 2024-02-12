@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>MODE Integration Guide for data collection on iOS devices - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "MODE Integration Guide for data collection on iOS devices";
+        var mkdocs_page_input_path = "tools/mode/examples/ios.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../../keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../../keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../../keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../../wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../../Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../../collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../collaborativeEnvironment/integration">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../..">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href=".">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../../sensorsIntegration">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../sensorsIntegration/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">UrbanTEP / VISAT</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../../urbantep-visat">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../urbantep-visat/deployment">Deployment</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../urbantep-visat/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../urbantep-visat/examples">Example</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../../datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../../superset">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../superset/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../superset/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">MODE Integration Guide for data collection on iOS devices</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="mode-integration-guide-for-data-collection-on-ios-devices">MODE Integration Guide for data collection on iOS devices</h1>
+<p>The MODE smartphone library (<code>libmode</code>) provides a complete, out-of-the-box
+solution for mobility data collection via smartphones. It is built as an
+autonomous component that can easily be integrated into third party apps. For
+the standard use-case (trip data collection) the library can be integrated into
+existing Apps with little effort:</p>
+<p>The most recent version of the MODE library will be provided by AIT
+<a href="mailto:martin.stubenschrott@ait.ac.at">upon request</a>. </p>
+<p>You will also be granted Git access to 
+<a href="https://gitlab.ait.ac.at/energy/commons/smartsurvey/ios/SmartSurveyDemoApp/">https://gitlab.ait.ac.at/energy/commons/smartsurvey/ios/SmartSurveyDemoApp/</a>
+which hosts a very basic demo app, showing how to use the MODE library.</p>
+<p><strong>Step 1: Add the library to the App as a build dependency</strong></p>
+<p>To make it easy to use libmode, we have published the library on our
+Gitlab in https://gitlab.ait.ac.at/energy/commons/smartsurvey/ios/Libmode.git</p>
+<p>You can then <a href="https://alexandersandberg.com/articles/managing-package-dependencies-with-swift-package-manager-in-xcode/">add the swift package as a dependency</a>
+in XCode.</p>
+<p><strong>Step 2: Initialize the library and start data collection</strong></p>
+<p>The library needs to be initialized before it can start recording data: </p>
+<pre><code class="language-swift">func initLibMode() {
+    // Allow uploading of trips also on cellular connection (default is Wi-Fi only)
+    UserDefaultsStore.cellularUploadAllowed = true
+
+    // Set the OAUTH2 token and the server address where trips are uploaded and analyzed.
+    Mode.setAuthorizationToken(token: &quot;myuser:abcdef123456&quot;)
+
+    // Define where the backend server is located, waiting for the trips to be
+    // uploaded
+    //
+    // By default, access to non-https is disabled by iOS. For development purposes one can change
+    // Info.plist like described here, but that might not allow the app to be
+    // accepted in the app store, so only use during development or install a local
+    // SSL certificate:
+    // https://stackoverflow.com/questions/63597760/not-allowed-to-make-request-to-local-host-swift
+    Mode.setBaseServerURL(surveyUrl: &quot;http://localhost:8080&quot;)
+
+    // This call starts recording trip data. Once it has detected a trip, it is uploaded and analyzed
+    Mode.startSurvey()
+}
+</code></pre>
+<p>Also make sure that you request background location access in the manifest of the
+project.</p>
+<h2 id="support-and-contact">Support and Contact</h2>
+<ul>
+<li>For any questions, contact Martin Stubenschrott directly at
+  <a href="mailto:martin.stubenschrott@ait.ac.at">martin.stubenschrott@ait.ac.at</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../javascripts/custom.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

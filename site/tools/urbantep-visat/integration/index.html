@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>UrbanTEP / VISAT - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "UrbanTEP / VISAT";
+        var mkdocs_page_input_path = "tools/urbantep-visat/integration.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../collaborativeEnvironment/integration">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../mode">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../sensorsIntegration">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../sensorsIntegration/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">UrbanTEP / VISAT</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="..">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../deployment">Deployment</a>
+                </li>
+                <li class="toctree-l3"><a class="" href=".">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../examples">Example</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../superset">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../superset/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../superset/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">UrbanTEP / VISAT</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="urbantep-visat">UrbanTEP / VISAT</h1>
+<h2 id="usage-integration-guide-for-third-party-services">Usage &amp; Integration Guide for Third-Party Services</h2>
+<p>The framework for building applications (such as UrbanTEP/VISAT) allowing visualisation and efficient analysis of geospatial data. To enable this, at the core of the framework there is a system of interlinked metadata structures, which enables the framework to understand the data on a conceptual level, facilitating easy access to the data tailored to its nature.</p>
+<p>For introducing new data sources into the system, the most important (and in case of automated addition of data necessary) aspect is <strong>consistent and unique identification of all concepts and attributes</strong>.</p>
+<h3 id="data-templates">Data templates</h3>
+<p>The key concepts are templates - metadata structures that describe a certain type of data irrespective of its specific context such as time and place.</p>
+<p><strong>Layer Template</strong></p>
+<p>Describes a type of spatial layer. An example layer template could be “Land cover”, “Population density”, “World Settlement Footprint” etc.
+Any specific data file/table needs to be paired to a layer template, and the same kind of data, typically across different times and locations, needs to be paired with the same layer template each time.</p>
+<p>Identifying templates:
+- Names of layer types routinely change, for this reason using the name alone is often not enough
+- If communicating with our API directly, UUIDs are used. If we are accessing an external system, any form of unique identifier will do
+- If there are more variants of similar data (e.g. the same nature of data resulting from two different configurations of a processing algorithm) that are to be distinct, this needs to be reflected in distinct templates
+- If the layer type is found within a tree of layer types, it needs to be identified uniquely across the whole tree, not just within the parent node</p>
+<p>Parameters needed for basic function:
+- Id (see above, needs to be supplied)
+- Name (can be statically supplied or defined on our side)
+- Corresponding style/symbology (can be statically supplied or defined on our side)</p>
+<p><strong>Attribute</strong></p>
+<p>Describes a type of attribute / indicator connected to a spatial layer. For example, “Land use”, “Primary education rate”, “Area”, </p>
+<p>Parameters needed for basic function:
+- Id (similar to layer template)
+- Name (can be statically supplied or defined on our side)
+- Units (can be statically supplied or defined on our side), e.g. ‘km2’, ‘inhabitants’</p>
+<h3 id="data-sources">Data sources</h3>
+<p>Data sources are technical metadata structures, used by components of the system to understand how to work with the data. They describe where the data is stored (local database, filesystem, remote API etc.) and what format it is in (we have DS types for e.g. PostGIS, Cloud Optimised GeoTIFF, WMTS etc.).</p>
+<p>Based on data source type, specific methods are used to work with the data and transform it for the rest of the system (which uses mostly custom GeoJSON, only in case of display in map formats more suited for work with large datasets).</p>
+<p>Additionally, data sources can also contain information useful for human understanding of the datasets (largely metadata in the usual sense).</p>
+<p>Parameters needed for basic function (apart from the data itself):
+- Id
+- Type
+- Type-specific information necessary for data retrieval</p>
+<h3 id="relations">Relations</h3>
+<p>Relations, linking individual data sources to respective data templates, while not metadata structures per se, are what allows the system, thus the apps built on top of it, and thus ultimately the users to conceptually work with the underlying data according to its nature as opposed to just as datasets in a GIS application.</p>
+<p>They also drive the need for the parameters specified with each metadata type, for consistency and identifiability of each instance of them.</p>
+<p>Apart from just linking the data to its describing template, the system uses relations to make further sense in the data by utilising other complementary structures, which describe various aspects of the particular data, but mainly of the particular relation, owing to specific requirements of specific applications. That is, the same data can be described slightly differently in different contexts, which is why this is not coupled with either the data itself or the template.
+(In effect, these complementary structures modify the relationship between the data and the template.)</p>
+<h3 id="modifiers-common-metadata-objects">Modifiers (common metadata objects)</h3>
+<p>Modifiers are items representing a metadata concept (time, place,...) common to multiple data layers (and thus usable to connect data relating to it together), or distinguishing multiple variations of the same data.</p>
+<p>These are not required if not used in the application to filter available data or for navigation, but have to be defined in such cases.</p>
+<p><strong>Period</strong></p>
+<p>Describes a time period for which given data is valid. It is used mainly for larger periods common to more datasets (e.g. for time series, it would be used for the whole period covered, but not for individual measurement times)</p>
+<p>Parameters needed for basic function:
+- Id
+- Period (ISO 8601)
+- Name - if different from period, e.g. ‘planting season 2015’. It’s not necessary to provide names if they are derived from the period in a consistent way, e.g. “January ‘23”, “February ‘23”, etc.</p>
+<p><strong>Place</strong></p>
+<p>Describes a geographic area to which given data corresponds.</p>
+<p>Parameters needed for basic function:
+- Id
+- Name
+- Geometry (polygon, bounding box, point coordinates)</p>
+<p><strong>Case</strong></p>
+<p>In case the same kind of data is available e.g. for multiple different entities, those are differentiated by this data type. A case can represent any kind of subject of the data - e.g. occurrence maps may be available for different species; in that case, ‘occurrence’ would be the layer template and different species would be different cases. This is so that the system can understand that all occurrence maps are the same in nature, yet differentiate among different species.</p>
+<p>(currently under development is possibility to link to multiple cases)</p>
+<p>Parameters needed for basic function:
+- Id
+- Name</p>
+<p>The last two modifier types, scope and scenario, are largely legacy types and their use cases may be better served by different means in newer versions of the framework. Be sure to consult with us if your specific use cases might benefit from using these.</p>
+<p><strong>Scope</strong></p>
+<p>Scope is used for separating large amounts of data and metadata into distinct logical collections (e.g. thematic datasets, worldwide data vs. locally specific data, etc.)</p>
+<p>Parameters needed for basic function:
+- Id
+- Name</p>
+<p><strong>Scenario</strong></p>
+<p>While the other types describe what the data is, scenarios describe what the data could be. They are used in specific use cases when slightly different versions of the same data (relating to all the same above structures) are prepared either by alternating some aspect of the input, or some parameters of an algorithm the output of which the data is.
+For example, we have used scenarios for computing heat islands based on changes in several features in land cover layers, or for comparing how different tolerance values affect the results of an algorithm.</p>
+<p>Parameters needed for basic function:
+- Id
+- Name</p>
+<p>The above mentioned metadata structure types are necessary in most of the cases to enable the majority of the system to effectively work with the data. As such, they are used in the majority of cases and/or by the majority of components of the system.
+In addition to those, the system utilises other types, either for more specific use cases, or in specific components of the system.</p>
+<h3 id="area-trees">Area trees</h3>
+<p>Area trees represent administrative or statistical units, areas of interest, etc. In principle they work very similar to layer templates, with added relations between multiple levels of subdivision (granularity).</p>
+<p>Area tree
+The basic structure, defining a set (tree) of areas/units. This could, for example, be ‘GADM’.
+Each tree contains one or more levels.</p>
+<p>Parameters needed for basic function:
+- Id
+- Name</p>
+<p><strong>Area tree level</strong></p>
+<p>A level is in essence a specialised form of a layer template - it is connected to a data source, which can differ based on modifiers - with additional information about how individual spatial features relate to features in a higher level. An example of an area tree level would be ‘GADM1’, connected to a data source where each feature also has information about the parent feature from ‘GADM0’.</p>
+<p>Parameters needed for basic function:
+- Id
+- Name
+- Area tree
+- Level (index)</p>
+<h3 id="style">Style</h3>
+<p>Describes a style, or symbology, for a layer template. For a wider feature set, we use a custom format, but for simple styling, we’re able to convert to it from e.g. an SLD.
+Multiple styles can be used with one layer template, and one style can be used by multiple layer templates.</p>
+<p>Parameters needed for basic function:
+- Id
+- Name (if styles can be changed by the user)</p>
+<h3 id="tag">Tag</h3>
+<p>To allow for building custom structure or hierarchy upon any existing metadata structure type, any instance of those can be tagged. This enables the structure to be dynamically updated and administered.</p>
+<p>Parameters needed for basic function:
+- Id
+- Name</p>
+<h3 id="users">Users</h3>
+<p>Access rights are set for any metadata structure type, and for either users or user groups.
+The system is able to work with external authentication providers using OAuth 2 (under development).</p>
+<p><strong>User</strong></p>
+<p>A single user account.</p>
+<p>Parameters needed for basic function:
+- Id
+- e-mail/passphrase or external system and user identification</p>
+<p><strong>User group</strong></p>
+<p>A group of users, which usually holds most access rights. A user may be part of multiple groups.</p>
+<p>Parameters needed for basic function:
+- Id
+- Name</p>
+<p><strong>URL access</strong> (under development)</p>
+<p>Apart from logged-in user accounts, access to content can be granted via a key in a link to the application. This can also be combined with standard user access rights.</p>
+<h3 id="view">View</h3>
+<p>Any state of the application, or partial state, can be saved, including the displayed map layers, visualisations, map position, open tool windows, etc. 
+(under development)</p>
+<p>(The framework does not support externally loaded views).</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../javascripts/custom.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

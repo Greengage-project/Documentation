@@ -46,6 +46,11 @@ nav:
             - Description: tools/sensorsIntegration
             - Integration: tools/sensorsIntegration/integration
       - Data analysis and insights generation:
+        - UrbanTEP / VISAT:
+          - Description: tools/urbantep-visat
+          - Deployment: tools/urbantep-visat/deployment
+          - Integration: tools/urbantep-visat/integration
+          - Example: tools/urbantep-visat/examples
         - DataHub:
             - Description: tools/datahub
             - Usage: tools/datahub/usage

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Collaborative Environment Usage Guide for Third-Party Services - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Collaborative Environment Usage Guide for Third-Party Services";
+        var mkdocs_page_input_path = "tools/collaborativeEnvironment/integration.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="..">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href=".">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../mode">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../sensorsIntegration">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../sensorsIntegration/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">UrbanTEP / VISAT</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../urbantep-visat">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../urbantep-visat/deployment">Deployment</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../urbantep-visat/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../urbantep-visat/examples">Example</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../superset">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../superset/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../superset/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Collaborative Environment Usage Guide for Third-Party Services</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="collaborative-environment-usage-guide-for-third-party-services">Collaborative Environment Usage Guide for Third-Party Services</h1>
+<p>This guide explains the process for integrating third-party services into the Collaborative Environment, a platform centralizing organizational management and enhancing collaborative workflows.</p>
+<p><strong>Initial Login and registration</strong></p>
+<ul>
+<li>Create an account either by registering with an email or using a Google account at <a href="https://demo.greengage-project.eu/dashboard">Collaborative Environment</a> &gt; Login.</li>
+</ul>
+<p><strong>Organization and Team Setup</strong></p>
+<ul>
+<li>After logging in, navigate to Organizations tab &gt; Create new organization. Fill in the necessary details to create your organization.</li>
+<li>To create a team, ensure you have an existing organization. In the Organizations tab, select your organization and click on Create new team. Define your team, stakeholders, and invite members.</li>
+</ul>
+<p><strong>Process Creation and Configuration</strong></p>
+<ul>
+<li>From the dashboard, click on Go to process list then on Create new process and fill in the required fields.</li>
+<li>Configure your process by selecting it from the process list and accessing the Overview section. This includes setting up various sections like Front Page, Overview, Resources, Guide, Leaderboard, Workplan, Team, and Settings.</li>
+<li>Define specific elements like Type, Schema, Organizations, Resources, Permissions, Rewards, and Finish in the roadmap for the process.</li>
+</ul>
+<p><strong>Development and Completion of the Co-Production Process</strong></p>
+<ul>
+<li>Begin the co-production process by selecting tasks from the Guide section.</li>
+<li>Manage phases, objectives, and tasks, including descriptions, statuses, planning times, and permissions.</li>
+<li>Once the process is complete, change the "State of the project" to "Finished" in Settings.</li>
+</ul>
+<p><strong>Support and Contact</strong></p>
+<ul>
+<li>For additional support or assistance with the integration process, please refer to the Collaborative Environment’s online resources, or contact via <a href="https://github.com/Greengage-project/interlink-project/issues">https://github.com/Greengage-project/interlink-project/issues</a>. (Technical Issues)</li>
+</ul>
+<p><strong>Important Notes:</strong></p>
+<ul>
+<li>Adhere to security best practices throughout the integration process.</li>
+<li>Regularly update and maintain your service for compatibility with the Collaborative Environment.</li>
+<li>For further assistance or troubleshooting, refer to the Collaborative Environment’s resources or community forums.</li>
+</ul>
+<p>By following these steps, third-party services can be effectively integrated into the Collaborative Environment, leveraging its capabilities to improve organizational efficiency and collaboration.</p>
+<h2 id="references">References</h2>
+<p>Further details about the usage of this tool are available in the following references:
+- <a href="https://demo.greengage-project.eu/docs/en/">Collaborative Environment's Usage Manual</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../javascripts/custom.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Apache Superset Usage Guide - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Apache Superset Usage Guide";
+        var mkdocs_page_input_path = "tools/superset/usage.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../collaborativeEnvironment/integration">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../mode">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../sensorsIntegration">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../sensorsIntegration/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">UrbanTEP / VISAT</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../urbantep-visat">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../urbantep-visat/deployment">Deployment</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../urbantep-visat/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../urbantep-visat/examples">Example</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="..">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href=".">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Apache Superset Usage Guide</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="apache-superset-usage-guide">Apache Superset Usage Guide</h1>
+<p><strong>Generic usage instructions for Apache Superset</strong>
+- Instructions on how to use the tool.
+  - In case there is external user manual make a small summary and refer to it.
+  - Otherwise, provide enough explanations and snapshots to let a user get started with the tool usage. Include links to URLs where the tool might be deployed.</p>
+<p>Introduction explaining the importance of integrating [Tool Name] to make your tool part of the GREENGAGE engine. This implies that your tool has to use the single sign on (SSO) service provided by GREENGAGE. However, you should also describe not only how your tool is integrated with GREENGAGE's SSO but also how other GREENGAGE tools may integrate with your tools. Feel free to add and rename the integrate steps listed below:</p>
+<p><strong>Step 1: Log In</strong>
+- Access to the <a href="https://superset.16.171.94.204.nip.io/">Superset</a> deploy of Greengage.
+- First of all, you should login using your Greengage login in the keycloak authentication webpage that will appear.
+- You will reach to the main view of the tool as shown in the figure below.</p>
+<p><img alt="Main view" src="../assets/main_view.png" /></p>
+<p><strong>Step 2: Creating datasets</strong></p>
+<ul>
+<li>Click on the <strong>DATASETS</strong> button at the top-left menu and click on the <strong>+DATASET</strong> button at the top-right part of the view that you have arrived.</li>
+</ul>
+<p><img alt="Add dataset button" src="../assets/dataset_button.png" /></p>
+<ul>
+<li>Introduce the database, schema and table that you want to import from the possible sources and click <strong>CREATE DATASET AND CREATE CHART</strong> button. </li>
+</ul>
+<p><img alt="Creation of dataset view" src="../assets/new_dataset.png" /></p>
+<ul>
+<li><strong>NOTE:</strong> In case that you want to connect Apache Superset to a new database or source contact with <a href="mailto:ruben.sanchez@deusto.es">ruben.sanchez@deusto.es</a></li>
+</ul>
+<p><strong>Step 3: Creating charts</strong></p>
+<ul>
+<li>Click on the <strong>CHARTS</strong> button at the top-left menu and click on the <strong>+CHART</strong> button at the top-right part of the view that you have arrived.</li>
+</ul>
+<p><img alt="Add chart button" src="../assets/chart_button.png" /></p>
+<ul>
+<li>For the chart creation you should select a dataset and a chart type to show the data.</li>
+</ul>
+<p><img alt="New chart" src="../assets/new_chart.png" /></p>
+<ul>
+<li>Once in the chart editing view, you should add a name to the chart. In this view you have two columns: the left one has all the rows from the dataset yout selected and the right one has the settings for the chart. Once you have selected the right settings, click on the <strong>CREATE CHART</strong> button at the bottom of the second column. Note that to upload the chart you will have to click again in a button that updates it in the same position as the previous one.</li>
+</ul>
+<p><img alt="Chart editing" src="../assets/chart_editing.png" /></p>
+<p><strong>Step 4: Creating dashboards</strong></p>
+<ul>
+<li>Click on the <strong>DASHBOARDS</strong> button at the top-left menu and click on the <strong>+DASHBOARD</strong> button at the top-right part of the view that you have arrived.</li>
+</ul>
+<p><img alt="Add chart button" src="../assets/dashboard_button.png" /></p>
+<ul>
+<li>Once in the dashboard creation view, you should add a name to the dashboard. In this view you can add already created charts that appear in the right side or create new charts. Furthermore, you can add new Layout elements such as headers, text or dividers. </li>
+</ul>
+<p><img alt="New chart" src="../assets/new_dashboard.png" /></p>
+<p><strong>Extra: Executing SQL queries to imported datasets</strong></p>
+<ul>
+<li>Accessing to the SQL view using the button at the top left menu you can access a SQL statement executor against the datasets imported in Superset.</li>
+</ul>
+<p><img alt="SQL lab" src="../assets/sql.png" /></p>
+<p><strong>Creating a chart from geo sources</strong></p>
+<ul>
+<li>First of all, create a chart with the desired data source. For geographical sources, the best is to put the "map" word into the search bar to find all the map-based charts.</li>
+</ul>
+<p><img alt="Map charts" src="../assets/map_charts.png" /></p>
+<ul>
+<li>Once in the chart editing view, you should identify the fields regarding latitude and longitude. Note that if both fields are in one field they may be inverted.</li>
+</ul>
+<p><img alt="Lat &amp; Long fields" src="../assets/lat_long.png" /></p>
+<ul>
+<li>Once the settings are set, create or update the chart to visualise it.</li>
+</ul>
+<p><img alt="Lat &amp; Long fields" src="../assets/map_done.png" /></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../javascripts/custom.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
