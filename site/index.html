@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#project">Project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tools">Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#keycloak">Keycloak</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#collaborative-environment">Collaborative Environment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mode">MODE</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#discourse">Discourse</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#datahub">DataHub</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#apache-superset">Apache Superset</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#libelium-mqtt-sensor-integration">Libelium MQTT sensor integration</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#wordpress">Wordpress</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#source-code-in-httpsgithubcomgreengage-projectdocumentation">Source code in: https://github.com/Greengage-project/Documentation</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="tools/keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="tools/keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="tools/keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="tools/wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="tools/Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="tools/collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/collaborativeEnvironment/integration">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="tools/mode">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="tools/mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="tools/mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="tools/mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="tools/sensorsIntegration">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/sensorsIntegration/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">UrbanTEP / VISAT</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="tools/urbantep-visat">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/urbantep-visat/deployment">Deployment</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/urbantep-visat/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/urbantep-visat/examples">Example</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="tools/datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="tools/superset">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/superset/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="tools/superset/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Home</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="technical-guide-for-greengage-project-integration">Technical Guide for GREENGAGE Project Integration</h1>
+<h3 id="project">Project</h3>
+<p>The GREENGAGE project is a three-year-long pan-European initiative aimed at strengthening urban governance through citizen-based co-creation and crowd-sourcing. Funded under the Horizon Europe Framework Programme and co-funded by the UK government and Switzerland's State Secretariat for Education, Research and Innovation, this project is led by the Austrian Institute of Technology and comprises 17 research and industry partners from the EU and the UK. The project seeks to encourage innovative governance processes and assist public authorities in formulating climate mitigation and adaptation policies. By leveraging citizen participation and providing innovative digital solutions, GREENGAGE lays the groundwork for co-creating and co-designing innovative solutions to monitor environmental issues at the grassroots level. The developed Citizen Observatories (CO) are intended to be further integrated into urban planning decision-making processes. The project encompasses campaigns in four pilot cities across Europe, focusing on mobility, air quality, and healthy living, with citizens encouraged to observe and co-create data solutions for urban environments through Citizen Observatories.</p>
+<h3 id="tools">Tools</h3>
+<p>The <code>tools</code> directory contains subdirectories for each tool utilized in the project. Each subdirectory includes a detailed description of the tool, its functionality, and its role within the project.</p>
+<h4 id="keycloak">Keycloak</h4>
+<ul>
+<li><strong>Directory</strong>: <code>/tools</code></li>
+<li><strong>Link</strong>: <a href="tools/keycloak">tools/keycloak</a></li>
+<li><strong>Deployed in</strong>: <a href="https://auth1.demo.greengage-project.eu">https://auth1.demo.greengage-project.eu</a></li>
+<li>
+<p><strong>Description</strong>: Keycloak is an open-source Identity and Access Management solution aimed at modern applications and services. It facilitates the secure transmission of identity information between applications and services, even across different domains.</p>
+</li>
+<li>
+<p><strong>Examples of programmatic integration/usage</strong>:</p>
+<ul>
+<li><a href="tools/keycloak/examples#node">Node</a></li>
+<li><a href="tools/keycloak/examples#python">Python</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="collaborative-environment">Collaborative Environment</h4>
+<ul>
+<li><strong>Directory</strong>: <code>/tools</code></li>
+<li><strong>Link</strong>: <a href="tools/collaborativeEnvironment">tools/collaborativeEnvironment</a></li>
+<li><strong>Deployed in</strong>: <a href="https://demo.greengage-project.eu">https://demo.greengage-project.eu</a></li>
+<li>
+<p><strong>Description</strong>: The Collaborative Environment is a comprehensive platform designed to facilitate co-production, asset management, and enhanced collaboration among users. It incorporates various interlinkers and modules to streamline workflows and improve organizational processes, supporting integration with different technologies and frameworks.</p>
+</li>
+<li>
+<p><strong>Examples of programmatic integration/usage</strong>:</p>
+<ul>
+<li><a href="tools/collaborativeEnvironment/examples">Deploy example</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="mode">MODE</h4>
+<ul>
+<li><strong>Directory</strong>: <code>/tools</code></li>
+<li><strong>Link</strong>: <a href="tools/mode">tools/mode</a></li>
+<li>
+<p><strong>Description</strong>: This module allows to determine the transport mode of a user based on GPS data provided.</p>
+</li>
+<li>
+<p><strong>Examples of programmatic integration/usage</strong>:</p>
+<ul>
+<li><a href="tools/mode/examples/ios">iOS example</a></li>
+<li><a href="tools/mode/examples/android">Android example</a></li>
+<li><a href="tools/mode/examples/backend">Backend example</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="discourse">Discourse</h4>
+<ul>
+<li><strong>Directory</strong>: <code>/tools</code></li>
+<li><strong>Link</strong>: <a href="tools/Discourse">tools/Discourse</a></li>
+<li><strong>Deployed in</strong>: <a href="https://discourse.16.171.94.204.nip.io">https://discourse.16.171.94.204.nip.io</a></li>
+<li>
+<p><strong>Description</strong>: Discourse is a modern, open-source discussion platform designed for building and managing community forums. Known for its user-friendly interface and robust features, it supports real-time discussions, multimedia integration, and comprehensive moderation tools. Ideal for a wide range of communities, from small groups to large enterprises, Discourse fosters engagement, knowledge sharing, and collaboration.</p>
+</li>
+<li>
+<p><strong>Examples of programmatic integration/usage</strong>:</p>
+<ul>
+<li><a href="tools/Discourse/examples">Deploy example</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="datahub">DataHub</h4>
+<ul>
+<li><strong>Directory</strong>: <code>/tools</code></li>
+<li><strong>Link</strong>: <a href="tools/datahub">tools/DataHub</a></li>
+<li><strong>Deployed in</strong>: <a href="https://datahub.16.171.94.204.nip.io">https://datahub.16.171.94.204.nip.io</a></li>
+<li>
+<p><strong>Description</strong>: DataHub is an open-source metadata platform designed to democratise data discovery. It acts as a centralised system for companies and teams to track, manage, and find data within their organisation. Its primary aim is to streamline the process of accessing and understanding data assets, making it easier for teams to derive insights and make informed decisions.</p>
+</li>
+<li>
+<p><strong>Examples of programmatic integration</strong>:</p>
+<ul>
+<li><a href="tools/datahub/examples">Integration example</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="apache-superset">Apache Superset</h4>
+<ul>
+<li><strong>Directory</strong>: <code>/tools</code></li>
+<li><strong>Link</strong>: <a href="tools/superset">tools/Superset</a></li>
+<li><strong>Deployed in</strong>: <a href="https://superset.16.171.94.204.nip.io">https://superset.16.171.94.204.nip.io</a></li>
+<li>
+<p><strong>Description</strong>: Apache Superset is a sophisticated, open-source data exploration and visualisation platform designed to transform the way analysts and businesses interact with their data. As a versatile web application, it empowers users with tools for deep data exploration and the creation of beautifully rendered visualisations and dashboards. Superset is renowned for its user-friendly interface, democratising data analysis by enabling users of all skill levels to engage with complex datasets, design compelling visual narratives, and derive actionable insights. Offering a rich array of features, including a variety of chart types, interactive dashboards, and an integrated SQL editor, Apache Superset stands out as a comprehensive solution for modern data analytics and business intelligence needs.</p>
+</li>
+<li>
+<p><strong>Examples of integration of sources with Superset</strong>:</p>
+<ul>
+<li><a href="tools/superset/examples">Integration example</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="libelium-mqtt-sensor-integration">Libelium MQTT sensor integration</h4>
+<ul>
+<li><strong>Directory</strong>: <code>/tools</code></li>
+<li><strong>Link</strong>: <a href="tools/sensorsIntegration">tools/sensorsIntegration</a></li>
+<li><strong>Description</strong>: This documentation contains all the information necessary to connect and configure the IoT sensors provided by Libelium to MQTT broker and integrate it in other platforms or architectures.</li>
+</ul>
+<p>The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.</p>
+<h4 id="wordpress">Wordpress</h4>
+<ul>
+<li><strong>Directory</strong>: <code>/tools</code></li>
+<li><strong>Link</strong>: <a href="tools/wordpress">tools/wordpress</a></li>
+<li>
+<p><strong>Description</strong>: WordPress is a highly popular and versatile Content Management System (CMS) renowned for its ease of use and flexibility. It's an ideal platform for creating a wide range of websites, from personal blogs to large corporate portals. WordPress is known for its extensive theme and plugin ecosystem, which allows users to customize their sites to fit their specific needs and enhance functionality.</p>
+</li>
+<li>
+<p><strong>Examples of programmatic integration/usage</strong>:</p>
+<ul>
+<li><a href="tools/wordpress/integration/#wpKeycloak">With Keycloak</a></li>
+<li><a href="tools/wordpress/integration/#wpdiscourse">With Discourse</a></li>
+</ul>
+</li>
+</ul>
+<h5 id="source-code-in-httpsgithubcomgreengage-projectdocumentation">Source code in: <a href="https://github.com/Greengage-project/Documentation">https://github.com/Greengage-project/Documentation</a></h5>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="javascripts/custom.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2024-01-21 17:44:21.655597+00:00
+-->

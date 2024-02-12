@@ -56,6 +56,11 @@ nav:
                   - clientJs: tools/greengage-app-api/examples/client-js
                   - client Restful to graphql: tools/greengage-app-api/examples/restful-to-graphql
       - Data analysis and insights generation:
+          - UrbanTEP / VISAT:
+              - Description: tools/urbantep-visat
+              - Deployment: tools/urbantep-visat/deployment
+              - Integration: tools/urbantep-visat/integration
+              - Example: tools/urbantep-visat/examples
           - DataHub:
               - Description: tools/datahub
               - Usage: tools/datahub/usage
