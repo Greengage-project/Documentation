@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Keycloak Integration Guide for Third-Party Services - GREENGAGE Documentation</title>
+    <title>UrbanTEP / VISAT - GREENGAGE Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Keycloak Integration Guide for Third-Party Services";
-        var mkdocs_page_input_path = "tools/keycloak/integration.md";
+        var mkdocs_page_name = "UrbanTEP / VISAT";
+        var mkdocs_page_input_path = "tools/urbantep-visat/examples/index.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -64,15 +64,15 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="#">Keycloak</a>
     <ul>
-                <li class="toctree-l3"><a class="" href="..">Description</a>
+                <li class="toctree-l3"><a class="" href="../../keycloak">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="" href=".">Integration</a>
+                <li class="toctree-l3"><a class="" href="../../keycloak/integration">Integration</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
     <ul>
-                <li class="toctree-l4"><a class="" href="../examples#nodejs">Node</a>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#nodejs">Node</a>
                 </li>
-                <li class="toctree-l4"><a class="" href="../examples#python">Python</a>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#python">Python</a>
                 </li>
     </ul>
                 </li>
@@ -170,13 +170,13 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="#">UrbanTEP / VISAT</a>
     <ul>
-                <li class="toctree-l3"><a class="" href="../../urbantep-visat">Description</a>
+                <li class="toctree-l3"><a class="" href="..">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../../urbantep-visat/deployment">Deployment</a>
+                <li class="toctree-l3"><a class="" href="../deployment">Deployment</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../../urbantep-visat/integration">Integration</a>
+                <li class="toctree-l3"><a class="" href="../integration">Integration</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../../urbantep-visat/examples">Example</a>
+                <li class="toctree-l3"><a class="" href=".">Example</a>
                 </li>
     </ul>
                 </li>
@@ -243,7 +243,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Keycloak Integration Guide for Third-Party Services</li>
+      <li class="breadcrumb-item active">UrbanTEP / VISAT</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -252,42 +252,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="keycloak-integration-guide-for-third-party-services">Keycloak Integration Guide for Third-Party Services</h1>
-<p>To facilitate a centralized user management system, we are utilizing Keycloak as our identity and access management solution. To integrate your service with our Keycloak system, please follow the instructions below to request the necessary credentials.</p>
-<p><strong>Step 1: Requesting Client Credentials</strong></p>
+                <h1 id="urbantep-visat">UrbanTEP / VISAT</h1>
+<h2 id="integrating-technological-product-in-green-engine-environment">Integrating technological product in GREEN Engine environment</h2>
+<h3 id="introduction">Introduction</h3>
+<p>The technological offer provided by GISAT is a part of data analysis and insights generation pipeline inside the GREEN Engine.
+The purpose of the tool and significance as a part of GREEN Engine is to support main 3 things:
+- Integration
+- Data visualization
+- Analysys</p>
+<p><strong>Objective</strong>:</p>
+<p>The primary objective of UrbanTEP/VISAT within the GREEN Engine is to empower users with a versatile toolset for handling complex urban datasets. This integration supports advanced data manipulation, insightful visualization, and in-depth analysis, thereby enhancing the overall functionality and security of applications within the GREEN Engine ecosystem.</p>
+<h3 id="prerequisites">Prerequisites</h3>
 <ul>
-<li>Send an email to greengage.admin@deusto.es with the subject line: "[GREENGAGE] Request for Keycloak Client Credentials".</li>
-<li>
-<p>In the body of the email, please provide the following information:</p>
-</li>
-<li>
-<p>Tool name:</p>
-</li>
-<li>Description: (no more than 200 characters):</li>
-<li>Contact name:(for technical propose)</li>
-<li>Contact email:(for technical propose)</li>
+<li>Hosting Platform: cloud-based services, local servers.</li>
+<li>Disk Space: Minimum disk space requirements for installation and operation depends on the final product complexity</li>
+<li>Technical Capabilities: Necessary technical specifications are requiring RAM, and CPU for optimal performance.</li>
 </ul>
-<p><strong>Step 2: Receiving Your Credentials</strong></p>
+<h3 id="support-and-additional-resources">Support and Additional Resources</h3>
+<p><strong>Support Channels</strong>:</p>
 <ul>
-<li>Upon receipt of your request, we will review the information and create a unique Client ID and Secret for your service.</li>
-<li>We will then send you an email with your Client ID and Secret, which you will use to configure the integration on your side.</li>
-</ul>
-<p><strong>Step 3: Configuring Your Service</strong></p>
-<ul>
-<li>Once you have received your Client ID and Secret, incorporate these credentials into your service’s authentication module.</li>
-<li>Ensure that your service is set to communicate with our Keycloak server using the OpenID Connect protocol.</li>
-</ul>
-<p><strong>Step 4: Testing the Integration</strong></p>
-<ul>
-<li>After configuring your service, conduct thorough testing to ensure that the authentication process works correctly.</li>
-<li>If you encounter any issues during testing, please reach out to us via email for support.</li>
-</ul>
-<p>If you have any questions about Keycloak integration, please contact us at greengage.admin@deusto.es with the subject "[Greengage] Keycloak support request"</p>
-<p><strong>Important Notes:</strong></p>
-<ul>
-<li>Keep your Client Secret confidential. Do not share it with unauthorized personnel or services.</li>
-<li>If you believe your Client Secret has been compromised, contact us immediately to issue a new one.</li>
-<li>Adhere to all security best practices when implementing the integration to safeguard user data.</li>
+<li>GISAT technical support - andrii.khrystodulov@gisat.cz</li>
+<li>GISAT UrbanTEP product owner - tomas.soukup@gisat.cz</li>
 </ul>
               
             </div>

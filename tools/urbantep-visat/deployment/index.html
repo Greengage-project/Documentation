@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Keycloak Integration Guide for Third-Party Services - GREENGAGE Documentation</title>
+    <title>UrbanTEP / VISAT - GREENGAGE Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Keycloak Integration Guide for Third-Party Services";
-        var mkdocs_page_input_path = "tools/keycloak/integration.md";
+        var mkdocs_page_name = "UrbanTEP / VISAT";
+        var mkdocs_page_input_path = "tools/urbantep-visat/deployment.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -64,15 +64,15 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="#">Keycloak</a>
     <ul>
-                <li class="toctree-l3"><a class="" href="..">Description</a>
+                <li class="toctree-l3"><a class="" href="../../keycloak">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="" href=".">Integration</a>
+                <li class="toctree-l3"><a class="" href="../../keycloak/integration">Integration</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="#">Examples</a>
     <ul>
-                <li class="toctree-l4"><a class="" href="../examples#nodejs">Node</a>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#nodejs">Node</a>
                 </li>
-                <li class="toctree-l4"><a class="" href="../examples#python">Python</a>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#python">Python</a>
                 </li>
     </ul>
                 </li>
@@ -170,13 +170,13 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="#">UrbanTEP / VISAT</a>
     <ul>
-                <li class="toctree-l3"><a class="" href="../../urbantep-visat">Description</a>
+                <li class="toctree-l3"><a class="" href="..">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../../urbantep-visat/deployment">Deployment</a>
+                <li class="toctree-l3"><a class="" href=".">Deployment</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../../urbantep-visat/integration">Integration</a>
+                <li class="toctree-l3"><a class="" href="../integration">Integration</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../../urbantep-visat/examples">Example</a>
+                <li class="toctree-l3"><a class="" href="../examples">Example</a>
                 </li>
     </ul>
                 </li>
@@ -243,7 +243,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Keycloak Integration Guide for Third-Party Services</li>
+      <li class="breadcrumb-item active">UrbanTEP / VISAT</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -252,43 +252,64 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="keycloak-integration-guide-for-third-party-services">Keycloak Integration Guide for Third-Party Services</h1>
-<p>To facilitate a centralized user management system, we are utilizing Keycloak as our identity and access management solution. To integrate your service with our Keycloak system, please follow the instructions below to request the necessary credentials.</p>
-<p><strong>Step 1: Requesting Client Credentials</strong></p>
-<ul>
-<li>Send an email to greengage.admin@deusto.es with the subject line: "[GREENGAGE] Request for Keycloak Client Credentials".</li>
+                <h1 id="urbantep-visat">UrbanTEP / VISAT</h1>
+<h2 id="overview">Overview</h2>
+<p>The deployment of UrbanTEP/VISAT is streamlined through the use of Docker, a popular containerization platform that simplifies the process of deploying and managing applications. Docker containers package an application with all the parts it needs, such as libraries and other dependencies, and ship it all out as one package. This ensures consistency across various development, testing, and production environments, and simplifies scalability and updates.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before proceeding with the deployment, ensure the following prerequisites are met:</p>
+<ol>
 <li>
-<p>In the body of the email, please provide the following information:</p>
+<p><strong>Docker Installation</strong>: Docker must be installed on the host machine. For installation instructions, refer to the <a href="https://docs.docker.com/">official Docker documentation</a>.</p>
 </li>
 <li>
-<p>Tool name:</p>
+<p><strong>Docker Compose</strong>: For managing multi-container Docker applications, Docker Compose is recommended. Installation instructions can be found on the <a href="https://docs.docker.com/compose/">Docker Compose documentation page</a>.</p>
 </li>
-<li>Description: (no more than 200 characters):</li>
-<li>Contact name:(for technical propose)</li>
-<li>Contact email:(for technical propose)</li>
-</ul>
-<p><strong>Step 2: Receiving Your Credentials</strong></p>
+<li>
+<p><strong>Access to UrbanTEP/VISAT Docker Images</strong>: Ensure access to the repository containing the Docker images for UrbanTEP/VISAT.</p>
+</li>
+<li>
+<p><strong>Configuration Files</strong>: Prepare the necessary configuration files that are specific to your deployment, including environment variables and any other necessary settings.</p>
+</li>
+</ol>
+<h2 id="deployment">Deployment</h2>
+<p>UrbanTEP/VISAT employs a microservices architecture on the backend, ensuring easy interoperability and support for various data formats and sources. The frontend is modular, built on React architecture, and allows integration with both new and existing tools.</p>
+<h3 id="deployment-steps">Deployment Steps</h3>
+<ol>
+<li>Clone Repository: Clone the repository containing the Docker Compose file and other necessary deployment scripts.
+    git clone <repository-url>
+    cd <repository-directory></li>
+<li>Configure Environment: Set up the environment variables as per your specific deployment requirements. This may include database connections, service endpoints, and other critical settings.</li>
+<li>Run Docker Compose: Use Docker Compose to build and start the containers. This can typically be done with a single command:
+    docker-compose up -d
+This command will download the required Docker images, create containers, and start the services defined in the docker-compose.yml file.</li>
+<li>Verify Deployment: Once the containers are up and running, verify the deployment by accessing the UrbanTEP/VISAT application through a web browser.</li>
+</ol>
+<p>Ensure all services are functioning as expected and that there are no connectivity issues between the microservices.</p>
+<h3 id="post-deployment-configuration">Post-Deployment Configuration</h3>
+<p>After successfully deploying UrbanTEP/VISAT, perform any necessary post-deployment configurations. This may include:</p>
 <ul>
-<li>Upon receipt of your request, we will review the information and create a unique Client ID and Secret for your service.</li>
-<li>We will then send you an email with your Client ID and Secret, which you will use to configure the integration on your side.</li>
+<li>Setting up additional user accounts and permissions.</li>
+<li>Integrating with other systems or databases.</li>
+<li>Configuring backups and data retention policies.</li>
 </ul>
-<p><strong>Step 3: Configuring Your Service</strong></p>
+<h3 id="updating-the-application">Updating the Application</h3>
+<p>To update UrbanTEP/VISAT, pull the latest Docker images and re-run the Docker Compose:</p>
+<pre><code>docker-compose pull
+docker-compose up -d --force-recreate
+</code></pre>
+<p>This will ensure that you are running the latest version of the application with all the necessary updates and security patches.</p>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<p>In case of issues during deployment, consult the application logs and Docker container logs. Common issues might include:</p>
 <ul>
-<li>Once you have received your Client ID and Secret, incorporate these credentials into your service’s authentication module.</li>
-<li>Ensure that your service is set to communicate with our Keycloak server using the OpenID Connect protocol.</li>
+<li>Network connectivity problems.</li>
+<li>Configuration errors.</li>
+<li>Incompatibilities between different versions of Docker images.</li>
 </ul>
-<p><strong>Step 4: Testing the Integration</strong></p>
-<ul>
-<li>After configuring your service, conduct thorough testing to ensure that the authentication process works correctly.</li>
-<li>If you encounter any issues during testing, please reach out to us via email for support.</li>
-</ul>
-<p>If you have any questions about Keycloak integration, please contact us at greengage.admin@deusto.es with the subject "[Greengage] Keycloak support request"</p>
-<p><strong>Important Notes:</strong></p>
-<ul>
-<li>Keep your Client Secret confidential. Do not share it with unauthorized personnel or services.</li>
-<li>If you believe your Client Secret has been compromised, contact us immediately to issue a new one.</li>
-<li>Adhere to all security best practices when implementing the integration to safeguard user data.</li>
-</ul>
+<p>For detailed troubleshooting, refer to the specific error messages in the logs and the UrbanTEP/VISAT documentation.</p>
+<h2 id="security">Security</h2>
+<p>All data transfer occurs over secure HTTPS connections, and authorization is implemented following OAuth 2.0 standards, ensuring robust security and privacy measures.</p>
+<h2 id="scalability-performance">Scalability &amp; Performance</h2>
+<p>The platform is designed to be scalable, with the ability to handle increasing data volumes, concurrent users, and system load. It is adaptable to different user needs and project requirements, whether deployed on a local machine, a demo environment, or production-like environments.</p>
               
             </div>
           </div><footer>
