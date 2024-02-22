@@ -1,71 +1,37 @@
 # HOWTO Thematic co-exploration 
-
- 
-
 This document describes the collaborative process, i.e. set of steps that should be carried out in a logical sequence to co-deliver a thematic co-exploration. Notice that co-production, alternatively known as co-creation, consists of two phases [CO-DESIGN and CO-DELIVERY](https://demo.interlink-project.eu/coprod).   
-
- 
 
 Importantly, these steps are indicative and there could be different journeys through them, i.e. some may be skipped, and some new steps added if the co-producers of a thematic co-exploration so consider.  
 
- 
-
 Besides, a thematic co-exploration is a collaborative and iterative process, i.e. several iterations over some of the steps of the collaborative process may be needed.  
-
- 
 
 There are four main phases that the thematic co-exploration might cover. Probably you already performed some of these phases, or at least some steps of those phases, of this workplan, you can take advantage on that and go for the next one.  
 
- 
 
-ADD FIGURE 
-
-![]() 
+![Gantt](./assets/gantt.png) 
 
  
 
 - [**Phase 1: Preparing**](#phase1) 
-
   - [T1.1 Theme Selection](#task1.1) 
-
   - [T1.2 Internal (Pilot Owner) training & preparing](#task1.2)  
-
   - [1.3 Core Team Onboarding](#task1.3) 
-
   - [1.4 Training of the core team](#task1.4) 
-
 - [**Phase 2: Designing**](#phase2) 
-
   - [2.1 Experiment specification](#task2.1)  
-
   - [2.2 Tools and resources selection](#task2.2) 
-
   - [2.3 Tools and resources customization](#task2.3) 
-
   - [2.4 Testing tools and resources](#task2.4) 
-
 - [**Phase 3: Delivering**](#phase3) 
-
   - [3.1 Observers onboarding](#task3.1) 
-
   - [3.2 Training and support](#task3.2) 
-
   - [3.3 Data collection](#task3.3) 
-
   - [3.4 Data combination, analysis & visualization](#task3.4) 
-
   - [3.5 Experiment evaluation](#task3.5) 
-
 - [**Phase 4: Sharing**](#phase4) 
-
   - [4.1 Storytelling (from findings)](#task4.1) 
-
   - [4.2 Translating into policies & assess impact](#task4.2) 
-
   - [4.3 Experiment sustainability](#task4.3) 
-
- 
-
  
 
 # Phase 1: Preparing <a name="phase1"></a> 
