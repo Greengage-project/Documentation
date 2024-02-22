@@ -13,7 +13,7 @@ There are four main phases that the thematic co-exploration might cover. Probabl
  
 
 - [**Phase 1: Preparing**](#phase1) 
-  - [T1.1 Theme Selection](#task1.1) 
+    - [T1.1 Theme Selection](#task1.1) 
   - [T1.2 Internal (Pilot Owner) training & preparing](#task1.2)  
   - [1.3 Core Team Onboarding](#task1.3) 
   - [1.4 Training of the core team](#task1.4) 
