@@ -22,7 +22,7 @@ There are four main phases that the thematic co-exploration might cover. Probabl
     - [2.2 Tools and resources selection](#task2.2) 
     - [2.3 Tools and resources customization](#task2.3) 
     - [2.4 Testing tools and resources](#task2.4) 
-- [**Phase 3: Delivering**](#phase3) 
+- [**Phase 3: Experimenting**](#phase3) 
     - [3.1 Observers onboarding](#task3.1) 
     - [3.2 Training and support](#task3.2) 
     - [3.3 Data collection](#task3.3) 
