@@ -13,8 +13,8 @@ There are four main phases that the thematic co-exploration might cover. Probabl
  
 
 - [**Phase 1: Preparing**](#phase1) 
-    - [T1.1 Theme Selection](#task1.1) 
-    - [T1.2 Internal (Pilot Owner) training & preparing](#task1.2)  
+    - [1.1 Theme Selection](#task1.1) 
+    - [1.2 Internal (Pilot Owner) training & preparing](#task1.2)  
     - [1.3 Core Team Onboarding](#task1.3) 
     - [1.4 Training of the core team](#task1.4) 
 - [**Phase 2: Designing**](#phase2) 
@@ -38,7 +38,7 @@ There are four main phases that the thematic co-exploration might cover. Probabl
 
  
 
-## T1.1. Theme Selection <a name="task1.1"></a> 
+## 1.1. Theme Selection <a name="task1.1"></a> 
 
 ### Responsible 
 Pilot owner and PST members.  
@@ -105,7 +105,7 @@ Notice that some additional optional resources are listed below which could be u
 
  
 
-## T1.2. Internal (Pilot Owner) training & preparing <a name="task1.2"></a> 
+## 1.2. Internal (Pilot Owner) training & preparing <a name="task1.2"></a> 
 
  
 
@@ -117,7 +117,7 @@ Pilot owners with the support of the PST.
 
 ### Objective 
 
-The objectives of this tasks is to empower pilot owners with a deep understanding of the capabilities and resources provided by the GREEN Engine, facilitating the strategic planning and execution of thematic co-explorations. A key goal is to compile a comprehensive and organized inventory of datasets relevant to the thematic area of exploration. This inventory will not only catalog existing datasets but also identify critical data gaps that cannot be filled by existing resources. Addressing these gaps is crucial for the thorough examination of the thematic area and for generating actionable insights. To fill these gaps, the strategy includes mobilizing citizen participation in data gathering campaigns. By leveraging the collective effort and unique perspectives of citizens, the initiative aims to enrich the dataset inventory with valuable, real-world data. 
+The objectives of this task is to empower pilot owners with a deep understanding of the capabilities and resources provided by the GREEN Engine, facilitating the strategic planning and execution of thematic co-explorations. A key goal is to compile a comprehensive and organized inventory of datasets relevant to the thematic area of exploration. This inventory will not only catalog existing datasets but also identify critical data gaps that cannot be filled by existing resources. Addressing these gaps is crucial for the thorough examination of the thematic area and for generating actionable insights. To fill these gaps, the strategy includes mobilizing citizen participation in data gathering campaigns. By leveraging the collective effort and unique perspectives of citizens, the initiative aims to enrich the dataset inventory with valuable, real-world data. 
 
  
 
@@ -151,7 +151,7 @@ Furthermore, PST members  should comprehensively identify all existing and poten
 
  
 
-## T1.3. Core Team Onboarding <a name="task1.3"></a> 
+## 1.3. Core Team Onboarding <a name="task1.3"></a> 
 
  
 
@@ -197,7 +197,7 @@ Finally, a first workshop will be organized to onboard the Core Team, specifical
 
  
 
-## T1.4. Training of the core team <a name="task1.4"></a> 
+## 1.4. Training of the core team <a name="task1.4"></a> 
 
  
 
@@ -256,9 +256,7 @@ Training materials for the following topics have been made ready by the project 
 
 # Phase 2: Designing <a name="phase2"></a> 
 
- 
-
-## T2.1. Experiment specification <a name="task2.1"></a> 
+## 2.1. Experiment specification <a name="task2.1"></a> 
 
  
 
@@ -314,7 +312,7 @@ Furthermore, a new co-production process will be set up in GREENGAGE Collaborati
 
  
 
-## T2.2. Tools and resources selection <a name="task2.2"></a> 
+## 2.2. Tools and resources selection <a name="task2.2"></a> 
 
  
 
@@ -344,7 +342,7 @@ To achieve this objective we will conduct a third workshop with the Core Team. T
 
  
 
-## T2.3. Tools and resources customization <a name="task2.3"></a> 
+## 2.3. Tools and resources customization <a name="task2.3"></a> 
 
  
 
@@ -372,7 +370,7 @@ TBD
 
  
 
-## T2.4. Testing tools and resources <a name="task2.4"></a> 
+## 2.4. Testing tools and resources <a name="task2.4"></a> 
 
  
 
@@ -384,7 +382,7 @@ Pilot Leader with the support of the Core Team and the PST.
 
 ### Objective 
 
-The objective of this taks is to perform a last test on the selected and adapted tools and resources. This task is essential to validate the functionality, compatibility, and performance of all tools and resources that have been selected to conduct the designed experiment. It involves rigorous testing scenarios that mimic real-world applications to identify any remaining issues or inefficiencies that could impact the project's success. This process not only encompasses technical tools such as data analysis software and data collection applications but also includes testing the usability and clarity of guidelines, documentation, and any other support materials. The objective is to guarantee that every component functions seamlessly together, providing a robust framework for observers and participants to engage effectively in the project activities.  
+The objective of this task is to perform a last test on the selected and adapted tools and resources. This task is essential to validate the functionality, compatibility, and performance of all tools and resources that have been selected to conduct the designed experiment. It involves rigorous testing scenarios that mimic real-world applications to identify any remaining issues or inefficiencies that could impact the project's success. This process not only encompasses technical tools such as data analysis software and data collection applications but also includes testing the usability and clarity of guidelines, documentation, and any other support materials. The objective is to guarantee that every component functions seamlessly together, providing a robust framework for observers and participants to engage effectively in the project activities.  
 
  
 
@@ -404,11 +402,9 @@ The Core Team will have a workshop in which the selected tools and resources wil
 
  
 
-# Phase 3: Delivering <a name="phase3"></a> 
+# Phase 3: Delivering <a name="phase3"></a>  
 
- 
-
-## T3.1. Observers onboarding <a name="task3.1"></a> 
+## 3.1. Observers onboarding <a name="task3.1"></a> 
 
  
 
@@ -440,7 +436,7 @@ Similar to what we conducted in [T1.3.](#task1.3), we will continue adapting and
 
 - [Materials for thematic co-exploration and citizen onboarding](https://www.greengage-project.eu/knowledge-base/) – TO BE PREPARED 
 
-## T3.2. Training and support <a name="task3.2"></a> 
+## 3.2. Training and support <a name="task3.2"></a> 
 
  
 
@@ -492,7 +488,7 @@ Training materials for the following topics have been made ready by the project 
 
  
 
-## T3.3. Data collection <a name="task3.3"></a> 
+## 3.3. Data collection <a name="task3.3"></a> 
 
  
 
@@ -560,7 +556,7 @@ To achieve this, the missions to collect data should be configured and launched.
 
  
 
-## T3.4. Data combination, analysis & visualization <a name="task3.4"></a> 
+## 3.4. Data combination, analysis & visualization <a name="task3.4"></a> 
 
  
 
@@ -618,7 +614,7 @@ Once the data is preprocessed and cleaned the analysis may be conducted by combi
 
  
 
-## T3.5. Experiment evaluation <a name="task3.5"></a> 
+## 3.5. Experiment evaluation <a name="task3.5"></a> 
 
  
 
@@ -642,30 +638,18 @@ This objective involves an evaluation of the experiments objectives, outputs, an
 
 - Think on the second iteration objective, goals, and outputs. Identify possibilities to mitigate or overcome barriers and enhance enablers based on what have you have learned so far. Adapt or change your thematic co-exploration specification, work plan or other planning strategies in place for future GO activities.  
 
- 
-
 ### Resources 
-
 TBD 
 
- 
 
 # Phase 4: Sharing <a name="phase4"></a> 
 
- 
-
-## T4.1. Storytelling (from findings) <a name="task4.1"></a> 
-
- 
+## 4.1. Storytelling (from findings) <a name="task4.1"></a> 
 
 ### Responsible 
-
 Pilot owners, GREENGAGE Observers (GOs) and PST 
 
- 
-
 ### Objective 
-
 The objective in the "Generation of storylines for wide dissemination" phase is to craft engaging and accessible narratives that convey the thematic co-exploration's key findings and insights to a broad audience. These storylines are designed to translate complex data and research outcomes into formats that are both engaging and easily understandable by the public. The aim is to underscore the thematic co-exploration's significance and its potential impact on policy-making, community initiatives, and scientific research. By doing so, the goal is to foster increased public awareness and interest in the project, thereby enhancing its overall reach and influence. To achieve wide visibility and impact, these storylines will be disseminated through various media channels, tailored to resonate with diverse audiences, including: 
 
   - GREENGAGE partners and pilots.   
@@ -688,7 +672,7 @@ To effectively generate storylines for wide dissemination, we will utilize a ran
 
  
 
-## T4.2. Impact on policies <a name="task4.2"></a> 
+## 4.2. Impact on policies <a name="task4.2"></a> 
 
  
 
@@ -720,7 +704,7 @@ To achieve this, we will first aggregate and analyze the data collected and insi
 
  
 
-## T4.3. Experiment sustainability <a name="task4.3"></a> 
+## 4.3. Experiment sustainability <a name="task4.3"></a> 
 
  
 
