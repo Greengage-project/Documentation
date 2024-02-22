@@ -14,24 +14,24 @@ There are four main phases that the thematic co-exploration might cover. Probabl
 
 - [**Phase 1: Preparing**](#phase1) 
     - [T1.1 Theme Selection](#task1.1) 
-  - [T1.2 Internal (Pilot Owner) training & preparing](#task1.2)  
-  - [1.3 Core Team Onboarding](#task1.3) 
-  - [1.4 Training of the core team](#task1.4) 
+    - [T1.2 Internal (Pilot Owner) training & preparing](#task1.2)  
+    - [1.3 Core Team Onboarding](#task1.3) 
+    - [1.4 Training of the core team](#task1.4) 
 - [**Phase 2: Designing**](#phase2) 
-  - [2.1 Experiment specification](#task2.1)  
-  - [2.2 Tools and resources selection](#task2.2) 
-  - [2.3 Tools and resources customization](#task2.3) 
-  - [2.4 Testing tools and resources](#task2.4) 
+    - [2.1 Experiment specification](#task2.1)  
+    - [2.2 Tools and resources selection](#task2.2) 
+    - [2.3 Tools and resources customization](#task2.3) 
+    - [2.4 Testing tools and resources](#task2.4) 
 - [**Phase 3: Delivering**](#phase3) 
-  - [3.1 Observers onboarding](#task3.1) 
-  - [3.2 Training and support](#task3.2) 
-  - [3.3 Data collection](#task3.3) 
-  - [3.4 Data combination, analysis & visualization](#task3.4) 
-  - [3.5 Experiment evaluation](#task3.5) 
+    - [3.1 Observers onboarding](#task3.1) 
+    - [3.2 Training and support](#task3.2) 
+    - [3.3 Data collection](#task3.3) 
+    - [3.4 Data combination, analysis & visualization](#task3.4) 
+    - [3.5 Experiment evaluation](#task3.5) 
 - [**Phase 4: Sharing**](#phase4) 
-  - [4.1 Storytelling (from findings)](#task4.1) 
-  - [4.2 Translating into policies & assess impact](#task4.2) 
-  - [4.3 Experiment sustainability](#task4.3) 
+    - [4.1 Storytelling (from findings)](#task4.1) 
+    - [4.2 Translating into policies & assess impact](#task4.2) 
+    - [4.3 Experiment sustainability](#task4.3) 
  
 
 # Phase 1: Preparing <a name="phase1"></a> 
@@ -40,34 +40,21 @@ There are four main phases that the thematic co-exploration might cover. Probabl
 
 ## T1.1. Theme Selection <a name="task1.1"></a> 
 
- 
-
 ### Responsible 
-
 Pilot owner and PST members.  
 
- 
-
 ### Objective 
-
 The primary objective of this step is to formulate precise research questions and hypotheses that are anchored in the needs and priorities of policy-making for a given area where thematic co-exploration could be advisable. Guided by pilot owners who are part of the PST team and know well what are the priorities of a given Citizen Observatory, an area of interest to research through a thematic co-exploration is chosen. It might be necessary to get additional stakeholders on board who e.g. are relevant as they provide specific local knowledge or they should have a meaningful role in the innovation of governance processes.  
-
- 
 
 The devised research questions and hypotheses should be actionable, measurable, and capable of being empirically tested within the thematic co-exploration’s scope. They should be designed to fill knowledge gaps, address current challenges, and generate evidence to translate into effective policy interventions.   
 
- 
-
 This step will involve a thorough analysis of the current policy landscape, consultation with stakeholders of the GREENGAGE Observatory, and a review of the existing literature to ensure that the research is targeted and relevant. This foundational step sets the stage for the subsequent research and data collection efforts, ensuring that the thematic co-exploration’s outcomes align with the strategic goals of influencing and enabling policy-making.  
 
- 
 
 ### How can we achieve it? 
-
 After having chosen an area of high priority to tackle a thematic co-exploration, guided by the [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document, a group of GREENGAGE Observers (GObs), citizens, civil servants and other stakeholders, who will govern / organise the pilot and moderate the thematic co-exploration, answer, in collaboration with owners of the Citizen Observatory,  the following core questions:  
 
  
-
  - WHY – Reason why this Citizen Observatory’ thematic co-exploration is needed (arguments for promoting the execution of this Citizen Observatory’s campaign)  
 
  - WHO – different and affected stakeholders’ groups in Citizen Observatory’s thematic co-exploration (describe the target groups and their possible motivation)  
@@ -681,11 +668,9 @@ Pilot owners, GREENGAGE Observers (GOs) and PST
 
 The objective in the "Generation of storylines for wide dissemination" phase is to craft engaging and accessible narratives that convey the thematic co-exploration's key findings and insights to a broad audience. These storylines are designed to translate complex data and research outcomes into formats that are both engaging and easily understandable by the public. The aim is to underscore the thematic co-exploration's significance and its potential impact on policy-making, community initiatives, and scientific research. By doing so, the goal is to foster increased public awareness and interest in the project, thereby enhancing its overall reach and influence. To achieve wide visibility and impact, these storylines will be disseminated through various media channels, tailored to resonate with diverse audiences, including: 
 
-    - GREENGAGE partners and pilots.   
-
-    - Local communities addressed by or emerging through the Observatories. 
-
-    - Audiences beyond GREENGAGE that are interested in tools, topics, or areas addressed by the GO (in connection with WP7).   
+  - GREENGAGE partners and pilots.   
+  - Local communities addressed by or emerging through the Observatories. 
+  - Audiences beyond GREENGAGE that are interested in tools, topics, or areas addressed by the GO (in connection with WP7).   
 
  
 
@@ -764,7 +749,3 @@ To achieve the objective of sustaining thematic co-explorations for future itera
 ### Resources 
 
 TBD 
-
- 
-
- 
