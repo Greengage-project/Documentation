@@ -3,7 +3,7 @@
 These instructions will guide you through the basic process of setting up a simple data flow.
 
 **Step 1: Log In**
-- Access to the [NiFi](https://nifi.16.171.94.204.nip.io/nifi) deploy of Greengage.
+- Access to the [NiFi](https://nifi.greengage-project.eu/nifi) deploy of Greengage.
 - First of all, you should login using your Greengage login in the keycloak authentication webpage that will appear.
 - You will reach to the main view of the tool as shown in the figure below.
 

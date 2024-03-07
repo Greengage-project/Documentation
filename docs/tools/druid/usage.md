@@ -3,7 +3,7 @@
 Apache Druid offers a variety of ways to ingest data. The most common way is to use the native batch ingestion system. This system is designed to handle large amounts of data and is the recommended way to ingest data into Druid. This usage guide provide instructions on how to use Apache Druid.
 
 **Step 1: Log In**
-- Access to the [Druid](https://druid.16.171.94.204.nip.io/) deploy of Greengage.
+- Access to the [Druid](https://druid.greengage-project.eu/) deploy of Greengage.
 - First of all, you should login using your Greengage login in the keycloak authentication webpage that will appear.
 - You will reach to the main view of the tool as shown in the figure below.
 

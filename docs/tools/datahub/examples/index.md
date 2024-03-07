@@ -8,14 +8,14 @@ In this example we will show how to create an ingestion source that pulls data f
 
 ### Prerequisites
 
-- Access to [DataHub](https://datahub.16.171.94.204.nip.io/)
+- Access to [DataHub](https://datahub.greengage-project.eu/)
 - Access to the platform to be integrated with DataHub
 - Check if the platform to be integrated with DataHub is already supported by Datahub. [List of ingestion sources](https://datahubproject.io/integrations)
 
 ### Creating the recipe
 
-1) Access to [DataHub](https://datahub.16.171.94.204.nip.io/)
-2) Go to the [Ingestion view](https://datahub.16.171.94.204.nip.io/ingestion) and click in create new source.
+1) Access to [DataHub](https://datahub.greengage-project.eu/)
+2) Go to the [Ingestion view](https://datahub.greengage-project.eu/ingestion) and click in create new source.
 3) Select the platform to be integrated with DataHub.
 4) Fill the form with the information of the platform to be integrated with DataHub. Some of the platforms have forms to be fulfilled with the information of the platform to be integrated with DataHub. In other cases, the information is provided in a yaml style as shown in the following figure:
 
@@ -29,7 +29,7 @@ In this example we will show how to create an ingestion source that pulls data f
 
 ## Adding metadata to the datasets
 
-1) Access to [DataHub](https://datahub.16.171.94.204.nip.io/)
+1) Access to [DataHub](https://datahub.greengage-project.eu/)
 2) Access to the desired dataset
 3) You can edit the metadata of the dataset in the column shown at the right side of the following figure and *descriptions*, *tags* and *glossary terms* can be added to the dataset fields: 
 

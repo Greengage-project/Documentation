@@ -3,7 +3,7 @@
 Superset allows you to create charts and dashboards from a wide variety of data sources. In this guide we will show you how to create charts and dashboards from the data sources that we have available in Greengage:
 
 **Step 1: Log In**
-- Access to the [Superset](https://superset.16.171.94.204.nip.io/) deploy of Greengage.
+- Access to the [Superset](https://superset.greengage-project.eu/) deploy of Greengage.
 - First of all, you should login using your Greengage login in the keycloak authentication webpage that will appear.
 - You will reach to the main view of the tool as shown in the figure below.
 
