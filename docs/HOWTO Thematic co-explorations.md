@@ -362,6 +362,10 @@ To ensure the effectiveness and efficiency of the thematic co-exploration, it is
 
 The Pilot Owner and PST will agree on a plan with WP4.  
 
+### DISCLAIMER
+
+**All resources to be used from external locations (APIs, websites,...) must be listed and communicated in advance to the technical administration of the project.**
+
  
 
 ### Resources 
