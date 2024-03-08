@@ -44,12 +44,11 @@ There are four main phases that the thematic co-exploration might cover. Probabl
 Pilot owner and PST members.  
 
 ### Objective 
-The primary objective of this step is to formulate precise research questions and hypotheses that are anchored in the needs and priorities of policy-making for a given area where thematic co-exploration could be advisable. Guided by pilot owners who are part of the PST team and know well what are the priorities of a given Citizen Observatory, an area of interest to research through a thematic co-exploration is chosen. It might be necessary to get additional stakeholders on board who e.g. are relevant as they provide specific local knowledge or they should have a meaningful role in the innovation of governance processes.  
+The primary objective of this step is to formulate precise research questions and hypotheses that are anchored in the needs and priorities of policymaking for a given area where thematic co-exploration could be advisable. Guided by pilot owners who are part of the PST team and know well what the priorities of a given Citizen Observatory are, an area of interest to research through a thematic co-exploration is chosen. It might be necessary to get additional stakeholders on board who e.g. are relevant as they provide specific local knowledge, or they should have a meaningful role in the innovation of governance processes.   
 
 The devised research questions and hypotheses should be actionable, measurable, and capable of being empirically tested within the thematic co-exploration’s scope. They should be designed to fill knowledge gaps, address current challenges, and generate evidence to translate into effective policy interventions.   
 
-This step will involve a thorough analysis of the current policy landscape, consultation with stakeholders of the GREENGAGE Observatory, and a review of the existing literature to ensure that the research is targeted and relevant. This foundational step sets the stage for the subsequent research and data collection efforts, ensuring that the thematic co-exploration’s outcomes align with the strategic goals of influencing and enabling policy-making.  
-
+This step will involve a thorough analysis of the current policy landscape, consultation with stakeholders of the GREENGAGE Observatory, and a review of the existing literature to ensure that the research is targeted and relevant. This foundational step sets the stage for the subsequent research and data collection efforts, ensuring that the thematic co-exploration’s outcomes align with the strategic goals of influencing and enabling policymaking.   
 
 ### How can we achieve it? 
 After having chosen an area of high priority to tackle a thematic co-exploration, guided by the [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document, a group of GREENGAGE Observers (GObs), citizens, civil servants and other stakeholders, who will govern / organise the pilot and moderate the thematic co-exploration, answer, in collaboration with owners of the Citizen Observatory,  the following core questions:  
@@ -71,7 +70,7 @@ After having chosen an area of high priority to tackle a thematic co-exploration
 
  
 
-The [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document does not need to be completed thoroughly in this step. It is paramount that the first questions of this document are filled in. It is the WHAT question the one that actually addresses the following aspects essential to start with the co-production of a thematic co-exploration:  
+The [Thematic Co-Exploration for Citizen Observatory (COb) Specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) document does not need to be completed thoroughly in this step. It is paramount that the first questions of this document are filled in. It is the WHAT question the one that addresses the following aspects essential to start with the co-production of a thematic co-exploration: 
 
  
 
@@ -97,7 +96,7 @@ Notice that some additional optional resources are listed below which could be u
 
  - [Citizen Science problem statement analysis](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/Citizen%20Science%20ProblemStatementQuestionnaire.xlsx?d=w2a0a58548f2f41a8821b4ed300a86be2&csf=1&web=1&e=TLG1AL) – this resource allows to perform a minimal viability analysis to determine whether a problem that wants to be tackled is approachable through Citizen Science or not.   
 
- - [Questionnaire to analysise suitability of the problem for co-production of CS experiment](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/CoProductionCSProjectQuestionnaire.xlsx?d=wb8a26c5d29d74f079642f04f2c0373c5&csf=1&web=1&e=DJh4qV) - this second resource can help you dilucidate whether a collaborative process can be organized or not, to address a given problem, through a Citizen Science experiment.  
+ - [Questionnaire to analyse suitability of the problem for co-production of CS experiment](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/CoProductionCSProjectQuestionnaire.xlsx?d=wb8a26c5d29d74f079642f04f2c0373c5&csf=1&web=1&e=DJh4qV) - this second resource can help you figure out  whether a collaborative process can be organized or not, to address a given problem, through a Citizen Science experiment.   
 
  - [Thematic Co-Exploration for GREENGAGE Observatory (GO) Specification Template](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/ThematicCoExplorationSpec.docx?d=wb2395027626c44cc98dc124e9dc5750b&csf=1&web=1&e=uT1gDq) – this resource is the most important one in this stage since it allows to answer the WHY, WHO, WHAT, WHEN, WHERE, with WHICH and HOW questions associated to the organization and planning of a thematic co-exploration. It is designed to compile all the information needed to get started with a thematic co-exploration. It gets information from the CONCEPTUALISING and PREPARING phases of the GREENGAGE methodology for Citizen Observatories.   
 
@@ -105,8 +104,7 @@ Notice that some additional optional resources are listed below which could be u
 
  
 
-## 1.2. Internal (Pilot Owner) training & preparing <a name="task1.2"></a> 
-
+## 1.2. Pilot Owner’s training & preparing <a name="task1.2"></a>  
  
 
 ### Responsible 
@@ -117,21 +115,20 @@ Pilot owners with the support of the PST.
 
 ### Objective 
 
-The objectives of this task is to empower pilot owners with a deep understanding of the capabilities and resources provided by the GREEN Engine, facilitating the strategic planning and execution of thematic co-explorations. A key goal is to compile a comprehensive and organized inventory of datasets relevant to the thematic area of exploration. This inventory will not only catalog existing datasets but also identify critical data gaps that cannot be filled by existing resources. Addressing these gaps is crucial for the thorough examination of the thematic area and for generating actionable insights. To fill these gaps, the strategy includes mobilizing citizen participation in data gathering campaigns. By leveraging the collective effort and unique perspectives of citizens, the initiative aims to enrich the dataset inventory with valuable, real-world data. 
-
+The objective of this task is to empower pilot owners with a deep understanding of the capabilities and resources provided by the GREENGAGE platform (GREEN engine toolbox + knowledge assets in AcadeMe), facilitating the strategic planning and execution of thematic co-explorations. Besides, in this task, a comprehensive and organized inventory of datasets relevant to the thematic area of exploration is compiled. This inventory will not only catalogue existing datasets but also identify critical data gaps that cannot be filled by existing resources. Addressing these gaps is crucial for the thorough examination of the thematic area and for generating actionable insights. To fill these gaps, the strategy includes mobilizing citizen participation in data gathering campaigns. By leveraging the collective effort and unique perspectives of citizens, the initiative aims to enrich the dataset inventory with valuable, real-world data.  
  
 
 ### How can we achieve it? 
 
-To optimize the integration of technology in thematic co-explorations, pilot owners will first identify relevant technologies offered by the GREEN Engine that align with their exploration objectives. Subsequently, tailored practical training sessions will be conducted for each selected technology, ensuring pilot owners are equipped with the necessary operational skills and knowledge. These sessions are designed to be hands-on, focusing on the functionalities, data management, and application of technologies pertinent to their specific needs. This approach ensures efficient learning and preparation, enabling pilot owners to effectively leverage these technologies to enhance data collection, analysis, and the overall success of their thematic explorations, thereby contributing to impactful insights and policy-making. 
-
+To optimize the integration of technology in thematic co-explorations, pilot owners will first identify relevant technologies offered by the GREEN Engine that align with their exploration objectives. Subsequently, tailored practical training sessions will be conducted for each selected technology, ensuring pilot owners are equipped with the necessary operational skills and knowledge. These sessions are designed to be hands-on, focusing on the functionalities, data management, and application of technologies pertinent to their specific needs. This approach ensures efficient learning and preparation, enabling pilot owners to effectively leverage these technologies to enhance data collection, analysis, and the overall success of their thematic explorations, thereby contributing to impactful insights and policymaking.  
  
 
-Furthermore, PST members  should comprehensively identify all existing and potential datasets within the scope of the Citizen Observatory and, particularly, those needed for the thematic co-exploration considered. This step aims to create an inventory of datasets, categorising them based on the current thematic co-exporation’s ID, relevance, data type, source, and intended use. Furthermore, it is essential to specify how each dataset may be retrieved and accessed. This inventory serves as the foundation for the dataset metadata registration process in DataHub. Population of Dataset with the newly created inventory is the final action within this step.  
-
+Furthermore, PST members should comprehensively identify all existing and potential datasets within the scope of the Citizen Observatory and, particularly, those needed for the thematic co-exploration considered. This step aims to create an inventory of datasets, categorising them based on the current thematic co-exploration’s ID, relevance, data type, source, and intended use. Furthermore, it is essential to specify how each dataset may be retrieved and accessed. This inventory serves as the foundation for the dataset metadata registration process in DataHub. Population of Dataset with the newly created inventory is the final action within this step.   
  
 
 ### Resources 
+
+ - [Training materials folder]( https://aitonline.sharepoint.com/:f:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP3%20GREENGAGE%20Citizen%20Observatory%20Academy/06_Tasks/3.2%20Training%20%26%20recruitment%20material/Final%20Training%20Material?csf=1&web=1&e=Zm2dXf)  
 
  - [Dataset Inventory template](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B632ec461-1851-463e-87de-01eedb9d2263%7D&action=edit&wdinitialsession=c2406669-913f-4a32-b5b5-3334b3429bd4&wdrldsc=2&wdrldc=1&wdrldr=OnSaveAsWebMethodComplete) – knowledge asset with fields  to identify every dataset’s metadata that will be needed for the thematic co-explorations in each Citizen Observatory. It is recommended that for each thematic co-exploration a a copy of this template is performed and filled in.  
 
@@ -142,12 +139,6 @@ Furthermore, PST members  should comprehensively identify all existing and poten
  
 
  - [GREENGAGE documentation](https://greengage-project.github.io/Documentation/) – Overall documentation of the tools that are available in the GREEN Engine. 
-
- 
-
- - [Training materials](TBD) -- TBD 
-
- 
 
  
 
@@ -163,8 +154,7 @@ Pilot leader with the support of the PST.
 
 ### Objective 
 
-To build a solid foundation for thematic co-explorations, the first objective involves creating a comprehensive map of potential stakeholders who could contribute significantly to the Core Team or join the ranks of the GREENGAGE Observers. This mapping will identify key individuals and organizations whose expertise, interests, and resources align with the goals of the exploration, ensuring a diverse and skilled team that can address the project's multifaceted challenges. Following this strategic identification, the second objective focuses on the onboarding of approximately 15 individuals who will play a crucial role in Phase 2 of the exploration. This group will be meticulously selected based on their potential to contribute to the project's success, ensuring they possess the necessary skills, knowledge, and enthusiasm. The onboarding process will equip them with a thorough understanding of the project objectives, methodologies, and expected outcomes, preparing them to effectively contribute to the collaborative efforts required for the exploration's success. Together, these objectives aim to establish a strong, collaborative team capable of driving the project forward through its critical early phases. 
-
+To build a solid foundation for thematic co-explorations, the first stage involves creating a comprehensive map of potential stakeholders who could contribute significantly to the Core Team or join the ranks of the GREENGAGE Observers. This mapping will identify key individuals and organizations whose expertise, interests, and resources align with the goals of the exploration, ensuring a diverse and skilled team that can address the project's multifaceted challenges. Following this strategic identification, the second stage focuses on the onboarding of approximately 15 individuals who will play a crucial role in Phase 2 of the exploration. This group will be meticulously selected based on their potential to contribute to the project's success, ensuring they possess the necessary skills, knowledge, and enthusiasm. The onboarding process will equip them with a thorough understanding of the project objectives, methodologies, and expected outcomes, preparing them to effectively contribute to the collaborative efforts required for the exploration's success. Together, these stages aim to establish a strong, collaborative team capable of driving the project forward through its critical early phases.  
  
 
 ### How can we achieve it? 
@@ -191,14 +181,13 @@ Finally, a first workshop will be organized to onboard the Core Team, specifical
 
  - [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) – HOWTO for essential tool to govern, guide and trace the co-production process executed during the co-design and co-delivery of the thematic co-exploration  
 
- - Communication map (UnaLab and Scivil, to be adapted)  
+ - [Communication map (UnaLab and Scivil)](https://aitonline.sharepoint.com/:p:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B33F074D9-F7AA-4DE0-8E9C-CE8506984392%7D&file=Communication%20map_Table.pptx&action=edit&mobileredirect=true)  
 
- - Inclusion check list (to be adapted)  
+ - [Inclusion check list (SOCIO-BEE)](https://docs.google.com/forms/d/e/1FAIpQLSd0U4Fl5puxTM2I_Df-ZapP2s7O1fVIyB1PZAvKTmglbRa6Kw/viewform)
 
  
 
-## 1.4. Training of the core team <a name="task1.4"></a> 
-
+## 1.4. Core team training <a name="task1.4"></a>  
  
 
 ### Responsible 
@@ -213,8 +202,7 @@ The objective of this task is to provide the Core Team with a comprehensive and 
 
 In addition to understanding the thematic area, the Core Team will receive training on the ethical framework of GREENGAGE. This includes discussions on data privacy, ethical considerations in citizen science, and how to ensure that all activities conducted within the thematic co-exploration adhere to these ethical guidelines. 
 
-Finally, the training will cover the technological tools available within the GREENGAGE ecosystem. The Core Team will learn how to utilize these technologies effectively, from data collection and analysis tools to platforms for collaboration and dissemination of findings. This technical training is essential for maximizing the impact of the thematic co-exploration, enabling the team to gather, analyze, and share data efficiently.
-
+Finally, the training will cover the technological tools available within the GREENGAGE ecosystem. The Core Team will learn how to utilize these technologies effectively, from data collection and analysis tools to platforms for collaboration and dissemination of findings. This technical training is essential for maximizing the impact of the thematic co-exploration, enabling the team to gather, analyse, and share data efficiently. 
 
 ### How can we achieve it? 
 
@@ -268,41 +256,38 @@ Pilot Leader with the support of the Core Team and the PST
 
 ### Objective 
 
-To successfully navigate through the latter stages of the thematic co-exploration, specifically phases 3 (Delivering) and 4 (Sharing), a meticulously crafted list of activities is essential. This list will outline the strategic actions required to not only implement the findings and insights gleaned from the exploration but also to disseminate these outcomes effectively to a broader audience. This comprehensive list of activities will serve as a roadmap, guiding the seamless transition from theory to practice and ensuring that the valuable insights generated through the exploration are shared widely and effectively, fostering greater impact and facilitating informed decision-making. 
-
+To successfully navigate through the latter stages of the thematic co-exploration, specifically phases 3 (Experimenting) and 4 (Sharing), a meticulously crafted list of activities is essential. This list will outline the strategic actions required to not only implement the findings and insights gleaned from the exploration but also to disseminate these outcomes effectively to a broader audience. This comprehensive list of activities will serve as a roadmap, guiding the seamless transition from theory to practice and ensuring that the valuable insights generated through the exploration are shared widely and effectively, fostering greater impact, and facilitating informed decision-making.  
  
 
 ### How can we achieve it? 
 
-Organise a second workshop conducted with the Core Team. This workshop aims to collaboratively design the specific actions, including the identification of indicators or Key Performance Indicators (KPIs), that will be executed in phases 3 (Delivering) and 4 (Sharing) of the thematic co-exploration. By engaging in a co-design process, the Core Team will collectively determine the most effective strategies and activities to ensure the successful delivery and dissemination of the project's outcomes.  
-
+Organise a second workshop conducted with the Core Team. This workshop aims to collaboratively design the specific actions, including the identification of concrete indicators or Key Performance Indicators (KPIs) for this thematic co-exploration, that will be evaluated in phases 3 (Experimenting) and 4 (Sharing) of the thematic co-exploration. By engaging in a co-design process, the Core Team will collectively determine the most effective strategies and activities to ensure the successful delivery and dissemination of the project's outcomes.  Notice that the core team with the support of the Pilot Owner, must discuss about indicators and metrics suitable to assess the thematic co-exploration, e.g. if the purpose is to explore air pollution the following indexes could be considered Air Quality Index or Liveability Index. In these discussions, GREENGAGE’s global KPIs should be considered (KPIs-monitoring-table.xlsx) giving place to a thematic co-exploration’s concrete KPI, where partial contribution to global KPIs will be planned and how to contribute to the specific ones also defined.  
  
 
-Furthermore, a new co-production process will be set up in GREENGAGE Collaborative Environment. Hence, the accomplishment of this step requires usage of all the tools belonging to the “Community and co-production process management” layer of GREEN Engine. 
-
+Furthermore, a new co-production process will be set up in GREENGAGE Collaborative Environment. Hence, the accomplishment of this step requires usage of all the tools belonging to the “Community and co-production process management” layer of GREEN Engine, in the following order: 
   
 
- - A new entry should be created within the parent pilot / Citizen Observatory page, for the newly specified thematic co-exploration. The [instructions to use Wordpress](https://greengage-project.github.io/Documentation/tools/wordpress/) should be followed to achieve this.  
-
+ 1. A entry created in preparing within the parent pilot / Citizen Observatory page, for the newly specified thematic co-exploration should be refined now. The [instructions to use Wordpress](https://greengage-project.github.io/Documentation/tools/wordpress/) should be followed to achieve this. Notice that GREENGAGE provides a default template that can be used to instantiate thematic co-explorations.  
  
+ 2. A new set of categories for topics of discussion following the instructions of usage of the [Discourse tool](https://greengage-project.github.io/Documentation/tools/Discourse/), should be created by the GObs leading and managing the thematic co-exploration. This will serve to foster the collaboration and dialogue among participants in the thematic co-exploration.  Notice that GREENGAGE provides a default template with categories and candidate topics that is recommended to each thematic co-exploration.    
 
- - A new set of categories for topics of discussion following the instructions of usage of the [Discourse tool](https://greengage-project.github.io/Documentation/tools/Discourse/), should be created by the GObs leading and managing the thematic co-exploration. This will serve to foster the collaboration and dialogue among participants in the thematic co-exploration .  
+ 3. A new co-production process based on the “GREENGAGE way” co-production process schema or blueprint already loaded into [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) should be instantiated.     
 
- 
+Besides, there is the need to involve the core team in the analysis of the available datasets and the reflection about dataset gaps to be filled in to complete the thematic co-exploration. Hence, a revisit of the dataset inventory initially created in the “Preparing” phase by pilot owners will be performed.  
 
- - A new co-production process based on the “GREENGAGE way” co-production process schema or blueprint already loaded into [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) should be instantiated.   
-
- 
+Finally, it is time to think about how the different activities and events that will be organized with the community of observers. For that, the GREENGAGE community building plan knowledge asset may be used.  
 
  
 
 ### Resources 
 
- - Work plan template (to be adapted)  
+ - [Work plan template]()  
 
- - Data management plan (to be done)  
+ - [Data management plan](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B0705D49C-A49E-4E7A-985A-F6B72BF176E2%7D&file=data-management-plan_he_en.docx&action=default&mobileredirect=true)
 
  - Data protocol specification (to be done)  
+
+ - [Reference KPI table for GREENGAGE project](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BEF9123A4-27C6-48B4-9C2C-A0F707E6F045%7D&file=KPIs-monitoring-table.xlsx&action=default&mobileredirect=true) 
 
  - [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) – HOWTO for essential tool to govern, guide and trace the co-production process executed during the co-design and co-delivery of the thematic co-exploration 
 
@@ -310,7 +295,7 @@ Furthermore, a new co-production process will be set up in GREENGAGE Collaborati
 
  - [Problem Statement Questionnaire](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B2A0A5854-8F2F-41A8-821B-4ED300A86BE2%7D&file=ProblemStatementQuestionnaire.xlsx&action=default&mobileredirect=true) document –  
 
- 
+ - [Dataset Inventory template](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B632ec461-1851-463e-87de-01eedb9d2263%7D&action=edit&wdinitialsession=c2406669-913f-4a32-b5b5-3334b3429bd4&wdrldsc=2&wdrldc=1&wdrldr=OnSaveAsWebMethodComplete) – knowledge asset with fields  to identify every dataset’s metadata that will be needed for the thematic co-explorations in each Citizen Observatory. It is recommended that for each thematic co-exploration, a copy of this template is completed.   
 
 ## 2.2. Tools and resources selection <a name="task2.2"></a> 
 
@@ -324,22 +309,23 @@ Pilot Leader with the support of the Core Team and the PST.
 
 ### Objective 
 
-To achieve the set objectives of the thematic co-exploration efficiently, a meticulous selection process will be undertaken to finalize the list of tools and resources essential for the project. This encompasses a wide array of assets, including, but not limited to, existing datasets that are pivotal for research and analysis, comprehensive guidelines that outline procedural directives, and thorough documentation that provides detailed instructions and insights into the project's methodologies. Additionally, other instrumental resources such as analytical software, data management platforms, and collaborative tools will be evaluated for their relevance, efficiency, and compatibility with the project goals. This careful curation process ensures that every selected tool and resource aligns with the specific needs of the exploration, facilitating a streamlined, effective approach to achieving the research objectives.  
-
+To achieve the set objectives of the thematic co-exploration efficiently, a meticulous selection process will be undertaken to finalize the list of tools and resources essential for the project. This encompasses a wide array of assets, including, but not limited to, existing datasets that are pivotal for research and analysis, comprehensive guidelines that outline procedural directives, and thorough documentation that provides detailed instructions and insights into the project's methodologies. Additionally, other instrumental resources such as analytical software, data management platforms, and collaborative tools will be evaluated for their relevance, efficiency, and compatibility with the thematic co-exploration’s goals. This careful curation process ensures that every selected tool and resource aligns with the specific needs of the exploration, facilitating a streamlined, effective approach to achieving the research objectives.   
  
 
 ### How can we achieve it? 
 
-To achieve this objective we will conduct a third workshop with the Core Team. This workshop will focus on the selection of the tools and resources that will be used in the thematic co-exploration. The Core Team will collaboratively evaluate and select the most appropriate tools and resources, ensuring that they align with the project's objectives and are capable of meeting the specific needs of the experiment specificed in T2.1. This analysis may rise the identification of gaps in the available tools and resources, which will be addressed in the T2.3. 
+To achieve this stage, we will conduct a third workshop with the Core Team. This workshop will focus on the selection of the tools and resources that will be used in the thematic co-exploration. The Core Team will collaboratively evaluate and select the most appropriate tools and resources, ensuring that they align with the project's objectives and can meet the specific needs of the experiment specified in T2.1. This analysis may rise the identification of gaps in the available tools and resources, which will be addressed in the T2.3.  
 
+Finally, the Data Protocol to be used in the thematic co-exploration needs to be defined, reflecting upon it guided by Data Protocol Specification template provided by GREENGAGE project.   
  
 
 ### Resources 
 
  - List of resources 
 
- - [List of tools](https://greengage-project.github.io/Documentation/tools/) – Overall documentation of the tools that are available in the GREEN Engine. 
+ - [List of GREENGAGE tools](https://greengage-project.github.io/Documentation/tools/) – Overall documentation of the tools that are available in the GREEN Engine.  
 
+ - [Template for tools and resources selection]( https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/ListToolsResourcesNeeded.docx?d=w7c6e2319112e498ca90e8286cc147e9d&csf=1&web=1&e=cYg9hW) – document that guides you in the process of selecting the knowledge assets, tools and resources necessary to run the thematic co-exploration  
  
 
 ## 2.3. Tools and resources customization <a name="task2.3"></a> 
@@ -354,9 +340,15 @@ Pilot Owner with the support of PST and WP4.
 
 ### Objective 
 
-To ensure the effectiveness and efficiency of the thematic co-exploration, it is necessary to undertake customizations on the tools utilized, including calibration, configuration, and possible extensions. This process is complemented by providing technical consultancy to address specific needs, thereby enhancing the functionality and usability of these tools for the observers. Concurrently, resources such as templates, documentation, and translations are optimized, along with the development of enablers, to streamline observers' activities and facilitate their engagement. Data quality is also a priority, with efforts directed towards cleaning available datasets to ensure reliability and accuracy in analysis. Additionally, ad-hoc development may be undertaken to meet unique project requirements. Preparing evaluation materials forms a critical component of this phase, encompassing the creation of questionnaires, refinement of Key Performance Indicators (KPIs), and the selection or development of measurement instruments, all aimed at rigorously assessing the impact and outcomes of the co-exploration activities. 
+To ensure the effectiveness and efficiency of the thematic co-exploration, it is necessary to undertake customizations on the tools utilized, including calibration, configuration, and possible extensions. This process is complemented by providing technical consultancy with the support of GREENGAGE consortium to address specific needs, thereby enhancing the functionality and usability of these tools for the observers.  
 
- 
+Concurrently, resources such as templates, documentation, and translations are optimized, along with the development of additional (thematic co-exploration specific) enablers or knowledge assets, to streamline observers' activities and facilitate their engagement.  
+
+Data quality is also a priority, with efforts directed towards cleaning available datasets to ensure reliability and accuracy in analysis. Additionally, ad-hoc development may be undertaken to meet unique project requirements regarding datasets.  
+
+Preparing evaluation materials forms a critical component of this task too, encompassing the creation of questionnaires, refinement of Key Performance Indicators (KPIs), and the selection or development of measurement instruments, all aimed at rigorously assessing the impact and outcomes of the co-exploration activities.  
+
+In this task the tools and resources selection document, the data protocol and data management plan may be updated.  New evaluation questionnaires and scripts to gather metrics values will be devised. Past CS projects’ evaluation questionnaires such as those of [SOCIO-BEE](https://socio-bee.eu/) can be used to inspire the new questionnaires to be developed.   
 
 ### How can we achieve it? 
 
@@ -370,8 +362,13 @@ The Pilot Owner and PST will agree on a plan with WP4.
 
 ### Resources 
 
-TBD 
+ - [Reference KPI table for GREENGAGE project](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BEF9123A4-27C6-48B4-9C2C-A0F707E6F045%7D&file=KPIs-monitoring-table.xlsx&action=default&mobileredirect=true) 
 
+ - [Template for tools and resources selection]( https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/ListToolsResourcesNeeded.docx?d=w7c6e2319112e498ca90e8286cc147e9d&csf=1&web=1&e=cYg9hW) – document that guides you in the process of selecting the knowledge assets, tools and resources necessary to run the thematic co-exploration  
+
+ - [PRE SOCIO-BEE Citizen Science Activists Evaluation Questionnaire](https://aitonline.sharepoint.com/sites/HEUGREENGAGE337/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources%2F2nd%20Iteration%20%2D%20MASTER%20COPY%20in%20ENGLISH%2D%20POST%20SOCIO%2DBEE%20Citizen%20Science%20Activists%20Evaluation%20Questionnaire%20%28ALL%29%2Epdf&parent=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources)
+
+ - [POST SOCIO-BEE Citizen Science Activists Evaluation Questionnaire](https://aitonline.sharepoint.com/sites/HEUGREENGAGE337/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources%2F2nd%20Iteration%20%2D%20MASTER%20COPY%20in%20ENGLISH%2D%20POST%20SOCIO%2DBEE%20Citizen%20Science%20Activists%20Evaluation%20Questionnaire%20%28ALL%29%2Epdf&parent=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources)  
  
 
 ## 2.4. Testing tools and resources <a name="task2.4"></a> 
@@ -398,15 +395,21 @@ The Core Team will have a workshop in which the selected tools and resources wil
 
 ### Resources 
 
- - List of resources 
+ - [Template for tools and resources selection]( https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/ListToolsResourcesNeeded.docx?d=w7c6e2319112e498ca90e8286cc147e9d&csf=1&web=1&e=cYg9hW) – document that guides you in the process of selecting the knowledge assets, tools and resources necessary to run the thematic co-exploration  
 
  - [List of tools](https://greengage-project.github.io/Documentation/tools/) – Overall documentation of the tools that are available in the GREEN Engine. 
 
- - Evaluation questionnaires (to be done) 
+ - [PRE SOCIO-BEE Citizen Science Activists Evaluation Questionnaire](https://aitonline.sharepoint.com/sites/HEUGREENGAGE337/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources%2F2nd%20Iteration%20%2D%20MASTER%20COPY%20in%20ENGLISH%2D%20POST%20SOCIO%2DBEE%20Citizen%20Science%20Activists%20Evaluation%20Questionnaire%20%28ALL%29%2Epdf&parent=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources)
+
+ - [POST SOCIO-BEE Citizen Science Activists Evaluation Questionnaire](https://aitonline.sharepoint.com/sites/HEUGREENGAGE337/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources%2F2nd%20Iteration%20%2D%20MASTER%20COPY%20in%20ENGLISH%2D%20POST%20SOCIO%2DBEE%20Citizen%20Science%20Activists%20Evaluation%20Questionnaire%20%28ALL%29%2Epdf&parent=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources)  
+
+ - [Template for selected verified list of knowledge assets](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B954A35FF-0896-4607-A69D-66820D61E041%7D&file=ListKnowledgeCommunicationEvaluationAssets.docx&action=default&mobileredirect=true) 
+
+ - [User acceptance test]( https://demo.greengage-project.eu/dashboard/interlinkers/4e995711-cbc9-4e4a-a42b-a1dcde5b800d) – this document guides about the different aspects that should be checked in the infrastructure in order validate its correct operation.  
 
  
 
-# Phase 3: Delivering <a name="phase3"></a>  
+# Phase 3: Experimenting <a name="phase3"></a>   
 
 ## 3.1. Observers onboarding <a name="task3.1"></a> 
 
@@ -638,7 +641,7 @@ This objective involves an evaluation of the experiments objectives, outputs, an
 
 - Implement the evaluation strategy planned sketched in “Phase 1 Preparing” and refined in “Phase 2 Designing” (defined KPIs and mechanisms for their assessment).   
 
-- Facilitate spaces for collective reflection about barriers and enablers during the preparing, designing, and delivering phases. Include all participants involved (PST members, pilot owners, Core Group, and Observers).  
+- Facilitate spaces for collective reflection about barriers and enablers during the preparing, designing, and Experimenting phases. Include all participants involved (PST members, pilot owners, Core Group, and Observers).   
 
 - Think on the second iteration objective, goals, and outputs. Identify possibilities to mitigate or overcome barriers and enhance enablers based on what have you have learned so far. Adapt or change your thematic co-exploration specification, work plan or other planning strategies in place for future GO activities.  
 
