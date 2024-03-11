@@ -24,7 +24,7 @@ There are four main phases that the thematic co-exploration might cover. Probabl
     - [2.4 Testing tools and resources](#task2.4) 
 - [**Phase 3: Experimenting**](#phase3) 
     - [3.1 Observers onboarding](#task3.1) 
-    - [3.2 Training and support](#task3.2) 
+    - [3.2 Observers Training & support](#task3.2) 
     - [3.3 Data collection](#task3.3) 
     - [3.4 Data combination, analysis & visualization](#task3.4) 
     - [3.5 Experiment evaluation](#task3.5) 
@@ -159,7 +159,7 @@ To build a solid foundation for thematic co-explorations, the first stage involv
 
 ### How can we achieve it? 
 
-To achieve the objectives, the PST will work closely with the pilot leader to identify and engage potential stakeholders who could contribute to the thematic co-exploration. This will involve the strategic mapping of stakeholders, identifying their roles, interests, and potential contributions to the project by filling the [Stakeholder Mapping Canvas](https://demo.greengage-project.eu/dashboard/interlinkers/a976a58e-60c7-40c4-9af3-ceec2db08277).  
+To achieve the objectives, the PST will work closely with the pilot leader to identify and engage potential stakeholders who could contribute to the thematic co-exploration. This will involve the strategic mapping of stakeholders, identifying their roles, interests, and potential contributions to the project by filling the [Stakeholder Mapping Canvas](https://demo.greengage-project.eu/dashboard/interlinkers/a976a58e-60c7-40c4-9af3-ceec2db08277).  A communication campaign will be created to invite citizens to take part in the thematic co-exploration. 
 
  
 
@@ -429,7 +429,13 @@ This task focuses primarily on integrating these key participants into the proje
 
 ### How can we achieve it? 
 
-Similar to what we conducted in [T1.3.](#task1.3), we will continue adapting and enhancing the communication campaign in the pilot. Together with this, we should update the Discourse and WordPress platforms to ensure that the information is up-to-date and accessible to the GOs.  
+Similar to what we conducted in [T1.3.](#task1.3), we will continue adapting and enhancing the communication campaign in the pilot. Together with this, we should update the Discourse and WordPress platforms to ensure that the information is up-to-date and accessible to the GOs. In essence, three main activities will be considered in this task: 
+
+- Promote and publicize thematic co-exploration 
+
+- Onboard further Citizen Observers 
+
+- Ensure ethics protocol are followed   
 
  
 
@@ -439,11 +445,15 @@ Similar to what we conducted in [T1.3.](#task1.3), we will continue adapting and
 
 - [Discourse](https://greengage-project.github.io/Documentation/tools/Discourse/) –  HOWTO for tool necessary to foster discussions and dialogue among GObs and allow them to request help and support each other 
 
-- Communication map (UnaLab and Scivil, to be adapted)  
+- Communication map (UnaLab and Scivil) - available at [Communication map](https://aitonline.sharepoint.com/:p:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B33F074D9-F7AA-4DE0-8E9C-CE8506984392%7D&file=Communication%20map_Table.pptx&action=edit&mobileredirect=true)  
 
 - [Materials for thematic co-exploration and citizen onboarding](https://www.greengage-project.eu/knowledge-base/) – TO BE PREPARED 
 
-## 3.2. Training and support <a name="task3.2"></a> 
+- [Data ethics in participatory science]( https://media.scistarter.org/curated/2023-01-02/Data_Ethics_Toolkit.pdf) 
+
+- [GREENGAGE Data Ethics starter kit](https://aitonline.sharepoint.com/sites/HEUGREENGAGE337/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=I5HC1s&cid=1af3e5d6%2D5cad%2D4928%2Dbfe8%2Dbd846a62247d&RootFolder=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP3%20GREENGAGE%20Citizen%20Observatory%20Academy%2F06%5FTasks%2F3%2E2%20Training%20%26%20recruitment%20material%2FFinal%20Training%20Material%2F01%5FEthics%20in%20Citizen%20Observatories%2FGG%5FEthics%20Starter%20Kit&FolderCTID=0x012000D068D8DB75D23C4BBF17727BCFAF5F22)
+
+## 3.2. Observers Training & support <a name="task3.2"></a> 
 
  
 
@@ -455,14 +465,12 @@ Pilot Leader with the support of the Core Team and the PST.
 
 ### Objective 
 
-The core objective of this task is to train the community of observers in the tools and resources needed to execute the thematic co-exploration. The training will be complemented by ongoing support, providing the observers with the necessary guidance and assistance to navigate through the project's operational phase. This support will be delivered through various channels, including Discourse, direct communication, and documentation, ensuring that the observers have access to the resources and assistance they need to engage effectively in the project. 
-
+The core objective of this task is to train the community of observers in the tools and resources needed to execute the thematic co-exploration. The training will be complemented by ongoing support, providing the observers with the necessary guidance and assistance to navigate through the project's operational phase. This support will be delivered through various channels, including Discourse, direct communication, and documentation, ensuring that the observers have access to the resources and assistance they need to engage effectively in the project. Part of this step on training and support will be to organize the data collection process with observers and agree on the data collection protocol to perform analysis and reflection upon the collected data. The Data Protocol Template is a resource that should help organizing the data collection process.  
  
 
 ### How can we achieve it? 
 
-GOs will atend a welcome event to train on the objectives of the experiment, the need to gather new data, the selected technologies, ethical aspects and other important topics identified in T2.1. This welcome event or workshop will be complemented with asynchronous training materials that will be available in the [Knowledge Base aka GREENGAGE Academy](https://www.greengage-project.eu/knowledge-base/) of the main project’s website. 
-
+GOs will attend a welcome event to train on the objectives of the experiment, the need to gather new data, the selected technologies by the core team, ethical aspects and other important topics identified in T2.1. This welcome event or workshop will be complemented with asynchronous training materials that will be available in the [Knowledge Base aka GREENGAGE Academy](https://www.greengage-project.eu/knowledge-base/) of the main project’s website.  
  
 
 Training materials for the following topics have been made ready by the project and should be extended and customized for each thematic co-exploration: 
@@ -493,7 +501,7 @@ Training materials for the following topics have been made ready by the project 
 
 - [Folder where trainings are currently uploaded](https://aitonline.sharepoint.com/:f:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP3%20GREENGAGE%20Citizen%20Observatory%20Academy/06_Tasks/3.2%20Training%20%26%20recruitment%20material/Final%20Training%20Material?csf=1&web=1&e=OU8jg9) which will be published as part of the [Knowledge Base aka GREENGAGE Academy](https://www.greengage-project.eu/knowledge-base/) of the main project’s website 
 
- 
+- [DataProtocolSpecification] (https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/DataProtocolSpecification.docx?d=w086eacc673a846eaac82aa959ef89d5c&csf=1&web=1&e=dfqsBH)  
 
 ## 3.3. Data collection <a name="task3.3"></a> 
 
@@ -507,45 +515,47 @@ Pilot Leader of the GOs
 
 ### Objective 
 
-This step aims to retrieve the data identified in the previous phase. This data may come from two different sources: 
+This step aims to retrieve the data identified in the previous phase. This data may come from three different sources:  
 
  - Data that are already available in Open Data portals or provided by Copernicus data. This process will involve the creation of the pipelines (ingestion sources) that will introduce each dataset in DataHub, which will allow us to retrieve the data from the source and store it in the centralised repository. The technical team should create the ingestion sources with the pilot owners' support. 
 
  - Data that are not available and need to be collected through human collaboration. This process will involve the creation of data gathering campaigns that include missions (tasks) to be completed by the public. The missions will be designed by the thematic co-exploration’s moderators, with the support of the technical team, to retrieve specific data. The missions, thus, the data capture process, will involve using specific tools designed for this task, such as MODE, GREENGAGE app or MindEarth. Notice that mission is a GREENGAGE concept denoting then need to collect certain data in a given area and time period to address a certain data gap identified within a thematic co-exploration. 
 
- 
+ - Apart from quantitative data, during this step, qualitative data about perceptions of observers regarding different aspects associated to the thematic co-exploration will also be gathered. This will involve making observers and even external citizens to the thematic co-exploration to be involved in completing surveys, realizing in depth interviews with stakeholders of the thematic co-exploration or organizing focus groups, local walks and other alternative mechanisms where discussion and reflection around the thematic co-exploration can be generated.   
 
 ### How can we achieve it? 
 
-This has to be done in two different ways, depending on the data availability: 
-
+This must be done in three different ways, depending on the data availability:  
  
 
 #### Data already available 
 
-For the data that is already available, the technical team will create the ingestion sources that will allow the data to be retrieved from the source and stored in the centralised repository. The ingestion sources can be created using Apache NiFi, allowing us to retrieve data from APIs, FTP servers, and other sources. Alternatively, other ingestion sources, such as Python scripts, may require programmatic solutions. Finally, the ingestion sources can also be configured using Apache Druid, allowing us to load data directly into the project's database. The technical team will be responsible for creating the ingestion sources, while the pilot owners will be responsible for providing the necessary information. 
-
+For the data that is already available, the technical team will create the ingestion sources that will allow the data to be retrieved from the source and stored in the centralised repository. The ingestion sources can be created using Apache NiFi, allowing us to retrieve data from APIs, FTP servers, and other sources. Alternatively, other ingestion sources, such as Python scripts, may require programmatic solutions. Finally, the ingestion sources can also be configured using Apache Druid, allowing us to load data directly into the project's database. The technical team will be responsible for creating the ingestion sources, while the pilot owners will be responsible for providing the necessary information and testing that the ingested data complies with the thematic co-exploration’s data needs.  
  
 
-#### Data not available 
+#### Data not available  
 
-To achieve this, the missions to collect data should be configured and launched. This process involves Pilot leaders and technical teams that will help them configure the tools that will be used for the data capture process. Once the tools are configured, citizens should be trained to use them. During the operation of the data collection campaigns, the PST members should monitor their progress and performance, and the technical team should ensure that the data is being collected and stored correctly. Data capturing apps and sensors belonging to “Data crowdsourcing and capture layer” of GREEN Engine, such as MODE, GREENGAGE app or MindEarth, will be used to collect the data. 
+To achieve this, the missions to collect data should be configured and launched. This process involves Pilot leaders and project’s technical team’s representatives that will help them configure the tools that will be used for the data collection or capture process. Once the tools are configured, observers should be trained to use them. During the operation of the data collection campaigns, the PST members should monitor their progress and performance, and the technical team should ensure that the data is being collected and stored correctly. Data capturing apps and sensors belonging to “Data crowdsourcing and capture layer” of GREEN Engine, such as MODE, GREENGAGE app or MindEarth, will be used to collect the data.  
+
+  
+
+#### Qualitative data  
+
+Questionnaires, surveys, interviews, focus groups or local walks, among other alternative activities, will be organized. The section and customization of such evaluation materials and instruments was performed in Task 2.3, based on examples of such mechanisms already published as knowledge assets within the GREENGAGE Academy. 
 
  
 
 ### Resources 
 
- * HOWTOs to gather data from Copernicus and from Open Data portals considered  in the project (TBD) 
+ * [Resources and budget template]() – this document developed in T2.2. can be used to keep track of the resources and budget planned for the data collection process.  
+
+ * HOWTOs to gather data from Copernicus and from Open Data portals considered in the project (TBD) 
 
  * [Apache NiFi official documentation](https://nifi.apache.org/docs.html) – Official documentation for tool to create ingestion sources 
 
  * [Apache NiFi GREENGAGE documentation](https://greengage-project.github.io/Documentation/tools/nifi/) – HOWTO for tool in GREENGAGE data stack configured for creating ingestion sources 
 
  * [Apache Druid official documentation](https://druid.apache.org/docs/latest/) – HOWTO for tool to load data directly into the centralised datastore offered by GREENGAGE 
-
- * [Apache Druid GREENGAGE documentation](https://greengage-project.github.io/Documentation/tools/druid/) – HOWTO explaining how to load data directly into the project's database 
-
- * [Resources and budget template](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B7c6e2319-112e-498c-a90e-8286cc147e9d%7D&action=edit&wdLOR=c48D37653-5FAE-4175-914D-060F1B6542AC&wdPid=6b868768) – convenient resource to help you planning what materials and budget will be needed to run the CS experiment or thematic co-exploration. This document should be updated in this step. 
 
  * [MODEs GREENGAGE documentation](https://greengage-project.github.io/Documentation/tools/mode/) – HOWTO for tool  to collect commuting data 
 
@@ -557,11 +567,11 @@ To achieve this, the missions to collect data should be configured and launched.
 
  * [Sensors integration in GREENGAGE] (https://greengage-project.github.io/Documentation/tools/sensorsIntegration/) – HOWTO to off-the-shelf sensors (ATMOtube and sensing apps, e.g. [Noisetube](https://scistarter.org/noisetube)) to be used in the project 
 
- * Data management plan (to be done) 
+ * [Data management plan](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B0705D49C-A49E-4E7A-985A-F6B72BF176E2%7D&file=data-management-plan_he_en.docx&action=default&mobileredirect=true) 
 
  * Data protocol specification (to be done) 
 
- 
+ * [Questionnaires of evaluation from SOCIO-BEE](PRE evaluation questionnaire & POST evaluation questionnaire) 
 
 ## 3.4. Data combination, analysis & visualization <a name="task3.4"></a> 
 
@@ -575,8 +585,7 @@ Pilot Leader with the support of PST and WP4.
 
 ### Objective 
 
-This multifaceted task begins with preprocessing steps to cleanse datasets of any inconsistencies, errors, or irrelevant information using automated data ingestion workflows through tools like Apache NiFi, channeling data efficiently into Apache Druid for optimal analysis readiness. The aim is to maintain data accuracy and integrity for a deeper, more precise understanding critical for informed decision-making. Concurrently, the development of interactive dashboards aims to transform this complex, cleansed data into accessible visual formats, enabling stakeholders—including policymakers, researchers, and citizens—to engage with data themes and patterns in a collaborative exploration environment. These dashboards, providing real-time monitoring and analysis, are crucial for facilitating quick, informed decisions and policy development, while promoting transparency and inclusivity. Together, these objectives strive to simplify data analysis and visualization processes through interlinked datasets and shared schemas, ultimately fostering a shared understanding and enhancing the thematic co-exploration’s impact. 
-
+This multifaceted task begins with preprocessing steps to cleanse datasets of any inconsistencies, errors, or irrelevant information using automated data ingestion workflows through tools like Apache NiFi, channelling data efficiently into Apache Druid for optimal analysis readiness. The aim is to maintain data accuracy and integrity for a deeper, more precise understanding critical for informed decision-making. Concurrently, the development of interactive dashboards aims to transform this complex, cleansed data into accessible visual formats, enabling stakeholders—including policymakers, researchers, and citizens—to engage with data themes and patterns in a collaborative exploration environment. These dashboards, providing real-time monitoring and analysis, are crucial for facilitating quick, informed decisions and policy development, while promoting transparency and inclusivity. Together, these objectives strive to simplify data analysis and visualization processes through interlinked datasets and shared schemas, ultimately fostering a shared understanding and enhancing the thematic co-exploration’s impact.  
  
 
 ### How can we achieve it? 
@@ -585,8 +594,7 @@ To successfully create workflows that can process the data into the desired form
 
  
 
- - **NiFi flow:** Apache NiFi is a powerful tool that allows us to create data pipelines that can be scheduled to run periodically. This tool is very useful for data ingestion, as it allows us to fetch data from APIs, FTP servers, and other sources. Additionally, NiFi can be used to clean and transform data, ensuring that it is in the desired format and structure. Finally, NiFi can be used to load data into Apache Druid, ensuring that the data is correctly ingested into the database.  
-
+ - **NiFi flow:** Apache NiFi is a powerful tool that allows us to create data pipelines that can be scheduled to run periodically. This tool is very useful for data ingestion, as it allows us to fetch data from APIs, FTP servers, and other sources. Additionally, NiFi can be used to clean and transform data, ensuring that it is in the desired format and structure. Finally, NiFi can be used to load data into Apache Druid, ensuring that the data is correctly ingested into the database.  Notably, in the data curation and cleaning process the Data quality VRVIS tool can also be useful.  
  
 
  - **Python script:** Develop Python scripts for more complex data transformations that might not be directly feasible within NiFi. This can include data cleaning, normalization, or feature engineering tasks. It can also be integrated with Apache NiFi to run as part of the flow. Furthermore, by using the Apache Druid API we can directly load data into the database.  
@@ -597,13 +605,11 @@ To successfully create workflows that can process the data into the desired form
 
  
 
-Once the data is preprocessed and cleaned the analysis may be conducted by combining and exploring the data using Apache Superset and Apache Druid. Apache Superset will allow us to create and share rich data visualizations and dashboards, providing an intuitive interface for users to interact with the data. Apache Druid will be utilized for its real-time data analytics capabilities, ensuring that our dashboards can display the most current data efficiently. Additionally, the integration of Apache NiFi will streamline the data flow into these systems, ensuring a consistent and reliable data pipeline. The combination of these tools, supported by thorough documentation and examples of integration, will enable us to create dynamic and insightful thematic co-exploration dashboards that serve the diverse needs of our project stakeholders.  
+Once the data is pre-processed and cleaned the analysis may be conducted by combining and exploring the data using Apache Superset and Apache Druid. Apache Superset will allow us to create and share rich data visualizations and dashboards, providing an intuitive interface for users to interact with the data. Apache Druid will be utilized for its real-time data analytics capabilities, ensuring that our dashboards can display the most current data efficiently. Additionally, the integration of Apache NiFi will streamline the data flow into these systems, ensuring a consistent and reliable data pipeline. The combination of these tools, supported by thorough documentation and examples of integration, will enable us to create dynamic and insightful thematic co-exploration dashboards that serve the diverse needs of our project stakeholders.  
 
  
 
 ### Resources 
-
- - Data quality VRVIS (TBD)  
 
  - [Apache NiFi documentation](https://nifi.apache.org/docs.html) – HOWTO for tool  to create preprocessing flows  
 
@@ -611,14 +617,15 @@ Once the data is preprocessed and cleaned the analysis may be conducted by combi
 
  - [Apache Superset documentation](https://superset.apache.org/docs/intro) – HOWTO for tool to create dashboards and visualizations  
 
- - [ThematicCoExplorationSpec](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) – continously updated document where  to revisit the objectives of the thematic co-exploration and generate dashboards that address them  
+ - [ThematicCoExplorationSpec](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BB2395027-626C-44CC-98DC-124E9DC5750B%7D&file=ThematicCoExplorationSpec.docx&action=default&mobileredirect=true) – continuously updated document where to revisit the objectives of the thematic co-exploration and generate dashboards that address them. Once visualizations are generated, it is convenient to edit the corresponding section in the template, so tracking the progress of the thematic co-exploration.  
 
  - [Data quality VRVIS](https://greengage-project.github.io/Documentation/tools/DataQualityDashboard/) – HOWTO for tool to handle data quality assurance on the gathered datasets  
 
  - [Apache Superset documentation](https://superset.apache.org/docs/intro) – official documentation for tool  to create dashboards and visualizations  
 
- - HOWTO GISAT tool to do these visualizatons (TBD)  
+ - [HOWTO GISAT tool to do these visualizations](https://greengage-project.github.io/Documentation/tools/urbantep-visat/) – documentation for tool designed to facilitate the seamless integration, exploration, visualization, and analysis of diverse datasets 
 
+ - [HOWTO thematic co-exploration](https://greengage-project.github.io/Documentation/thematic_coexploration_example/)  – step by step example on how to co-produce a simple thematic co-exploration, using real datasets. It includes a video illustrating the usage of the different data management tools that intervene.
  
 
 ## 3.5. Experiment evaluation <a name="task3.5"></a> 
@@ -633,17 +640,16 @@ Pilot owners, GREENGAGE Observers and PST
 
 ### Objective 
 
-This objective involves an evaluation of the experiments objectives, outputs, and overarching goals have been achieved, alongside a detailed review of how the planned activities were implemented in practice. By meticulously examining the alignment between planned and actual activities, the assessment will not only highlight the project's accomplishments and areas of strength but also uncover any discrepancies or challenges encountered along the way. Furthermore, this process is instrumental in identifying valuable opportunities for learning and improvement, facilitating a reflective analysis that can inform future initiatives.  
-
+This objective involves an evaluation of the experiment’s objectives, outputs, and overarching goals have been achieved, alongside a detailed review of how the planned activities were implemented in practice. By meticulously examining the alignment between planned and actual activities, the assessment will not only highlight the thematic co-exploration's accomplishments and areas of strength but also uncover any discrepancies or challenges encountered along the way. Furthermore, this process is instrumental in identifying valuable opportunities for learning and improvement, facilitating a reflective analysis that can inform future initiatives.   
  
 
 ### How can we achieve it? 
 
-- Implement the evaluation strategy planned sketched in “Phase 1 Preparing” and refined in “Phase 2 Designing” (defined KPIs and mechanisms for their assessment).   
+- Implement the evaluation strategy planned sketched in “Phase 1 Preparing” and refined in “Phase 2 Designing” (defined KPIs and mechanisms for their assessment).    
 
-- Facilitate spaces for collective reflection about barriers and enablers during the preparing, designing, and Experimenting phases. Include all participants involved (PST members, pilot owners, Core Group, and Observers).   
+- Facilitate spaces for collective reflection about barriers and enablers encountered during the Preparing, Designing, and Experimenting phases. Include all participants involved (PST members, pilot owners, Core Group, and Observers).   
 
-- Think on the second iteration objective, goals, and outputs. Identify possibilities to mitigate or overcome barriers and enhance enablers based on what have you have learned so far. Adapt or change your thematic co-exploration specification, work plan or other planning strategies in place for future GO activities.  
+- Think on the possible following iteration objective, goals, and outputs. Identify possibilities to mitigate or overcome barriers and enhance enablers based on what have you have learned so far. Adapt or change your thematic co-exploration specification, work plan or other planning strategies in place for future GO activities.   
 
 ### Resources 
 TBD 
@@ -657,11 +663,11 @@ TBD
 Pilot owners, GREENGAGE Observers (GOs) and PST 
 
 ### Objective 
-The objective in the "Generation of storylines for wide dissemination" phase is to craft engaging and accessible narratives that convey the thematic co-exploration's key findings and insights to a broad audience. These storylines are designed to translate complex data and research outcomes into formats that are both engaging and easily understandable by the public. The aim is to underscore the thematic co-exploration's significance and its potential impact on policy-making, community initiatives, and scientific research. By doing so, the goal is to foster increased public awareness and interest in the project, thereby enhancing its overall reach and influence. To achieve wide visibility and impact, these storylines will be disseminated through various media channels, tailored to resonate with diverse audiences, including: 
+The objective in the "Generation of storylines for wide dissemination" stage is to craft engaging and accessible narratives that convey the thematic co-exploration's key findings and insights to a broad audience. These storylines are designed to translate complex data and research outcomes into formats that are both engaging and easily understandable by the public. The aim is to underscore the thematic co-exploration's significance and its potential impact on policymaking, community initiatives, and scientific research. By doing so, the goal is to foster increased public awareness and interest in the project, thereby enhancing its overall reach and influence. To achieve wide visibility and impact, these storylines will be disseminated through various media channels, tailored to resonate with diverse audiences, including:  
 
   - GREENGAGE partners and pilots.   
   - Local communities addressed by or emerging through the Observatories. 
-  - Audiences beyond GREENGAGE that are interested in tools, topics, or areas addressed by the GO (in connection with WP7).   
+  - Audiences beyond GREENGAGE that are interested in tools, topics, or areas addressed by the GO
 
  
 
@@ -677,6 +683,7 @@ To effectively generate storylines for wide dissemination, we will utilize a ran
 
 - [Presentation of Storytelling and Citizen Science](https://eu-citizen.science/resource/282) – this presentation describes about the value of storytelling in Citizen Science. It takes us through several viewpoints and tools you can use to tell your story, considering the needs of the audience, the human instinct for storytelling, how to use it to make your Citizen Science project exciting and meaningful to other people, and encourages you to think about ways to use these tools to reach more audiences  
 
+- Communication map (UnaLab and Scivil) - available at [Communication map](https://aitonline.sharepoint.com/:p:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B33F074D9-F7AA-4DE0-8E9C-CE8506984392%7D&file=Communication%20map_Table.pptx&action=edit&mobileredirect=true)  
  
 
 ## 4.2. Impact on policies <a name="task4.2"></a> 
@@ -697,17 +704,16 @@ The generation of policy briefs for policymakers, a key objective of this projec
 
 ### How can we achieve it? 
 
-To achieve this, we will first aggregate and analyze the data collected and insights generated throughout the project, using tools like Apache Druid for real-time analytics and Apache Superset for data visualization. These tools will help in identifying key trends and findings that are most relevant to policy-making. The policy analysis team will then work closely with research teams to distill these insights into policy briefs, ensuring that they are both data-driven and aligned with current policy needs. Communication specialists will refine these briefs to be clear and compelling, making them accessible to non-specialist policymakers. Throughout this process, a given thematic co-exploration’s coordinators will ensure that the briefs align with the strategic objectives of the thematic co-exploration and effectively convey its potential impact on policy and governance.  
-
+To achieve this, we will first aggregate and analyse the data collected and insights generated throughout the project, using tools like Apache Druid for real-time analytics and Apache Superset for data visualization. These tools will help in identifying key trends and findings that are most relevant to policymaking. The policy analysis team will then work closely with research teams to distil these insights into policy briefs, ensuring that they are both data-driven and aligned with current policy needs. Communication specialists will refine these briefs to be clear and compelling, making them accessible to non-specialist policymakers. Throughout this process, a given thematic co-exploration’s coordinators will ensure that the briefs align with the strategic objectives of the thematic co-exploration and effectively convey its potential impact on policy and governance.   
  
 
 ### Resources 
 
-- [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) – HOWTO about environment to collaborate in the policy briefs' generation in a centralised repository. The CE will suggest templates to guide the ellaboration of policy briefs.  
+- [Collaborative Environment](https://greengage-project.github.io/Documentation/tools/collaborativeEnvironment/) – HOWTO about environment to collaborate in the policy briefs' generation in a centralised repository. The CE will suggest templates to guide the elaboration of policy briefs.  
 
-- [Policy brief guideline](https://www.quorum.us/blog/write-policy-brief/) – web document explaining how to format a policy brief  
+- [Policy brief guideline](https://www.quorum.us/blog/write-policy-brief/) – public access web document explaining how to format a policy brief  
 
-- [Example of Polciy brief](https://zenodo.org/records/7752561) – in the domain of Citizen Science that could inspire those embarking in the preparation of a policy brief  
+- [Example of Policy brief](https://zenodo.org/records/7752561) – example of policy brief in the domain of Citizen Science that could inspire those embarking in the preparation of a policy brief  
 
  
 
@@ -723,12 +729,10 @@ Pilot Owners, GREENGAGE Observers (GOs), PST.
 
 ### Objective 
 
-The objective of identifying mechanisms for sustaining thematic co-explorations entails developing a strategic framework that ensures the longevity and continued relevance of these initiatives. This involves a thorough analysis of the resources, partnerships, and methodologies that have contributed to the success of the exploration, with an eye towards replicating and adapting these elements for future cycles. Critical to this process is the engagement with stakeholders to understand their needs, motivations, and feedback, which can inform the refinement of objectives and approaches for subsequent iterations.  
-
+The objective of identifying mechanisms for sustaining thematic co-explorations entails developing a strategic framework that ensures the long-term and continued relevance of these initiatives. This involves a thorough analysis of the resources, partnerships, and methodologies that have contributed to the success of the exploration, with an eye towards replicating and adapting these elements for future cycles. Critical to this process is the engagement with stakeholders to understand their needs, motivations, and feedback, which can inform the refinement of objectives and approaches for subsequent iterations.   
  
 
-As part of this objective, the preparation for the second iteration phase begins with a clear articulation of lessons learned, achievements, and challenges from the first cycle, setting the stage for enhanced planning, execution, and impact in the next phase. This proactive approach not only ensures that thematic co-explorations remain dynamically aligned with evolving research landscapes and societal needs but also fosters a culture of continuous improvement and innovation within the community of practice. 
-
+As part of this objective, the preparation for a possible new iteration phase or launch of a new thematic co-exploration as side effect of this thematic co-exploration begins with a clear articulation of lessons learned, achievements, and challenges from the first cycle, setting the stage for enhanced planning, execution, and impact in the next phase. This proactive approach not only ensures that thematic co-explorations remain dynamically aligned with evolving research landscapes and societal needs but also fosters a culture of continuous improvement and innovation within the community of practice.  
  
 
 ### How can we achieve it? 
@@ -739,4 +743,4 @@ To achieve the objective of sustaining thematic co-explorations for future itera
 
 ### Resources 
 
-TBD 
+- [Open Data, Software and Code Guidelines](https://open-research-europe.ec.europa.eu/for-authors/data-guidelines#:~:text=Data%20supporting%20Open%20Research%20Europe,license%20which%20facilitates%20data%20reuse.) – These guidelines relate to the Open Research Europe policy on data availability
