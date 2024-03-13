@@ -281,11 +281,13 @@ Finally, it is time to think about how the different activities and events that 
 
 ### Resources 
 
- - [Work plan template]()  
+ - [Work plan template](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B6751E3AB-C271-49A1-A4F5-851B7EAE16A1%7D&file=Workprogramme-pilotphase-iteration1.xlsx&action=default&mobileredirect=true)  
 
  - [Data management plan](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B0705D49C-A49E-4E7A-985A-F6B72BF176E2%7D&file=data-management-plan_he_en.docx&action=default&mobileredirect=true)
 
- - Data protocol specification (to be done)  
+ - [Data protocol specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B086EACC6-73A8-46EA-AC82-AA959EF89D5C%7D&file=DataProtocolSpecification.docx&action=default&mobileredirect=true)
+
+ - [Exemplary document reflecting about metrics and KPIs](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B6D48F632-4179-4AB4-98AF-E1F24CEA0115%7D&file=DefiningBristolPilotMetrics.docx&action=default&mobileredirect=true) 
 
  - [Reference KPI table for GREENGAGE project](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BEF9123A4-27C6-48B4-9C2C-A0F707E6F045%7D&file=KPIs-monitoring-table.xlsx&action=default&mobileredirect=true) 
 
@@ -296,6 +298,8 @@ Finally, it is time to think about how the different activities and events that 
  - [Problem Statement Questionnaire](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B2A0A5854-8F2F-41A8-821B-4ED300A86BE2%7D&file=ProblemStatementQuestionnaire.xlsx&action=default&mobileredirect=true) document –  
 
  - [Dataset Inventory template](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B632ec461-1851-463e-87de-01eedb9d2263%7D&action=edit&wdinitialsession=c2406669-913f-4a32-b5b5-3334b3429bd4&wdrldsc=2&wdrldc=1&wdrldr=OnSaveAsWebMethodComplete) – knowledge asset with fields  to identify every dataset’s metadata that will be needed for the thematic co-explorations in each Citizen Observatory. It is recommended that for each thematic co-exploration, a copy of this template is completed.   
+
+ - [Template for planning of activities and events](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BAE7BE0C4-5C15-46BE-838D-7D9481AAF2FD%7D&file=Community%20Building%20Plan.xlsx&action=default&mobileredirect=true) 
 
 ## 2.2. Tools and resources selection <a name="task2.2"></a> 
 
@@ -327,6 +331,7 @@ Finally, the Data Protocol to be used in the thematic co-exploration needs to be
 
  - [Template for tools and resources selection]( https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/ListToolsResourcesNeeded.docx?d=w7c6e2319112e498ca90e8286cc147e9d&csf=1&web=1&e=cYg9hW) – document that guides you in the process of selecting the knowledge assets, tools and resources necessary to run the thematic co-exploration  
  
+ - [Data protocol specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B086EACC6-73A8-46EA-AC82-AA959EF89D5C%7D&file=DataProtocolSpecification.docx&action=default&mobileredirect=true)
 
 ## 2.3. Tools and resources customization <a name="task2.3"></a> 
 
@@ -365,6 +370,8 @@ The Pilot Owner and PST will agree on a plan with WP4.
  - [Reference KPI table for GREENGAGE project](https://aitonline.sharepoint.com/:x:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7BEF9123A4-27C6-48B4-9C2C-A0F707E6F045%7D&file=KPIs-monitoring-table.xlsx&action=default&mobileredirect=true) 
 
  - [Template for tools and resources selection]( https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/Shared%20Documents/WP4%20CO%20enabling%20infrastructure%20and%20interoperable/D4.1%20GREEN%20Engine%20and%20manuals/Academy/resources/ListToolsResourcesNeeded.docx?d=w7c6e2319112e498ca90e8286cc147e9d&csf=1&web=1&e=cYg9hW) – document that guides you in the process of selecting the knowledge assets, tools and resources necessary to run the thematic co-exploration  
+
+ - [Data protocol specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B086EACC6-73A8-46EA-AC82-AA959EF89D5C%7D&file=DataProtocolSpecification.docx&action=default&mobileredirect=true)
 
  - [PRE SOCIO-BEE Citizen Science Activists Evaluation Questionnaire](https://aitonline.sharepoint.com/sites/HEUGREENGAGE337/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources%2F2nd%20Iteration%20%2D%20MASTER%20COPY%20in%20ENGLISH%2D%20POST%20SOCIO%2DBEE%20Citizen%20Science%20Activists%20Evaluation%20Questionnaire%20%28ALL%29%2Epdf&parent=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources)
 
@@ -547,7 +554,7 @@ Questionnaires, surveys, interviews, focus groups or local walks, among other al
 
 ### Resources 
 
- * [Resources and budget template]() – this document developed in T2.2. can be used to keep track of the resources and budget planned for the data collection process.  
+ * [Resources and budget template](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B7C6E2319-112E-498C-A90E-8286CC147E9D%7D&file=ListToolsResourcesNeeded.docx&action=default&mobileredirect=true) – this document developed in T2.2. can be used to keep track of the resources and budget planned for the data collection process.  
 
  * HOWTOs to gather data from Copernicus and from Open Data portals considered in the project (TBD) 
 
@@ -569,9 +576,9 @@ Questionnaires, surveys, interviews, focus groups or local walks, among other al
 
  * [Data management plan](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B0705D49C-A49E-4E7A-985A-F6B72BF176E2%7D&file=data-management-plan_he_en.docx&action=default&mobileredirect=true) 
 
- * Data protocol specification (to be done) 
+ * [Data protocol specification](https://aitonline.sharepoint.com/:w:/r/sites/HEUGREENGAGE337/_layouts/15/Doc.aspx?sourcedoc=%7B086EACC6-73A8-46EA-AC82-AA959EF89D5C%7D&file=DataProtocolSpecification.docx&action=default&mobileredirect=true)
 
- * [Questionnaires of evaluation from SOCIO-BEE](PRE evaluation questionnaire & POST evaluation questionnaire) 
+ * [Questionnaires of evaluation from SOCIO-BEE]([PRE evaluation questionnaire](https://aitonline.sharepoint.com/sites/HEUGREENGAGE337/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources%2F2nd%20Iteration%20%2D%20MASTER%20COPY%20in%20ENGLISH%2D%20PRE%20SOCIO%2DBEE%20Citizen%20Science%20Activists%20Evaluation%20Questionnaire%20%28ALL%29%20%2Epdf&parent=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources) & [POST evaluation questionnaire](https://aitonline.sharepoint.com/sites/HEUGREENGAGE337/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=sA5JF3&cid=fbb115a8%2D5c54%2D4537%2Db89b%2Db4a2df1902ae&FolderCTID=0x012000D068D8DB75D23C4BBF17727BCFAF5F22&id=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources%2F2nd%20Iteration%20%2D%20MASTER%20COPY%20in%20ENGLISH%2D%20POST%20SOCIO%2DBEE%20Citizen%20Science%20Activists%20Evaluation%20Questionnaire%20%28ALL%29%2Epdf&parent=%2Fsites%2FHEUGREENGAGE337%2FShared%20Documents%2FWP4%20CO%20enabling%20infrastructure%20and%20interoperable%2FD4%2E1%20GREEN%20Engine%20and%20manuals%2FAcademy%2Fresources)) 
 
 ## 3.4. Data combination, analysis & visualization <a name="task3.4"></a> 
 
@@ -704,8 +711,7 @@ The generation of policy briefs for policymakers, a key objective of this projec
 
 ### How can we achieve it? 
 
-To achieve this, we will first aggregate and analyse the data collected and insights generated throughout the project, using tools like Apache Druid for real-time analytics and Apache Superset for data visualization. These tools will help in identifying key trends and findings that are most relevant to policymaking. The policy analysis team will then work closely with research teams to distil these insights into policy briefs, ensuring that they are both data-driven and aligned with current policy needs. Communication specialists will refine these briefs to be clear and compelling, making them accessible to non-specialist policymakers. Throughout this process, a given thematic co-exploration’s coordinators will ensure that the briefs align with the strategic objectives of the thematic co-exploration and effectively convey its potential impact on policy and governance.   
- 
+To achieve this, we will first aggregate and analyse the data collected and insights generated throughout the project, using tools like Apache Druid for real-time analytics and Apache Superset for data visualization. These tools will help in identifying key trends and findings that are most relevant to policymaking. The policy analysis team will then work closely with research teams to distil these insights into policy briefs, ensuring that they are both data-driven and aligned with current policy needs. Communication specialists will refine these briefs to be clear and compelling, making them accessible to non-specialist policymakers. Throughout this process, a given thematic co-exploration’s coordinators will ensure that the briefs align with the strategic objectives of the thematic co-exploration and effectively convey its potential impact on policy and governance.    
 
 ### Resources 
 
