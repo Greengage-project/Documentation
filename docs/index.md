@@ -50,7 +50,7 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 - **Directory**: `/tools`
 - **Link**: [tools/Discourse](tools/Discourse)
-- **Deployed in**: [https://discourse.16.171.94.204.nip.io](https://discourse.16.171.94.204.nip.io)
+- **Deployed in**: [https://discourse.16.171.94.204.nip.io](https://discourse.greengage.apps.deustotech.eu/)
 - **Description**: Discourse is a modern, open-source discussion platform designed for building and managing community forums. Known for its user-friendly interface and robust features, it supports real-time discussions, multimedia integration, and comprehensive moderation tools. Ideal for a wide range of communities, from small groups to large enterprises, Discourse fosters engagement, knowledge sharing, and collaboration.
 
   - **Examples of programmatic integration/usage**:
