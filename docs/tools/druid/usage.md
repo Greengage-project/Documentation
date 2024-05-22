@@ -50,3 +50,33 @@ Apache Druid offers a variety of ways to ingest data. The most common way is to 
 - Click on the **THREE DOTS** at the rightmost part of the top menu. Then, click on the **Explore** button. This view will allow you to explore the different datasources that you have in the database. At the left part you should select the datasource that you want to explore and in the right part you may choose the chart type and its configuration. After that, you should select the desired column to explore. Finally, you can add several filters at the top part of the view. 
 
 ![Explore](./assets/explore.png)
+
+
+# Download data from Apache Druid
+
+**Step 1: Go to query section**
+
+- Click on the **QUERY** button at the top menu. 
+
+![Query](./assets/navbar.png)
+
+**Step 2: Write the query**
+
+- Create a query to select the data that you want to download. In this case, we will download all the data from the `test` datasource. 
+
+```sql
+SELECT * FROM test
+```
+
+**Step 3: Run the query**
+
+- Click on the **Run** button at the middle-left part of the view. The results of the query will be shown at the bottom part of the view. 
+- **VERY IMPORTANT!** You should uncheck the **Limit inline result** option in the engine configuration. This option is shown in the figure below.
+
+![Limit inline result](./assets/limit_results.png)
+
+**Step 4: Download the data**
+
+- Finally, at the right-most part of the screen, click on the down pointing arrow and download the data in the desired format.
+
+![Download data](./assets/download_data.png)
