@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "keycloak_example" "\0"
+            VALUE "FileDescription", "keycloaklogin" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "keycloak_example" "\0"
+            VALUE "InternalName", "keycloaklogin" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "keycloak_example.exe" "\0"
-            VALUE "ProductName", "keycloak_example" "\0"
+            VALUE "OriginalFilename", "keycloaklogin.exe" "\0"
+            VALUE "ProductName", "keycloaklogin" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

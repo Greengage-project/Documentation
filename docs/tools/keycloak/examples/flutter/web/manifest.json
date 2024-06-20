@@ -1,6 +1,6 @@
 {
-    "name": "keycloak_example",
-    "short_name": "keycloak_example",
+    "name": "keycloaklogin",
+    "short_name": "keycloaklogin",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
