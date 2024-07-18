@@ -41,6 +41,15 @@ class _LoginPageState extends State<LoginPage> {
           _refreshToken = result.refreshToken;
           _profile = _decodeJWT(_idToken!);
         });
+        print(' ');
+        print(' ');
+        print(' ');
+        print(' ');
+        print(result.refreshToken);
+        print(' ');
+        print(' ');
+        print(' ');
+        print(' ');
         if (result.idToken != null) {
           print('Profile: $_profile');
         }
