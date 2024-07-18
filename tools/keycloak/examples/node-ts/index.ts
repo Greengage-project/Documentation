@@ -3,6 +3,8 @@ import session from "express-session";
 import Keycloak from "keycloak-connect";
 import keycloakSettings from "./keycloak.json";
 import { RequestKeycloak } from "./custom-types";
+import axios from "axios";
+
 const app = express();
 const memoryStore = new session.MemoryStore();
 
@@ -45,6 +47,41 @@ app.get("/", (req: RequestKeycloak, res: Response) => {
 
 app.get("/auth", keycloak.protect(), (_: Request, res: Response) => {
   res.send("Authenticated  | <a href='/logout'>Logout</a>");
+});
+
+app.get("/verify-token", async (req: Request, res: Response) => {
+  const token = req.headers.authorization?.split(" ")[1];
+
+  if (!token) {
+    return res.status(400).send("Token not provided");
+  }
+
+  try {
+    const introspectionResponse = await axios.post(
+      `${keycloakSettings["auth-server-url"]}/realms/${keycloakSettings["realm"]}/protocol/openid-connect/token/introspect`,
+      new URLSearchParams({
+        token: token,
+        client_id: keycloakSettings["resource"],
+        client_secret: keycloakSettings["credentials"]["secret"],
+      }),
+      {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      }
+    );
+
+    const introspectionResult = introspectionResponse.data;
+
+    if (introspectionResult.active) {
+      res.send("Token is valid");
+    } else {
+      res.status(401).send("Token is invalid");
+    }
+  } catch (error) {
+    console.error("Error verifying token:", error);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 app.get("/logout", (req: RequestKeycloak, res: Response) => {
