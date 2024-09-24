@@ -118,6 +118,7 @@ The above README provides a structured outline to document the technical aspects
 
 - **Directory**: `/tools`
 - **Link**: [tools/greengage-app-api](tools/greengage-app-api)
+- **Deployed in**: [api-stage.greengage.dev/graphql](https://api-stage.greengage.dev/graphql)
 - **Description**: The greengage app api is mesh of multiple services which are provided via a single gateway. This underlying docuemntation will show you in a simple way how you can interact with application and how you can adopt your application to fit in the ecosystem.
 
 #### Wordpress
@@ -129,5 +130,25 @@ The above README provides a structured outline to document the technical aspects
   - **Examples of programmatic integration/usage**:
     - [With Keycloak](tools/wordpress/integration/#wpKeycloak)
     - [With Discourse](tools/wordpress/integration/#wpdiscourse)
+
+#### MindEarth
+
+- **Directory**: `/tools`
+- **Link**: [tools/mindview](tools/mindview)
+- **Deployed in**: [Google Play
+  ](https://play.google.com/store/apps/details?id=ch.mindearth.mindviewgreengage&hl=en)
+- **Description**: The MindEarth platform is an advanced system designed for real-time data collection and analysis, particularly suited to urban planning, environmental monitoring, and commercial research projects. It allows third-party organizations to commission missions for users to perform, which may involve taking photographs, traveling specific routes, or staying in a certain location for a set amount of time. The platform supports seamless integration with mobile devices and backend services, ensuring high scalability and flexibility.
+
+  - **Examples of programmatic integration/usage**:
+    - [With Third-Party Services](tools/mindview/integration)
+
+#### Data Quality Dashboard
+
+- **Directory**: `/tools`
+- **Link**: [tools/DataQualityDashboard](tools/DataQualityDashboard)
+- **Deployed in**: [qualitydashboard.greengage-project.eu](https://qualitydashboard.greengage-project.eu/)
+- **Description**: The Data Quality Dashboard is a web-based platform designed to monitor and visualize the quality of collected data. It provides users with powerful tools to identify, analyze, and resolve data quality issues. By offering both visual and numeric representations of key metrics such as completeness, accuracy, and consistency, the dashboard helps users quickly pinpoint potential issues in their datasets. The platform supports various data exploration features, including filtering by time, location, and other parameters, making it ideal for applications like environmental monitoring, urban planning, and more.
+
+---
 
 ##### Source code in: [https://github.com/Greengage-project/Documentation](https://github.com/Greengage-project/Documentation)
