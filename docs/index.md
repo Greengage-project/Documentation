@@ -121,6 +121,13 @@ The above README provides a structured outline to document the technical aspects
 - **Deployed in**: [api-stage.greengage.dev/graphql](https://api-stage.greengage.dev/graphql)
 - **Description**: The greengage app api is mesh of multiple services which are provided via a single gateway. This underlying docuemntation will show you in a simple way how you can interact with application and how you can adopt your application to fit in the ecosystem.
 
+#### UrbanTEP / VISAT
+
+- **Directory**: `/tools`
+- **Link**: [tools/urbantep-visat](tools/UrbanTEP/VISAT)
+- **Deployed in**: [visat-sdg.urban-tep.eu](https://visat-sdg.urban-tep.eu)
+- **Description**: VISAT (Visualization and Analytical Toolbox) is a powerful tool provided by GISAT within the Urban Thematic and Exploration Platform (UrbanTEP). It is designed for the seamless integration, exploration, visualization, and analysis of diverse datasets, particularly geospatial data. As part of the GREENGAGE project, VISAT is integral to supporting pilot solutions with its data integration, visualization, and analysis capabilities, enhancing the efficiency of Citizen Observatory projects.
+
 #### Wordpress
 
 - **Directory**: `/tools`
