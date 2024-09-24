@@ -257,7 +257,7 @@
 <p>If you're interested in participating in the MindView project by using the MindEarth App, here's a detailed guide to help you get started:</p>
 <h3 id="step-1-downloading-and-installing-the-app">Step 1. Downloading and Installing the App</h3>
 <p><strong>Download the app</strong>: Download the MindEarth App on the Google Play Store, or if it’s not yet available there, download the APK file from the link provided in the resources section.
-[download app][#]
+<a href="https://play.google.com/store/apps/details?id=ch.mindearth.mindviewgreengage&amp;hl=en">download app</a>
 <strong>Install the App</strong>: Install the app on your Android smartphone. If you're installing via an APK file, make sure to allow installation from unknown sources in your phone's settings.</p>
 <h3 id="step-2-setting-up-your-account">Step 2. Setting Up Your Account</h3>
 <p><strong>Launch the App</strong>: Open the MindEarth App on your device. Please note that for the app to function correctly, you need to give it permission to track your precise location, access your camera, microphone, and storage.
@@ -283,7 +283,7 @@
 <h3 id="additional-tips">Additional Tips</h3>
 <p><strong>Stay Charged</strong>: Ensure your device is sufficiently charged, especially for longer missions.
 <strong>Follow Guidelines</strong>: Always adhere to the guidelines for each mission to ensure the quality of data and secure your reward.
-<strong>Privacy Compliance</strong>: Be mindful of privacy regulations, especially when photographing in public spaces. Do not deviate from the path associated with your mission. </p>
+<strong>Privacy Compliance</strong>: Be mindful of privacy regulations, especially when photographing in public spaces. Do not deviate from the path associated with your mission.</p>
 <h2 id="mission-control">Mission Control</h2>
 <p>Mission Control serves as the back-end component of MindView, designed for the generation and monitoring of mapping campaigns and missions. The platform is typically managed directly by authorized MindEarth team members, or by authorized third parties, each granted access through a secure Keycloak authentication method, functioning as the operational hub of all active campaigns. If you want to use Mission Control, here's a detailed guide to help you get started:</p>
 <h3 id="step-1-accessing-mission-control">Step 1: Accessing Mission Control</h3>
@@ -317,8 +317,8 @@ Time constraints for the mission, including start and end dates and times.
 <h3 id="step-7-confirm-mission-data">Step 7. Confirm Mission Data</h3>
 <p><strong>Review and Analysis</strong>: Review data collected from completed missions and, if quality is satisfactory to the campaign goals, confirm it to send if for AI processing.</p>
 <h2 id="dataview-rest-api">Dataview REST API</h2>
-<p>DataView is an integral part of the MindView system, offering a suite of interactive REST APIs that enable interaction with data collected via the MindEarth App and processed by MindEarth. </p>
-<p>Note: DataView is still under development and no final link to the resource nor a final outline of the data endpoints is available. </p>
+<p>DataView is an integral part of the MindView system, offering a suite of interactive REST APIs that enable interaction with data collected via the MindEarth App and processed by MindEarth.</p>
+<p>Note: DataView is still under development and no final link to the resource nor a final outline of the data endpoints is available.</p>
 <h3 id="authentication">Authentication</h3>
 <p><strong>KeyCloak Authentication</strong>: Secure access control for using DataView APIs.
 <strong>SSL Encryption</strong>: All API interactions are SSL encrypted for data security during transmission.</p>
@@ -329,35 +329,41 @@ Time constraints for the mission, including start and end dates and times.
 <strong>Header</strong>: Bearer <token>
 <strong>Output Example</strong>:
 [
-   {
-      "id": 1,
-      "campaignName": "Test 1",
-      "features": [
-         { "id": 6, "type": [1, 2] },
-         { "id": 2, "type": [2] }
-      ]
-   },
-   {
-      "id": 2,
-      "campaignName": "Test 2"
-   }
+{
+"id": 1,
+"campaignName": "Test 1",
+"features": [
+{ "id": 6, "type": [1, 2] },
+{ "id": 2, "type": [2] }
+]
+},
+{
+"id": 2,
+"campaignName": "Test 2"
+}
 ]</p>
 <h3 id="accessing-geospatial-layers">Accessing Geospatial Layers</h3>
 <p><strong>Description</strong>: Within the selected campaign, define the features of interest and other applicable parameters (e.g., results spatial aggregation methods).</p>
-<p><strong>Endpoint</strong>:  https://greengage-mindview.mindearth.ai/results/<campaign_id>/<features_id>/<geometry_type>
-- <strong>Method</strong>: GET
-- <strong>Header</strong>: Bearer <token></p>
-<p><strong>Features ID</strong> (Example of typical socio-demographic features extractable through the GREENGAGE project, as discussed with Pilot cities):
-- 9 → Footfall
-- 10 → Gender
-- 11 → Age 
-- …</p>
+<p><strong>Endpoint</strong>: https://greengage-mindview.mindearth.ai/results/<campaign_id>/<features_id>/<geometry_type></p>
+<ul>
+<li><strong>Method</strong>: GET</li>
+<li><strong>Header</strong>: Bearer <token></li>
+</ul>
+<p><strong>Features ID</strong> (Example of typical socio-demographic features extractable through the GREENGAGE project, as discussed with Pilot cities):</p>
+<ul>
+<li>9 → Footfall</li>
+<li>10 → Gender</li>
+<li>11 → Age</li>
+<li>…</li>
+</ul>
 <p><strong>Geometry Type</strong>:
-Examples of different geometry types:
-- 1 → Point
-- 2 → Line
-- 3 → Raster Grid
-- 4 → Vector Polygon</p>
+Examples of different geometry types:</p>
+<ul>
+<li>1 → Point</li>
+<li>2 → Line</li>
+<li>3 → Raster Grid</li>
+<li>4 → Vector Polygon</li>
+</ul>
 <h3 id="data-export">Data Export</h3>
 <p>DataView provides options to export data in formats like JSON, CSV, etc., facilitating easy integration with external data processing tools.</p>
 <h2 id="single-sign-on-sso-service">Single Sign On (SSO) Service</h2>
@@ -367,7 +373,7 @@ Examples of different geometry types:
 <h1 id="testing">Testing</h1>
 <ul>
 <li>You can find here some <a href="assets/sample_data">sample output data</a></li>
-<li>We can give you <a href="#">early access to the APK</a> and create sample missions around your location if you want to test the app and there are no active missions in your vicinity.</li>
+<li>We can give you <a href="https://play.google.com/store/apps/details?id=ch.mindearth.mindviewgreengage&amp;hl=en">early access to the APK</a> and create sample missions around your location if you want to test the app and there are no active missions in your vicinity.</li>
 </ul>
 <h1 id="support-and-contact">Support and Contact</h1>
 <p>If you have any questions or require technical support, do not hesitate to contact our support team at <a href="support@mindearth.ch">support@mindearth.ch</a>.</p>
