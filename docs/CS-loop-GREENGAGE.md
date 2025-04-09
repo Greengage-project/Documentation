@@ -44,14 +44,13 @@ This section showcases the process, tools and results obtained when applying the
 ### A.	CS campaign specification 
 
 First thing in the organization of a thematic co-exploration, within a Citizen Observatory, is to decide what is the socio-economic and/or environmental challenge that wants to be addressed. There are different aspects that need to be decided at this stage. A useful knowledge asset or CO enabler, as they are called in GREENGAGE, is the thematic co-exploration specification template which is a Word template which guides the organizers of a thematic co-exploration through the following questions: 
-a. WHY – reason why this Citizen Observatory’ thematic co-exploration is needed; 
-b. WHO – stakeholders involved and affected who need to be recruited for the co-exploration to take place and for the outcomes to be disseminated to; 
-c. WHAT – actual endeavours/activities of the Citizen Observatory’s thematic co-exploration towards validating a defined hypothesis and populate a given set of metrics; 
-d. WHEN – planning of activities (resources&time) when undertaking the Citizen Observatory’s thematic co-exploration, e.g. crowd-sourcing and data analysis sessions needed; 
-e. WHERE – geographical area where Citizen Observatory’s thematic co-exploration will take place, i.e. area to cover and specific points and frequency of measurements which are needed to ensure valuable crowdsourced data; 
-f. WHICH – materials and resources, i.e. actual materials, devices and tools needed to execute the Citizen Observatory’s thematic co-exploration, coming either from GREENGAGE or other publicly available tools and assets; 
-g. HOW – specification of data analysis processes/workflows to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration. In this stage the needed visualizations and possible storytelling approaches to be eventually adopted are co-specified too. 
-
+1. WHY – reason why this Citizen Observatory’ thematic co-exploration is needed; 
+2. WHO – stakeholders involved and affected who need to be recruited for the co-exploration to take place and for the outcomes to be disseminated to; 
+3. WHAT – actual endeavours/activities of the Citizen Observatory’s thematic co-exploration towards validating a defined hypothesis and populate a given set of metrics; 
+4. WHEN – planning of activities (resources&time) when undertaking the Citizen Observatory’s thematic co-exploration, e.g. crowd-sourcing and data analysis sessions needed; 
+5. WHERE – geographical area where Citizen Observatory’s thematic co-exploration will take place, i.e. area to cover and specific points and frequency of measurements which are needed to ensure valuable crowdsourced data; 
+6. WHICH – materials and resources, i.e. actual materials, devices and tools needed to execute the Citizen Observatory’s thematic co-exploration, coming either from GREENGAGE or other publicly available tools and assets; 
+7. HOW – specification of data analysis processes/workflows to be able to capture, analyse and generate indicators and visualizations sought in Citizen Observatory’s thematic co-exploration. In this stage the needed visualizations and possible storytelling approaches to be eventually adopted are co-specified too. 
 
 
 As result, in this stage, applied to our exemplary thematic co-exploration, the following decisions were taken:
