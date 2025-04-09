@@ -12,7 +12,7 @@ This documentation describes the validation of the GREENGAGE co-creation process
 5. Feedback & collective learning – validating findings with humans and providing participants with actionable feedback; and 
 6. Action & impact - informing policies, creating solutions, and refining methodologies for future CS campaigns exploring similar or complementary thematic co-explorations.
 
-![Gantt](./assets/citizen-science-loop-GREENGAGE.png) 
+![Citizen Science Loop in GREENGAGE](./assets/citizen-science-loop-GREENGAGE.png) 
 
 
 ## GREENGAGE platform to enable Citizen Observatories
@@ -28,15 +28,14 @@ Each phase is supported by GREENGAGE’s GREEN Engine infrastructure, named GREE
 2.	Data Crowdsourcing and Capture: Based on the groundwork of the previous area of concern, this materialises into concrete data collection activities. It is characterized by active participation, leveraging technology to gather vital curated high quality environmental data.
 3.	Data Analysis and Insights Generation: In this latter area of concern, the collected data is transformed into actionable insights. This is where the data, once transformed in actionable information, becomes a powerful tool for understanding and influencing environmental policy.
 
-The purpose of this documentation is to exemplify how the CS loop is enabled through the suite of tools and knowledge assets defined by GREENGAGE and shown in the above figure. Thus, next section describes how GREENGAGE validates the Citizen Science Loop through a real-world thematic co-exploration at the University of Deusto. 
+The purpose of this documentation is to exemplify how the CS loop is enabled through the suite of tools and knowledge assets defined by GREENGAGE and shown in the below figure. Thus, next section describes how GREENGAGE validates the Citizen Science Loop through a real-world thematic co-exploration at the University of Deusto. 
 
 1. **Community and Co-production Process Management:** Throughout this phase, the emphasis is on building a strong, informed, and active community which collaborates through a co-production process.
 2. **Data Crowdsourcing and Capture:** Based on the groundwork of the previous phase, e.g. definition of hypothesis, research questions formulation or datasets selection, among others, this phase materialises into concrete data collection activities. It is characterized by active participation, leveraging technology to gather vital environmental data.
 3. **Data Analysis and Insights Generation:** In this phase the collected data is transformed into actionable insights. This phase is where the data, once transformed in actionable information, becomes a powerful tool for understanding and influencing environmental policy. 
 
-The following figure shows the Citizen Observer Journey and the tools that are used in the different phases that it comprises:
+![GREEN Engine areas of concern](./assets/citizen_observer_journey.png) 
 
-<img src='../assets/citizen_observer_journey.png' width='50%'>
 
 ## Example of a simple thematic co-exploration
 
