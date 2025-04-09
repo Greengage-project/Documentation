@@ -12,7 +12,8 @@ d. data analysis & interpretation – employing AI-driven tools for insight extr
 e. feedback & collective learning – validating findings with humans and providing participants with actionable feedback; and 
 f. action & impact - informing policies, creating solutions, and refining methodologies for future CS campaigns exploring similar or complementary thematic co-explorations.
 
-[<img src='../assets/citizen-science-loop-GREENGAGE.png' width='50%'>](Citizen Science loop in GREENGAGE)
+![Gantt](./assets/citizen-science-loop-GREENGAGE.png) 
+
 
 In a thematic co-exploration, the focus is on a particular theme or subject matter, such as air quality, water pollution, biodiversity, or climate change phenomena. The key aspects of this approach include:
 
