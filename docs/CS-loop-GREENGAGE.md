@@ -1,8 +1,18 @@
-# Thematic co-exploration example
+# Completion of a Citizen Science Loop with GREENGAGE
 
-## Thematic co-exploration contextualisation
+## Importance of completing Citizen Science loop in thematic co-explorations within Citizen Observatories
 
-Thematic co-exploration in the context of Citizen Observatories refers to a collaborative approach where citizens actively participate alongside scientists and other stakeholders in exploring specific themes or topics related to environmental monitoring and observation. Citizen Observatories are organizations that leverage the collective efforts of individuals, often non-scientists, to gather, share, and analyse environmental data, typically facilitated by digital tools and technologies.
+Citizen Observatories (COs) empower individuals to actively participate in data collection and environmental monitoring to address local challenges. The GREENGAGE project, under the Horizon Europe framework, aims to enhance the efficacy and more widespread adoption of COs by providing a structured Citizen Science Loop methodology operationalized by a co-production process which is enabled by its GREEN Engine infrastructure. One core contribution brought forward by GREENGAGE is the “thematic co-exploration” concept. A thematic co-exploration, in the context of COs, refers to a collaborative approach where citizens actively participate alongside scientists and other stakeholders in exploring specific themes or topics related to environmental monitoring and observation. Through them, COs are made purposeful by leveraging the collective efforts of individuals, often non-scientists, to gather, share, and analyse environmental data, typically facilitated by digital tools and technologies. 
+
+This documentation describes the validation of the GREENGAGE co-creation process for thematic co-explorations, through a university campus based thematic co-exploration, which results in the execution of the following 6 steps of a Citizen Science loop, namely: 
+a. problem identification – recognizing research questions or societal challenges suitable for public engagement; 
+b. campaign design – developing participatory protocols, data collection methodologies, and toolkits for citizens’ engagement; 
+c. data crowdsourcing – enabling citizen scientists to gather good quality observations via digital applications, sensors, and surveys, through data crowdsourcing activities; 
+d. data analysis & interpretation – employing AI-driven tools for insight extraction and thus making humanly meaningful the data modelled; 
+e. feedback & collective learning – validating findings with humans and providing participants with actionable feedback; and 
+f. action & impact - informing policies, creating solutions, and refining methodologies for future CS campaigns exploring similar or complementary thematic co-explorations.
+
+[<img src='../assets/citizen_observer_journey.png' width='50%'>](https://www.youtube.com/watch?v=6VZLyuLVSPQ)
 
 In a thematic co-exploration, the focus is on a particular theme or subject matter, such as air quality, water pollution, biodiversity, or climate change phenomena. The key aspects of this approach include:
 
