@@ -1,6 +1,6 @@
 # Completion of a Citizen Science Loop with GREENGAGE
 
-## Importance of completing Citizen Science loop in thematic co-explorations within Citizen Observatories
+## Citizen Science loop in thematic co-explorations within Citizen Observatories
 
 Citizen Observatories (COs) empower individuals to actively participate in data collection and environmental monitoring to address local challenges. The GREENGAGE project, under the Horizon Europe framework, aims to enhance the efficacy and more widespread adoption of COs by providing a structured Citizen Science Loop methodology operationalized by a co-production process which is enabled by its GREEN Engine infrastructure. One core contribution brought forward by GREENGAGE is the “thematic co-exploration” concept. A thematic co-exploration, in the context of COs, refers to a collaborative approach where citizens actively participate alongside scientists and other stakeholders in exploring specific themes or topics related to environmental monitoring and observation. Through them, COs are made purposeful by leveraging the collective efforts of individuals, often non-scientists, to gather, share, and analyse environmental data, typically facilitated by digital tools and technologies. 
 
@@ -37,10 +37,9 @@ The purpose of this documentation is to exemplify how the CS loop is enabled thr
 ![GREEN Engine areas of concern](./assets/citizen_observer_journey.png) 
 
 
-## Example of a simple thematic co-exploration
+## Citizen Science loop step-wised co-creation
 
-This example explains the steps to conduct a complete thematic co-exploration process using some of the tools provided by the GREENGAGE platform. To support the explanation, we will employ a video, however, in the video there are only covered the steps belonging to the third phase of the Citizen Observer Journey. Thus, we will complement the video with a textual explanation of the steps covered in the first and second phases.
-
+This section showcases the process, tools and results obtained when applying the GREENGAGE CO-enabling approach to a real use-case, namely, “reflection on the suitability and air quality of important points of interest (POIs) within the campus of the University of Deusto in Bilbao, Spain”. The following subsections describe the different steps completed towards fulfilling the CS loop for this thematic co-exploration. Notice that to coordinate the execution of this co-creation process, a new process was defined in the Collaborative Environment as shown in Fig. 2.
 
 ### Objective
 
