@@ -76,4 +76,45 @@ Next, it is shown the dashboard that has been defined as back-end of the GREENGA
 
 ![GREENGAGE crowdsourcing campaign specification](./assets/CampaignConfigurationDashboard.png) 
 
+### C.	Collect, extract, transform and load campaign data
+
+On Friday 14th March 2025, from 11:30am to 12:30pm CET, a crowdsourcing campaign was executed, where 10 people took part. Notice that volunteers before starting the crowdsourcing campaign they were requested to complete the following actions:
+
+1. They had to log into [https://me.greengage-project.eu/](https://me.greengage-project.eu/) and complete there a sociodemographic form as the one shown in the figure below. Notice that this form requires that each participant specifies her role in the thematic co-exploration, gender, age range, work status, education level and so on. Besides and, very importantly, volunteers must accept a consent form at the bottomo of this page by means of which GREENGAGE is allowed to process their supplied data and aggregate with other participant's sociodemographic data, still preserving the privacy of participants at all time. Only, after they have completed this form, users are allowed to log in into the GREENGAGE app devised to capture data.
+
+![GREENGAGE participant's identify manager](./assets/me-greengage-snapshot.png) 
+
+2. They had to complete a PRE Impact evaluation questionnaire
+3. They had to download and install the GREENGAGE app either in their Android or Apple smartphones. Platform names give direct access to those willing to install the GREENGAGE app. Notice that the GREENGAGE app also allows users to register as done in step 1, if they do not have credentials, so that they can access into the app. 
+
+After, these preparation activities, volunteers were ready to launch the GREENGAGE app, as shown below, and use it to collect data:
+
+|----------------|----------------|----------------|
+| ![PO3-1](./assets/PO3-1.png) | ![PO3-2](./assets/PO3-2.png) | ![PO3-3](./assets/PO3-3.png) |
+
+The crowdsourced campaign data was collected by applying an ETL process. Whilst, the PRE and POST impact and satisfaction questionnaires were hosted in Google Forms, the the GREENGAGE app’s collected data was hosted at Apollo Server which exhibits a GraphQL API. This API allows clients (such as mobile apps or web frontends) to efficiently query and interact with campaign data. This interface was used to retrieve all data crowdsourced associated to the POIs and spots generated in the thematic co-exploration’s crowdsourcing campaign. Fig. 6 shows the Apollo Server front-end where details in JSON about tasks performed in the crowdsourcing campaign are retrieved by means of a GraphQL query. Notice that GraphQL is a modern API query language and runtime that allows clients to request precisely the data they need in a single request, unlike RESTful APIs which rely on multiple endpoints and fixed data structures, often leading to over-fetching or under-fetching of data.
+ 
+Fig. 6.	Front-end of Apollo Server where GraphQL queries are issued. 
+The ETL process corresponding to the crowdsourcing campaign was implemented as a Python script utilizing asynchronous programming patterns to efficiently extract, transform, and load GREENGAGE app’s data. For data extraction, the script interfaces with GREENGAGE app’s GraphQL API endpoint to retrieve mission data, including various mission types (e.g. SURVEY, WALK or DATASET). Additional observatory-related data is collected to provide geographical context for each mission during transform stage of the process. Finally, the script also interfaces with a Keycloak-based [11] authentication service customized for GREENGAGE, which allows extracting participants’ socioeconomic user data. Such service enables anonymization while preserving demographic information. Fig. 7 illustrates the web form devised that was completed by the 10 volunteers of the campaign to have access to GREENGAGE resources. 
+During transformation, mission data is processed according to type-specific rules. For example, a SURVEY type task, requires additional API calls to retrieve associated quantitative survey values, or GEOTRACKING type mission requires additional API call to retrieve associated GeoJSON object. The transformation phase maps tasks to observatory information, enriches records with anonymized user demographic data, and converts all data to a standardized CSV format with appropriate fields for analysis. This step is crucial because Apache Druid [12], the real-time analytics database used in the loading phase, requires data to be ingested in a structured format. Druid stores data internally in a columnar format, which optimizes it for fast aggregations and queries.
+Finally, the load phase utilizes Apache Druid's ingestion API [13] to load the transformed data. The script generates a comprehensive ingestion specification defining data types, dimensions, and granularity settings to optimize subsequent analytical queries. Once ingested, the data becomes immediately queryable through Druid's SQL API, which enables seamless integration with visualization platforms like Apache Superset and other analytics tools.
+Notice that 3 ETL processes were set up to extract, transform and load data from: 1) photos gathered through task 2 (see Fig. 4); 2) survey answers associated to the different users and POIs where surveys were responded through task 1 (see Fig. 4); and c) socio demographic data completed by volunteers when they signed up to take part in the observatory, by means of the https://me.greengage-project.eu page shown at Fig. 7. As result of these ETL processes, data was stored in Apache Druid infrastructure (see Fig. 8), which is the storage solution chosen within GREEN Engine. 
+ 
+Fig. 7.	Sociodemographic profile of campaign participants.
+As result of such campaign the following number of measurements were gathered:
+•	10 people completed a sociodemographic questionnaire which granted them access GREENGAGE app, after a consent form was signed.
+•	10 people also completed the PRE Impact evaluation questionnaire, as part of the ex-ante and ex-post evaluation approach [14] adopted by the project. 
+•	10 people completed an alpha testing questionnaire to provide feedback about the GREENGAGE app, and thus enhance its eventual acceptance.  
+•	10 people completed the POST Impact evaluation questionnaire
+•	21 photos were gathered at spots defined near the 4 POIs visited by the 10 volunteers, where potential issues were identified.
+•	90 answers to the 3-question survey associated to each of the 4 POIs defined in the campaign were gathered. 
+•	180 air quality measurements were gathered by the 4 Atmotube devices carried by volunteers (39 PM2.5 measurements). 
+ 
+Fig. 8.	Crowdsourcing campaign’s survey data loaded into Druid.
+ 
+Fig. 9.	Geolocated survey’s analysis for one single POI.
+ 
+Fig. 10.	Geolocated survey’s analysis for one question in all POIs.
+
+
 
