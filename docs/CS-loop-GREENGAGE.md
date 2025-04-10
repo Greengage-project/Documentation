@@ -145,4 +145,22 @@ Additionally, results from all questions and all POIs were aggregated in other c
 ![GREENGAGE Apache Superset's visualization of survey results for a POI](./assets/Superset-POIs-survey-question-analysis.png) 
 
 
+### E.	Evaluation of the thematic co-exploration experience and results
+
+Analysing the data visualized in the Superset has allowed us to draw some few conclusions. There has been alignment between the perceptions regarding air quality and the actual measurements obtained through more reliable devices as Atmotube. This fact was reflected per POI, see [figure for findings for POI4](#fig-superset-poi-analysis) and [figure for cross-campus survey results](#fig-superset-pois-question-analysis) which aggregates the air quality perceptions in all POIs. Similarly, info about the suitability of the different places was gathered and analysed at each POI and for the whole campus, taking the average value of the PSSI in the 4 points that represent the campus. Finally, some feedback was gathered from those visiting the POIs, who mainly took some pictures in spots, i.e. locations, close to the POIs where they found something remarkable regarding the suitability or the air quality of the place. The [following figure](#"fig-spot-photos-campus) shows an HTML visualization generated with all the spots collected. 
+
+<a id="fig-spot-photos-campus"></a>
+![Photos about spots of interest in Deusto's campus](./assets/SpotPhotosCampusDeusto.png) 
+
+Analysing the spots and the comments received in question 3 of survey 1 (see [figure for findings for POI4](#fig-superset-poi-analysis)), it was found that although generally the status of the campus is considered quite adequate, issues related to the fact that pedestrians and cars often share common spaces, it might be troublesome. 
+
+Fig. 12 summarizes the sociodemographic profile of participants in the campaign, where 3 women and 7 men, owning 5 iPhones and 6 Android devices, half of them not associated to GREENGAGE took part. Notice that the predominant age range was 25-50 years, and they were digitally literate participants with master of PhD studies. 
+F.	Feedback and action: Social media dissemination, policymaking, replication
+To close the CS loop and contribute towards the positive transformation of Deusto’s campus in Bilbao, the following actions were taken:
+1.	Discourse theme was created through which participants could communicate with each other. Results were announced through this Discourse [17] channel and participants had the opportunity to comment on the generated visualizations and in the interpretations performed by all of them.
+2.	X and LinkedIn social media channels were used to summarize the thematic co-exploration completed main conclusions.
+3.	A policy brief was created and sent to the vice-chancellor in the university of Deusto responsible for the campus refurbishment.
+4.	Impact analysis about the executed campaign in terms of social, political and citizen science aspects was performed, following the ACTION project’s [18] impact evaluation approach.
+	 
+Fig. 12.	Sociodemographic data analysis.
 
