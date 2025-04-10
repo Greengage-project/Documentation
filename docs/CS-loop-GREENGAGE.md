@@ -89,6 +89,7 @@ On Friday 14th March 2025, from 11:30am to 12:30pm CET, a crowdsourcing campaign
 
 After, these preparation activities, volunteers were ready to launch the GREENGAGE app, as shown below, and use it to collect data:
 
+| Check into POI    | Answer questionnaire     | Submit responses     |
 |----------------|----------------|----------------|
 | ![POI3-1](assets/POI3-3.jpg) | ![POI3-2](./assets/POI3-3.jpg) | ![POI3-3](./assets/POI3-3.jpg) |
 
