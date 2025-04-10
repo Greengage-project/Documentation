@@ -117,7 +117,7 @@ During transformation, mission data is processed according to type-specific rule
 Finally, the load phase utilizes [Apache Druid's ingestion API](https://druid.apache.org/docs/latest/api-reference/sql-ingestion-api/) to load the transformed data. The script generates a comprehensive ingestion specification defining data types, dimensions, and granularity settings to optimize subsequent analytical queries. Once ingested, the data becomes immediately queryable through Druid's SQL API, which enables seamless integration with visualization platforms like Apache Superset and other analytics tools.
 
 Notice that 3 ETL processes were set up to extract, transform and load data from: 
-1. Photos gathered through task 2 (see [crowdsourcing campaign's spec](#fig-campaign-spec)
+1. Photos gathered through task 2 (see [crowdsourcing campaign's spec](#fig-campaign-spec))
 2. Survey answers associated to the different users and POIs where surveys were responded through task 1 (see [crowdsourcing campaign's spec](#fig-campaign-spec)
 3. Socio demographic data completed by volunteers when they signed up to take part in the observatory, by means of the [https://me.greengage-project.eu](https://me.greengage-project.eu) page shown at [identify manager's interface](#fig-identity-manager). As result of these ETL processes, data was stored in Apache Druid infrastructure (see [Apache Druid's interface](#fig-apached-druid)), which is the storage solution chosen within GREEN Engine. 
 
@@ -132,3 +132,17 @@ As result of such campaign the following number of measurements were gathered:
 -	90 answers to the 3-question survey associated to each of the 4 POIs defined in the campaign were gathered. 
 -	180 air quality measurements were gathered by the 4 Atmotube devices carried by volunteers (39 PM2.5 measurements). 
  
+### D.	Analyse data throuh visualisations & reflection
+
+Once data had been collected into Druid, helped by [Apache Superset tool](https://superset.apache.org/), a range of visualizations were created at [GREENGAGE's deployment](https://superset.greengage-project.eu/). A superset dashboard was created with Superset [analyse survey answers at each POI](#fig-superset-poi-analysis). The figure shows analysis of answers to the question “How do you rate air quality at POI4?”. In the top left-hand side in a pie chart we notice that volunteers’ perception was good or very good in 70% of the cases, i.e. for 7 out of the 10 volunteers that took part. The table below the pie chart shows the answers’ distribution out of the 4 categories, there are 5 (no answer for “bad” was received). Interestingly, the PM2.5 concentration gathered by the 4 volunteers that also carried out an Atmotube device whilst they went around with the GREENGAGE app is shown at the bottom right side. During the crowdsourcing campaign’s time, the concentration of PM2.5 was in the range 1 to 7.8. Most studies indicate PM2.5 at or below 12 μg/m3 is considered healthy with little to no risk from exposure. If the level goes to or above 35 μg/m3 during a 24-hour period, the air is considered unhealthy and can cause issues for people with existing breathing issues such as asthma. Hence, users’ perceptions regarding air quality match what the Atmobube devices reflected in their measurements. 
+
+<a id="fig-superset-poi-analysis"></a>
+![GREENGAGE Apache Superset's visualization of survey results for a POI](./assets/Superset-POI-survey-analysis.png) 
+
+Additionally, results from all questions and all POIs were aggregated in other charts. For instance, [figure about survey results in the whole campus](#fig-superset-pois-question-analysis) depicts that in above 55% of the cases, volunteers considered that the air quality at the all the POIs, i.e. 4 points, selected was good or very good. 
+
+<a id="fig-superset-pois-question-analysis"></a>
+![GREENGAGE Apache Superset's visualization of survey results for a POI](./assets/Superset-POIs-survey-question-analysis.png) 
+
+
+
