@@ -91,7 +91,7 @@ After, these preparation activities, volunteers were ready to launch the GREENGA
 
 | Check into POI    | Answer questionnaire     | Submit responses     |
 |----------------|----------------|----------------|
-| <img src="./assets/POI3-1.png" width="921" height="2048"> | <img src="./assets/POI3-2.png" width="921" height="2048"> | <img src="./assets/POI3-3.png" width="921" height="2048"> |
+| <img src="./assets/POI3-1.jpg" width="921" height="2048"> | <img src="./assets/POI3-2.jpg" width="921" height="2048"> | <img src="./assets/POI3-3.jpg" width="921" height="2048"> |
 
 
 
