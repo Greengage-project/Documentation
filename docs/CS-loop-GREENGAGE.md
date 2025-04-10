@@ -86,7 +86,7 @@ On Friday 14th March 2025, from 11:30am to 12:30pm CET, a crowdsourcing campaign
 <a id="fig-identity-manager"></a>
 ![GREENGAGE participant's identify manager](./assets/me-greengage-snapshot.png) 
 
-2. They had to complete a [PRE Impact evaluation questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSdoNRTWPRb0emYWLAiXn4swOLFLRw41nqXQ4h5gKYnDaaUIcQ/viewform?usp=preview) as the one shown below. Its [PDF printout](./assets/GREENGAGE - MASTER COPY PRE Impact Questionnaire (CO participants) ENGLISH - Google Forms.pdf) showcases how volunteers in a CS campaign held within GREENGAGE are questionned about environmental, political, scientific and social impact perception before they take part in a thematic co-exploration.
+2. They had to complete a [PRE Impact evaluation questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSdoNRTWPRb0emYWLAiXn4swOLFLRw41nqXQ4h5gKYnDaaUIcQ/viewform?usp=preview) as the one shown below. Its [PDF printout](./assets/GREENGAGE%20-%20MASTER%20COPY%20PRE%20Impact%20Questionnaire%20%28CO%20participants%29%20ENGLISH%20-%20Google%20Forms.pdf) showcases how volunteers in a CS campaign held within GREENGAGE are questionned about environmental, political, scientific and social impact perception before they take part in a thematic co-exploration.
 
 <a id="fig-pre-impact-questionnaire"></a>
 ![GREENGAGE's volunteers' PRE Impact Evaluation questionnaire](./assets/PRE-impact-questionnaire.png) 
@@ -99,7 +99,7 @@ After, these preparation activities, volunteers were ready to launch the GREENGA
 |----------------|----------------|----------------|
 | ![POI3-1](assets/POI3-1.jpg) | ![POI3-2](./assets/POI3-2.jpg) | ![POI3-3](./assets/POI3-3.jpg) |
 
-Right after concluding the crowdsourcing campaign, volunteers were also requested to complete a [POST Impact evaluation questionnaire](https://docs.google.com/forms/d/e/1FAIpQLScsBJqiT6P0oww_rg1TiOhLhe8Z2UyqTI41-qUlrhGh8RlSfg/viewform?usp=preview)) as the one shown below. Its [PDF printout](./assets/MASTER POST Impact Questionnaire (CO participants) ENGLISH - Google Forms) showcases how volunteers in a CS campaign held within GREENGAGE are questionned about environmental, political, scientific and social impact perception after they take part in a thematic co-exploration.
+Right after concluding the crowdsourcing campaign, volunteers were also requested to complete a [POST Impact evaluation questionnaire](https://docs.google.com/forms/d/e/1FAIpQLScsBJqiT6P0oww_rg1TiOhLhe8Z2UyqTI41-qUlrhGh8RlSfg/viewform?usp=preview)) as the one shown below. Its [PDF printout](./assets/MASTER%20POST%20Impact%20Questionnaire%20%28CO%20participants%29%20ENGLISH%20-%20Google%20Forms.pdf) showcases how volunteers in a CS campaign held within GREENGAGE are questionned about environmental, political, scientific and social impact perception after they take part in a thematic co-exploration.
 
 <a id="fig-pre-impact-questionnaire"></a>
 ![GREENGAGE's volunteers' POST Impact Evaluation questionnaire](./assets/PRE-impact-questionnaire.png) 
@@ -119,7 +119,7 @@ Finally, the load phase utilizes [Apache Druid's ingestion API](https://druid.ap
 Notice that 3 ETL processes were set up to extract, transform and load data from: 
 1. Photos gathered through task 2 (see [crowdsourcing campaign's spec](#fig-campaign-spec)
 2. Survey answers associated to the different users and POIs where surveys were responded through task 1 (see [crowdsourcing campaign's spec](#fig-campaign-spec)
-3. Socio demographic data completed by volunteers when they signed up to take part in the observatory, by means of the [https://me.greengage-project.eu page](https://me.greengage-project.eu page) shown at [identify manager's interface](#fig-identity-manager). As result of these ETL processes, data was stored in Apache Druid infrastructure (see [Apache Druid's interface](#fig-apached-druid)), which is the storage solution chosen within GREEN Engine. 
+3. Socio demographic data completed by volunteers when they signed up to take part in the observatory, by means of the [https://me.greengage-project.eu](https://me.greengage-project.eu) page shown at [identify manager's interface](#fig-identity-manager). As result of these ETL processes, data was stored in Apache Druid infrastructure (see [Apache Druid's interface](#fig-apached-druid)), which is the storage solution chosen within GREEN Engine. 
 
 <a id="fig-apache-druid"></a>
 ![GREENGAGE Apache Druid deployment](./assets/ApacheDruidFrontend.png) 
