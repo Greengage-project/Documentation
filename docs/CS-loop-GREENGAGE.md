@@ -61,6 +61,19 @@ As result, a [thematic co-exploration specification for University of Deusto's c
    1.	Do you consider that the Air Quality in this spot is? a) very bad; b) bad; c) normal; d) good; e) very good
    2.	Do you consider that this POI is suited to facilitate campus life and activities? a) not at all; b) not significantly; c) it is OK; d) good enough; e) very good
    3.	Provide feedback about this POI in terms of its suitability and/or air quality perception. Any suggestions, improvements that you would add?
-   4. If the volunteer has an Atmotube gather an air quality measurement in the POI
-   5. Optionally, in spots near the POI gather some pictures depicting the surroundings of the selected POIs
+
+### B.	Design of the crowdsourcing campaign
+
+Once the specification of the thematic co-exploration is ready, the next critical stage is to co-design the CS crowdsourcing campaign – based on the hypothesis, objectives and data gaps previously identified in [thematic co-exploration specification for University of Deusto's campus](https://github.com/Greengage-project/Documentation/blob/main/docs/assets/ThematicCoExplorationSpec%20-%20UnivDeusto.pdf). In GREENGAGE, the following parameters must be completed in order to set up a CS crowdsourcing campaign: 
+1. A new instance of an observatory entity is defined, specifying a name for it and the geographical area it covers;
+2. A set of POIs within the defined area are defined, for each POI the following fields are defined: type (e.g. culture, nature and so on), description, latitude & longitude, and optional photo; 
+3. In each POI several tasks can be defined, usually in a campaign the same tasks are required at every measurement point, for each task the following fields are defined: POI associated, topic (e.g. air quality, safety and so on), type (survey, photo, walk and so on), title, description and geocoordinates
+4. For tasks of type survey, a survey has be created or an already existing one linked, providing the following fields: title and a set of questions, where for each question a title, type (single choice, multiple choice, text request), and options as pairs of id and values must be defined. The next figure exemplifies the crowdsourcing campaign defined for the thematic co-exploration at Deusto’s campus.  
+
+![GREENGAGE crowdsourcing campaign specification](./assets/CampaignSpecTable.png) 
+
+Next, it is shown the dashboard that has been defined as back-end of the GREENGAGE app and which can be used to configure CS crowdsourcing campaigns in GREENGAGE. For more details on how to use this interface check [GREENGAGE back-end's crowdsourcing campaign configuration dashboard's documentation](https://docs-stage.greengage.dev/docs).
+
+![GREENGAGE crowdsourcing campaign specification](./assets/CampaignConfigurationDashboard.png) 
+
 
