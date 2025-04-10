@@ -90,7 +90,7 @@ On Friday 14th March 2025, from 11:30am to 12:30pm CET, a crowdsourcing campaign
 After, these preparation activities, volunteers were ready to launch the GREENGAGE app, as shown below, and use it to collect data:
 
 |----------------|----------------|----------------|
-| ![POI3-1](docs/assets/POI3-3.jpg) | ![POI3-2](docs/assets/POI3-3.jpg) | ![POI3-3](docs/assets/POI3-3.jpg) |
+| ![POI3-1](assets/POI3-3.jpg) | ![POI3-2](./assets/POI3-3.jpg) | ![POI3-3](./assets/POI3-3.jpg) |
 
 The crowdsourced campaign data was collected by applying an ETL process. Whilst, the PRE and POST impact and satisfaction questionnaires were hosted in Google Forms, the the GREENGAGE app’s collected data was hosted at Apollo Server which exhibits a GraphQL API. This API allows clients (such as mobile apps or web frontends) to efficiently query and interact with campaign data. This interface was used to retrieve all data crowdsourced associated to the POIs and spots generated in the thematic co-exploration’s crowdsourcing campaign. Fig. 6 shows the Apollo Server front-end where details in JSON about tasks performed in the crowdsourcing campaign are retrieved by means of a GraphQL query. Notice that GraphQL is a modern API query language and runtime that allows clients to request precisely the data they need in a single request, unlike RESTful APIs which rely on multiple endpoints and fixed data structures, often leading to over-fetching or under-fetching of data.
  
