@@ -41,7 +41,7 @@ The purpose of this documentation is to exemplify how the CS loop is enabled thr
 
 ## Citizen Science loop step-wised co-creation
 
-This section showcases the process, tools and results obtained when applying the GREENGAGE CO-enabling approach to a real use-case, namely, “reflection on the suitability and air quality of important points of interest (POIs) within the campus of the University of Deusto in Bilbao, Spain”. The following subsections describe the different steps completed towards fulfilling the CS loop for this thematic co-exploration. Notice that to coordinate the execution of this co-creation process, a new process was defined in the Collaborative Environment as shown in the following [figure](#fig-collaborative-environment)).
+This section showcases the process, tools and results obtained when applying the GREENGAGE CO-enabling approach to a real use-case, namely, “reflection on the suitability and air quality of important points of interest (POIs) within the campus of the University of Deusto in Bilbao, Spain”. The following subsections describe the different steps completed towards fulfilling the CS loop for this thematic co-exploration. Notice that to coordinate the execution of this co-creation process, a new process was defined in the Collaborative Environment as shown in the following [figure](#fig-collaborative-environment).
 
 <a id="fig-collaborative-environment"></a>
 ![GREENGAGE's Collaborative Environment](./assets/colaborative-environment-spec.png) 
@@ -111,7 +111,7 @@ After, these preparation activities, volunteers were ready to launch the GREENGA
 |----------------|----------------|----------------|
 | ![POI3-1](assets/POI3-1.jpg) | ![POI3-2](./assets/POI3-2.jpg) | ![POI3-3](./assets/POI3-3.jpg) |
 
-Right after concluding the crowdsourcing campaign, volunteers were also requested to complete a [POST Impact evaluation questionnaire](https://docs.google.com/forms/d/e/1FAIpQLScsBJqiT6P0oww_rg1TiOhLhe8Z2UyqTI41-qUlrhGh8RlSfg/viewform?usp=preview)) as the one shown below. Its [PDF printout](./assets/MASTER%20POST%20Impact%20Questionnaire%20%28CO%20participants%29%20ENGLISH%20-%20Google%20Forms.pdf) showcases how volunteers in a CS campaign held within GREENGAGE are questionned about environmental, political, scientific and social impact perception after they take part in a thematic co-exploration.
+Right after concluding the crowdsourcing campaign, volunteers were also requested to complete a [POST Impact evaluation questionnaire](https://docs.google.com/forms/d/e/1FAIpQLScsBJqiT6P0oww_rg1TiOhLhe8Z2UyqTI41-qUlrhGh8RlSfg/viewform?usp=preview) as the one shown below. Its [PDF printout](./assets/MASTER%20POST%20Impact%20Questionnaire%20%28CO%20participants%29%20ENGLISH%20-%20Google%20Forms.pdf) showcases how volunteers in a CS campaign held within GREENGAGE are questionned about environmental, political, scientific and social impact perception after they take part in a thematic co-exploration.
 
 <a id="fig-pre-impact-questionnaire"></a>
 ![GREENGAGE's volunteers' POST Impact Evaluation questionnaire](./assets/PRE-impact-questionnaire.png) 
@@ -129,7 +129,7 @@ During transformation, mission data is processed according to type-specific rule
 Finally, the load phase utilizes [Apache Druid's ingestion API](https://druid.apache.org/docs/latest/api-reference/sql-ingestion-api/) to load the transformed data. The script generates a comprehensive ingestion specification defining data types, dimensions, and granularity settings to optimize subsequent analytical queries. Once ingested, the data becomes immediately queryable through Druid's SQL API, which enables seamless integration with visualization platforms like Apache Superset and other analytics tools.
 
 Notice that 3 ETL processes were set up to extract, transform and load data from: 
-1. Photos gathered through task 2 (see [crowdsourcing campaign's spec](#fig-campaign-spec))
+1. Photos gathered through task 2 (see [crowdsourcing campaign's spec](#fig-campaign-spec)
 2. Survey answers associated to the different users and POIs where surveys were responded through task 1 (see [crowdsourcing campaign's spec](#fig-campaign-spec)
 3. Socio demographic data completed by volunteers when they signed up to take part in the observatory, by means of the [https://me.greengage-project.eu](https://me.greengage-project.eu) page shown at [identify manager's interface](#fig-identity-manager). As result of these ETL processes, data was stored in Apache Druid infrastructure (see [Apache Druid's interface](#fig-apached-druid)), which is the storage solution chosen within GREEN Engine. 
 
@@ -166,7 +166,7 @@ Analysing the data visualized in the Superset has allowed us to draw some few co
 
 Analysing the spots and the comments received in question 3 of survey 1 (see [figure for findings for POI4](#fig-superset-poi-analysis)), it was found that although generally the status of the campus is considered quite adequate, issues related to the fact that pedestrians and cars often share common spaces, it might be troublesome. 
 
-The following [figure](#fig-sociodemographic-charts)) summarizes the sociodemographic profile of participants in the campaign, where 3 women and 7 men, owning 5 iPhones and 6 Android devices, half of them not associated to GREENGAGE took part. Notice that the predominant age range was 25-50 years, and they were digitally literate participants with master of PhD studies. 
+The following [figure](#fig-sociodemographic-charts) summarizes the sociodemographic profile of participants in the campaign, where 3 women and 7 men, owning 5 iPhones and 6 Android devices, half of them not associated to GREENGAGE took part. Notice that the predominant age range was 25-50 years, and they were digitally literate participants with master of PhD studies. 
 
 <a id="fig-sociodemographic-charts"></a>
 ![Sociodemographic details participants in thematic co-exploration](./assets/socidemographic-charts.png) 
@@ -180,13 +180,12 @@ To close the CS loop and contribute towards the positive transformation of Deust
 3. The [policy brief template](https://demo.greengage-project.eu/dashboard/interlinkers/34f3ced4-cc01-4583-94d6-187e7ae4b64f) CO enabler was used to create and send to the vice-chancellor in the university of Deusto responsible for the campus refurbishment.
 4. Impact analysis about the executed campaign in terms of social, political and citizen science aspects was performed, following the [ACTION project’s impact evaluation approach](https://zenodo.org/records/6410782).
 5. The following datasets from this thematic co-exploration where uploaded into [Zenodo community for GREENGAGE](https://zenodo.org/communities/greengage/).
-   a. Anonymized dataset with aggregated survey answers for the 4 POIs
-   b. Anonymized dataset with aggregaged survey answers for each specici POI
-   c. Dataset with all snapshots captured at snapshots in the campaign
-   d. Atmotube Pro sensors measurements during the campaign
-   e. Sociodemographic data gathered at the campaign
-   f. PRE impact evaluation questionnaire answers and report
-   g. POST impact evaluation questionnaire answers and report. 
+   - Anonymized sociodemographic data of participants in the thematic co-exploration organized at University of Deusto's campus in Bilbao
+   - Anonymized dataset with aggregated survey answers for the 4 POIs defined at the campus of University of Deusto
+   - Dataset with all snapshots (photos) captured at different spots in the University of Deusto's campus
+   - Atmotube Pro sensors measurements during from 4 different devices (users) captured between 11:30 - 13:30 CET local time
+   - PRE (before the participation in the CS campaign) impact evaluation questionnaire answers and report
+   - POST (after the participation in the CS campaign) impact evaluation questionnaire answers and report. 
 7. Impact analysis of this thematic co-exploration was published [TO BE COMPLETED]
 	 
 ## Conclusion
