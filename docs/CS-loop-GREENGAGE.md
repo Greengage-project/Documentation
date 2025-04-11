@@ -179,7 +179,7 @@ To close the CS loop and contribute towards the positive transformation of Deust
 2. X and LinkedIn social media channels were used to summarize the thematic co-exploration completed main conclusions.
 3. The [policy brief template](https://demo.greengage-project.eu/dashboard/interlinkers/34f3ced4-cc01-4583-94d6-187e7ae4b64f) CO enabler was used to create and send to the vice-chancellor in the university of Deusto responsible for the campus refurbishment.
 4. Impact analysis about the executed campaign in terms of social, political and citizen science aspects was performed, following the [ACTION project’s impact evaluation approach](https://zenodo.org/records/6410782).
-5. The following datasets from this thematic co-exploration where uploaded into [Zenodo community for GREENGAGE](https://zenodo.org/communities/greengage/).
+5. The following datasets from this thematic co-exploration were uploaded into [Zenodo community for GREENGAGE]([https://zenodo.org/communities/greengage/] at the following [entry](https://zenodo.org/records/15195849)).
    - Anonymized sociodemographic data of participants in the thematic co-exploration organized at University of Deusto's campus in Bilbao
    - Anonymized dataset with aggregated survey answers for the 4 POIs defined at the campus of University of Deusto
    - Dataset with all snapshots (photos) captured at different spots in the University of Deusto's campus
