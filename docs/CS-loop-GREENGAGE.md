@@ -39,7 +39,17 @@ The purpose of this documentation is to exemplify how the CS loop is enabled thr
 
 ## Citizen Science loop step-wised co-creation
 
-This section showcases the process, tools and results obtained when applying the GREENGAGE CO-enabling approach to a real use-case, namely, “reflection on the suitability and air quality of important points of interest (POIs) within the campus of the University of Deusto in Bilbao, Spain”. The following subsections describe the different steps completed towards fulfilling the CS loop for this thematic co-exploration. Notice that to coordinate the execution of this co-creation process, a new process was defined in the Collaborative Environment as shown in Fig. 2.
+This section showcases the process, tools and results obtained when applying the GREENGAGE CO-enabling approach to a real use-case, namely, “reflection on the suitability and air quality of important points of interest (POIs) within the campus of the University of Deusto in Bilbao, Spain”. The following subsections describe the different steps completed towards fulfilling the CS loop for this thematic co-exploration. Notice that to coordinate the execution of this co-creation process, a new process was defined in the Collaborative Environment as shown in the following [figure](#fig-collaborative-environment)).
+
+<a id="fig-collaborative-environment"></a>
+![GREENGAGE's Collaborative Environment](./assets/colaborative-environment-spec.png) 
+
+
+A core aspect of every thematic co-exploration is the collaborative (co-design & co-creation) activities that participants take part in. For this use case, the following co-design and co-creation sessions were realized: 
+1. Initial training, specification of the thematic co-exploration, team and co-creation process setup;
+2. Crowdsourcing campaign and co-design of possible useful visualizations; 
+3. Collaborative reflection on the gathered data and analysis results; 
+4. Participation in [Discourse](https://discourse.greengage-project.eu/) channel, social media dissemination of public results and policy brief. 
 
 ### A.	CS campaign specification 
 
@@ -154,13 +164,24 @@ Analysing the data visualized in the Superset has allowed us to draw some few co
 
 Analysing the spots and the comments received in question 3 of survey 1 (see [figure for findings for POI4](#fig-superset-poi-analysis)), it was found that although generally the status of the campus is considered quite adequate, issues related to the fact that pedestrians and cars often share common spaces, it might be troublesome. 
 
-Fig. 12 summarizes the sociodemographic profile of participants in the campaign, where 3 women and 7 men, owning 5 iPhones and 6 Android devices, half of them not associated to GREENGAGE took part. Notice that the predominant age range was 25-50 years, and they were digitally literate participants with master of PhD studies. 
-F.	Feedback and action: Social media dissemination, policymaking, replication
-To close the CS loop and contribute towards the positive transformation of Deusto’s campus in Bilbao, the following actions were taken:
-1.	Discourse theme was created through which participants could communicate with each other. Results were announced through this Discourse [17] channel and participants had the opportunity to comment on the generated visualizations and in the interpretations performed by all of them.
-2.	X and LinkedIn social media channels were used to summarize the thematic co-exploration completed main conclusions.
-3.	A policy brief was created and sent to the vice-chancellor in the university of Deusto responsible for the campus refurbishment.
-4.	Impact analysis about the executed campaign in terms of social, political and citizen science aspects was performed, following the ACTION project’s [18] impact evaluation approach.
-	 
-Fig. 12.	Sociodemographic data analysis.
+The following [figure](#fig-sociodemographic-charts)) summarizes the sociodemographic profile of participants in the campaign, where 3 women and 7 men, owning 5 iPhones and 6 Android devices, half of them not associated to GREENGAGE took part. Notice that the predominant age range was 25-50 years, and they were digitally literate participants with master of PhD studies. 
 
+<a id="fig-sociodemographic-charts"></a>
+![Sociodemographic details participants in thematic co-exploration](./assets/socidemographic-charts.png) 
+
+
+### F.	Feedback and action: Social media dissemination, policymaking, replication
+
+To close the CS loop and contribute towards the positive transformation of Deusto’s campus in Bilbao, the following actions were taken:
+1. Discourse theme was created through which participants could communicate with each other. Results were announced through this [Discourse channel](https://discourse.greengage-project.eu/) and participants had the opportunity to comment on the generated visualizations and in the interpretations performed by all of them.
+2. X and LinkedIn social media channels were used to summarize the thematic co-exploration completed main conclusions.
+3. The [policy brief template](https://demo.greengage-project.eu/dashboard/interlinkers/34f3ced4-cc01-4583-94d6-187e7ae4b64f) CO enabler was used to create and send to the vice-chancellor in the university of Deusto responsible for the campus refurbishment.
+4. Impact analysis about the executed campaign in terms of social, political and citizen science aspects was performed, following the [ACTION project’s impact evaluation approach](https://zenodo.org/records/6410782).
+5. The following datasets from this thematic co-exploration where uploaded into [Zenodo community for GREENGAGE](https://zenodo.org/communities/greengage/).
+6. Impact analysis of this thematic co-exploration was published [TO BE COMPLETED]
+	 
+## Conclusion
+
+The tutorial has demonstrated how GREENGAGE infrastructure and suite of enablers configuring its [Academy](https://www.greengage-project.eu/academy/) successfully bridge the gap between citizen participation and environmental decision-making. The completion of a whole Citizen Science Loop for the campus in Bilbao of the University of Deusto has been demonstrated. 10 participants with high digital acquaintances took part and made use of a wide range of tools and CO enablers, namely, Collaborative Environment, Discourse, Apollo server, Apache Druid and Apache Superset, together with enablers such as the “thematic co-exploration specification” or the “policy brief template”. 
+
+The main insight is that laypeople, after brief training, can follow the right protocol to gather good enough data to perform effective analysis or, at least, reflect on the results of data analysis’ visualizations. Still, the generation of visualization with Superset or the aggregation and curation of data through ETL processes is complex, requires programming and data analysis skills. Anyhow, interpretation of charts can be made accessible when some more expert people explain and discuss results with volunteers. Hence, continuous guidance and support for volunteers in CS observatories is critical to maintaining their interest across the whole thematic co-exploration’s duration. Besides, several feedback loops are necessary to keep the community tunned after each of the steps necessary to complete the CS loop, e.g. through a Discourse channel. 
