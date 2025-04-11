@@ -12,21 +12,22 @@ This documentation describes the validation of the GREENGAGE co-creation process
 5. Feedback & collective learning – validating findings with humans and providing participants with actionable feedback; and 
 6. Action & impact - informing policies, creating solutions, and refining methodologies for future CS campaigns exploring similar or complementary thematic co-explorations.
 
+<a id="fig-citizenscience-loop"></a>
 ![Citizen Science Loop in GREENGAGE](./assets/citizen-science-loop-GREENGAGE.png) 
 
 
 ## GREENGAGE platform to enable Citizen Observatories
 
-These CS loop stages shown above are aligned to the main phases established by GREENGAGE’s co-creation process for thematic co-explorations, which has been devised to organize, execute and exploit the results of CS campaigns. These main phases which compose the GREENGAGE co-creation process, supported by the Collaborative Environment (fully described at [HOWTO Thematic co-exploration](https://greengage-project.github.io/Documentation/HOWTO%20Thematic%20co-explorations/) documentation page, are:
+These CS loop stages shown in [figure](#fig-citizenscience-loop) above are aligned to the main phases established by GREENGAGE’s co-creation process for thematic co-explorations, which has been devised to organize, execute and exploit the results of CS campaigns. These main phases which compose the GREENGAGE co-creation process, supported by the Collaborative Environment (fully described at [HOWTO Thematic co-exploration](https://greengage-project.github.io/Documentation/HOWTO%20Thematic%20co-explorations/) documentation page, are:
 - Phase 1 - preparing: fully aligned with the “problem identification” stage of a Citizen Science loop, comprises the following aspects: a) theme selection; b) pilot owners training; c) core team onboarding and d) core team training.
 - Phase 2 – designing: aligned with the “campaign design” stage of a CS loop, comprising: a) experiment specification; b) tools’ resources selection; c) tools resources customization and d) tools resources testing.  
 - Phase 3 – experimenting: aligned with both the “data crowdsourcing” and “data analysis & interpretation” steps of a CS loop. It comprises the following activities: observers onboarding, observers training support, data collection, data combination, data analysis, data visualization and evaluation.
 - Phase 4 – sharing: aligned with “feedback & learning” and “action & impact” stages of CS loop, comprising the following tasks defined in the GREENGAGE thematic co-exploration process, namely storytelling, policy advocacy and sustainability.
  
 Each phase is supported by GREENGAGE’s GREEN Engine infrastructure, named GREEN Engine, fully described at page [Citizen Observer journey](https://greengage-project.github.io/Documentation/thematic_coexploration_example/#citizen-observer-journey), which integrates various digital tools and knowledge assets to streamline the co-production process. The tools and knowledge assets created in GREENGAGE are categorized in the following areas of concern, where the names of the tools defined for each layer is indicated:
-1.	Community and Co-production Process Management: In it, the emphasis is on building a strong, informed, and active community which collaborates through a co-production process by defining a hypothesis, research questions formulation or datasets selection, among others.
-2.	Data Crowdsourcing and Capture: Based on the groundwork of the previous area of concern, this materialises into concrete data collection activities. It is characterized by active participation, leveraging technology to gather vital curated high quality environmental data.
-3.	Data Analysis and Insights Generation: In this latter area of concern, the collected data is transformed into actionable insights. This is where the data, once transformed in actionable information, becomes a powerful tool for understanding and influencing environmental policy.
+1.	*Community and Co-production Process Management*: In it, the emphasis is on building a strong, informed, and active community which collaborates through a co-production process by defining a hypothesis, research questions formulation or datasets selection, among others.
+2.	*Data Crowdsourcing and Capture*: Based on the groundwork of the previous area of concern, this materialises into concrete data collection activities. It is characterized by active participation, leveraging technology to gather vital curated high quality environmental data.
+3.	*Data Analysis and Insights Generation*: In this latter area of concern, the collected data is transformed into actionable insights. This is where the data, once transformed in actionable information, becomes a powerful tool for understanding and influencing environmental policy.
 
 The purpose of this documentation is to exemplify how the CS loop is enabled through the suite of tools and knowledge assets defined by GREENGAGE and shown in the below figure. Thus, next section describes how GREENGAGE validates the Citizen Science Loop through a real-world thematic co-exploration at the University of Deusto. 
 
@@ -34,6 +35,7 @@ The purpose of this documentation is to exemplify how the CS loop is enabled thr
 2. **Data Crowdsourcing and Capture:** Based on the groundwork of the previous phase, e.g. definition of hypothesis, research questions formulation or datasets selection, among others, this phase materialises into concrete data collection activities. It is characterized by active participation, leveraging technology to gather vital environmental data.
 3. **Data Analysis and Insights Generation:** In this phase the collected data is transformed into actionable insights. This phase is where the data, once transformed in actionable information, becomes a powerful tool for understanding and influencing environmental policy. 
 
+<a id="fig-greenengine-areasconcern"></a>
 ![GREEN Engine areas of concern](./assets/citizen_observer_journey.png) 
 
 
@@ -178,7 +180,14 @@ To close the CS loop and contribute towards the positive transformation of Deust
 3. The [policy brief template](https://demo.greengage-project.eu/dashboard/interlinkers/34f3ced4-cc01-4583-94d6-187e7ae4b64f) CO enabler was used to create and send to the vice-chancellor in the university of Deusto responsible for the campus refurbishment.
 4. Impact analysis about the executed campaign in terms of social, political and citizen science aspects was performed, following the [ACTION project’s impact evaluation approach](https://zenodo.org/records/6410782).
 5. The following datasets from this thematic co-exploration where uploaded into [Zenodo community for GREENGAGE](https://zenodo.org/communities/greengage/).
-6. Impact analysis of this thematic co-exploration was published [TO BE COMPLETED]
+   a. Anonymized dataset with aggregated survey answers for the 4 POIs
+   b. Anonymized dataset with aggregaged survey answers for each specici POI
+   c. Dataset with all snapshots captured at snapshots in the campaign
+   d. Atmotube Pro sensors measurements during the campaign
+   e. Sociodemographic data gathered at the campaign
+   f. PRE impact evaluation questionnaire answers and report
+   g. POST impact evaluation questionnaire answers and report. 
+7. Impact analysis of this thematic co-exploration was published [TO BE COMPLETED]
 	 
 ## Conclusion
 
