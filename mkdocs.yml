@@ -15,6 +15,7 @@ nav:
   - Guidelines: guidelines
   - HOWTO Thematic co-exploration: HOWTO Thematic co-explorations.md
   - Thematic co-exploration example: thematic_coexploration_example.md
+  - Step-wised execution of CS loop: CS-loop-GREENGAGE.md
   - Tools:
       - Backbone:
           - Keycloak:
