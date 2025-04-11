@@ -114,7 +114,7 @@ After, these preparation activities, volunteers were ready to launch the GREENGA
 Right after concluding the crowdsourcing campaign, volunteers were also requested to complete a [POST Impact evaluation questionnaire](https://docs.google.com/forms/d/e/1FAIpQLScsBJqiT6P0oww_rg1TiOhLhe8Z2UyqTI41-qUlrhGh8RlSfg/viewform?usp=preview) as the one shown below. Its [PDF printout](./assets/MASTER%20POST%20Impact%20Questionnaire%20%28CO%20participants%29%20ENGLISH%20-%20Google%20Forms.pdf) showcases how volunteers in a CS campaign held within GREENGAGE are questionned about environmental, political, scientific and social impact perception after they take part in a thematic co-exploration.
 
 <a id="fig-pre-impact-questionnaire"></a>
-![GREENGAGE's volunteers' POST Impact Evaluation questionnaire](./assets/PRE-impact-questionnaire.png) 
+![GREENGAGE's volunteers' POST Impact Evaluation questionnaire](./assets/POST-impact-questionnaire.png) 
 
 The crowdsourced campaign data was collected by applying an ETL process. Whilst, the PRE and POST impact and satisfaction questionnaires are hosted in Google Forms, the GREENGAGE app’s collected data is hosted at [Apollo Server](https://www.apollographql.com/docs/apollo-server) which exhibits a [GraphQL](https://graphql.org/) API. This API allows clients (such as mobile apps or web frontends) to efficiently query and interact with campaign data. This interface was used to retrieve all data crowdsourced associated to the POIs and spots generated in the above described thematic co-exploration’s crowdsourcing campaign. 
 
