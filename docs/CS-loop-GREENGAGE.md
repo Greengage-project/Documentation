@@ -5,12 +5,12 @@
 Citizen Observatories (COs) empower individuals to actively participate in data collection and environmental monitoring to address local challenges. The GREENGAGE project, under the Horizon Europe framework, aims to enhance the efficacy and more widespread adoption of COs by providing a structured Citizen Science Loop methodology operationalized by a co-production process which is enabled by its GREEN Engine infrastructure. One core contribution brought forward by GREENGAGE is the “thematic co-exploration” concept. A thematic co-exploration, in the context of COs, refers to a collaborative approach where citizens actively participate alongside scientists and other stakeholders in exploring specific themes or topics related to environmental monitoring and observation. Through them, COs are made purposeful by leveraging the collective efforts of individuals, often non-scientists, to gather, share, and analyse environmental data, typically facilitated by digital tools and technologies. 
 
 This documentation describes the validation of the GREENGAGE co-creation process for thematic co-explorations, through a university campus based thematic co-exploration, which results in the execution of the following 6 steps of a Citizen Science loop, namely: 
-1. Problem identification – recognizing research questions or societal challenges suitable for public engagement; 
-2. Campaign design – developing participatory protocols, data collection methodologies, and toolkits for citizens’ engagement; 
-3. Data crowdsourcing – enabling citizen scientists to gather good quality observations via digital applications, sensors, and surveys, through data crowdsourcing activities; 
-4. Data analysis & interpretation – employing AI-driven tools for insight extraction and thus making humanly meaningful the data modelled; 
-5. Feedback & collective learning – validating findings with humans and providing participants with actionable feedback; and 
-6. Action & impact - informing policies, creating solutions, and refining methodologies for future CS campaigns exploring similar or complementary thematic co-explorations.
+1. *Problem identification* – recognizing research questions or societal challenges suitable for public engagement; 
+2. *Campaign design* – developing participatory protocols, data collection methodologies, and toolkits for citizens’ engagement; 
+3. *Data crowdsourcing* – enabling citizen scientists to gather good quality observations via digital applications, sensors, and surveys, through data crowdsourcing activities; 
+4. *Data analysis & interpretation* – employing AI-driven tools for insight extraction and thus making humanly meaningful the data modelled; 
+5. *Feedback & collective learning* – validating findings with humans and providing participants with actionable feedback; and 
+6. *Action & impact* - informing policies, creating solutions, and refining methodologies for future CS campaigns exploring similar or complementary thematic co-explorations.
 
 <a id="fig-citizenscience-loop"></a>
 ![Citizen Science Loop in GREENGAGE](./assets/citizen-science-loop-GREENGAGE.png) 
@@ -29,7 +29,7 @@ Each phase is supported by GREENGAGE’s GREEN Engine infrastructure, named GREE
 2.	*Data Crowdsourcing and Capture*: Based on the groundwork of the previous area of concern, this materialises into concrete data collection activities. It is characterized by active participation, leveraging technology to gather vital curated high quality environmental data.
 3.	*Data Analysis and Insights Generation*: In this latter area of concern, the collected data is transformed into actionable insights. This is where the data, once transformed in actionable information, becomes a powerful tool for understanding and influencing environmental policy.
 
-The purpose of this documentation is to exemplify how the CS loop is enabled through the suite of tools and knowledge assets defined by GREENGAGE and shown in the below figure. Thus, next section describes how GREENGAGE validates the Citizen Science Loop through a real-world thematic co-exploration at the University of Deusto. 
+The purpose of this documentation page is to exemplify how the CS loop is enabled through the suite of tools and knowledge assets defined by GREENGAGE and shown in the [below figure](#fig-greenengine-areasconcern). Thus, next section describes how GREENGAGE validates the Citizen Science Loop through a real-world thematic co-exploration at the University of Deusto. 
 
 1. **Community and Co-production Process Management:** Throughout this phase, the emphasis is on building a strong, informed, and active community which collaborates through a co-production process.
 2. **Data Crowdsourcing and Capture:** Based on the groundwork of the previous phase, e.g. definition of hypothesis, research questions formulation or datasets selection, among others, this phase materialises into concrete data collection activities. It is characterized by active participation, leveraging technology to gather vital environmental data.
@@ -41,7 +41,7 @@ The purpose of this documentation is to exemplify how the CS loop is enabled thr
 
 ## Citizen Science loop step-wised co-creation
 
-This section showcases the process, tools and results obtained when applying the GREENGAGE CO-enabling approach to a real use-case, namely, “reflection on the suitability and air quality of important points of interest (POIs) within the campus of the University of Deusto in Bilbao, Spain”. The following subsections describe the different steps completed towards fulfilling the CS loop for this thematic co-exploration. Notice that to coordinate the execution of this co-creation process, a new process was defined in the Collaborative Environment as shown in the following [figure](#fig-collaborative-environment).
+This section showcases the process, tools and results obtained when applying the GREENGAGE CO-enabling approach to a real use-case, namely, *“reflection on the suitability and air quality of important points of interest (POIs) within the campus of the University of Deusto in Bilbao, Spain”*. The following subsections describe the different steps completed towards fulfilling the CS loop for this thematic co-exploration. Notice that to coordinate the execution of this co-creation process, a new process was defined in the Collaborative Environment as shown in the following [figure](#fig-collaborative-environment).
 
 <a id="fig-collaborative-environment"></a>
 ![GREENGAGE's Collaborative Environment](./assets/colaborative-environment-spec.png) 
