@@ -20,12 +20,14 @@ This documentation describes the validation of the GREENGAGE co-creation process
 ## GREENGAGE platform to enable Citizen Observatories
 
 These CS loop stages shown in [figure](#fig-citizenscience-loop) above are aligned to the main phases established by GREENGAGE’s co-creation process for thematic co-explorations, which has been devised to organize, execute and exploit the results of CS campaigns. These main phases which compose the GREENGAGE co-creation process, supported by the Collaborative Environment (fully described at [HOWTO Thematic co-exploration](https://greengage-project.github.io/Documentation/HOWTO%20Thematic%20co-explorations/) documentation page, are:
+
 - *Phase 1 - preparing*: fully aligned with the “problem identification” stage of a Citizen Science loop, comprises the following aspects:
   
 	a) theme selection;
 	b) pilot owners training;
 	c) core team onboarding and
 	d) core team training.
+
 - *Phase 2 – designing*: aligned with the “campaign design” stage of a CS loop, comprising:
   
 	a) experiment specification;
@@ -110,17 +112,12 @@ Next, it is shown the dashboard that has been defined as back-end of the GREENGA
 On Friday 14th March 2025, from 11:30am to 12:30pm CET, a crowdsourcing campaign was executed, where 10 people took part. Notice that volunteers before starting the crowdsourcing campaign they were requested to complete the following actions:
 
 1. They had to log into [https://me.greengage-project.eu/](https://me.greengage-project.eu/) and complete there a sociodemographic form as the one shown in the figure below. Notice that this form requires that each participant specifies her role in the thematic co-exploration, gender, age range, work status, education level and so on. Besides and, very importantly, volunteers must accept a consent form at the bottomo of this page by means of which GREENGAGE is allowed to process their supplied data and aggregate with other participant's sociodemographic data, still preserving the privacy of participants at all time. Only, after they have completed this form, users are allowed to log in into the GREENGAGE app devised to capture data.
-
 <a id="fig-identity-manager"></a>
 ![GREENGAGE participant's identify manager](./assets/me-greengage-snapshot.png) 
-
 2. They had to complete a [PRE Impact evaluation questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSdoNRTWPRb0emYWLAiXn4swOLFLRw41nqXQ4h5gKYnDaaUIcQ/viewform?usp=preview) as the one shown below. Its [PDF printout](./assets/GREENGAGE%20-%20MASTER%20COPY%20PRE%20Impact%20Questionnaire%20%28CO%20participants%29%20ENGLISH%20-%20Google%20Forms.pdf) showcases how volunteers in a CS campaign held within GREENGAGE are questionned about environmental, political, scientific and social impact perception before they take part in a thematic co-exploration.
-
 <a id="fig-pre-impact-questionnaire"></a>
 ![GREENGAGE's volunteers' PRE Impact Evaluation questionnaire](./assets/PRE-impact-questionnaire.png) 
-
 3. They had to download and install the GREENGAGE app from either [Android's Google play store](https://play.google.com/store/apps/details?id=com.greengage.project) or [Apple's app store](https://apps.apple.com/at/app/greengage/id6503947045?l=en-GB) in their smartphones. Notice that the GREENGAGE app also allows users to register as done in step 1, if they do not have credentials, so that they can access into the app. 
-
 After, these preparation activities, volunteers were ready to launch the GREENGAGE app, as shown below, and use it to collect data. Such campaign was executed by 10 volunteers on Friday 14th March 2025, from 11:30am to 12:30pm CET.
 
 | Check into POI    | Answer questionnaire     | Submit responses     |
