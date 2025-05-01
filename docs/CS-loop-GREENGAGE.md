@@ -7,7 +7,7 @@ Citizen Observatories (COs) empower individuals to actively participate in data 
 This documentation describes the validation of the GREENGAGE co-creation process for thematic co-explorations, through a university campus based thematic co-exploration, which results in the execution of the following 6 steps of a Citizen Science loop, namely: 
 
 1. *Problem identification* – recognizing research questions or societal challenges suitable for public engagement; 
-2. *Campaign design* – developing participatory protocols, data collection methodologies, and toolkits for citizens’ engagement; 
+2. *Campaign design* – co-selecting and co-designing participatory protocols, data collection methodologies, and toolkits for citizens’ engagement; 
 3. *Data crowdsourcing* – enabling citizen scientists to gather good quality observations via digital applications, sensors, and surveys, through data crowdsourcing activities; 
 4. *Data analysis & interpretation* – employing AI-driven tools for insight extraction and thus making humanly meaningful the data modelled; 
 5. *Feedback & collective learning* – validating findings with humans and providing participants with actionable feedback; and 
