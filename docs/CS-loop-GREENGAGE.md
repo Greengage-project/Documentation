@@ -193,8 +193,8 @@ To close the CS loop and contribute towards the positive transformation of Deust
 
 1. [Discourse channel](https://discourse.greengage-project.eu/t/about-the-university-of-deustos-thematic-coexploration-category/218) was created through which participants could communicate with each other. Results were announced through this [Discourse](https://discourse.greengage-project.eu/) channel, see [figure](#fig-discourse) below, and participants had the opportunity to comment on the generated visualizations and in the interpretations performed by all of them.
 2. X and LinkedIn social media channels were used to summarize the thematic co-exploration completed main conclusions.
-3. The [policy brief template](https://demo.greengage-project.eu/dashboard/interlinkers/34f3ced4-cc01-4583-94d6-187e7ae4b64f) CO enabler was used to create and send to the vice-chancellor in the university of Deusto responsible for the campus refurbishment.
-4. Impact analysis about the executed campaign in terms of social, political and citizen science aspects was performed, following the [ACTION project’s impact evaluation approach](https://zenodo.org/records/6410782).
+3. The [policy brief template](https://demo.greengage-project.eu/dashboard/interlinkers/34f3ced4-cc01-4583-94d6-187e7ae4b64f) CO enabler was used to create and send to the vice-chancellor in the university of Deusto responsible for the campus refurbishment, giving place to the [Deusto's campus' suitability exploration's policy brief](./assets/Deusto-campus-thematic-coexploration-policy-brief.pdf).
+4. Impact analysis about the executed campaign in terms of social, political and citizen science aspects was performed, following the [ACTION project’s impact evaluation approach](https://zenodo.org/records/6410782). The resulting report is accessible [here](./assets/GREENGAGE_Impact_Assessment_Report-DEUSTO-campus_final.pdf).
 5. The following datasets from this thematic co-exploration were uploaded into [Zenodo community for GREENGAGE]([https://zenodo.org/communities/greengage/) at the following [entry](https://zenodo.org/records/15195849)):
 
    - Anonymized sociodemographic data of participants in the thematic co-exploration organized at University of Deusto's campus in Bilbao
@@ -203,7 +203,6 @@ To close the CS loop and contribute towards the positive transformation of Deust
    - Atmotube Pro sensors measurements during from 4 different devices (users) captured between 11:30 - 13:30 CET local time
    - PRE (before the participation in the CS campaign) impact evaluation questionnaire answers and report
    - POST (after the participation in the CS campaign) impact evaluation questionnaire answers and report. 
-7. Impact analysis of this thematic co-exploration was published [TO BE COMPLETED]
 
 <a id="fig-discourse"></a>
 ![Sociodemographic details participants in thematic co-exploration](./assets/Discourse.png) 
