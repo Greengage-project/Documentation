@@ -80,5 +80,7 @@ nav:
               - Example of integration: tools/nifi/examples
           - Data Quality Dashboard:
               - Description: tools/DataQualityDashboard
+  - GREEN ENGINE:
+        - Installation: green-engine/installation.md
 locale:
   - en
