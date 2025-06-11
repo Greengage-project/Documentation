@@ -18,6 +18,30 @@ The repository is organized into the following sections:
 
 - **mkdocs.yml**: MkDocs configuration file for setting up the documentation site.
 
+## Requirements
+
+To build and serve this documentation, you need the following:
+
+- Python 3.7 or higher
+- `pip` (Python package manager)
+
+  ```bash
+  sudo apt update
+  sudo apt install python3 python3-pip -y
+  ```
+
+2. **Install MkDocs and Material theme globally:**
+
+   ```bash
+   pip3 install --user mkdocs mkdocs-material
+   ```
+
+3. Run the MkDocs development server:
+
+   ```bash
+   mkdocs serve
+   ```
+
 ## Running Locally
 
 To run this documentation locally:
