@@ -1154,8 +1154,8 @@ services:
       - NEXT_PUBLIC_SENTRY_DSN=${MYACCOUNT_NEXT_PUBLIC_SENTRY_DSN}
       - NEXT_PUBLIC_SENTRY_ENVIRONMENT=${MYACCOUNT_NEXT_PUBLIC_SENTRY_ENVIRONMENT}
       - NEXTAUTH_SECRET=${MYACCOUNT_NEXTAUTH_SECRET}
-      - MINIO_ACCESS_KEY=w8sxav4Mq2EtlC2bXma0
-      - MINIO_SECRET_KEY=fcwt01w3FeHSWQp1d4XTOVwLlIO4M6X4bHsFu7Tk
+      - MINIO_ACCESS_KEY=CHANGETHIS
+      - MINIO_SECRET_KEY=CHANGETHIS
       - MINIO_ENDPOINT_PUBLIC=minioapi.${NIPDOMAIN}
       - MINIO_ENDPOINT=myAccountMinIO
       - MINIO_PORT=9000
@@ -1242,12 +1242,12 @@ services:
       - DISCOURSE_HOST=demo.greengage-project.eu/discourse
       - DISCOURSE_DATABASE_HOST=postgresql
       - DISCOURSE_DATABASE_PORT_NUMBER=5432
-      - DISCOURSE_DATABASE_USER=bn_discourse
+      - DISCOURSE_DATABASE_USER=bn_discourse_changethis
       - DISCOURSE_DATABASE_NAME=bitnami_discourse
       - DISCOURSE_REDIS_HOST=redis
       - DISCOURSE_REDIS_PORT_NUMBER=6379
       - DISCOURSE_USERNAME=admin
-      - DISCOURSE_PASSWORD=adm1nadm1nadm1nadm1nChangeThis
+      - DISCOURSE_PASSWORD=changeThis
     labels:
       - traefik.enable=true
       - traefik.docker.network=traefik-public
