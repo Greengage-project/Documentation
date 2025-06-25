@@ -237,6 +237,40 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Installation</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#requirements">📦 Requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quick-setup">⚙️ Quick Setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-download-the-docker-compose-files-and-environment-configuration-sample">1. Download the docker-compose files and environment configuration sample</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-set-up-the-environment-file">2. Set Up the Environment File</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-create-required-docker-networks">3. Create Required Docker Networks</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-start-the-full-stack">4. Start the Full Stack</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#verify-deployment">🧪 Verify Deployment</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#https-via-lets-encrypt">🔐 HTTPS via Let's Encrypt</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#replicating-to-new-environments">🔁 Replicating to New Environments</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#maintenance">🧰 Maintenance</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#restart-the-stack">Restart the stack:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stop-all-services">Stop all services:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prune-unused-resources">Prune unused resources:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#documentation">📖 Documentation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#support">👨‍🔧 Support</a>
+    </li>
     </ul>
                   </li>
               </ul>
@@ -264,7 +298,110 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="green-engine">GREEN ENGINE</h1>
+                <h1 id="greenengine-deployment-guide">GREENENGINE Deployment Guide</h1>
+<p>This guide explains how to deploy the full <strong>GREENENGINE</strong> toolbox using Docker Compose. The deployment includes authentication, co-production tools, analytics, gamification services, monitoring, and more. It is designed to be <strong>replicable</strong>, <strong>modular</strong>, and <strong>production-ready</strong>.</p>
+<hr />
+<h2 id="requirements">📦 Requirements</h2>
+<ul>
+<li>Docker ≥ 20.10</li>
+<li>Docker Compose ≥ 1.29</li>
+<li>A Linux-based system (Ubuntu 20.04+, Debian, etc.)</li>
+<li>A valid domain (for HTTPS via Let's Encrypt)</li>
+<li><strong>Recommended:</strong><code>git</code>, <code>curl</code>, and basic CLI tools</li>
+<li>At least 8 GB RAM and 4 vCPU (recommended: 16 GB / 8 vCPU for full stack)</li>
+</ul>
+<hr />
+<h2 id="quick-setup">⚙️ Quick Setup</h2>
+<h3 id="1-download-the-docker-compose-files-and-environment-configuration-sample">1. Download the docker-compose files and environment configuration sample</h3>
+<pre><code class="language-text">https://greengage-project.github.io/Documentation/green-engine/docker-compose.yml
+
+https://greengage-project.github.io/Documentation/green-engine/.env.sample
+</code></pre>
+<h3 id="2-set-up-the-environment-file">2. Set Up the Environment File</h3>
+<p>Create a <code>.env</code> file by copying the template:</p>
+<pre><code class="language-bash">cp .env.sample .env
+</code></pre>
+<p>Edit the file with your preferred editor and configure:</p>
+<ul>
+<li><code>MAIN_DOMAIN=yourdomain.com</code></li>
+<li>Other required variables (see comments in <code>.env.sample</code>)</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Important</strong>:
+This setup is provided as a boilerplate and can be extended or modified depending on pilot-specific needs.
+New services (e.g., additional data pipelines, frontend modules, edge connectors) can be integrated into the architecture by editing the <code>docker-compose.yml</code> file and updating the <code>.env</code> configuration accordingly. The platform is designed to be modular and scalable.</p>
+</blockquote>
+<h3 id="3-create-required-docker-networks">3. Create Required Docker Networks</h3>
+<p>Before launching the stack, make sure the required external Docker networks are created. These allow multiple containers to communicate securely across services like the proxy (Traefik) and monitoring tools (Grafana, Prometheus).</p>
+<p>Run the following commands:</p>
+<pre><code class="language-bash">docker network create traefik-public
+docker network create grafana-network
+</code></pre>
+<blockquote>
+<p><strong>Note</strong>:
+These are <strong>external networks</strong>, meaning they must exist <strong>before</strong> running <code>docker-compose up</code>.
+If you get an error about missing networks, check their existence with <code>docker network ls</code> and recreate them if necessary.</p>
+</blockquote>
+<p>These can be included or ignored depending on the services enabled in your <code>docker-compose.yml</code>.</p>
+<h3 id="4-start-the-full-stack">4. Start the Full Stack</h3>
+<pre><code class="language-bash">docker-compose up -d
+</code></pre>
+<p>This command will start over 20 services, including:</p>
+<ul>
+<li>🔐 Keycloak (auth)</li>
+<li>📊 Grafana + Prometheus (monitoring)</li>
+<li>⚙️ Dremio, Matomo, ElasticSearch (analytics)</li>
+<li>🧠 Gamification engine (Python + postgresql)</li>
+<li>💬 Loomio, Coproduction backend/frontend</li>
+<li>🛠️ Traefik (proxy + TLS)</li>
+<li>🗄️ PostgreSQL, Redis, MongoDB</li>
+<li>💡 Crontab backups and static volumes</li>
+</ul>
+<hr />
+<h2 id="verify-deployment">🧪 Verify Deployment</h2>
+<ul>
+<li>Keycloak: <code>https://auth1.yourdomain.com</code></li>
+<li>Frontend: <code>https://yourdomain.com</code></li>
+<li>Monitoring: <code>https://yourdomain.com/monitoring</code></li>
+<li>Gamification (optional route): <code>/interlink-gamification</code></li>
+</ul>
+<p>To check logs:</p>
+<pre><code class="language-bash">docker-compose logs -f traefik
+</code></pre>
+<p>To see running services:</p>
+<pre><code class="language-bash">docker ps
+</code></pre>
+<hr />
+<h2 id="https-via-lets-encrypt">🔐 HTTPS via Let's Encrypt</h2>
+<p>Traefik automatically configures HTTPS certificates using the email and domain in <code>.env</code>. Make sure ports <strong>80</strong> and <strong>443</strong> are open and your domain points to your host.</p>
+<hr />
+<h2 id="replicating-to-new-environments">🔁 Replicating to New Environments</h2>
+<ol>
+<li>Copy the repo to the new host.</li>
+<li>Create a new <code>.env</code> file.</li>
+<li>Repeat the steps from <strong>Quick Setup</strong>.</li>
+<li>Optionally, adjust volumes or backup paths for multi-node sync.</li>
+</ol>
+<hr />
+<h2 id="maintenance">🧰 Maintenance</h2>
+<h3 id="restart-the-stack">Restart the stack:</h3>
+<pre><code class="language-bash">docker-compose restart
+</code></pre>
+<h3 id="stop-all-services">Stop all services:</h3>
+<pre><code class="language-bash">docker-compose down
+</code></pre>
+<h3 id="prune-unused-resources">Prune unused resources:</h3>
+<pre><code class="language-bash">docker system prune -a
+</code></pre>
+<hr />
+<h2 id="documentation">📖 Documentation</h2>
+<p>📘 Full documentation and advanced setup options are available at:
+<a href="https://greengage-project.github.io/Documentation">https://greengage-project.github.io/Documentation</a></p>
+<hr />
+<h2 id="support">👨‍🔧 Support</h2>
+<p>For technical issues, please open an issue in the repository or contact:</p>
+<p>📩 <strong><a href="mailto:greengage.admin@deusto.es">greengage.admin@deusto.es</a></strong>
+Maintained by the GREENGAGE </p>
               
             </div>
           </div><footer>
