@@ -1,0 +1,1479 @@
+x-superset-image: &superset-image apachesuperset.docker.scarf.sh/apache/superset:${TAG:-latest-dev}
+x-superset-depends-on: 
+  &superset-depends-on
+  - superset_db
+  - superset_redis
+x-superset-volumes:
+  &superset-volumes # /app/pythonpath_docker will be appended to the PYTHONPATH in the final container
+  - ./superset:/app/docker
+  - superset_home:/app/superset_home
+
+
+version: "3.9"
+services:
+  # Traefik Service
+  proxy:
+    image: traefik:v2.6.6
+    container_name: ${PLATFORM_STACK_NAME}-traefik
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8090:8080"
+    volumes:
+      - ./letsencrypt:/letsencrypt
+      - /var/run/docker.sock:/var/run/docker.sock
+    command:
+      # Enable Docker in Traefik, so that it reads labels from Docker services
+      - --providers.docker=true
+      # Do not expose all Docker services, only the ones explicitly exposed
+      - --providers.docker.exposedbydefault=false
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+      # Redirect Http to Https
+      - --entrypoints.web.http.redirections.entryPoint.to=websecure
+      - --entrypoints.web.http.redirections.entryPoint.scheme=https
+      - --entrypoints.web.http.redirections.entrypoint.permanent=true
+      # Enable the access log, with HTTP requests
+      - --accesslog
+      # Enable the Traefik log, for configurations and errors
+      - --log
+      # Enable the Dashboard and API
+      - --api
+      # Enable the Dashboard and API in insecure mode for local development
+      - --api.insecure=true
+      # - --certificatesresolvers.letsencrypt.acme.tlschallenge=true
+      - --certificatesresolvers.letsencrypt.acme.email=apps@interlink-project.eu
+      - --certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json
+
+      # httpchallenge
+      - --certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web
+      - --certificatesresolvers.letsencrypt.acme.httpchallenge=true
+
+      # staging
+      # - --certificatesResolvers.letsencrypt.acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory
+
+    labels:
+      - traefik.http.routers.http-catchall.rule=hostregexp(`{host:.+}`)
+      - traefik.http.routers.http-catchall.entrypoints=web
+      - traefik.http.routers.http-catchall.middlewares=redirect-to-https
+      - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
+
+      # - traefik.http.middlewares.iframeHeaders.headers.customresponseheaders.Content-Security-Policy=frame-ancestors 'self' ${DOMAIN} *.${MAIN_DOMAIN}
+      # - traefik.http.middlewares.iframeHeaders.headers.customresponseheaders.X-Frame-Options=ALLOW-FROM https://${MAIN_DOMAIN}
+      # - traefik.http.middlewares.iframeHeaders.headers.customresponseheaders.Access-Control-Allow-Origin=*
+      # - traefik.http.middlewares.iframeHeaders.headers.customresponseheaders.Access-Control-Allow-Methods=DELETE, POST, PUT, GET, OPTIONS
+      # - traefik.http.middlewares.iframeHeaders.headers.customresponseheaders.Access-Control-Allow-Headers=Content-Type, Authorization, X-Requested-With
+    networks:
+      - traefik-public
+
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  crontab:
+    image: projectgreengage/crontab:master
+    container_name: ${PLATFORM_STACK_NAME}-crontab
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - KPIS_GOOGLE_PROJECT_ID=${KPIS_GOOGLE_PROJECT_ID}
+      - KPIS_GOOGLE_PRIVATE_KEY_ID=${KPIS_GOOGLE_PRIVATE_KEY_ID}
+      - KPIS_GOOGLE_PRIVATE_KEY=${KPIS_GOOGLE_PRIVATE_KEY}
+      - KPIS_GOOGLE_CLIENT_EMAIL=${KPIS_GOOGLE_CLIENT_EMAIL}
+      - KPIS_GOOGLE_CLIENT_ID=${KPIS_GOOGLE_CLIENT_ID}
+      - KPIS_GOOGLE_CLIENT_X509=${KPIS_GOOGLE_CLIENT_X509}
+      - DREMIO_EMAIL=${DREMIO_EMAIL}
+      - DREMIO_USERNAME=${DREMIO_USERNAME}
+      - DREMIO_PASSWORD=${DREMIO_PASSWORD}
+    volumes:
+      # Enable docker commands
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      # Cronjobs configuration and specification
+      - ./cronjobs/config.json:/opt/crontab/config.json:rw
+      - ./cronjobs/entrypoint.sh:/entrypoint.sh
+      - ./cronjobs/jobs:/opt/jobs
+      # Volumes to be backup
+      - matomo-data:/opt/volumes/matomo-data
+      - mariadb-data:/opt/volumes/mariadb-data
+      - monitoringdb-data:/opt/volumes/monitoringdb-data
+      - newelasticsearch-data:/opt/volumes/newelasticsearch-data
+      - elasticsearch-data:/opt/volumes/elasticsearch-data
+      - mongodb-data:/opt/volumes/mongodb-data
+      - db-data:/opt/volumes/db-data
+      - dremio-data:/opt/volumes/dremio-data
+      - portainer-data:/opt/volumes/portainer-data
+      - auth-static:/opt/volumes/auth-static
+      - coproduction-static:/opt/volumes/coproduction-static
+      - catalogue-static:/opt/volumes/catalogue-static
+      # Volume for the backup files
+      - backups:/opt/backups
+    networks:
+      - traefik-public
+
+  # Frontend Service
+  frontend:
+    image: projectgreengage/frontend:${FRONTEND_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-frontend
+    restart: unless-stopped
+    volumes:
+      - ./frontend-customization:/usr/share/nginx/html/static/customization
+    environment:
+      - DOMAIN
+      - NODE_ENV=production
+      - REACT_APP_DOMAIN=${DOMAIN}
+      - REACT_APP_PROTOCOL=https://
+      - REACT_APP_DEFAULT_LANGUAGE=${DEFAULT_LANGUAGE}
+      - REACT_APP_ALLOWED_LANGUAGES=${ALLOWED_LANGUAGES}
+      - TZ=${TZ}
+      - REACT_APP_MATOMO_ID=1
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-frontend.loadbalancer.server.port=${PORT}
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-frontend.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-frontend.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-frontend.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-frontend.rule=Host(`${DOMAIN}`) && PathPrefix(`/`)
+    networks:
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  frontend-docs:
+    image: projectgreengage/frontend-docs:${FRONTEND_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-frontend-docs
+    restart: unless-stopped
+    networks:
+      - traefik-public
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-frontend-docs.loadbalancer.server.port=80
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-frontend-docs.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-frontend-docs.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-frontend-docs.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-frontend-docs.rule=Host(`${DOMAIN}`) && PathPrefix(`/docs`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-frontend-docs.middlewares=frontend-docs-stripprefix
+      - traefik.http.middlewares.frontend-docs-stripprefix.stripprefix.prefixes=/docs
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  mariadb:
+    image: mariadb:10.10.2
+    container_name: ${PLATFORM_STACK_NAME}-mariadb
+    restart: unless-stopped
+    command: --max-allowed-packet=64MB
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    env_file:
+      - .env
+    networks:
+      - traefik-public
+      - grafana-network
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  matomo:
+    image: bitnami/matomo:4.10.1
+    container_name: ${PLATFORM_STACK_NAME}-matomo
+    restart: unless-stopped
+    volumes:
+      - matomo-data:/bitnami/matomo
+    env_file:
+      - .env
+    networks:
+      - traefik-public
+    depends_on:
+      - mariadb
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-matomo.loadbalancer.server.port=8080
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-matomo.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-matomo.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-matomo.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-matomo.rule=Host(`${DOMAIN}`) && PathPrefix(`/matomo/`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-matomo.middlewares=matomo-stripprefix
+      - traefik.http.middlewares.matomo-stripprefix.stripprefix.prefixes=/matomo/
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  # Redis Service
+  redis:
+    image: redis:6-alpine
+    container_name: ${PLATFORM_STACK_NAME}-redis
+    restart: unless-stopped
+    networks:
+      - traefik-public
+      - grafana-network
+    environment:
+      - TZ=${TZ}
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  dremio:
+    image: dremio/dremio-oss:24.0
+    container_name: ${PLATFORM_STACK_NAME}-dremio
+    restart: unless-stopped
+    volumes:
+      - dremio-data:/opt/dremio/data
+    ports:
+      - "9047:9047" # UI (HTTP)
+      # - "31010:31010" # ODBC/JDBC clients
+      # - "2181:2181"   # ZooKeeper
+      # - "45678:45678" # Inter-node communication
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-dremio.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-dremio.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-dremio.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-dremio.rule=Host(`dremio.${DOMAIN}`)
+      - traefik.http.services.${PLATFORM_STACK_NAME}-dremio.loadbalancer.server.port=9047
+    networks:
+      - traefik-public
+      - grafana-network
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  # Postgres Service
+  db:
+    image: projectgreengage/postgres:${DB_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-db
+    restart: unless-stopped
+    volumes:
+      - db-data:${PGDATA}
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_MULTIPLE_DATABASES=loomio_production,coproduction_production,catalogue_production,keycloak_demo
+      - PGUSER=${POSTGRES_USERNAME} # https://stackoverflow.com/questions/60193781/postgres-with-docker-compose-gives-fatal-role-root-does-not-exist-error
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USERNAME}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - grafana-network
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+    command: postgres -N 500
+
+  # PGAdmin (do not expose)
+  # pgadmin:
+  #   image: dpage/pgadmin4:6.8
+  #   container_name: ${PLATFORM_STACK_NAME}-pgadmin
+  #   ports:
+  #     - "5050:5050"
+  #   depends_on:
+  #     - db
+  #   env_file:
+  #     - .env
+  #   logging:
+  #     driver: "json-file"
+  #     options:
+  #       tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+ 
+  mongodb:
+    image: bitnami/mongodb:6.0.3
+    container_name: ${PLATFORM_STACK_NAME}-mongodb
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - MONGODB_USERNAME=${MONGODB_USERNAME}
+      - MONGODB_PASSWORD=${MONGODB_PASSWORD}
+      - MONGODB_DATABASE=${MONGODB_DATABASE}
+    healthcheck:
+      test: echo 'db.runCommand({serverStatus:1}).ok' | mongosh admin -u $MONGODB_ROOT_USERNAME -p $MONGODB_ROOT_PASSWORD --quiet | grep 1
+      interval: 10s
+      timeout: 10s
+      retries: 3
+      # start_period: 20s
+    networks:
+      - grafana-network
+      - traefik-public
+    volumes:
+      - mongodb-data:/bitnami/mongodb
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  # Coproduction Service
+  coproduction:
+    image: projectgreengage/backend-coproduction:${COPRODUCTION_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-coproduction
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - coproduction-static:/app/static
+    environment:
+      - SERVER_NAME=${DOMAIN}
+      - PORT=${PORT}
+      - BASE_PATH=/coproduction
+      - POSTGRES_DB=coproduction_production
+      - POSTGRES_SERVER=db
+      - POSTGRES_USER=${POSTGRES_USERNAME}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - CATALOGUE_SERVICE_NAME=catalogue
+      - CATALOGUE_PORT=80
+      - DEFAULT_LANGUAGE
+      - ALLOWED_LANGUAGES
+      - SQLALCHEMY_DATABASE_URI=${SQLALCHEMY_DATABASE_URI_COPRODUCTION}
+    command: ["bash", "./start-prod.sh"]
+    depends_on:
+      db:
+        condition: service_healthy
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-coproduction.loadbalancer.server.port=${PORT}
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-coproduction.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-coproduction.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-coproduction.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-coproduction.rule=Host(`${DOMAIN}`) && PathPrefix(`/coproduction`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-coproduction.middlewares=coproduction-stripprefix
+      - traefik.http.middlewares.coproduction-stripprefix.stripprefix.prefixes=/coproduction
+    networks:
+      - traefik-public
+    links:
+      - db:db
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+    extra_hosts:
+      - "${DOMAIN}:172.17.0.1"
+
+  # Coproduction Worker Service
+  coproductionworker:
+    image: projectgreengage/backend-coproduction:${COPRODUCTION_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-coproductionworker
+    restart: unless-stopped
+    command: ["bash", "./worker-start.sh"]
+    volumes:
+      - coproduction-static:/app/static
+    depends_on:
+      - db
+      - redis
+      - coproduction
+    env_file:
+      - .env
+    environment:
+      - SERVER_NAME=${DOMAIN}
+      - PORT=${PORT}
+      - BASE_PATH=/coproduction
+      - POSTGRES_DB=coproduction_production
+      - POSTGRES_USER=${POSTGRES_USERNAME}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - CATALOGUE_SERVICE_NAME=catalogue
+      - CATALOGUE_PORT=80
+      - DEFAULT_LANGUAGE
+      - ALLOWED_LANGUAGES
+      - POSTGRES_SERVER=db
+      - SQLALCHEMY_DATABASE_URI=${SQLALCHEMY_DATABASE_URI_COPRODUCTION}
+    networks:
+      - traefik-public
+    links:
+      - db:db
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  # Catalogue Service
+  catalogue:
+    image: projectgreengage/backend-catalogue:${CATALOGUE_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-catalogue
+    restart: unless-stopped
+    volumes:
+      - catalogue-static:/app/static
+    env_file:
+      - .env
+    environment:
+      - SERVER_NAME=${DOMAIN}
+      - PORT=${PORT}
+      - BASE_PATH=/catalogue
+      - POSTGRES_DB=catalogue_production
+      - POSTGRES_USER=${POSTGRES_USERNAME}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_SERVER=${POSTGRES_HOST}
+      - DEFAULT_LANGUAGE
+      - ALLOWED_LANGUAGES
+      - SQLALCHEMY_DATABASE_URI=${SQLALCHEMY_DATABASE_URI_CATALOGUE}
+    depends_on:
+      - db
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-catalogue.loadbalancer.server.port=${PORT}
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-catalogue.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-catalogue.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-catalogue.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-catalogue.rule=Host(`${DOMAIN}`) && PathPrefix(`/catalogue`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-catalogue.middlewares=catalogue-stripprefix
+      - traefik.http.middlewares.catalogue-stripprefix.stripprefix.prefixes=/catalogue
+    command: ["bash", "./start-prod.sh"]
+    networks:
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+    extra_hosts:
+      - "${DOMAIN}:172.17.0.1"
+
+  # Auth Service
+  auth:
+    image: projectgreengage/backend-auth:${AUTH_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-auth
+    restart: unless-stopped
+    environment:
+      - SERVER_NAME=${DOMAIN}
+      - PORT=${PORT}
+      - BASE_PATH=/auth
+      - MONGODB_URL=mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@mongodb:27017/${MONGODB_DATABASE}?retryWrites=true&w=majority
+      - COLLECTION_NAME=users
+      - CLIENT_SECRET=${LOOMIO_AAC_APP_SECRET}
+    env_file:
+      - .env
+    volumes:
+      - auth-static:/app/static
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-auth.loadbalancer.server.port=${PORT}
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-auth.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-auth.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-auth.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-auth.rule=Host(`${DOMAIN}`) && PathPrefix(`/auth`)
+    networks:
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+    extra_hosts:
+      - "${DOMAIN}:172.17.0.1"
+
+  # Googledrive Interlinker
+  googledrive:
+    image: projectgreengage/interlinker-googledrive:${GOOGLEDRIVE_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-googledrive
+    restart: unless-stopped
+    environment:
+      - SERVER_NAME=${DOMAIN}
+      - PORT=${PORT}
+      - BASE_PATH=/googledrive
+      - MONGODB_URL=mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@mongodb:27017/${MONGODB_DATABASE}?retryWrites=true&w=majority
+      - COLLECTION_NAME=googledrive_assets
+      - GOOGLE_PROJECT_ID=${GOOGLE_PROJECT_ID}
+      - GOOGLE_PRIVATE_KEY_ID=${GOOGLE_PRIVATE_KEY_ID}
+      - GOOGLE_PRIVATE_KEY=${GOOGLE_PRIVATE_KEY}
+      - GOOGLE_CLIENT_EMAIL=${GOOGLE_CLIENT_EMAIL}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_X509=${GOOGLE_CLIENT_X509}
+    env_file:
+      - .env
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-googledrive.loadbalancer.server.port=${PORT}
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-googledrive.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-googledrive.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-googledrive.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-googledrive.rule=Host(`${DOMAIN}`) && PathPrefix(`/googledrive`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-googledrive.middlewares=googledrive-stripprefix
+      - traefik.http.middlewares.googledrive-stripprefix.stripprefix.prefixes=/googledrive
+    networks:
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+    extra_hosts:
+      - "${DOMAIN}:172.17.0.1"
+
+  # Survey Editor Interlinker
+  surveyeditor:
+    image: projectgreengage/interlinker-surveyeditor:${SURVEYEDITOR_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-surveyeditor
+    restart: unless-stopped
+    environment:
+      - SERVER_NAME=${DOMAIN}
+      - PORT=${PORT}
+      - BASE_PATH=/surveyeditor
+      - MONGODB_URL=mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@mongodb:27017/${MONGODB_DATABASE}?retryWrites=true&w=majority
+      - COLLECTION_NAME=surveyeditor_assets
+    env_file:
+      - .env
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-surveyeditor.loadbalancer.server.port=${PORT}
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-surveyeditor.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-surveyeditor.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-surveyeditor.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-surveyeditor.rule=Host(`${DOMAIN}`) && PathPrefix(`/surveyeditor`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-surveyeditor.middlewares=surveyeditor-stripprefix
+      - traefik.http.middlewares.surveyeditor-stripprefix.stripprefix.prefixes=/surveyeditor
+    networks:
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  # Ceditor Interlinker Service
+  ceditor:
+    image: projectgreengage/interlinker-ceditor:ceditor.${CEDITOR_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-ceditor
+    restart: unless-stopped
+    environment:
+      - SERVER_NAME=${DOMAIN}
+      - PORT=${PORT}
+      - BASE_PATH=/ceditor
+      - MONGODB_URL=mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@mongodb:27017/${MONGODB_DATABASE}?retryWrites=true&w=majority
+      - COLLECTION_NAME=etherpad_assets
+    env_file:
+      - .env
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-ceditor.loadbalancer.server.port=${PORT}
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-ceditor.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-ceditor.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-ceditor.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-ceditor.rule=Host(`${DOMAIN}`) && PathPrefix(`/ceditor`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-ceditor.middlewares=ceditor-stripprefix
+      - traefik.http.middlewares.ceditor-stripprefix.stripprefix.prefixes=/ceditor
+    networks:
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+    extra_hosts:
+      - "${DOMAIN}:172.17.0.1"
+
+  # Ceditor Interlinker Service etherpad
+  etherpad:
+    image: projectgreengage/interlinker-ceditor:etherpad.${ETHERPAD_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-etherpad
+    restart: on-failure
+    environment:
+      - TITLE=${ETHERPAD_TITLE}
+      - PORT=${ETHERPAD_PORT}
+      - ETHERPAD_API_KEY=${ETHERPAD_API_KEY}
+      - DEFAULT_PAD_TEXT=${ETHERPAD_DEFAULT_PAD_TEXT}
+      - ADMIN_PASSWORD=${ETHERPAD_ADMIN_PASSWORD}
+      - ADMIN_USER=${ETHERPAD_ADMIN_USERNAME}
+      - REQUIRE_SESSION=${ETHERPAD_REQUIRE_SESSION}
+      - EDIT_ONLY=${ETHERPAD_EDIT_ONLY}
+      - MONGODB_URL=mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@mongodb:27017/${MONGODB_DATABASE}?retryWrites=true&w=majority
+      - COLLECTION_NAME=etherpad_assets
+    env_file:
+      - .env
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-etherpad.loadbalancer.server.port=${ETHERPAD_PORT}
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-etherpad.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-etherpad.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-etherpad.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-etherpad.rule=Host(`${DOMAIN}`) && PathPrefix(`/etherpad`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-etherpad.middlewares=etherpad-stripprefix
+      - traefik.http.middlewares.etherpad-stripprefix.stripprefix.prefixes=/etherpad
+    networks:
+      - traefik-public
+    depends_on:
+      db:
+        condition: service_healthy
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  loomio:
+    image: interlinkproject/interlinker-loomio:${LOOMIO_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-loomio
+    restart: unless-stopped
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USERNAME}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${LOOMIO_POSTGRES_DB}
+      - REDIS_URL=redis://redis:6379
+      - AAC_APP_SECRET=${LOOMIO_AAC_APP_SECRET}
+      - SECRET_COOKIE_TOKEN=${LOOMIO_SECRET_COOKIE_TOKEN}
+      - SECRET_KEY_BASE=${LOOMIO_SECRET_COOKIE_TOKEN}
+      - DEVISE_SECRET=${LOOMIO_DEVISE_SECRET}
+      - SMTP_USERNAME=${LOOMIO_SMTP_USERNAME}
+      - SMTP_PASSWORD=${LOOMIO_SMTP_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USERNAME}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - loomio-uploads:/loomio/public/system
+      - loomio-storage:/loomio/storage
+      - loomio-files:/loomio/public/files
+      - loomio-plugins:/loomio/plugins/docker
+      - loomio-import:/import
+      - loomio-tmp:/loomio/tmp
+    env_file:
+      - .env
+    depends_on:
+      - db
+      - redis
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-loomio.loadbalancer.server.port=${PORT}
+      - traefik.http.middlewares.iframeHeaders.headers.customresponseheaders.Content-Security-Policy=frame-ancestors 'self' ${DOMAIN} *.${MAIN_DOMAIN}
+      - traefik.http.middlewares.iframeHeaders.headers.customresponseheaders.X-Frame-Options=ALLOW-FROM https://${MAIN_DOMAIN}
+      - traefik.http.middlewares.iframeHeaders.headers.customresponseheaders.Access-Control-Allow-Origin=*
+      - traefik.http.middlewares.iframeHeaders.headers.customresponseheaders.Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+      - traefik.http.middlewares.iframeHeaders.headers.customresponseheaders.Access-Control-Allow-Headers=Content-Type, Authorization, X-Requested-With
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-loomio.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-loomio.middlewares=iframeHeaders
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-loomio.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-loomio.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-loomio.rule=Host(`loomio.${DOMAIN}`)
+    networks:
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  loomioworker:
+    image: interlinkproject/interlinker-loomio:${LOOMIOWORKER_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-loomioworker
+    restart: unless-stopped
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USERNAME}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${LOOMIO_POSTGRES_DB}
+      - REDIS_URL=redis://redis:6379
+      - TASK=worker
+      - AAC_APP_SECRET=${LOOMIO_AAC_APP_SECRET}
+      - SECRET_COOKIE_TOKEN=${LOOMIO_SECRET_COOKIE_TOKEN}
+      - SECRET_KEY_BASE=${LOOMIO_SECRET_COOKIE_TOKEN}
+      - DEVISE_SECRET=${LOOMIO_DEVISE_SECRET}
+      - SMTP_USERNAME=${LOOMIO_SMTP_USERNAME}
+      - SMTP_PASSWORD=${LOOMIO_SMTP_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USERNAME}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - loomio-uploads:/loomio/public/system
+      - loomio-storage:/loomio/storage
+      - loomio-files:/loomio/public/files
+      - loomio-plugins:/loomio/plugins/docker
+      - loomio-tmp:/loomio/tmp
+    env_file:
+      - .env
+    networks:
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  loomiochannels:
+    image: loomio/loomio_channel_server:latest
+    container_name: ${PLATFORM_STACK_NAME}-loomiochannels
+    restart: unless-stopped
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - VIRTUAL_HOST=channels.loomio.${DOMAIN}
+      - SITE_NAME=channels.loomio.${DOMAIN}
+      - LETSENCRYPT_HOST=channels.loomio.${DOMAIN}
+      - LETSENCRYPT_EMAIL=apps@interlink-project.eu
+    env_file:
+      - .env
+    depends_on:
+      - redis
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-loomiochannels.loadbalancer.server.port=5000
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-loomiochannels.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-loomiochannels.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-loomiochannels.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-loomiochannels.rule=Host(`channels.loomio.${DOMAIN}`)
+    networks:
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  # service augmenter
+
+  augmenterservice:
+    image: interlinkproject/publicservice-servicepedia:augmenterservice.${AUGMENTERSERVICE_VERSION}
+    container_name: ${PLATFORM_STACK_NAME}-augmenterservice
+    restart: always
+    env_file:
+      - .env
+    networks:
+      - traefik-public
+    environment:
+      # TODO: verify secrets
+      - VIRTUAL_HOST=servicepedia.${DOMAIN}
+      - ELASTICSEARCH_URL=http://newelasticsearch:9200
+      - SURVEYINTERLINK_URL=https://${DOMAIN}/surveyeditor
+      - AUTHINTERLINK_URL=https://${DOMAIN}/auth
+      - SURVEYAPI_VERSION=v1
+      - HOST=0.0.0.0
+      - PORT=${PORT}
+      - PROTOCOL=https://
+      - BASE_PATH=
+      - SCRIPT_NAME=
+      - DEBUG=True
+      - ELASTICSEARCH_INDEX=annotator
+      - AUTH_ON=False
+      - AUTHZ_ON=False
+      - MAIL_SERVER=mail.interlink-project.eu
+      - MAIL_PORT=25
+      - MAIL_DEFAULT_SENDER=no-reply@interlink-project.eu
+      - MAIL_USE_TLS=False
+      - MAIL_USE_SSL=False
+      - MAIL_MAX_EMAILS=None
+      - MAIL_ASCII_ATTACHMENTS=False
+      - MAX_CONTENT_LENGTH=3145728
+      - UPLOAD_EXTENSIONS=[".pdf",".docx"]
+      - UPLOAD_PATH=uploads
+      - USE_SESSION_FOR_NEXT=True
+      - SWAGGER_URL=/docs
+      - API_URL=app/static/swagger.yaml
+      - BABEL_DEFAULT_LOCALE=en
+      - CLIENT_ID=${CLIENT_ID}
+      - CLIENT_SECRET=${LOOMIO_AAC_APP_SECRET}
+      - ISSUER=${AAC_HOST}
+      - AUTH_URI=https://aac.platform.smartcommunitylab.it/oauth/authorize
+      - TOKEN_URI=https://aac.platform.smartcommunitylab.it/oauth/token
+      - TOKEN_INTROSPECTION_URI=https://aac.platform.smartcommunitylab.it/oauth/introspect
+      - REDIRECT_URI=https://${DOMAIN}/callback
+      - USERINFO_URI=https://aac.platform.smartcommunitylab.it/userinfo
+      - END_SESSION_ENDPOINT=https://aac.platform.smartcommunitylab.it/endsession
+      - CONSUMER_KEY="6E1C924B-C03B-4F7F-97DE-B72EE2338B39"
+      - CONSUMER_TTL=86400
+      - CRYPT_KEY="qF_uizNn_HP4HaT_jsYemyK-qDHBuJUGA1C5MZl8xAg="
+    depends_on:
+      - newelasticsearch
+      - auth
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-augmenterservice.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-augmenterservice.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-augmenterservice.tls=true
+      - traefik.http.services.${PLATFORM_STACK_NAME}-augmenterservice.loadbalancer.server.port=${PORT}
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-augmenterservice.rule=Host(`servicepedia.${DOMAIN}`)
+    command: gunicorn  --log-level debug --bind 0.0.0.0:80 --workers 1  --threads 100 "app.main:create_app()"
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  newelasticsearch:
+    image: elasticsearch:8.2.2
+    container_name: ${PLATFORM_STACK_NAME}-elasticsearch8
+    restart: unless-stopped
+    environment:
+      - xpack.security.enabled=true
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms750m -Xmx750m
+      - ELASTIC_USERNAME=${ELASTIC_USERNAME}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    networks:
+      - traefik-public
+    volumes:
+      - newelasticsearch-data:/usr/share/elasticsearch/data
+      - newelasticsearch-config:/usr/share/elasticsearch/config
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  logging:
+    image: projectgreengage/backend-logging:${LOGGING_VERSION}
+    container_name: logging
+    restart: unless-stopped
+    environment:
+      - DOMAIN=${DOMAIN}
+      - PORT=${PORT}
+      - BASE_PATH=/logging
+      - TZ=${TZ}
+      - WAITFORIT_TIMEOUT=120
+      - ELASTIC_HOST=${ELASTIC_HOST_USER_LOGGING}
+      - ELASTIC_PORT=${ELASTIC_PORT}
+      - ELASTIC_USERNAME=${ELASTIC_USERNAME}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.services.${PLATFORM_STACK_NAME}-logging.loadbalancer.server.port=${PORT}
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-logging.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-logging.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-logging.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-logging.rule=Host(`${DOMAIN}`) && PathPrefix(`/logging`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-logging.middlewares=logging-stripprefix
+      - traefik.http.middlewares.logging-stripprefix.stripprefix.prefixes=/logging
+    networks:
+      - traefik-public
+    command: "wait-for-it --service ${ELASTIC_HOST_USER_LOGGING}:${ELASTIC_PORT} -- uvicorn main:app --reload --host 0.0.0.0 --port ${PORT}"
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  elasticsearch:
+    container_name: ${PLATFORM_STACK_NAME}-elasticsearch6
+    image: elasticsearch:6.8.23
+    environment:
+      - xpack.security.enabled=true
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms750m -Xmx750m
+      - ELASTIC_USERNAME=${ELASTIC_USERNAME}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    networks:
+      - traefik-public
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+      - elasticsearch-config:/usr/share/elasticsearch/config
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  grafana:
+    image: interlinkproject/backend-monitoring:prometheus.master
+    container_name: ${PLATFORM_STACK_NAME}-grafana
+    restart: unless-stopped
+    links:
+      - prometheus:prometheus
+    volumes:
+      - grafana-dashboards:/var/lib/grafana
+      - grafana-data:/etc/grafana/
+    env_file:
+      - .env
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-grafana.rule=Host(`${DOMAIN}`) && PathPrefix(`/monitoring`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-grafana.service=${PLATFORM_STACK_NAME}-grafana
+      - traefik.http.services.${PLATFORM_STACK_NAME}-grafana.loadbalancer.server.port=3000
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-grafana.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-grafana.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-grafana.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-grafana.middlewares=${PLATFORM_STACK_NAME}-grafana-stripprefix
+      - traefik.http.middlewares.${PLATFORM_STACK_NAME}-grafana-stripprefix.stripprefix.prefixes=/monitoring
+    networks:
+      - traefik-public
+      - grafana-network
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  prometheus:
+    image: interlinkproject/backend-monitoring:prometheus.master
+    container_name: ${PLATFORM_STACK_NAME}-prometheus
+    restart: unless-stopped
+    volumes:
+      - prometheus-data:/prometheus
+    expose:
+      - 9090
+    ports:
+      - "9090:9090"
+    links:
+      - cadvisor:cadvisor
+      - node-exporter:node-exporter
+    networks:
+      - grafana-network
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  cadvisor:
+    image: google/cadvisor:v0.33.0
+    container_name: ${PLATFORM_STACK_NAME}-monitoring_cadvisor
+    restart: unless-stopped
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /datadrive/docker/containers/:/datadrive/docker/containers/:ro
+    expose:
+      - 8080
+    networks:
+      - grafana-network
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  node-exporter:
+    image: prom/node-exporter:v1.3.1
+    container_name: ${PLATFORM_STACK_NAME}-monitoring_node_exporter
+    restart: unless-stopped
+    expose:
+      - 9100
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - "--path.procfs=/host/proc"
+      - "--path.rootfs=/rootfs"
+      - "--path.sysfs=/host/sys"
+      - "--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)"
+    networks:
+      - grafana-network
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  monitoringdb:
+    image: mariadb:10.10.2
+    container_name: ${PLATFORM_STACK_NAME}-monitoringdb
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD_MONITORING}
+      MYSQL_DATABASE: ${MYSQL_DATABASE_MONITORING}
+      MYSQL_USER: ${MYSQL_USERNAME_MONITORING}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD_MONITORING}
+    volumes:
+      - monitoringdb-data:/var/lib/mysql
+    networks:
+      - grafana-network
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  filebeat:
+    image: interlinkproject/backend-monitoring:prometheus.master
+    container_name: ${PLATFORM_STACK_NAME}-filebeat
+    restart: unless-stopped
+    user: root
+    env_file: .env
+    environment:
+      ELASTIC_HOST: ${ELASTIC_GRAFANA_HOST}
+      ELASTIC_PORT: ${ELASTIC_GRAFANA_PORT}
+      ELASTIC_USERNAME: ${ELASTIC_GRAFANA_USERNAME}
+      ELASTIC:PASSWORD: ${ELASTIC_GRAFANA_PASSWORD}
+    volumes:
+      - type: volume
+        source: filebeat-data
+        target: /usr/share/filebeat/data
+      - type: bind
+        source: /datadrive/docker/containers
+        target: /var/lib/docker/containers
+        read_only: true
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+        read_only: true
+    command:
+      - -e
+      # Disable config file permissions checks. Allows mounting
+      # 'config/filebeat.yml' even if it's not owned by root.
+      # see: https://www.elastic.co/guide/en/beats/libbeat/current/config-file-permissions.html
+      - --strict.perms=false
+    networks:
+      - grafana-network
+      - traefik-public
+
+  grafana-elasticsearch:
+    image: elasticsearch:8.2.2
+    container_name: ${PLATFORM_STACK_NAME}-grafana-elasticsearch
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - xpack.security.enabled=true
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms750m -Xmx750m
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    networks:
+      - grafana-network
+      - traefik-public
+    volumes:
+      - grafana-elasticsearch-data:/usr/share/elasticsearch/data
+      - grafana-elasticsearch-config:/usr/share/elasticsearch/config
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: ${PLATFORM_STACK_NAME}-portainer
+    restart: unless-stopped
+    command: --http-enabled
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - 9000:9000
+    environment:
+      - TZ=${TZ}
+    networks:
+      - traefik-public
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - portainer-data:/data
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portainer.rule=Host(`portainer.${DOMAIN?Variable not set}`)"
+      - "traefik.http.routers.portainer.entrypoints=websecure"
+      - "traefik.http.routers.portainer.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.portainer.tls=true"
+      - "traefik.http.services.portainer.loadbalancer.server.port=9000"
+      - "traefik.http.middlewares.portainer-stripprefix.stripprefix.prefixes=/portainer"
+
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  keycloak_db:
+    image: postgres:13.4
+    container_name: keycloak_db
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_USER=${KEYCLOAK_USER}
+      - POSTGRES_PASSWORD=${KEYCLOAK_PASSWORD}
+      - POSTGRES_DB=${KEYCLOAK_DB_DATABASE}
+    networks:
+      - traefik-public
+    volumes:
+      - keycloak-data:/var/lib/postgresql/data
+    labels:
+      - traefik.enable=false
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  keycloak:
+    image: jboss/keycloak:16.1.1
+    container_name: ${PLATFORM_STACK_NAME}-keycloak
+    env_file:
+      - .env
+    environment:
+      - KEYCLOAK_USER=${KEYCLOAK_USER}
+      - KEYCLOAK_PASSWORD=${KEYCLOAK_PASSWORD}
+      - DB_VENDOR=postgres
+      - DB_ADDR=keycloak_db
+      - DB_DATABASE=${KEYCLOAK_DB_DATABASE}
+      - DB_USER=${KEYCLOAK_USER}
+      - DB_PASSWORD=${KEYCLOAK_PASSWORD}
+      - PROXY_ADDRESS_FORWARDING=true
+      - TZ=${TZ}
+    depends_on:
+      - keycloak_db
+    volumes:
+      - keycloak-data:/opt/jboss/keycloak/standalone/data
+      - ./keycloak/greengage-keycloak-custom/target/greengageflow-keycloak-spi-1.0.jar:/opt/jboss/keycloak/standalone/deployments/greengageflow.jar
+      - ./keycloak/surveyFormFields.ftl:/opt/jboss/keycloak/themes/keycloak/login/surveyFormFields.ftl
+      - ./keycloak/keycloak_custom_register.ftl:/opt/jboss/keycloak/themes/keycloak/login/register.ftl
+    ports:
+      - "8081:8080"
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-keycloak.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-keycloak.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-keycloak.tls=true
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-keycloak.rule=Host(`auth1.${DOMAIN}`)
+
+    networks:
+      - traefik-public
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  myAccount:
+    image: projectgreengage/my-account:${MY_ACCOUNT}
+    container_name: ${PLATFORM_STACK_NAME}-my-Account
+    env_file:
+      - .env
+    environment:
+      - KEYCLOAK_CLIENT_ID=${MYACCOUNT_KEYCLOAK_CLIENT_ID}
+      - KEYCLOAK_CLIENT_SECRET=${MYACCOUNT_KEYCLOAK_CLIENT_SECRET}
+      - KEYCLOAK_ISSUER_URL=${MYACCOUNT_KEYCLOAK_ISSUER_URL}
+      - KEYCLOAK_REALM=${MYACCOUNT_KEYCLOAK_REALM}
+      - KEYCLOAK_BASE_URL=${MYACCOUNT_KEYCLOAK_BASE_URL}
+      - NEXTAUTH_URL=me.${NIPDOMAIN}
+      - NEXTAUTH_URL_INTERNAL=me.${NIPDOMAIN}
+      - NEXT_PUBLIC_SENTRY_DSN=${MYACCOUNT_NEXT_PUBLIC_SENTRY_DSN}
+      - NEXT_PUBLIC_SENTRY_ENVIRONMENT=${MYACCOUNT_NEXT_PUBLIC_SENTRY_ENVIRONMENT}
+      - NEXTAUTH_SECRET=${MYACCOUNT_NEXTAUTH_SECRET}
+      - MINIO_ACCESS_KEY=CHANGETHIS
+      - MINIO_SECRET_KEY=CHANGETHIS
+      - MINIO_ENDPOINT_PUBLIC=minioapi.${NIPDOMAIN}
+      - MINIO_ENDPOINT=myAccountMinIO
+      - MINIO_PORT=9000
+      - MINIO_USE_SSL=false
+    networks:
+      - traefik-public
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-my-Account.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-my-Account.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-my-Account.tls=true
+      - traefik.http.services.my-Account.loadbalancer.server.port=80
+      - traefik.http.routers.${PLATFORM_STACK_NAME}-my-Account.rule=Host(`me.${NIPDOMAIN}`) 
+  
+  myAccountMinIO:
+    image: minio/minio:RELEASE.2024-04-28T17-53-50Z
+    container_name: ${PLATFORM_STACK_NAME}-MinIO
+    volumes:
+      - minio_data:/data
+    env_file:
+      - .env
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_ENDPOINT=minio.${NIPDOMAIN}
+      - MINIO_HOST=minio.${NIPDOMAIN}
+      - MINIO_PORT=9000
+      - MINIO_useSSL=false
+      - MINIO_BROWSER=on
+      
+    networks:
+      - traefik-public
+  
+    command: server /data --console-address ":10000"
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-public"
+      - "traefik.http.routers.myAccountMinIO.rule=Host(`minio.${NIPDOMAIN}`)"
+      - "traefik.http.routers.myAccountMinIO.entrypoints=websecure"
+      - "traefik.http.routers.myAccountMinIO.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.myAccountMinIO.tls=true"
+      - "traefik.http.services.myAccountMinIO.loadbalancer.server.port=10000"
+      - "traefik.http.services.myAccountMinIO.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.myAccountMinIO.service=myAccountMinIO"
+      - "traefik.http.middlewares.myAccountMinIO-stripprefix.stripprefix.prefixes=/minio"
+      - "traefik.http.routers.myAccountMinIO.middlewares=myAccountMinIO-stripprefix"
+
+      - "traefik.http.routers.myAccountMinIOAPI.rule=Host(`minioapi.${NIPDOMAIN}`)"
+      - "traefik.http.routers.myAccountMinIOAPI.entrypoints=websecure"
+      - "traefik.http.routers.myAccountMinIOAPI.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.myAccountMinIOAPI.tls=true"
+      - "traefik.http.services.myAccountMinIOAPI.loadbalancer.server.port=9000"
+      - "traefik.http.services.myAccountMinIOAPI.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.myAccountMinIOAPI.service=myAccountMinIOAPI"
+      - "traefik.http.middlewares.myAccountMinIOAPI-stripprefix.stripprefix.prefixes=/minioapi"
+      - "traefik.http.routers.myAccountMinIOAPI.middlewares=myAccountMinIOAPI-stripprefix"
+
+    ports:
+      - "9001:9000"
+
+
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  
+  discourse:
+    container_name: discourse
+    image: docker.io/bitnami/discourse:3.1.3
+    ports:
+      - "4000:3000"
+    volumes:
+      - "discourse_data:/bitnami/discourse"
+    depends_on:
+      - postgresql
+      - redis
+    env_file:
+      - .env
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - DISCOURSE_HOST=demo.greengage-project.eu/discourse
+      - DISCOURSE_DATABASE_HOST=postgresql
+      - DISCOURSE_DATABASE_PORT_NUMBER=5432
+      - DISCOURSE_DATABASE_USER=bn_discourse_changethis
+      - DISCOURSE_DATABASE_NAME=bitnami_discourse
+      - DISCOURSE_REDIS_HOST=redis
+      - DISCOURSE_REDIS_PORT_NUMBER=6379
+      - DISCOURSE_USERNAME=admin
+      - DISCOURSE_PASSWORD=changeThis
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+      - traefik.http.routers.${PLATFORM_STACK_NAME?Variable not set}-discourse.entrypoints=websecure
+      - traefik.http.routers.${PLATFORM_STACK_NAME?Variable not set}-discourse.tls.certresolver=letsencrypt
+      - traefik.http.routers.${PLATFORM_STACK_NAME?Variable not set}-discourse.tls=true
+      - traefik.http.services.${PLATFORM_STACK_NAME?Variable not set}-discourse.loadbalancer.server.port=4000
+      - traefik.http.routers.${PLATFORM_STACK_NAME?Variable not set}-discourse.rule=Host(`${DOMAIN?Variable not set}`) && PathPrefix(`/discourse`)
+      - traefik.http.routers.${PLATFORM_STACK_NAME?Variable not set}-discourse.middlewares=discourse-stripprefix
+      - traefik.http.middlewares.discourse-stripprefix.stripprefix.prefixes=/discourse
+    networks:
+      - traefik-public
+      - discourse-tier
+
+  nifi:
+    image: apache/nifi:1.19.0
+    container_name: nifi
+    user: root
+    ports:
+      - 8443:8443
+    environment:
+      - NIFI_WEB_HTTPS_PORT=8443
+      - NIFI_WEB_HTTPS_HOST=0.0.0.0
+      - NIFI_WEB_PROXY_CONTEXT_PATH=/my-nifi/
+      - NIFI_WEB_PROXY_HOST=16.171.94.204:443, nifi.16.171.94.204.nip.io:443
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-public"
+      - "traefik.http.routers.nifi.service=nifi"
+      - "traefik.http.routers.nifi.entrypoints=websecure"
+      - "traefik.http.routers.nifi.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.nifi.tls=true"
+      - "traefik.http.services.nifi.loadbalancer.server.scheme=https"
+      - "traefik.http.services.nifi.loadbalancer.server.port=8443"
+      - "traefik.http.routers.nifi.rule=Host(`nifi.16.171.94.204.nip.io`)"
+      - "traefik.http.routers.nifi.middlewares=nifi-stripprefix"
+      - "traefik.http.middlewares.nifi-stripprefix.stripprefix.prefixes=/my-nifi"
+      
+    volumes:
+      - ./nifi/database_repository:/opt/nifi/nifi-current/database_repository
+      - ./nifi/flowfile_repository:/opt/nifi/nifi-current/flowfile_repository
+      - ./nifi/content_repository:/opt/nifi/nifi-current/content_repository
+      - ./nifi/provenance_repository:/opt/nifi/nifi-current/provenance_repository
+      - ./nifi/state:/opt/nifi/nifi-current/state
+      - ./nifi/logs:/opt/nifi/nifi-current/logs
+      # uncomment the next line after copying the /conf directory from the container to your local directory to persist NiFi flows
+      - ./nifi/conf:/opt/nifi/nifi-current/conf
+      - data_storage:/home/nifi/data/
+    networks:
+      - traefik-public
+      - datahub-network
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  superset_redis:
+    image: redis:7
+    container_name: superset_redis
+    restart: unless-stopped
+    volumes:
+      - superset_redis:/data
+    networks:
+      - superset
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  superset_db:
+    env_file: ./superset/.env
+    image: postgres:15
+    container_name: superset_db
+    restart: unless-stopped
+    networks:
+      - superset
+    volumes:
+      - superset_db_home:/var/lib/postgresql/data
+      - ./superset/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  superset:
+    env_file: ./superset/.env
+    image: *superset-image
+    container_name: superset_app
+    command: ["/app/docker/docker-bootstrap.sh", "app-gunicorn"]
+    user: "root"
+    restart: unless-stopped
+    ports:
+      - 8088
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-public"
+      - "traefik.http.routers.superset.entrypoints=websecure"
+      - "traefik.http.routers.superset.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.superset.tls=true"
+      - "traefik.http.services.superset.loadbalancer.server.port=8088"
+      - "traefik.http.routers.superset.rule=Host(`superset.16.171.94.204.nip.io`)"
+    networks:
+      - traefik-public
+      - superset
+    depends_on: *superset-depends-on
+    volumes: *superset-volumes
+    logging:
+      driver: "json-file"
+      options:
+        max-size: 10m
+        max-file: "3"
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  superset-init:
+    image: *superset-image
+    container_name: superset_init
+    command: ["/app/docker/docker-init.sh"]
+    env_file: ./superset/.env
+    depends_on: *superset-depends-on
+    user: "root"
+    volumes: *superset-volumes
+    healthcheck:
+      disable: true
+    networks:
+      - superset
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  superset-worker:
+    image: *superset-image
+    container_name: superset_worker
+    command: ["/app/docker/docker-bootstrap.sh", "worker"]
+    env_file: ./superset/.env
+    restart: unless-stopped
+    depends_on: *superset-depends-on
+    user: "root"
+    volumes: *superset-volumes
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "celery -A superset.tasks.celery_app:app inspect ping -d celery@$$HOSTNAME",
+        ]
+    networks:
+      - superset
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+  superset-worker-beat:
+    image: *superset-image
+    container_name: superset_worker_beat
+    command: ["/app/docker/docker-bootstrap.sh", "beat"]
+    env_file: ./superset/.env
+    restart: unless-stopped
+    depends_on: *superset-depends-on
+    user: "root"
+    volumes: *superset-volumes
+    healthcheck:
+      disable: true
+    networks:
+      - superset
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+
+networks:
+  traefik-public:
+    external: true
+  grafana-network:
+    external: true
+  ckannet:
+  solrnet:
+    internal: true
+  dbnet:
+    internal: true
+  redisnet:
+    internal: true
+  druid:
+    external: true
+
+volumes:
+  matomo-data:
+  mariadb-data:
+  monitoringdb-data:
+  newelasticsearch-data:
+  elasticsearch-data:
+  mongodb-data:
+  db-data:
+  dremio-data:
+  portainer-data:
+  auth-static:
+  coproduction-static:
+  catalogue-static:
+  backups:
+  loomio-uploads:
+  loomio-storage:
+  loomio-files:
+  loomio-plugins:
+  loomio-import:
+  loomio-tmp:
+  newelasticsearch-config:
+  elasticsearch-config:
+  grafana-dashboards:
+  grafana-data:
+  prometheus-data:
+  filebeat-data:
+  grafana-elasticsearch-data:
+  grafana-elasticsearch-config:
+  gamification-mongo-data:
+  gamification-engine-data:
+  keycloak-db-data:
+  keycloak-data:
+  ckan_storage:
+  pg_data:
+  solr_data:
+  # Druid
+  metadata_data: 
+  middle_var: 
+  historical_var: 
+  broker_var: 
+  coordinator_var: 
+  router_var: 
+  druid_shared:
+  minio_data:
