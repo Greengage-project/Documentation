@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Discourse - GREENGAGE Documentation</title>
+    <title>Multi-modal data processing tools - GREENGAGE Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Discourse";
-        var mkdocs_page_input_path = "tools/Discourse/index.md";
+        var mkdocs_page_name = "Multi-modal data processing tools";
+        var mkdocs_page_input_path = "tools/multimodal_data_processing/index.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -98,11 +98,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Discourse</a>
     <ul>
-                <li class="toctree-l3"><a class="" href=".">Description</a>
+                <li class="toctree-l3"><a class="" href="../Discourse">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="integration">Integration</a>
+                <li class="toctree-l3"><a class="" href="../Discourse/integration">Integration</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="examples">Example of deployment</a>
+                <li class="toctree-l3"><a class="" href="../Discourse/examples">Example of deployment</a>
                 </li>
     </ul>
                 </li>
@@ -232,7 +232,7 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../multimodal_data_processing">Multi-modal data processing tools</a>
+                  <li class="toctree-l1"><a class="" href=".">Multi-modal data processing tools</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">GREEN ENGINE</span></p>
@@ -254,7 +254,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Discourse</li>
+      <li class="breadcrumb-item active">Multi-modal data processing tools</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -263,36 +263,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="discourse">Discourse</h1>
-<h3 id="introduction">Introduction</h3>
-<p><strong>Description</strong>: Discourse is a free, open-source forum software that plays a crucial role in modern tech environments by enabling thoughtful discussion and meaningful connections. It integrates seamlessly with various platforms, enhancing both application functionality and community engagement.</p>
-<p><strong>Objective</strong>: The integration of Discourse can significantly benefit development projects by offering robust collaboration and communication tools. It enhances application security with features like spam blocking and two-factor authentication, ensuring a safe and productive environment for users.</p>
-<h3 id="features-of-discourse">Features of Discourse</h3>
-<p><strong>List of Features</strong>:</p>
-<ol>
-<li><strong>Conversations, Not Pages</strong>: Utilizes just-in-time loading for seamless conversation flow.</li>
-<li><strong>Real-Time Chat</strong>: Enables informal chats alongside more structured discussions.</li>
-<li><strong>AI Integration</strong>: Enhances user experience and moderation with AI capabilities.</li>
-<li><strong>Customizable User Experience</strong>: Offers a personalized interface with adjustable preferences.</li>
-<li><strong>Mobile Compatibility</strong>: Fully functional on high-resolution touch devices.</li>
-<li><strong>Link Expansion</strong>: Automatically enhances shared links with additional context.</li>
-<li><strong>Single Sign-On</strong>: Facilitates easy integration with existing login systems.</li>
-<li><strong>Trust System</strong>: Rewards regular members with additional abilities.</li>
-<li><strong>Community Moderation</strong>: Allows community-driven content moderation.</li>
-<li><strong>Spam Blocking</strong>: Integrates Akismet spam protection.</li>
-<li><strong>Social Login</strong>: Supports common social media logins.</li>
-<li><strong>Topic Summarization</strong>: Condenses long discussions to highlights.</li>
-<li><strong>Badges</strong>: Encourages positive behaviors with a badge system.</li>
-<li><strong>Emoji Support</strong>: Offers a searchable list of emojis.</li>
-<li><strong>Email Interaction</strong>: Allows replying to notifications via email.</li>
-<li><strong>Two-Factor Authentication</strong>: Enhances account security.</li>
-<li><strong>Admin Dashboard</strong>: Provides essential community health metrics.</li>
-<li><strong>Official Plugins</strong>: Supports various additional features.</li>
-<li><strong>Comprehensive API</strong>: Facilitates broad functionality access.</li>
-<li><strong>Open Source</strong>: Ensures transparency and adaptability.</li>
-<li><strong>One-Click Upgrades</strong>: Simplifies version updates.</li>
-<li><strong>Additional Features</strong>: Includes support for multiple languages, SEO optimization, various content formatting options, automatic backups, blog integration, and more</li>
-</ol>
+                <h1 id="multi-modal-data-processing-tools">Multi-modal data processing tools</h1>
+<h2 id="dashcam-based-road-defects-detection-uwe">Dashcam-based Road Defects Detection (UWE)</h2>
+<p>The image analysis work has been successfully extended to dashcam footage, aiming to spot a wide range of roadway defects for the Turano pilot—including potholes, surface cracks, faded road markings, and vandalised road signs. As part of the initial training phase, we deployed CVAT to label representative frames from the dashcam videos. Further, we integrated Segment Anything Model (SAM) model inside CVAT to speedup and accelerate the annotation process. An AI model is currently under development, and an early prototype already demonstrates promising results, offering side-by-side visual analysis of identified defects. The next release will output structured JSON files detailing all roadway defects and respective metadata , enabling research and development for downstream urban use cases. This is an exciting and evolving area of work, with ongoing interations to increase accuracy, usability, and scalability.</p>
+<h2 id="sentiment-analysis-uwe">Sentiment analysis (UWE)</h2>
+<p>Using Large Language Models (LLMs) - Flan-T5, sentiment analysis is performed on transcripts from videos, interviews, and written texts from citizens. Inputs are processed by the LLM to detect emotional tone, and classified with a binary label (1 for positive sentiment and 0 for negative). This approach enables rapid assessment of overall emotional trends, helping to quickly understand the prevailing mood or attitude expressed across large volumes of collected data. The models used are run locally to avoid sharing information with third party software.</p>
+<h2 id="summarisation-and-thematic-analysis-uwe">Summarisation and thematic analysis (UWE)</h2>
+<p>As part of the Bristol pilot, a text summarisation service leveraging LLaMA 3 is being developed to summarise content from qualitative comments submitted by citizens through the EBLN platform. This tool is designed to help the pilot owner and other stakeholders quickly grasp key themes and sentiments from large volumes of textual survey data. To support experimentation and broader usability, a streamlit web application has been created, enabling users to upload their own datasets and explore summarisation across various contextual settings. Initial evaluations by domain experts have shown that summarisation quality can vary depending on the context provided, an insight that is guiding further refinement. Building on this foundation, the work is now being extended to include thematic summarisation, aiming to group and highlight recurring topics and concerns more effectively. This evolving capability holds strong potential for enhancing civic engagement analysis and decision-making.</p>
               
             </div>
           </div><footer>
