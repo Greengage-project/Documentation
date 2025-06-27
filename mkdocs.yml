@@ -80,7 +80,8 @@ nav:
               - Example of integration: tools/nifi/examples
           - Data Quality Dashboard:
               - Description: tools/DataQualityDashboard
+      - Multi-modal data processing tools: tools/multimodal_data_processing
   - GREEN ENGINE:
-        - Installation: green-engine/installation.md
+      - Installation: green-engine/installation.md
 locale:
   - en

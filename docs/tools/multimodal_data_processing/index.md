@@ -1,0 +1,13 @@
+# Multi-modal data processing tools
+
+## Dashcam-based Road Defects Detection (UWE)
+
+The image analysis work has been successfully extended to dashcam footage, aiming to spot a wide range of roadway defects for the Turano pilot—including potholes, surface cracks, faded road markings, and vandalised road signs. As part of the initial training phase, we deployed CVAT to label representative frames from the dashcam videos. Further, we integrated Segment Anything Model (SAM) model inside CVAT to speedup and accelerate the annotation process. An AI model is currently under development, and an early prototype already demonstrates promising results, offering side-by-side visual analysis of identified defects. The next release will output structured JSON files detailing all roadway defects and respective metadata , enabling research and development for downstream urban use cases. This is an exciting and evolving area of work, with ongoing interations to increase accuracy, usability, and scalability.
+
+## Sentiment analysis (UWE)
+
+Using Large Language Models (LLMs) - Flan-T5, sentiment analysis is performed on transcripts from videos, interviews, and written texts from citizens. Inputs are processed by the LLM to detect emotional tone, and classified with a binary label (1 for positive sentiment and 0 for negative). This approach enables rapid assessment of overall emotional trends, helping to quickly understand the prevailing mood or attitude expressed across large volumes of collected data. The models used are run locally to avoid sharing information with third party software.
+
+## Summarisation and thematic analysis (UWE)
+
+As part of the Bristol pilot, a text summarisation service leveraging LLaMA 3 is being developed to summarise content from qualitative comments submitted by citizens through the EBLN platform. This tool is designed to help the pilot owner and other stakeholders quickly grasp key themes and sentiments from large volumes of textual survey data. To support experimentation and broader usability, a streamlit web application has been created, enabling users to upload their own datasets and explore summarisation across various contextual settings. Initial evaluations by domain experts have shown that summarisation quality can vary depending on the context provided, an insight that is guiding further refinement. Building on this foundation, the work is now being extended to include thematic summarisation, aiming to group and highlight recurring topics and concerns more effectively. This evolving capability holds strong potential for enhancing civic engagement analysis and decision-making.
