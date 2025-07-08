@@ -20,9 +20,9 @@ This guide explains how to deploy the full **GREENENGINE** toolbox using Docker 
 ### 1. Download the docker-compose files and environment configuration sample
 
 ```text
-https://greengage-project.github.io/Documentation/green-engine/docker-compose.yml
+https://raw.githubusercontent.com/Greengage-project/Documentation/refs/heads/main/docs/green-engine/docker-compose.yml
+https://raw.githubusercontent.com/Greengage-project/Documentation/refs/heads/main/docs/green-engine/.env.sample
 
-https://greengage-project.github.io/Documentation/green-engine/.env.sample
 ```
 
 ### 2. Set Up the Environment File
