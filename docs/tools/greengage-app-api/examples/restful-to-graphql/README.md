@@ -11,8 +11,6 @@ PORT=3333
 URL='https://example.com/'
 ```
 
-Please be aware that the URL parameter will not be taken if the request header "drupal" is set.
-
 ### Step 2
 
 Run the following command:

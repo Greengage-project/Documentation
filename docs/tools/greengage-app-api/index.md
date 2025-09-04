@@ -10,7 +10,7 @@ Staging:
 https://api-stage.greengage.dev/graphql
 ```
 
-Prouction (available January 2024):
+Production (Spring 2024):
 ```
 https://api.greengage.dev/graphql
 ```
@@ -78,3 +78,30 @@ For a client side approach to use the graphql endpoint please follow [this link]
 ## Integration
 
 If you want to be integrated into the greengage api or need further support please send an email to support@sushi.dev
+
+## More examples for functions
+The basic set of features allows you to use multiple functions.
+
+[More details](more.md).
+
+## Webhooks
+
+For certain implemenatations and integrations webhooks will are provided. 
+The webhooks are available via:
+
+/webhooks
+
+The request must be a post and the body needs to look like:
+
+```json
+{
+    "origin": "mindearth",
+    "data": {}
+}
+```
+
+Please be aware that the use of the webhook currently supports only one type:
+
+- mindearth (to push missions from mindearth into the greengage system without the need on their side to implement GraphQL)
+
+We recommend to use the GraphQL api for deeper integrations.
