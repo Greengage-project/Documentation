@@ -21,6 +21,8 @@ To facilitate a centralized user management system, we are utilizing Keycloak as
 
 - Once you have received your Client ID and Secret, incorporate these credentials into your service’s authentication module.
 - Ensure that your service is set to communicate with our Keycloak server using the OpenID Connect protocol.
+- You can add the following link **https://[KEYCLOAK]/
+auth/realms/[REALM]/account** in your system. To give your user access to the information managed by keycloak. Example https://auth1.demo.greengage-project.eu/auth/realms/greengage/account/
 
 **Step 4: Testing the Integration**
 

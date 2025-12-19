@@ -27,7 +27,7 @@ To monitor, analyse, and visualise air quality data across different parts of th
 
 1) Data Collection:
 
-    - Deploy HOPU sensors across the city to measure air quality indicators like PM2.5, PM10, NO2, CO2, and Ozone.
+    - Deploy IoT sensors across the city to measure air quality indicators like PM2.5, PM10, NO2, CO2, and Ozone.
     - Sensors transmit data to a centralised database, storing time-stamped readings and location data.
 
 2) Data Integration with Apache Superset:

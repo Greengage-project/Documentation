@@ -50,7 +50,7 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 - **Directory**: `/tools`
 - **Link**: [tools/Discourse](tools/Discourse)
-- **Deployed in**: [https://discourse.16.171.94.204.nip.io](https://discourse.16.171.94.204.nip.io)
+- **Deployed in**: [https://discourse.greengage-project.eu](https://discourse.greengage-project.eu)
 - **Description**: Discourse is a modern, open-source discussion platform designed for building and managing community forums. Known for its user-friendly interface and robust features, it supports real-time discussions, multimedia integration, and comprehensive moderation tools. Ideal for a wide range of communities, from small groups to large enterprises, Discourse fosters engagement, knowledge sharing, and collaboration.
 
   - **Examples of programmatic integration/usage**:
@@ -62,13 +62,100 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 
 - **Directory**: `/tools`
 - **Link**: [tools/DataHub](tools/datahub)
-- **Deployed in**: [https://datahub.16.171.94.204.nip.io](https://datahub.16.171.94.204.nip.io)
+- **Deployed in**: [https://datahub.greengage-project.eu/](https://datahub.greengage-project.eu/)
 - **Description**: DataHub is an open-source metadata platform designed to democratise data discovery. It acts as a centralised system for companies and teams to track, manage, and find data within their organisation. Its primary aim is to streamline the process of accessing and understanding data assets, making it easier for teams to derive insights and make informed decisions.
-
 
   - **Examples of programmatic integration**:
     - [Integration example](tools/datahub/examples)
 
+---
+
+#### Apache Superset
+
+- **Directory**: `/tools`
+- **Link**: [tools/Superset](tools/superset)
+- **Deployed in**: [https://superset.greengage-project.eu/](https://superset.greengage-project.eu/)
+- **Description**: Apache Superset is a sophisticated, open-source data exploration and visualisation platform designed to transform the way analysts and businesses interact with their data. As a versatile web application, it empowers users with tools for deep data exploration and the creation of beautifully rendered visualisations and dashboards. Superset is renowned for its user-friendly interface, democratising data analysis by enabling users of all skill levels to engage with complex datasets, design compelling visual narratives, and derive actionable insights. Offering a rich array of features, including a variety of chart types, interactive dashboards, and an integrated SQL editor, Apache Superset stands out as a comprehensive solution for modern data analytics and business intelligence needs.
+
+  - **Examples of integration of sources with Superset**:
+    - [Integration example](tools/superset/examples)
+
+---
+
+#### Apache Druid
+
+- **Directory**: `/tools`
+- **Link**: [tools/Druid](tools/druid)
+- **Deployed in**: [https://druid.greengage-project.eu](https://druid.greengage-project.eu)
+- **Description**: Apache Druid is a high-performance, distributed data store designed for real-time analytics on large-scale datasets. It excels in scenarios where fast queries and ingest are crucial, such as in business intelligence applications, operational analytics, and real-time monitoring. Druid is known for its ability to handle high concurrency, its columnar storage format, and its ability to scale horizontally. It supports streaming and batch data ingestion, and its architecture allows for efficient data summarisation, fast aggregation queries, and low-latency data access. Druid is often used in conjunction with big data technologies like Hadoop and Kafka, making it a popular choice for organisations looking to implement real-time analytics solutions.
+
+  - **Examples of integration of sources with Druid**:
+    - [Integration example](tools/druid/examples)
+
+---
+
+#### Apache NiFi
+
+- **Directory**: `/tools`
+- **Link**: [tools/NiFi](tools/nifi)
+- **Deployed in**: [https://nifi.greengage-project.eu/nifi](https://nifi.greengage-project.eu/nifi)
+- **Description**: Apache NiFi is a robust, open-source software solution designed for efficient and reliable data ingestion, processing, and distribution. It is particularly noted for its user-friendly graphical interface that simplifies the design, management, and monitoring of data flows. NiFi supports highly configurable and flexible data routing, system mediation, and transformation capabilities, enabling the handling of diverse data formats and systems. Key features include its scalability to accommodate large volumes of data, built-in data security measures, and extensive audit trails for data provenance. Primarily used in scenarios requiring complex data pipelines, such as real-time data processing and integration across varied systems, Apache NiFi stands out for its ease of use and comprehensive data management capabilities.
+
+  - **Examples of integration of sources with NiFi**:
+    - [Integration example](tools/nifi/examples)
+
+---
+
+#### Libelium MQTT sensor integration
+
+- **Directory**: `/tools`
+- **Link**: [tools/sensorsIntegration](tools/sensorsIntegration)
+- **Description**: This documentation contains all the information necessary to connect and configure the IoT sensors provided by Libelium to MQTT broker and integrate it in other platforms or architectures.
+
 The above README provides a structured outline to document the technical aspects of the GREENGAGE project, offering a solid starting point to further elaborate on the tools and processes involved in the project.
+
+#### Greengage APP
+
+- **Directory**: `/tools`
+- **Link**: [tools/greengage-app-api](tools/greengage-app-api)
+- **Deployed in**: [api-stage.greengage.dev/graphql](https://api-stage.greengage.dev/graphql)
+- **Description**: The greengage app api is mesh of multiple services which are provided via a single gateway. This underlying docuemntation will show you in a simple way how you can interact with application and how you can adopt your application to fit in the ecosystem.
+
+#### UrbanTEP / VISAT
+
+- **Directory**: `/tools`
+- **Link**: [tools/urbantep-visat](tools/UrbanTEP/VISAT)
+- **Deployed in**: [visat-sdg.urban-tep.eu](https://visat-sdg.urban-tep.eu)
+- **Description**: VISAT (Visualization and Analytical Toolbox) is a powerful tool provided by GISAT within the Urban Thematic and Exploration Platform (UrbanTEP). It is designed for the seamless integration, exploration, visualization, and analysis of diverse datasets, particularly geospatial data. As part of the GREENGAGE project, VISAT is integral to supporting pilot solutions with its data integration, visualization, and analysis capabilities, enhancing the efficiency of Citizen Observatory projects.
+
+#### Wordpress
+
+- **Directory**: `/tools`
+- **Link**: [tools/wordpress](tools/wordpress)
+- **Description**: WordPress is a highly popular and versatile Content Management System (CMS) renowned for its ease of use and flexibility. It's an ideal platform for creating a wide range of websites, from personal blogs to large corporate portals. WordPress is known for its extensive theme and plugin ecosystem, which allows users to customize their sites to fit their specific needs and enhance functionality.
+
+  - **Examples of programmatic integration/usage**:
+    - [With Keycloak](tools/wordpress/integration/#wpKeycloak)
+    - [With Discourse](tools/wordpress/integration/#wpdiscourse)
+
+#### MindEarth
+
+- **Directory**: `/tools`
+- **Link**: [tools/mindview](tools/mindview)
+- **Deployed in**: [Google Play
+  ](https://play.google.com/store/apps/details?id=ch.mindearth.mindviewgreengage&hl=en)
+- **Description**: The MindEarth platform is an advanced system designed for real-time data collection and analysis, particularly suited to urban planning, environmental monitoring, and commercial research projects. It allows third-party organizations to commission missions for users to perform, which may involve taking photographs, traveling specific routes, or staying in a certain location for a set amount of time. The platform supports seamless integration with mobile devices and backend services, ensuring high scalability and flexibility.
+
+  - **Examples of programmatic integration/usage**:
+    - [With Third-Party Services](tools/mindview/integration)
+
+#### Data Quality Dashboard
+
+- **Directory**: `/tools`
+- **Link**: [tools/DataQualityDashboard](tools/DataQualityDashboard)
+- **Deployed in**: [qualitydashboard.greengage-project.eu](https://qualitydashboard.greengage-project.eu/)
+- **Description**: The Data Quality Dashboard is a web-based platform designed to monitor and visualize the quality of collected data. It provides users with powerful tools to identify, analyze, and resolve data quality issues. By offering both visual and numeric representations of key metrics such as completeness, accuracy, and consistency, the dashboard helps users quickly pinpoint potential issues in their datasets. The platform supports various data exploration features, including filtering by time, location, and other parameters, making it ideal for applications like environmental monitoring, urban planning, and more.
+
+---
 
 ##### Source code in: [https://github.com/Greengage-project/Documentation](https://github.com/Greengage-project/Documentation)

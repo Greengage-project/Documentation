@@ -4,7 +4,7 @@ To provide a centralised location for all data assets, we are deploying DataHub 
 
 **Step 1: Requesting Credentials**
 
-- Access to [DataHub](https://datahub.16.171.94.204.nip.io/) using your Google account or the account created for Greengage project and registered in Keycloak.
+- Access to [DataHub](https://datahub.greengage-project.eu/) using your Google account or the account created for Greengage project and registered in Keycloak.
 
 <!-- - TODO SPECIFY THE DIFFERENT ROLES AND THE ACTIONS THAT CAN BE PERFORMED WITH EACH ROLE. -->
 

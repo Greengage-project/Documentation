@@ -1,25 +1,24 @@
 const express = require("express");
 const session = require("express-session");
 const Keycloak = require("keycloak-connect");
+const keycloakSettings = require("./keycloak.json");
 
 const app = express();
-
-const KEYCLOAK_AUTH_SERVER_URL = "http://localhost:8080/auth";
 
 const memoryStore = new session.MemoryStore();
 
 const keycloak = new Keycloak({
   store: memoryStore, // Use memoryStore here
   scope: "openid",
-  clientId: "nodejs-microservice",
+  clientId: keycloakSettings["resource"],
   bearerOnly: true,
-  serverUrl: KEYCLOAK_AUTH_SERVER_URL,
-  realm: "nodejs-microservice",
+  serverUrl: keycloakSettings["auth-server-url"],
+  realm: keycloakSettings["realm"],
 });
 
 app.use(
   session({
-    secret: "your-secret-goes-here", // Add a secret to your session configuration
+    secret: keycloakSettings["credentials"]["secret"],
     resave: false,
     saveUninitialized: true,
     store: memoryStore, // Use memoryStore for session storage
