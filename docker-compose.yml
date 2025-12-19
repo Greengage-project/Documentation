@@ -1,0 +1,9 @@
+services:
+  docs:
+    build: .
+    ports:
+      - "8080:8000"
+    volumes:
+      - ./docs:/docs/docs:ro
+      - ./mkdocs.yml:/docs/mkdocs.yml:ro
+    restart: unless-stopped

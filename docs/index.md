@@ -118,8 +118,8 @@ The above README provides a structured outline to document the technical aspects
 
 - **Directory**: `/tools`
 - **Link**: [tools/greengage-app-api](tools/greengage-app-api)
-- **Deployed in**: [api-stage.greengage.dev/graphql](https://api-stage.greengage.dev/graphql)
-- **Description**: The greengage app api is mesh of multiple services which are provided via a single gateway. This underlying docuemntation will show you in a simple way how you can interact with application and how you can adopt your application to fit in the ecosystem.
+- **Deployed in**: [api.greengage.dev/graphql](https://api.greengage.dev/graphql)
+- **Description**: The GREENGAGE App is mesh of multiple services which are provided via a single gateway. This underlying docuemntation will show you in a simple way how you can interact with application and how you can adopt your application to fit in the ecosystem.
 
 #### UrbanTEP / VISAT
 
