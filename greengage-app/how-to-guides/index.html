@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>How-to Guides - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "How-to Guides";
+        var mkdocs_page_input_path = "greengage-app/how-to-guides.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../HOWTO%20Thematic%20co-explorations/">HOWTO Thematic co-exploration</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../thematic_coexploration_example/">Thematic co-exploration example</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../CS-loop-GREENGAGE/">Step-wised execution of CS loop</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/mode">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >MindView</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/mindview">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/mindview/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/sensorsIntegration">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/sensorsIntegration/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Greengage App</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/greengage-app-api">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/client-js">clientJs</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/restful-to-graphql">client Restful to graphql</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >UrbanTEP / VISAT</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/deployment">Deployment</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/examples">Example</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/superset">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/superset/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/superset/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache Druid</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/druid">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/druid/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/druid/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache NiFi</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Data Quality Dashboard</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/DataQualityDashboard">Description</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../tools/multimodal_data_processing">Multi-modal data processing tools</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GREEN ENGINE</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../green-engine/installation/">Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GREENGAGE App</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../console/">Console</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">How-to Guides</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#create-an-observatory">Create an Observatory</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#first-time-setup">First-time Setup</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#define-the-observatory-region">Define the Observatory Region</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-additional-observatories">Create Additional Observatories</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-a-task">Create a Task</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#understanding-the-poi-concept">Understanding the POI Concept</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-navigate-to-tasks">Step 1: Navigate to Tasks</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-choose-or-create-a-poi">Step 2: Choose or Create a POI</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-define-your-task">Step 3: Define Your Task</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#task-types">Task Types</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#delete-an-observatory">Delete an Observatory</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#steps-to-delete">Steps to Delete</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mission-templates">Mission Templates</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#save-a-mission-as-template">Save a Mission as Template</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-mission-from-template">Create Mission from Template</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mission-scheduling">Mission Scheduling</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-a-schedule">Create a Schedule</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#schedule-options">Schedule Options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enabledisable-schedules">Enable/Disable Schedules</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#calendar-view">Calendar View</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-news">Create News</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-a-news-article">Create a News Article</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#manage-news">Manage News</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#send-communications">Send Communications</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#send-a-notification">Send a Notification</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recipient-options">Recipient Options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#contact-spot-users">Contact Spot Users</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#communication-templates">Communication Templates</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configure-webhooks">Configure Webhooks</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-a-webhook">Create a Webhook</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#supported-events">Supported Events</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#webhook-payload">Webhook Payload</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#view-webhook-logs">View Webhook Logs</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mobile-app/">iOS & Android App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">API Reference</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">GREENGAGE App</li>
+      <li class="breadcrumb-item active">How-to Guides</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="how-to-guides">How-to Guides</h1>
+<p>This section provides step-by-step instructions for common tasks in the GREENGAGE Console.</p>
+<h2 id="create-an-observatory">Create an Observatory</h2>
+<p>A Citizen Observatory is the entry point for every mission and survey. It defines the geographic area where citizens can participate.</p>
+<h3 id="first-time-setup">First-time Setup</h3>
+<p>If this is your first time in the console and your account hasn't been invited to any other observatory team, you will see only a "Create Observatory" button. The only thing you need to enter is the name of the observatory.</p>
+<video autoplay muted loop controls width="100%">
+  <source src="/assets/greengage-app/console/videos/create-observatory.mp4" type="video/mp4">
+</video>
+
+<h3 id="define-the-observatory-region">Define the Observatory Region</h3>
+<p>After the initial prompt, you will be redirected to a map. On this map, you need to define the area of the observatory. This is important for the app because only data from this region will be loaded when users participate.</p>
+<p>To define the region:</p>
+<ol>
+<li>Click on the map</li>
+<li>A rectangle will appear</li>
+<li>Drag the corners to define the size</li>
+<li><strong>Click Save</strong> to confirm the boundaries</li>
+</ol>
+<p>!!! warning "Important"
+    If you don't save the region, your observatory will not have any boundaries, which means nothing will be loaded in the app.</p>
+<video autoplay muted loop controls width="100%">
+  <source src="/assets/greengage-app/console/videos/define-region.mp4" type="video/mp4">
+</video>
+
+<h3 id="create-additional-observatories">Create Additional Observatories</h3>
+<p>If you already have an observatory, you can create another one using the menu in the upper left corner:</p>
+<video autoplay muted loop controls width="100%">
+  <source src="/assets/greengage-app/console/videos/create-observatory-menu.mp4" type="video/mp4">
+</video>
+
+<p>!!! tip
+    There is no limitation on how many observatories can be created.</p>
+<hr />
+<h2 id="create-a-task">Create a Task</h2>
+<p>Tasks are one of the core functions of the GREENGAGE App. They define what citizens should do at specific locations.</p>
+<h3 id="understanding-the-poi-concept">Understanding the POI Concept</h3>
+<p>The GREENGAGE App requires every task to have a <strong>Point of Interest (POI)</strong>. A POI is at least the starting point for one single mission.</p>
+<p>Key concepts:</p>
+<ul>
+<li>A POI can be used multiple times</li>
+<li>The relation is always: <strong>1 Task = 1 POI</strong></li>
+<li>POIs need a location (latitude/longitude)</li>
+</ul>
+<h3 id="step-1-navigate-to-tasks">Step 1: Navigate to Tasks</h3>
+<p>Go to the "Tasks and Missions" section and click on "Create Task". A prompt will guide you through the process.</p>
+<h3 id="step-2-choose-or-create-a-poi">Step 2: Choose or Create a POI</h3>
+<p>If you have not created a POI yet, you can do so during the task creation process by clicking "Create POI". A POI needs a location which can be easily defined via our map integration.</p>
+<video autoplay muted loop controls width="100%">
+  <source src="/assets/greengage-app/console/videos/create-poi-via-task.mp4" type="video/mp4">
+</video>
+
+<h3 id="step-3-define-your-task">Step 3: Define Your Task</h3>
+<p>After defining the POI, the dialog will update with additional fields. The required fields are:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Type</strong></td>
+<td>The purpose of the task</td>
+</tr>
+<tr>
+<td><strong>Position</strong></td>
+<td>Latitude and longitude (from the POI)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="task-types">Task Types</h3>
+<p>By choosing a type, you define the purpose of the task. The console supports a variety of task types:</p>
+<p><img alt="Mission Types" src="/assets/greengage-app/console/images/mission-types.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>App Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Survey</strong></td>
+<td>Complete a questionnaire</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>MODE</strong></td>
+<td>Transport mode detection</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Walk</strong></td>
+<td>Walking route task</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Validation</strong></td>
+<td>Validate existing data</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Rating</strong></td>
+<td>Rate a location or service</td>
+<td>Partial</td>
+</tr>
+<tr>
+<td><strong>External</strong></td>
+<td>Link to external service</td>
+<td>Partial</td>
+</tr>
+</tbody>
+</table>
+<p>!!! note
+    Depending on the task type, you may need to fill additional fields. For example, a Survey type requires you to set up a survey form.</p>
+<hr />
+<h2 id="delete-an-observatory">Delete an Observatory</h2>
+<p>Sometimes you need to delete an observatory, for example after finishing a project or when testing is complete.</p>
+<p>!!! warning "Admin Only"
+    Deleting an observatory can only be done by an admin.</p>
+<h3 id="steps-to-delete">Steps to Delete</h3>
+<ol>
+<li>Go to the console</li>
+<li>Navigate to the <strong>Settings</strong> area</li>
+<li>Find the delete option</li>
+</ol>
+<video autoplay muted loop controls width="100%">
+  <source src="/assets/greengage-app/console/videos/delete-observatory.mp4" type="video/mp4">
+</video>
+
+<p>!!! danger "This action is permanent"
+    Deleting an observatory will remove all associated data including tasks, POIs, and user submissions.</p>
+<hr />
+<h2 id="mission-templates">Mission Templates</h2>
+<p>Mission templates allow you to save mission configurations for reuse, saving time when creating similar missions.</p>
+<h3 id="save-a-mission-as-template">Save a Mission as Template</h3>
+<ol>
+<li>Go to <strong>Tasks &amp; Missions</strong></li>
+<li>Find the mission you want to use as a template</li>
+<li>Click on the mission actions menu (three dots)</li>
+<li>Select <strong>Save as Template</strong></li>
+<li>Give your template a name</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<p>The template will now be available in the Templates section.</p>
+<h3 id="create-mission-from-template">Create Mission from Template</h3>
+<ol>
+<li>Go to <strong>Templates</strong> in the navigation</li>
+<li>Find the template you want to use</li>
+<li>Click <strong>Create Mission</strong></li>
+<li>Adjust any settings if needed (POI, dates, etc.)</li>
+<li>Click <strong>Create</strong></li>
+</ol>
+<p>!!! tip
+    Templates are perfect for recurring mission types like daily surveys or weekly data collection tasks.</p>
+<hr />
+<h2 id="mission-scheduling">Mission Scheduling</h2>
+<p>Automate mission creation with the scheduling system to create recurring missions without manual intervention.</p>
+<h3 id="create-a-schedule">Create a Schedule</h3>
+<ol>
+<li>Go to <strong>Schedules</strong> in the navigation</li>
+<li>Click <strong>Create Schedule</strong></li>
+<li>Configure the schedule:</li>
+<li><strong>Name</strong> - A descriptive name for the schedule</li>
+<li><strong>Template</strong> - Select which mission template to use</li>
+<li><strong>Frequency</strong> - Daily, weekly, or monthly</li>
+<li><strong>Start Date</strong> - When to begin creating missions</li>
+<li><strong>End Date</strong> (optional) - When to stop</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<h3 id="schedule-options">Schedule Options</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong></td>
+<td>Create a new mission every day</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong></td>
+<td>Create missions on specific days of the week</td>
+</tr>
+<tr>
+<td><strong>Monthly</strong></td>
+<td>Create missions on specific dates each month</td>
+</tr>
+<tr>
+<td><strong>Auto-Close</strong></td>
+<td>Automatically close missions after a set duration</td>
+</tr>
+</tbody>
+</table>
+<h3 id="enabledisable-schedules">Enable/Disable Schedules</h3>
+<p>You can temporarily disable a schedule without deleting it:</p>
+<ol>
+<li>Go to <strong>Schedules</strong></li>
+<li>Find your schedule</li>
+<li>Toggle the <strong>Active</strong> switch</li>
+</ol>
+<h3 id="calendar-view">Calendar View</h3>
+<p>The <strong>Calendar</strong> section provides a visual overview of all scheduled and active missions. Use it to:</p>
+<ul>
+<li>See upcoming missions at a glance</li>
+<li>Identify scheduling conflicts</li>
+<li>Plan your observatory activities</li>
+</ul>
+<hr />
+<h2 id="create-news">Create News</h2>
+<p>Keep your participants informed with news articles that appear in the mobile app.</p>
+<h3 id="create-a-news-article">Create a News Article</h3>
+<ol>
+<li>Go to <strong>News</strong> in the navigation</li>
+<li>Click <strong>Create News</strong></li>
+<li>Fill in the article details:</li>
+<li><strong>Title</strong> - The headline of your article</li>
+<li><strong>Content</strong> - The full article text (supports formatting)</li>
+<li><strong>Publish Date</strong> - When the article should be visible</li>
+<li>Click <strong>Publish</strong></li>
+</ol>
+<h3 id="manage-news">Manage News</h3>
+<ul>
+<li><strong>Edit</strong> - Update existing articles</li>
+<li><strong>Delete</strong> - Remove articles that are no longer relevant</li>
+<li><strong>Preview</strong> - See how the article will appear in the app</li>
+</ul>
+<p>!!! tip
+    Use news articles to announce new missions, share results, or thank participants for their contributions.</p>
+<hr />
+<h2 id="send-communications">Send Communications</h2>
+<p>The communications system allows you to send messages and notifications to your observatory participants.</p>
+<h3 id="send-a-notification">Send a Notification</h3>
+<ol>
+<li>Go to <strong>Communications</strong> in the navigation</li>
+<li>Click <strong>Create Communication</strong></li>
+<li>Configure your message:</li>
+<li><strong>Subject</strong> - The notification title</li>
+<li><strong>Message</strong> - The content of your notification</li>
+<li><strong>Recipients</strong> - Select who should receive it</li>
+<li>Click <strong>Send</strong></li>
+</ol>
+<h3 id="recipient-options">Recipient Options</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>All Users</strong></td>
+<td>Send to everyone in the observatory</td>
+</tr>
+<tr>
+<td><strong>Active Users</strong></td>
+<td>Only users who have been active recently</td>
+</tr>
+<tr>
+<td><strong>Specific Users</strong></td>
+<td>Select individual recipients</td>
+</tr>
+<tr>
+<td><strong>Mission Participants</strong></td>
+<td>Users who participated in a specific mission</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contact-spot-users">Contact Spot Users</h3>
+<p>You can directly respond to users who created spots:</p>
+<ol>
+<li>Go to <strong>Spots</strong></li>
+<li>Find the spot you want to respond to</li>
+<li>Click the <strong>Contact User</strong> action</li>
+<li>Write your message</li>
+<li>Click <strong>Send</strong></li>
+</ol>
+<h3 id="communication-templates">Communication Templates</h3>
+<p>Save frequently used messages as templates:</p>
+<ol>
+<li>When creating a communication, click <strong>Save as Template</strong></li>
+<li>Give your template a name</li>
+<li>Reuse it later by selecting from the template dropdown</li>
+</ol>
+<hr />
+<h2 id="configure-webhooks">Configure Webhooks</h2>
+<p>Webhooks allow external systems to receive real-time notifications when events occur in your observatory.</p>
+<h3 id="create-a-webhook">Create a Webhook</h3>
+<ol>
+<li>Go to <strong>Webhooks</strong> in the navigation</li>
+<li>Click <strong>Create Webhook</strong></li>
+<li>Configure the webhook:</li>
+<li><strong>Name</strong> - A descriptive name</li>
+<li><strong>URL</strong> - The endpoint that will receive notifications</li>
+<li><strong>Events</strong> - Select which events trigger the webhook</li>
+<li><strong>Secret</strong> (optional) - A shared secret for verification</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<h3 id="supported-events">Supported Events</h3>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Trigger</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>mission.completed</strong></td>
+<td>When a user completes a mission</td>
+</tr>
+<tr>
+<td><strong>mission.started</strong></td>
+<td>When a user starts a mission</td>
+</tr>
+<tr>
+<td><strong>spot.created</strong></td>
+<td>When a new spot is created</td>
+</tr>
+<tr>
+<td><strong>spot.updated</strong></td>
+<td>When a spot is modified</td>
+</tr>
+<tr>
+<td><strong>survey.submitted</strong></td>
+<td>When a survey is submitted</td>
+</tr>
+<tr>
+<td><strong>poi.created</strong></td>
+<td>When a new POI is created</td>
+</tr>
+</tbody>
+</table>
+<h3 id="webhook-payload">Webhook Payload</h3>
+<p>Webhooks send a JSON payload containing:</p>
+<pre><code class="language-json">{
+  &quot;event&quot;: &quot;spot.created&quot;,
+  &quot;timestamp&quot;: &quot;2025-12-19T14:30:00Z&quot;,
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;123&quot;,
+    &quot;title&quot;: &quot;Traffic Issue&quot;,
+    &quot;latitude&quot;: 48.2082,
+    &quot;longitude&quot;: 16.3738
+  }
+}
+</code></pre>
+<h3 id="view-webhook-logs">View Webhook Logs</h3>
+<p>Debug webhook issues using the logs:</p>
+<ol>
+<li>Go to <strong>Webhooks</strong></li>
+<li>Click on your webhook</li>
+<li>View the <strong>Logs</strong> tab</li>
+<li>See delivery status, response codes, and payloads</li>
+</ol>
+<p>!!! info "Example Implementation"
+    A reference implementation is available at <a href="https://github.com/sushidev-team/greengage-webhook-example">github.com/sushidev-team/greengage-webhook-example</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../console/" class="btn btn-neutral float-left" title="Console"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mobile-app/" class="btn btn-neutral float-right" title="iOS & Android App">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../console/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mobile-app/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/custom.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

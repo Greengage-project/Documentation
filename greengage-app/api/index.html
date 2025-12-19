@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>API Reference - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "API Reference";
+        var mkdocs_page_input_path = "greengage-app/api.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../HOWTO%20Thematic%20co-explorations/">HOWTO Thematic co-exploration</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../thematic_coexploration_example/">Thematic co-exploration example</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../CS-loop-GREENGAGE/">Step-wised execution of CS loop</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/mode">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >MindView</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/mindview">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/mindview/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/sensorsIntegration">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/sensorsIntegration/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Greengage App</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/greengage-app-api">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/client-js">clientJs</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/restful-to-graphql">client Restful to graphql</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >UrbanTEP / VISAT</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/deployment">Deployment</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/examples">Example</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/superset">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/superset/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/superset/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache Druid</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/druid">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/druid/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/druid/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache NiFi</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Data Quality Dashboard</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/DataQualityDashboard">Description</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../tools/multimodal_data_processing">Multi-modal data processing tools</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GREEN ENGINE</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../green-engine/installation/">Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GREENGAGE App</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../console/">Console</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../how-to-guides/">How-to Guides</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mobile-app/">iOS & Android App</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">API Reference</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#important-naming-convention">Important Naming Convention</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#authentication">Authentication</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#getting-a-token">Getting a Token</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#token-lifetime">Token Lifetime</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#refreshing-tokens">Refreshing Tokens</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#using-the-token">Using the Token</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#graphql-schema">GraphQL Schema</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#core-types">Core Types</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#city-observatory">City (Observatory)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#user">User</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mission">Mission</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pointofinterest-poi">PointOfInterest (POI)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#spot">Spot</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#survey">Survey</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#topic">Topic</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#queries">Queries</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#user-queries">User Queries</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#observatory-queries">Observatory Queries</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mission-queries">Mission Queries</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#poi-queries">POI Queries</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#spot-queries">Spot Queries</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mutations">Mutations</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#authentication_1">Authentication</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#profile-management">Profile Management</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mission-operations">Mission Operations</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#survey-submission">Survey Submission</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#spot-operations">Spot Operations</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enums">Enums</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#geojson-support">GeoJSON Support</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example-complete-workflow">Example: Complete Workflow</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-login-and-get-user-info">1. Login and Get User Info</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-get-available-observatories">2. Get Available Observatories</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-join-an-observatory">3. Join an Observatory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-get-pois-and-missions">4. Get POIs and Missions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5-start-and-complete-a-mission">5. Start and Complete a Mission</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#error-handling">Error Handling</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rate-limiting">Rate Limiting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#developer">Developer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#webhooks">Webhooks</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#example-implementation">Example Implementation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#webhook-events">Webhook Events</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#graphql-playground">GraphQL Playground</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#interactive-explorer">Interactive Explorer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#apollo-sandbox">Apollo Sandbox</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">GREENGAGE App</li>
+      <li class="breadcrumb-item active">API Reference</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="greengage-api">GREENGAGE API</h1>
+<h2 id="overview">Overview</h2>
+<p>The GREENGAGE API is a GraphQL-based API that provides access to all functionality of the GREENGAGE platform. It serves as the backend for the GREENGAGE mobile apps and can be used for custom integrations.</p>
+<p><strong>API Endpoint</strong>: <code>https://api.greengage.dev/graphql</code></p>
+<p><strong>Technology</strong>: Apollo Server (GraphQL)</p>
+<h2 id="important-naming-convention">Important Naming Convention</h2>
+<p>!!! warning "City vs Observatory"
+    In the API, <strong>Observatories are referred to as "City"</strong> (e.g., <code>city</code>, <code>cities</code>, <code>updateFavoriteCity</code>). This naming exists for historical reasons and has been retained for backwards compatibility. When you see "City" in the API, it refers to a <strong>Citizen Observatory</strong>.</p>
+<h2 id="authentication">Authentication</h2>
+<p>The API supports multiple authentication methods:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Email/Password</strong></td>
+<td>Register and login with email credentials</td>
+</tr>
+<tr>
+<td><strong>Keycloak</strong></td>
+<td>OAuth-based authentication via Keycloak</td>
+</tr>
+<tr>
+<td><strong>Apple/Google</strong></td>
+<td>Social login (handled via Keycloak)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getting-a-token">Getting a Token</h3>
+<pre><code class="language-graphql">mutation Login {
+  login(email: &quot;user@example.com&quot;, password: &quot;yourpassword&quot;) {
+    token
+    refresh_token
+  }
+}
+</code></pre>
+<h3 id="token-lifetime">Token Lifetime</h3>
+<p>!!! info "Token Expiration"
+    The access token has a short lifetime of <strong>5 minutes</strong> for security reasons. Use the refresh token to obtain a new access token when it expires.</p>
+<table>
+<thead>
+<tr>
+<th>Token Type</th>
+<th>Lifetime</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Access Token</strong></td>
+<td>5 minutes</td>
+<td>Used for all API requests</td>
+</tr>
+<tr>
+<td><strong>Refresh Token</strong></td>
+<td>30 days</td>
+<td>Used only to obtain new access tokens</td>
+</tr>
+</tbody>
+</table>
+<h3 id="refreshing-tokens">Refreshing Tokens</h3>
+<p>When your access token expires, use the refresh token to get a new one:</p>
+<pre><code class="language-graphql">mutation RefreshToken($token: String!) {
+  refreshToken(token: $token) {
+    token
+  }
+}
+</code></pre>
+<p><img alt="Refresh Token" src="/assets/greengage-app/console/images/refresh-token.png" /></p>
+<p>!!! warning "Security Best Practice"
+    Store tokens securely. Never save them in local storage for web applications. Use secure HTTP-only cookies or secure storage mechanisms instead.</p>
+<h3 id="using-the-token">Using the Token</h3>
+<p>Include the token in the <code>Authorization</code> header:</p>
+<pre><code>Authorization: Bearer &lt;your-token&gt;
+</code></pre>
+<h2 id="graphql-schema">GraphQL Schema</h2>
+<h3 id="core-types">Core Types</h3>
+<h4 id="city-observatory">City (Observatory)</h4>
+<p>Represents a Citizen Observatory where citizens can participate.</p>
+<pre><code class="language-graphql">type City {
+  id: String!
+  name: String
+  geo_start: GeoPosition
+  geo_stop: GeoPosition
+  grid: TilePaginationList
+  missionsList: MissionList
+  joinable: Boolean
+}
+</code></pre>
+<h4 id="user">User</h4>
+<pre><code class="language-graphql">type User {
+  id: ID!
+  firstname: String
+  lastname: String
+  displayname: String
+  email: String
+  phone: String
+  city: City              # The user's current Observatory
+  avatar: FairuAsset
+  language: String
+  score: Int
+  badges: [UserBadge]
+  created_at: String
+  updated_at: String
+}
+</code></pre>
+<h4 id="mission">Mission</h4>
+<p>Missions are tasks that citizens can complete within an Observatory.</p>
+<pre><code class="language-graphql">type Mission {
+  id: ID!
+  title: String
+  description: String
+  asset: FairuAsset
+  provider: MissionProvider
+  type: MissionType
+  duration: Int           # Estimated duration in minutes
+  latitude: Float
+  longitude: Float
+  geojson: GeoJSON
+  active: Boolean
+  status: MissionStatus
+  points: Int
+  survey: Survey
+  poi: PointOfInterest
+  topic: Topic
+  completed: Boolean
+  created_at: String
+  updated_at: String
+}
+</code></pre>
+<h4 id="pointofinterest-poi">PointOfInterest (POI)</h4>
+<pre><code class="language-graphql">type PointOfInterest {
+  id: ID!
+  title: String
+  description: String
+  asset: FairuAsset
+  type: PointOfInterestType
+  topic: Topic
+  latitude: Float
+  longitude: Float
+  missions: [Mission]
+}
+</code></pre>
+<h4 id="spot">Spot</h4>
+<p>User-created observations on the map.</p>
+<pre><code class="language-graphql">type Spot {
+  id: ID!
+  title: String
+  description: String
+  latitude: Float
+  longitude: Float
+  topic: Topic
+  asset: FairuAsset
+  created_at: String
+}
+</code></pre>
+<h4 id="survey">Survey</h4>
+<pre><code class="language-graphql">type Survey {
+  id: ID!
+  title: String
+  description: String
+  elements: [SurveyElement]
+}
+</code></pre>
+<h4 id="topic">Topic</h4>
+<p>Topics/Themes for categorizing content.</p>
+<pre><code class="language-graphql">type Topic {
+  id: ID!
+  title: String
+  color: String
+}
+</code></pre>
+<h3 id="queries">Queries</h3>
+<h4 id="user-queries">User Queries</h4>
+<pre><code class="language-graphql"># Get current authenticated user
+query Me {
+  me {
+    id
+    displayname
+    email
+    city {
+      id
+      name
+    }
+    score
+  }
+}
+</code></pre>
+<h4 id="observatory-queries">Observatory Queries</h4>
+<pre><code class="language-graphql"># Get all available Observatories
+query GetObservatories {
+  cities {
+    id
+    name
+    joinable
+    geo_start {
+      latitude
+      longitude
+    }
+  }
+}
+
+# Get a specific Observatory
+query GetObservatory($id: String!) {
+  city(id: $id) {
+    id
+    name
+    missionsList {
+      missions {
+        id
+        title
+        type
+      }
+    }
+  }
+}
+</code></pre>
+<h4 id="mission-queries">Mission Queries</h4>
+<pre><code class="language-graphql"># Get all missions for an Observatory
+query GetMissions($cityId: String!) {
+  missions(city_id: $cityId) {
+    id
+    title
+    description
+    type
+    status
+    points
+    poi {
+      title
+      latitude
+      longitude
+    }
+  }
+}
+
+# Get user's active missions
+query MyMissions {
+  myMissions {
+    id
+    title
+    status
+    completed
+  }
+}
+
+# Get a specific mission
+query GetMission($id: ID!) {
+  mission(id: $id) {
+    id
+    title
+    description
+    survey {
+      elements {
+        type
+        label
+      }
+    }
+  }
+}
+</code></pre>
+<h4 id="poi-queries">POI Queries</h4>
+<pre><code class="language-graphql"># Get POIs for an Observatory
+query GetPOIs($cityId: String!) {
+  pois(city_id: $cityId) {
+    id
+    title
+    description
+    latitude
+    longitude
+    topic {
+      title
+      color
+    }
+    missions {
+      id
+      title
+    }
+  }
+}
+</code></pre>
+<h4 id="spot-queries">Spot Queries</h4>
+<pre><code class="language-graphql"># Get spots for an Observatory
+query GetSpots($cityId: String!) {
+  spots(city_id: $cityId) {
+    id
+    title
+    description
+    latitude
+    longitude
+    topic {
+      title
+    }
+  }
+}
+</code></pre>
+<h3 id="mutations">Mutations</h3>
+<h4 id="authentication_1">Authentication</h4>
+<pre><code class="language-graphql"># Register new account
+mutation Register($email: String!, $password: String!, $firstname: String, $lastname: String) {
+  register(email: $email, password: $password, firstname: $firstname, lastname: $lastname) {
+    token
+    refresh_token
+  }
+}
+
+# Login
+mutation Login($email: String!, $password: String!) {
+  login(email: $email, password: $password) {
+    token
+    refresh_token
+  }
+}
+
+# Keycloak login
+mutation KeycloakLogin($token: String!) {
+  keycloak(token: $token) {
+    token
+    refresh_token
+  }
+}
+
+# Refresh token
+mutation RefreshToken($refresh_token: String!) {
+  refreshToken(refresh_token: $refresh_token) {
+    token
+    refresh_token
+  }
+}
+
+# Reset password
+mutation ResetPassword($email: String!) {
+  resetPassword(email: $email)
+}
+
+# Delete account
+mutation DeleteAccount {
+  deleteAccount
+}
+</code></pre>
+<h4 id="profile-management">Profile Management</h4>
+<pre><code class="language-graphql"># Update profile
+mutation UpdateProfile($firstname: String, $lastname: String, $language: String) {
+  updateProfile(firstname: $firstname, lastname: $lastname, language: $language) {
+    id
+    displayname
+  }
+}
+
+# Change Observatory
+mutation ChangeObservatory($city_id: String!) {
+  updateFavoriteCity(city_id: $city_id)
+}
+
+# Join an Observatory
+mutation JoinObservatory($id: String!) {
+  joinObservatory(id: $id) {
+    id
+    name
+  }
+}
+</code></pre>
+<h4 id="mission-operations">Mission Operations</h4>
+<pre><code class="language-graphql"># Start a mission
+mutation StartMission($id: ID!) {
+  startMission(id: $id) {
+    id
+    status
+  }
+}
+
+# Stop/Cancel a mission
+mutation StopMission($id: ID!) {
+  stopMission(id: $id) {
+    id
+    status
+  }
+}
+
+# Validate a mission
+mutation ValidateMission($id: ID!, $valid: Boolean!) {
+  validateMission(id: $id, valid: $valid) {
+    id
+    status
+  }
+}
+
+# Add data to a mission
+mutation AddMissionData($mission_id: ID!, $data: AddMissionDataset!) {
+  addMissionDataset(mission_id: $mission_id, data: $data) {
+    id
+  }
+}
+</code></pre>
+<h4 id="survey-submission">Survey Submission</h4>
+<pre><code class="language-graphql"># Submit survey answers
+mutation SubmitSurvey($survey_id: ID!, $answers: [SurveyAnswerInput!]!) {
+  submitToSurvey(survey_id: $survey_id, answers: $answers) {
+    id
+  }
+}
+</code></pre>
+<h4 id="spot-operations">Spot Operations</h4>
+<pre><code class="language-graphql"># Create a new spot
+mutation CreateSpot($input: CreateSpot!) {
+  createSpot(input: $input) {
+    id
+    title
+    latitude
+    longitude
+  }
+}
+
+# Update a spot
+mutation UpdateSpot($id: ID!, $input: UpdateSpot!) {
+  updateSpot(id: $id, input: $input) {
+    id
+    title
+  }
+}
+
+# Delete a spot
+mutation DeleteSpot($id: ID!) {
+  deleteSpot(id: $id)
+}
+</code></pre>
+<h3 id="enums">Enums</h3>
+<pre><code class="language-graphql">enum MissionType {
+  SURVEY
+  MODE
+  WALK
+  VALIDATION
+  RATING
+  EXTERNAL
+}
+
+enum MissionStatus {
+  OPEN
+  ACTIVE
+  CLOSED
+  COMPLETED
+}
+
+enum MissionProvider {
+  GREENGAGE
+  EXTERNAL
+}
+
+enum PointOfInterestType {
+  DEFAULT
+  STATION
+}
+
+enum DatasetType {
+  TEXT
+  IMAGE
+  NUMBER
+  BOOLEAN
+}
+</code></pre>
+<h3 id="geojson-support">GeoJSON Support</h3>
+<p>The API supports GeoJSON for geographic data:</p>
+<pre><code class="language-graphql">type GeoJSON {
+  type: String!
+  features: [GeoJSONFeature!]
+}
+
+type GeoJSONFeature {
+  type: String!
+  geometry: GeoJSONGeometry!
+  properties: Tile
+}
+
+type GeoPosition {
+  latitude: Float
+  longitude: Float
+}
+</code></pre>
+<h2 id="example-complete-workflow">Example: Complete Workflow</h2>
+<h3 id="1-login-and-get-user-info">1. Login and Get User Info</h3>
+<pre><code class="language-graphql">mutation {
+  login(email: &quot;user@example.com&quot;, password: &quot;password123&quot;) {
+    token
+  }
+}
+</code></pre>
+<h3 id="2-get-available-observatories">2. Get Available Observatories</h3>
+<pre><code class="language-graphql">query {
+  cities {
+    id
+    name
+    joinable
+  }
+}
+</code></pre>
+<h3 id="3-join-an-observatory">3. Join an Observatory</h3>
+<pre><code class="language-graphql">mutation {
+  joinObservatory(id: &quot;vienna-observatory&quot;) {
+    id
+    name
+  }
+}
+</code></pre>
+<h3 id="4-get-pois-and-missions">4. Get POIs and Missions</h3>
+<pre><code class="language-graphql">query {
+  pois(city_id: &quot;vienna-observatory&quot;) {
+    id
+    title
+    missions {
+      id
+      title
+      type
+    }
+  }
+}
+</code></pre>
+<h3 id="5-start-and-complete-a-mission">5. Start and Complete a Mission</h3>
+<pre><code class="language-graphql">mutation {
+  startMission(id: &quot;mission-123&quot;) {
+    id
+    status
+  }
+}
+
+# After completing the task
+mutation {
+  addMissionDataset(
+    mission_id: &quot;mission-123&quot;
+    data: { values: [{ type: TEXT, value: &quot;Observation notes&quot; }] }
+  ) {
+    id
+  }
+}
+</code></pre>
+<h2 id="error-handling">Error Handling</h2>
+<p>GraphQL errors are returned in the standard format:</p>
+<pre><code class="language-json">{
+  &quot;errors&quot;: [
+    {
+      &quot;message&quot;: &quot;Unauthorized&quot;,
+      &quot;extensions&quot;: {
+        &quot;code&quot;: &quot;UNAUTHENTICATED&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+<p>Common error codes:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UNAUTHENTICATED</code></td>
+<td>Token missing or invalid</td>
+</tr>
+<tr>
+<td><code>FORBIDDEN</code></td>
+<td>User lacks permission</td>
+</tr>
+<tr>
+<td><code>NOT_FOUND</code></td>
+<td>Resource not found</td>
+</tr>
+<tr>
+<td><code>BAD_USER_INPUT</code></td>
+<td>Invalid input data</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rate-limiting">Rate Limiting</h2>
+<p>The API implements rate limiting to ensure fair usage. Current limits:</p>
+<ul>
+<li><strong>Authenticated requests</strong>: 1000 requests/minute</li>
+<li><strong>Unauthenticated requests</strong>: 100 requests/minute</li>
+</ul>
+<h2 id="developer">Developer</h2>
+<p>The GREENGAGE API and Console are developed and maintained by:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Company</strong></td>
+<td>Sushi Dev GmbH</td>
+</tr>
+<tr>
+<td><strong>Headquarters</strong></td>
+<td>Wiedner Gürtel 28/6, 1040 Wien, Austria</td>
+</tr>
+<tr>
+<td><strong>Branch Office</strong></td>
+<td>Bischofpl. 1/6b, 8010 Graz, Austria</td>
+</tr>
+<tr>
+<td><strong>Email</strong></td>
+<td><a href="mailto:office@sushi.dev">office@sushi.dev</a></td>
+</tr>
+<tr>
+<td><strong>Phone</strong></td>
+<td>+43 1 934 6339</td>
+</tr>
+</tbody>
+</table>
+<h2 id="webhooks">Webhooks</h2>
+<p>The GREENGAGE API supports webhooks for real-time event notifications.</p>
+<p>!!! note "Current Implementation"
+    The current webhooks implementation was originally developed for MindEarth/MindView integration. For general integrations, we recommend using the GraphQL API directly.</p>
+<h3 id="example-implementation">Example Implementation</h3>
+<p>A basic webhook implementation example is available on GitHub:</p>
+<p><strong><a href="https://github.com/sushidev-team/greengage-webhook-example">github.com/sushidev-team/greengage-webhook-example</a></strong></p>
+<h3 id="webhook-events">Webhook Events</h3>
+<p>Webhooks can be triggered for various events including:</p>
+<ul>
+<li>Mission completion</li>
+<li>Spot creation</li>
+<li>Survey submission</li>
+<li>User actions</li>
+</ul>
+<p>For custom webhook integrations, please contact the development team.</p>
+<hr />
+<h2 id="graphql-playground">GraphQL Playground</h2>
+<h3 id="interactive-explorer">Interactive Explorer</h3>
+<p>Explore and test the API interactively using the <strong>Control Panel</strong>:</p>
+<p><strong><a href="https://api.greengage.dev/cp">https://api.greengage.dev/cp</a></strong></p>
+<video autoplay muted loop controls width="100%">
+  <source src="/assets/greengage-app/console/videos/api-basic.mp4" type="video/mp4">
+</video>
+
+<p>The Control Panel provides:</p>
+<ul>
+<li>Interactive query builder</li>
+<li>Full schema documentation</li>
+<li>Live query execution</li>
+<li>Response visualization</li>
+<li>Authentication testing</li>
+</ul>
+<h3 id="apollo-sandbox">Apollo Sandbox</h3>
+<p>The standard Apollo Sandbox is also available at:</p>
+<p><strong><a href="https://api.greengage.dev/graphql">https://api.greengage.dev/graphql</a></strong></p>
+<p>Features:</p>
+<ul>
+<li>Schema introspection</li>
+<li>Query history</li>
+<li>Variable editor</li>
+<li>Response formatting</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../mobile-app/" class="btn btn-neutral float-left" title="iOS & Android App"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mobile-app/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/custom.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

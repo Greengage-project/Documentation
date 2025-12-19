@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Console - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Console";
+        var mkdocs_page_input_path = "greengage-app/console.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../HOWTO%20Thematic%20co-explorations/">HOWTO Thematic co-exploration</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../thematic_coexploration_example/">Thematic co-exploration example</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../CS-loop-GREENGAGE/">Step-wised execution of CS loop</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/mode">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >MindView</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/mindview">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/mindview/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/sensorsIntegration">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/sensorsIntegration/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Greengage App</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/greengage-app-api">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/client-js">clientJs</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/restful-to-graphql">client Restful to graphql</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >UrbanTEP / VISAT</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/deployment">Deployment</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/examples">Example</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/superset">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/superset/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/superset/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache Druid</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/druid">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/druid/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/druid/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache NiFi</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Data Quality Dashboard</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/DataQualityDashboard">Description</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../tools/multimodal_data_processing">Multi-modal data processing tools</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GREEN ENGINE</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../green-engine/installation/">Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GREENGAGE App</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Console</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#get-started">Get Started</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#login">Login</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-a-standalone-account">Create a Standalone Account</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-click-create-free-account">Step 1: Click "Create free account"</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-fill-out-the-registration-form">Step 2: Fill out the registration form</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-verify-your-email">Step 3: Verify your email</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#console-overview">Console Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#features">Features</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#dashboard-statistics">Dashboard &amp; Statistics</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mission-templates">Mission Templates</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mission-scheduling">Mission Scheduling</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#news-announcements">News &amp; Announcements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#communications">Communications</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#webhooks">Webhooks</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#topics-themes">Topics &amp; Themes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#multi-language-support">Multi-language Support</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#next-steps">Next Steps</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../how-to-guides/">How-to Guides</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mobile-app/">iOS & Android App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">API Reference</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">GREENGAGE App</li>
+      <li class="breadcrumb-item active">Console</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="greengage-console">GREENGAGE Console</h1>
+<p>The GREENGAGE Console is the administration interface for quickly and easily creating and managing Citizen Observatories. All you need is a free account.</p>
+<p><strong>Console URL</strong>: <a href="https://console.greengage.dev">console.greengage.dev</a></p>
+<h2 id="get-started">Get Started</h2>
+<p>Getting started with the GREENGAGE Console takes just a few minutes. Currently, we support two ways to create a free account:</p>
+<ul>
+<li><strong>GREENGAGE Project Account</strong> - Use your existing EU project credentials</li>
+<li><strong>Standalone Account</strong> - Create a dedicated account with email and password</li>
+</ul>
+<h2 id="login">Login</h2>
+<p><img alt="Login Screen" src="/assets/greengage-app/console/images/get-started-screen.png" /></p>
+<p>On the login screen, you can choose between:</p>
+<ol>
+<li>
+<p><strong>GREENGAGE Project Account</strong> - If you are part of the GREENGAGE EU project, you can use your project credentials. First-time users will need to complete a consent form.</p>
+</li>
+<li>
+<p><strong>Custom Credentials</strong> - Use your standalone email and password.</p>
+</li>
+</ol>
+<h2 id="create-a-standalone-account">Create a Standalone Account</h2>
+<p>If you prefer not to use the GREENGAGE project account, you can create a standalone account.</p>
+<h3 id="step-1-click-create-free-account">Step 1: Click "Create free account"</h3>
+<p><img alt="Create Account" src="/assets/greengage-app/console/images/create-account.png" /></p>
+<h3 id="step-2-fill-out-the-registration-form">Step 2: Fill out the registration form</h3>
+<p><img alt="Register Form" src="/assets/greengage-app/console/images/register.png" /></p>
+<p>You only need three things to register:</p>
+<ul>
+<li><strong>Name</strong> - Your display name</li>
+<li><strong>Email</strong> - A valid email address</li>
+<li><strong>Password</strong> - A secure password</li>
+</ul>
+<h3 id="step-3-verify-your-email">Step 3: Verify your email</h3>
+<p>After submitting the form, you will receive a verification email. Click the link in the email to verify your account.</p>
+<p>!!! note
+    Email verification is not required if you use the GREENGAGE Project Account.</p>
+<h2 id="console-overview">Console Overview</h2>
+<p>Once logged in, you have access to the full administration interface:</p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dashboard</strong></td>
+<td>Overview with statistics and recent activity</td>
+</tr>
+<tr>
+<td><strong>Observatories</strong></td>
+<td>Create and manage Citizen Observatories</td>
+</tr>
+<tr>
+<td><strong>Tasks &amp; Missions</strong></td>
+<td>Define tasks for citizens to complete</td>
+</tr>
+<tr>
+<td><strong>POIs</strong></td>
+<td>Manage Points of Interest on the map</td>
+</tr>
+<tr>
+<td><strong>Surveys</strong></td>
+<td>Create and manage questionnaires</td>
+</tr>
+<tr>
+<td><strong>Calendar</strong></td>
+<td>Visual calendar view of all scheduled missions</td>
+</tr>
+<tr>
+<td><strong>Templates</strong></td>
+<td>Save and reuse mission configurations</td>
+</tr>
+<tr>
+<td><strong>Schedules</strong></td>
+<td>Set up recurring/automated missions</td>
+</tr>
+<tr>
+<td><strong>News</strong></td>
+<td>Publish announcements for your observatory</td>
+</tr>
+<tr>
+<td><strong>Communications</strong></td>
+<td>Send messages and notifications to participants</td>
+</tr>
+<tr>
+<td><strong>Webhooks</strong></td>
+<td>Configure external integrations</td>
+</tr>
+<tr>
+<td><strong>Users</strong></td>
+<td>Manage team members and permissions</td>
+</tr>
+<tr>
+<td><strong>Settings</strong></td>
+<td>Configure observatory settings</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="features">Features</h2>
+<h3 id="dashboard-statistics">Dashboard &amp; Statistics</h3>
+<p>The dashboard provides an overview of your observatory's activity:</p>
+<ul>
+<li>Total number of participants</li>
+<li>Completed missions and surveys</li>
+<li>Recent spots and submissions</li>
+<li>Activity trends</li>
+</ul>
+<h3 id="mission-templates">Mission Templates</h3>
+<p>Save time by creating reusable mission templates:</p>
+<ul>
+<li><strong>Save as Template</strong> - Convert any existing mission into a template</li>
+<li><strong>Create from Template</strong> - Quickly create new missions based on saved templates</li>
+<li>Templates preserve all mission settings including surveys, POI assignments, and configurations</li>
+</ul>
+<p>See <a href="../how-to-guides/#mission-templates">How to use Mission Templates</a> for details.</p>
+<h3 id="mission-scheduling">Mission Scheduling</h3>
+<p>Automate mission creation with the scheduling system:</p>
+<ul>
+<li><strong>Recurring Missions</strong> - Set up daily, weekly, or monthly missions</li>
+<li><strong>Auto-Close</strong> - Automatically close missions after a specified time</li>
+<li><strong>Calendar View</strong> - Visualize all scheduled and active missions</li>
+</ul>
+<p>See <a href="../how-to-guides/#mission-scheduling">How to set up Mission Schedules</a> for details.</p>
+<h3 id="news-announcements">News &amp; Announcements</h3>
+<p>Keep your participants informed:</p>
+<ul>
+<li>Create news articles for your observatory</li>
+<li>Articles are displayed in the mobile app</li>
+<li>Support for rich text formatting</li>
+</ul>
+<p>See <a href="../how-to-guides/#create-news">How to create News</a> for details.</p>
+<h3 id="communications">Communications</h3>
+<p>Reach out to your participants directly:</p>
+<ul>
+<li><strong>Send Notifications</strong> - Push notifications to app users</li>
+<li><strong>Contact Spot Users</strong> - Respond to specific spot submissions</li>
+<li><strong>Communication Templates</strong> - Save frequently used messages</li>
+<li><strong>Recipient Management</strong> - Target specific user groups</li>
+</ul>
+<p>See <a href="../how-to-guides/#send-communications">How to send Communications</a> for details.</p>
+<h3 id="webhooks">Webhooks</h3>
+<p>Integrate with external systems:</p>
+<ul>
+<li>Receive real-time notifications when events occur</li>
+<li>Supported events: Mission completion, Spot creation, Survey submission</li>
+<li>Configure multiple webhook endpoints</li>
+<li>View webhook logs for debugging</li>
+</ul>
+<p>See <a href="../how-to-guides/#configure-webhooks">How to configure Webhooks</a> for details.</p>
+<h3 id="topics-themes">Topics &amp; Themes</h3>
+<p>Organize your content with custom themes:</p>
+<ul>
+<li>Create custom topics/themes for your observatory</li>
+<li>Assign colors using the visual color picker</li>
+<li>Filter content by theme in the mobile app</li>
+</ul>
+<h3 id="multi-language-support">Multi-language Support</h3>
+<p>The console supports multiple languages:</p>
+<ul>
+<li>English</li>
+<li>German (Deutsch)</li>
+<li>Spanish (Español)</li>
+<li>Italian (Italiano)</li>
+</ul>
+<hr />
+<h2 id="next-steps">Next Steps</h2>
+<p>After creating your account, you can:</p>
+<ol>
+<li><a href="../how-to-guides/#create-an-observatory">Create a Citizen Observatory</a></li>
+<li><a href="../how-to-guides/#create-a-task">Set up Tasks and POIs</a></li>
+<li><a href="../how-to-guides/#mission-templates">Configure Mission Templates</a></li>
+<li><a href="../how-to-guides/#mission-scheduling">Set up automated Schedules</a></li>
+<li>Invite team members to collaborate</li>
+</ol>
+<p>See the <a href="../how-to-guides/">How-to Guides</a> for detailed instructions.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../how-to-guides/" class="btn btn-neutral float-right" title="How-to Guides">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../how-to-guides/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/custom.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

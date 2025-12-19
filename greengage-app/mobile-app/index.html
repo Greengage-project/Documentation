@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>iOS & Android App - GREENGAGE Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "iOS \u0026 Android App";
+        var mkdocs_page_input_path = "greengage-app/mobile-app.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> GREENGAGE Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../guidelines">Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../HOWTO%20Thematic%20co-explorations/">HOWTO Thematic co-exploration</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../thematic_coexploration_example/">Thematic co-exploration example</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../CS-loop-GREENGAGE/">Step-wised execution of CS loop</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Backbone</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Keycloak</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/keycloak">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/keycloak/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/keycloak/examples#nodejs">Node</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/keycloak/examples#python">Python</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Community and Co-production process Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Wordpress</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/wordpress/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Discourse</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/Discourse/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Collaborative Environment</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/collaborativeEnvironment/examples">Example of deployment</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data crowdsourcing and capture</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >MODE</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/mode">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/mode/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/ios">iOS</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/android">Android</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/mode/examples/backend">Backend</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >MindView</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/mindview">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/mindview/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Libelium sensor integration</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/sensorsIntegration">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/sensorsIntegration/integration">Integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Greengage App</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/greengage-app-api">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/client-js">clientJs</a>
+                </li>
+                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/restful-to-graphql">client Restful to graphql</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data analysis and insights generation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >UrbanTEP / VISAT</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/deployment">Deployment</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/integration">Integration</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/urbantep-visat/examples">Example</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >DataHub</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/datahub/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache Superset</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/superset">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/superset/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/superset/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache Druid</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/druid">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/druid/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/druid/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Apache NiFi</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi">Description</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi/usage">Usage</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../tools/nifi/examples">Example of integration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Data Quality Dashboard</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../tools/DataQualityDashboard">Description</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../tools/multimodal_data_processing">Multi-modal data processing tools</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GREEN ENGINE</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../green-engine/installation/">Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GREENGAGE App</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../console/">Console</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../how-to-guides/">How-to Guides</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">iOS & Android App</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#about-the-app">About the App</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#download">Download</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#platform-requirements">Platform Requirements</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#apple-ios">Apple iOS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#google-android">Google Android</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#key-features">Key Features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#app-screenshots">App Screenshots</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#welcome-screen">Welcome Screen</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#login-registration">Login &amp; Registration</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#interactive-map">Interactive Map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#theme-filtering">Theme Filtering</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#task-details-surveys">Task Details &amp; Surveys</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#add-spot">Add Spot</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#profile-settings">Profile &amp; Settings</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#privacy-data">Privacy &amp; Data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#developer-information">Developer Information</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mobile-app-development">Mobile App Development</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#backend-api-console-development">Backend, API &amp; Console Development</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#support">Support</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">API Reference</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">GREENGAGE Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">GREENGAGE App</li>
+      <li class="breadcrumb-item active">iOS & Android App</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ios-android-app">iOS &amp; Android App</h1>
+<h2 id="about-the-app">About the App</h2>
+<p>The GREENGAGE App is the official mobile front-end for the EU project GREENGAGE's Citizen Observatories. It enables citizen observers to conduct measurements, report observations, and participate in data collection activities within designated observatories.</p>
+<p>The app is configured and managed through the GREENGAGE Console backend system at <a href="https://console.greengage.dev">console.greengage.dev</a>.</p>
+<h2 id="download">Download</h2>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Store</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Apple iOS</strong></td>
+<td>App Store</td>
+<td><a href="https://apps.apple.com/at/app/greengage/id6503947045">Download</a></td>
+</tr>
+<tr>
+<td><strong>Google Android</strong></td>
+<td>Google Play</td>
+<td><a href="https://play.google.com/store/apps/details?id=com.greengage.project">Download</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="platform-requirements">Platform Requirements</h2>
+<h3 id="apple-ios">Apple iOS</h3>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum iOS Version</td>
+<td><strong>iOS 16.0</strong> or later</td>
+</tr>
+<tr>
+<td>Compatible Devices</td>
+<td>iPhone, iPad, iPod touch</td>
+</tr>
+<tr>
+<td>App Size</td>
+<td>~73 MB</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English, German</td>
+</tr>
+</tbody>
+</table>
+<h3 id="google-android">Google Android</h3>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Android Version</td>
+<td><strong>Android 8.0</strong> (API level 26) or later</td>
+</tr>
+<tr>
+<td>App Size</td>
+<td>~60 MB</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English, German</td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Citizen Observatory Participation</strong> - Join and participate in environmental monitoring campaigns</li>
+<li><strong>Location-based Data Collection</strong> - Report observations at specific locations</li>
+<li><strong>Mobility Tracking</strong> - Track your journeys with automatic transport mode detection</li>
+<li><strong>Survey Completion</strong> - Answer structured questionnaires for research</li>
+<li><strong>Photo Documentation</strong> - Capture and upload images with your observations</li>
+<li><strong>Multi-Observatory Support</strong> - Switch between different Citizen Observatories</li>
+<li><strong>Gamification</strong> - Earn points and badges for contributions</li>
+</ul>
+<h2 id="app-screenshots">App Screenshots</h2>
+<h3 id="welcome-screen">Welcome Screen</h3>
+<p><img src="/assets/greengage-app/IMG_2631.PNG" alt="Welcome Screen" width="280"></p>
+<p>The welcome screen introduces the GREENGAGE mission: strengthening urban governance through citizen-based co-creation and crowdsourcing. Tap "Get Started" to begin the onboarding process.</p>
+<h3 id="login-registration">Login &amp; Registration</h3>
+<p><img src="/assets/greengage-app/IMG_2633.PNG" alt="Login Screen" width="280"></p>
+<p>Secure authentication with multiple options:</p>
+<ul>
+<li><strong>Email &amp; Password</strong> - Create a dedicated GREENGAGE account</li>
+<li><strong>Apple Sign-In</strong> - Quick login with your Apple ID (iOS)</li>
+<li><strong>Google Sign-In</strong> - Quick login with your Google account</li>
+<li><strong>Registration</strong> - Create a new account in seconds</li>
+</ul>
+<p>Multi-language support allows switching between English and German.</p>
+<h3 id="interactive-map">Interactive Map</h3>
+<p><img src="/assets/greengage-app/IMG_2634.PNG" alt="Map View" width="280"></p>
+<p>The main map interface displays your current Citizen Observatory with:</p>
+<ul>
+<li><strong>POIs</strong> (Points of Interest) - Predefined locations with tasks</li>
+<li><strong>Spots</strong> - User-contributed observations</li>
+<li><strong>Your Location</strong> - Real-time GPS positioning</li>
+<li><strong>Quick Actions</strong>:<ul>
+<li>"Add Spot" - Report a new observation</li>
+<li>"Track me" - Start mobility tracking</li>
+</ul>
+</li>
+</ul>
+<h3 id="theme-filtering">Theme Filtering</h3>
+<p><img src="/assets/greengage-app/IMG_2636.PNG" alt="Theme Filter" width="280"></p>
+<p>Filter map content by themes defined by your observatory:</p>
+<ul>
+<li><strong>TRAFFIC</strong> - Traffic and mobility observations</li>
+<li><strong>CLIMATE</strong> - Environmental and climate data</li>
+<li><strong>Custom Themes</strong> - Any theme your observatory needs</li>
+</ul>
+<p>Themes are fully customizable. Each Observatory can freely define its own themes through the <a href="https://console.greengage.dev">GREENGAGE Console</a>. This allows tailoring the app experience to your specific citizen science project needs.</p>
+<h3 id="task-details-surveys">Task Details &amp; Surveys</h3>
+<p><img src="/assets/greengage-app/IMG_2635.PNG" alt="Task Details" width="280"></p>
+<p>Tasks provide clear instructions for participation:</p>
+<ul>
+<li>Step-by-step guidance</li>
+<li>Check-in functionality at locations</li>
+<li>Integrated surveys with various question types</li>
+<li>Point rewards for completion</li>
+</ul>
+<p><img src="/assets/greengage-app/IMG_2640.PNG" alt="Survey" width="280"></p>
+<p>Survey types include:</p>
+<ul>
+<li>Multiple choice questions</li>
+<li>Yes/No questions</li>
+<li>Rating scales</li>
+<li>Free text input</li>
+</ul>
+<h3 id="add-spot">Add Spot</h3>
+<p><img src="/assets/greengage-app/IMG_2639.PNG" alt="Add Spot" width="280"></p>
+<p>Citizens can report observations by:</p>
+<ol>
+<li>Selecting a <strong>theme category</strong></li>
+<li>Adding a <strong>title</strong> for the observation</li>
+<li>Writing a <strong>description</strong></li>
+<li><strong>Uploading a photo</strong> for documentation</li>
+</ol>
+<p>Spots are immediately visible to other users and administrators.</p>
+<h3 id="profile-settings">Profile &amp; Settings</h3>
+<p><img src="/assets/greengage-app/IMG_2637.PNG" alt="Profile" width="280"></p>
+<p>Manage your account:</p>
+<ul>
+<li>View and edit profile information</li>
+<li><strong>Switch Observatories</strong> - Participate in multiple citizen science projects</li>
+<li>Change language settings</li>
+<li>Sign out or restart onboarding</li>
+<li>View app version (current: v2.2.1)</li>
+</ul>
+<h2 id="privacy-data">Privacy &amp; Data</h2>
+<p>The app collects the following data for functionality:</p>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Purpose</th>
+<th>Linked to Identity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Location (precise &amp; coarse)</td>
+<td>Observatory participation</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Photos/Videos</td>
+<td>Spot documentation</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Contact Info</td>
+<td>Account management</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Device Identifiers</td>
+<td>Analytics</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Crash Data</td>
+<td>Bug fixing</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>All data collection follows GDPR guidelines.</p>
+<h2 id="developer-information">Developer Information</h2>
+<h3 id="mobile-app-development">Mobile App Development</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Developer</strong></td>
+<td>Digitalsunray Media GmbH</td>
+</tr>
+<tr>
+<td><strong>Address</strong></td>
+<td>Gonzagagasse 11/25, 1010 Vienna, Austria</td>
+</tr>
+<tr>
+<td><strong>Email</strong></td>
+<td><a href="mailto:apps@digitalsunray.com">apps@digitalsunray.com</a></td>
+</tr>
+<tr>
+<td><strong>Phone</strong></td>
+<td>+43 1 920 66 33</td>
+</tr>
+</tbody>
+</table>
+<h3 id="backend-api-console-development">Backend, API &amp; Console Development</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Developer</strong></td>
+<td>Sushi Dev GmbH</td>
+</tr>
+<tr>
+<td><strong>Headquarters</strong></td>
+<td>Wiedner Gürtel 28/6, 1040 Wien, Austria</td>
+</tr>
+<tr>
+<td><strong>Branch Office</strong></td>
+<td>Bischofpl. 1/6b, 8010 Graz, Austria</td>
+</tr>
+<tr>
+<td><strong>Email</strong></td>
+<td><a href="mailto:office@sushi.dev">office@sushi.dev</a></td>
+</tr>
+<tr>
+<td><strong>Phone</strong></td>
+<td>+43 1 934 6339</td>
+</tr>
+<tr>
+<td><strong>Website</strong></td>
+<td><a href="https://sushi.dev">sushi.dev</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="support">Support</h2>
+<p>For technical support or questions:</p>
+<ul>
+<li><strong>App Support</strong>: <a href="mailto:support@sushi.dev">support@sushi.dev</a></li>
+<li><strong>Project Contact</strong>: <a href="mailto:contact@greengage-project.eu">contact@greengage-project.eu</a></li>
+<li><strong>Console Documentation</strong>: <a href="https://console.greengage.dev/docs">console.greengage.dev/docs</a></li>
+<li><strong>Project Website</strong>: <a href="https://greengage-project.eu/">greengage-project.eu</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../how-to-guides/" class="btn btn-neutral float-left" title="How-to Guides"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../api/" class="btn btn-neutral float-right" title="API Reference">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../how-to-guides/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../api/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/custom.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
