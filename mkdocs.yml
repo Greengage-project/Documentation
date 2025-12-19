@@ -83,5 +83,11 @@ nav:
           - Multi-modal data processing tools: tools/multimodal_data_processing
   - GREEN ENGINE:
       - Installation: green-engine/installation.md
+  - GREENGAGE App:
+      - Overview: greengage-app/index.md
+      - Console: greengage-app/console.md
+      - How-to Guides: greengage-app/how-to-guides.md
+      - iOS & Android App: greengage-app/mobile-app.md
+      - API Reference: greengage-app/api.md
 locale:
   - en
