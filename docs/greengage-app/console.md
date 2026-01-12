@@ -13,7 +13,7 @@ Getting started with the GREENGAGE Console takes just a few minutes. Currently, 
 
 ## Login
 
-![Login Screen](/assets/greengage-app/console/images/get-started-screen.png)
+![Login Screen](../assets/greengage-app/console/images/get-started-screen.png)
 
 On the login screen, you can choose between:
 
@@ -27,11 +27,11 @@ If you prefer not to use the GREENGAGE project account, you can create a standal
 
 ### Step 1: Click "Create free account"
 
-![Create Account](/assets/greengage-app/console/images/create-account.png)
+![Create Account](../assets/greengage-app/console/images/create-account.png)
 
 ### Step 2: Fill out the registration form
 
-![Register Form](/assets/greengage-app/console/images/register.png)
+![Register Form](../assets/greengage-app/console/images/register.png)
 
 You only need three things to register:
 

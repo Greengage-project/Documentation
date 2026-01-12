@@ -31,13 +31,13 @@ For detailed documentation on the Console, visit the [GREENGAGE Console Document
 
 ### Welcome Screen
 
-![Welcome Screen](/assets/greengage-app/IMG_2631.PNG)
+![Welcome Screen](../assets/greengage-app/IMG_2631.PNG)
 
 The welcome screen introduces users to the GREENGAGE project mission: *"Strengthening urban governance through promoting citizen-based co-creation and crowdsourcing."* Users can tap "Get Started" to begin.
 
 ### Login / Registration
 
-![Login Screen](/assets/greengage-app/IMG_2633.PNG)
+![Login Screen](../assets/greengage-app/IMG_2633.PNG)
 
 The app supports multiple authentication methods:
 
@@ -50,7 +50,7 @@ Multi-language support is available (e.g., English, German).
 
 ### Map View
 
-![Map View](/assets/greengage-app/IMG_2634.PNG)
+![Map View](../assets/greengage-app/IMG_2634.PNG)
 
 The interactive map displays:
 
@@ -65,7 +65,7 @@ Key actions:
 
 ### Theme Filter
 
-![Theme Filter](/assets/greengage-app/IMG_2636.PNG)
+![Theme Filter](../assets/greengage-app/IMG_2636.PNG)
 
 Users can filter map content by themes eg.:
 
@@ -78,7 +78,7 @@ Themes can be defined within the console.greengage.dev for every observatory on 
 
 ### Task Details
 
-![Task Details](/assets/greengage-app/IMG_2635.PNG)
+![Task Details](../assets/greengage-app/IMG_2635.PNG)
 
 Tasks provide instructions for citizen participation. This example shows a public transport delay survey asking users to:
 
@@ -88,7 +88,7 @@ Tasks provide instructions for citizen participation. This example shows a publi
 
 ### Add Spot
 
-![Add Spot](/assets/greengage-app/IMG_2639.PNG)
+![Add Spot](../assets/greengage-app/IMG_2639.PNG)
 
 Citizens can contribute observations by adding spots:
 
@@ -99,7 +99,7 @@ Citizens can contribute observations by adding spots:
 
 ### Survey
 
-![Survey](/assets/greengage-app/IMG_2640.PNG)
+![Survey](../assets/greengage-app/IMG_2640.PNG)
 
 Integrated surveys allow structured data collection:
 
@@ -110,7 +110,7 @@ Integrated surveys allow structured data collection:
 
 ### Profile & Observatory Selection
 
-![Profile](/assets/greengage-app/IMG_2637.PNG)
+![Profile](../assets/greengage-app/IMG_2637.PNG)
 
 The profile screen allows users to:
 

@@ -56,7 +56,7 @@ mutation RefreshToken($token: String!) {
 }
 ```
 
-![Refresh Token](/assets/greengage-app/console/images/refresh-token.png)
+![Refresh Token](../assets/greengage-app/console/images/refresh-token.png)
 
 !!! warning "Security Best Practice"
     Store tokens securely. Never save them in local storage for web applications. Use secure HTTP-only cookies or secure storage mechanisms instead.
