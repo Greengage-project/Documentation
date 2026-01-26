@@ -1,0 +1,101 @@
+services:
+  project-greengage_gst13-app:
+    image: gisat/app-eu_horizon_greengage:v#.#.#
+    environment:
+      TZ: Europe/Prague
+      METADATA_URL: https://<hostname>/be-metadata
+      DATABASE_FILE: ./db.sqlite
+      DATA_URL: https://<hostname>/be-gisdata
+      DATABASE_STATE_EXPIRATION_SEC: 3600
+      INSTANCE_WARNING_HIDDEN: false
+      INSTANCE_WARNING_COLOR: "#ff0000"
+      INSTANCE_WARNING_TEXT: "This is development instance of Greengage application. It may change or stop working at any time."
+      # CLIENT_ID: greengage_gst13-app
+      # OID_IAM_ISSUER_URL: "https://<hostname>/auth/realms/greengage"
+      # OID_IAM_AUTHORIZE_URL: "https://<hostname>/auth/realms/greengage/protocol/openid-connect/auth"
+      # OID_IAM_TOKEN_URL: "https://<hostname>/auth/realms/greengage/protocol/openid-connect/token"
+      # OID_SELF_REDIRECT_URL: "https://<hostname>/api/auth/callback"
+    ports:
+      - "8082:3000"
+    restart: unless-stopped
+
+  project-greengage_gst13-keycloak:
+    image: quay.io/keycloak/keycloak
+    environment:
+      KEYCLOAK_ADMIN: greengage_admin
+      KEYCLOAK_ADMIN_PASSWORD: <password>
+      KC_HOSTNAME: https://<hostname>/auth
+    volumes:
+      - project-greengage_gst13-keycloak-data:/opt/keycloak/data
+    command:
+      [
+        "start",
+        "--db=dev-file",
+        "--http-enabled=true",
+        "--hostname-strict=false",
+        "--proxy-headers=xforwarded",
+        "--http-relative-path=/auth",
+      ]
+    ports:
+      - "8083:8080"
+    restart: unless-stopped
+
+  project-greengage_gst13-be-metadata:
+    image: gisat/be-metadata:v#.#.#
+    environment:
+      TZ: Europe/Prague
+      HOST: 0.0.0.0
+      PORT: 6100
+      REDIS_HOST: project-greengage_gst13-redis
+      REDIS_PORT: 6379
+      NEO4J_URI: bolt://project-greengage_gst13-neo4j:7687
+      NEO4J_USER: neo4j
+      NEO4J_PASSWORD: <password>
+    ports:
+      - 8004:6100
+    restart: unless-stopped
+
+  project-greengage_gst13-redis:
+    image: redis:8
+    restart: unless-stopped
+
+  project-greengage_gst13-neo4j:
+    image: neo4j:#.#
+    environment:
+      TZ: Europe/Prague
+      NEO4J_AUTH: neo4j/<password>
+      NEO4J_ACCEPT_LICENSE_AGREEMENT: yes
+    volumes:
+      - project-greengage_gst13-neo4j-data:/data
+    restart: unless-stopped
+
+  project-greengage_gst13-be-gisdata:
+    image: gisat/be-gisdata:v#.#.#
+    environment:
+      TZ: Europe/Prague
+      HOST: 0.0.0.0
+      PORT: 6100
+      DB_HOST: project-greengage_gst13-postgis
+      DB_PORT: 5432
+      DB_NAME: gisdata
+      DB_PASSWORD: <password>
+      DB_USER: postgres
+    ports:
+      - "8005:6100"
+    restart: unless-stopped
+
+  project-greengage_gst13-postgis:
+    image: postgis/postgis:#.#
+    environment:
+      TZ: Europe/Prague
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: <password>
+      POSTGRES_DB: gisdata
+    volumes:
+      - project-greengage_gst13-postgis-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  project-greengage_gst13-neo4j-data:
+  project-greengage_gst13-keycloak-data:
+  project-greengage_gst13-postgis-data:

@@ -14,7 +14,6 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Link**: [tools/keycloak](tools/keycloak)
 - **Deployed in**: [https://auth1.demo.greengage-project.eu](https://auth1.demo.greengage-project.eu)
 - **Description**: Keycloak is an open-source Identity and Access Management solution aimed at modern applications and services. It facilitates the secure transmission of identity information between applications and services, even across different domains.
-
   - **Examples of programmatic integration/usage**:
     - [Node](tools/keycloak/examples#node)
     - [Python](tools/keycloak/examples#python)
@@ -27,7 +26,6 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Link**: [tools/collaborativeEnvironment](tools/collaborativeEnvironment)
 - **Deployed in**: [https://demo.greengage-project.eu](https://demo.greengage-project.eu)
 - **Description**: The Collaborative Environment is a comprehensive platform designed to facilitate co-production, asset management, and enhanced collaboration among users. It incorporates various interlinkers and modules to streamline workflows and improve organizational processes, supporting integration with different technologies and frameworks.
-
   - **Examples of programmatic integration/usage**:
     - [Deploy example](tools/collaborativeEnvironment/examples)
 
@@ -38,7 +36,6 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Directory**: `/tools`
 - **Link**: [tools/mode](tools/mode)
 - **Description**: This module allows to determine the transport mode of a user based on GPS data provided.
-
   - **Examples of programmatic integration/usage**:
     - [iOS example](tools/mode/examples/ios)
     - [Android example](tools/mode/examples/android)
@@ -52,7 +49,6 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Link**: [tools/Discourse](tools/Discourse)
 - **Deployed in**: [https://discourse.greengage-project.eu](https://discourse.greengage-project.eu)
 - **Description**: Discourse is a modern, open-source discussion platform designed for building and managing community forums. Known for its user-friendly interface and robust features, it supports real-time discussions, multimedia integration, and comprehensive moderation tools. Ideal for a wide range of communities, from small groups to large enterprises, Discourse fosters engagement, knowledge sharing, and collaboration.
-
   - **Examples of programmatic integration/usage**:
     - [Deploy example](tools/Discourse/examples)
 
@@ -64,7 +60,6 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Link**: [tools/DataHub](tools/datahub)
 - **Deployed in**: [https://datahub.greengage-project.eu/](https://datahub.greengage-project.eu/)
 - **Description**: DataHub is an open-source metadata platform designed to democratise data discovery. It acts as a centralised system for companies and teams to track, manage, and find data within their organisation. Its primary aim is to streamline the process of accessing and understanding data assets, making it easier for teams to derive insights and make informed decisions.
-
   - **Examples of programmatic integration**:
     - [Integration example](tools/datahub/examples)
 
@@ -76,7 +71,6 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Link**: [tools/Superset](tools/superset)
 - **Deployed in**: [https://superset.greengage-project.eu/](https://superset.greengage-project.eu/)
 - **Description**: Apache Superset is a sophisticated, open-source data exploration and visualisation platform designed to transform the way analysts and businesses interact with their data. As a versatile web application, it empowers users with tools for deep data exploration and the creation of beautifully rendered visualisations and dashboards. Superset is renowned for its user-friendly interface, democratising data analysis by enabling users of all skill levels to engage with complex datasets, design compelling visual narratives, and derive actionable insights. Offering a rich array of features, including a variety of chart types, interactive dashboards, and an integrated SQL editor, Apache Superset stands out as a comprehensive solution for modern data analytics and business intelligence needs.
-
   - **Examples of integration of sources with Superset**:
     - [Integration example](tools/superset/examples)
 
@@ -88,7 +82,6 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Link**: [tools/Druid](tools/druid)
 - **Deployed in**: [https://druid.greengage-project.eu](https://druid.greengage-project.eu)
 - **Description**: Apache Druid is a high-performance, distributed data store designed for real-time analytics on large-scale datasets. It excels in scenarios where fast queries and ingest are crucial, such as in business intelligence applications, operational analytics, and real-time monitoring. Druid is known for its ability to handle high concurrency, its columnar storage format, and its ability to scale horizontally. It supports streaming and batch data ingestion, and its architecture allows for efficient data summarisation, fast aggregation queries, and low-latency data access. Druid is often used in conjunction with big data technologies like Hadoop and Kafka, making it a popular choice for organisations looking to implement real-time analytics solutions.
-
   - **Examples of integration of sources with Druid**:
     - [Integration example](tools/druid/examples)
 
@@ -100,7 +93,6 @@ The `tools` directory contains subdirectories for each tool utilized in the proj
 - **Link**: [tools/NiFi](tools/nifi)
 - **Deployed in**: [https://nifi.greengage-project.eu/nifi](https://nifi.greengage-project.eu/nifi)
 - **Description**: Apache NiFi is a robust, open-source software solution designed for efficient and reliable data ingestion, processing, and distribution. It is particularly noted for its user-friendly graphical interface that simplifies the design, management, and monitoring of data flows. NiFi supports highly configurable and flexible data routing, system mediation, and transformation capabilities, enabling the handling of diverse data formats and systems. Key features include its scalability to accommodate large volumes of data, built-in data security measures, and extensive audit trails for data provenance. Primarily used in scenarios requiring complex data pipelines, such as real-time data processing and integration across varied systems, Apache NiFi stands out for its ease of use and comprehensive data management capabilities.
-
   - **Examples of integration of sources with NiFi**:
     - [Integration example](tools/nifi/examples)
 
@@ -125,15 +117,14 @@ The above README provides a structured outline to document the technical aspects
 
 - **Directory**: `/tools`
 - **Link**: [tools/urbantep-visat](tools/UrbanTEP/VISAT)
-- **Deployed in**: [visat-sdg.urban-tep.eu](https://visat-sdg.urban-tep.eu)
-- **Description**: VISAT (Visualization and Analytical Toolbox) is a powerful tool provided by GISAT within the Urban Thematic and Exploration Platform (UrbanTEP). It is designed for the seamless integration, exploration, visualization, and analysis of diverse datasets, particularly geospatial data. As part of the GREENGAGE project, VISAT is integral to supporting pilot solutions with its data integration, visualization, and analysis capabilities, enhancing the efficiency of Citizen Observatory projects.
+- **Deployed in**: (AIT)
+- **Description**: UrbanTEP/VISAT is a GISAT-developed web application for seamless exploration, visualization, and analysis of diverse datasets, especially geospatial and Earth-observation (Remote Sensing) data. Within the GREENGAGE project, VISAT supports pilot solutions by integrating and harmonizing data, providing interactive visualizations and analysis tools, and streamlining Citizen Observatory campaigns to make data-driven engagement more efficient.
 
 #### Wordpress
 
 - **Directory**: `/tools`
 - **Link**: [tools/wordpress](tools/wordpress)
 - **Description**: WordPress is a highly popular and versatile Content Management System (CMS) renowned for its ease of use and flexibility. It's an ideal platform for creating a wide range of websites, from personal blogs to large corporate portals. WordPress is known for its extensive theme and plugin ecosystem, which allows users to customize their sites to fit their specific needs and enhance functionality.
-
   - **Examples of programmatic integration/usage**:
     - [With Keycloak](tools/wordpress/integration/#wpKeycloak)
     - [With Discourse](tools/wordpress/integration/#wpdiscourse)
@@ -145,7 +136,6 @@ The above README provides a structured outline to document the technical aspects
 - **Deployed in**: [Google Play
   ](https://play.google.com/store/apps/details?id=ch.mindearth.mindviewgreengage&hl=en)
 - **Description**: The MindEarth platform is an advanced system designed for real-time data collection and analysis, particularly suited to urban planning, environmental monitoring, and commercial research projects. It allows third-party organizations to commission missions for users to perform, which may involve taking photographs, traveling specific routes, or staying in a certain location for a set amount of time. The platform supports seamless integration with mobile devices and backend services, ensuring high scalability and flexibility.
-
   - **Examples of programmatic integration/usage**:
     - [With Third-Party Services](tools/mindview/integration)
 
