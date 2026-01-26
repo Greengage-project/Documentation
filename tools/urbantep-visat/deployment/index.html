@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>UrbanTEP / VISAT - GREENGAGE Documentation</title>
+    <title>Deployment - GREENGAGE Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "UrbanTEP / VISAT";
+        var mkdocs_page_name = "Deployment";
         var mkdocs_page_input_path = "tools/urbantep-visat/deployment.md";
         var mkdocs_page_url = null;
       </script>
@@ -63,7 +63,7 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Tools</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" >Backbone</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" >Keycloak</a>
@@ -170,17 +170,27 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Data analysis and insights generation</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" >UrbanTEP / VISAT</a>
-    <ul>
-                <li class="toctree-l3"><a class="" href="..">Description</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Data analysis and insights generation</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" >UrbanTEP / VISAT</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="" href=".">Deployment</a>
+                <li class="toctree-l3"><a class="reference internal" href="../user-guide/">User Guide</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../integration">Integration</a>
+                <li class="toctree-l3"><a class="reference internal" href="../data-model/">Data Model</a>
                 </li>
-                <li class="toctree-l3"><a class="" href="../examples">Example</a>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">Deployment</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#deployment">Deployment</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#security">Security</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../examples/">Examples</a>
                 </li>
     </ul>
                 </li>
@@ -267,7 +277,10 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">UrbanTEP / VISAT</li>
+          <li class="breadcrumb-item">Tools</li>
+          <li class="breadcrumb-item">Data analysis and insights generation</li>
+          <li class="breadcrumb-item">UrbanTEP / VISAT</li>
+      <li class="breadcrumb-item active">Deployment</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -292,7 +305,7 @@
 <p><strong>Access to UrbanTEP/VISAT Docker Images</strong>: Ensure access to the repository containing the Docker images for UrbanTEP/VISAT.</p>
 </li>
 <li>
-<p><strong>Configuration Files</strong>: Prepare the necessary configuration files that are specific to your deployment, including environment variables and any other necessary settings.</p>
+<p><strong>Configuration Files</strong>: Prepare the necessary configuration files (e.g., environment variables, reverse proxy). Start from the downloadable examples: <a href="../assets/docker-compose.yml">docker-compose.yml</a> and <a href="../assets/nginx.greengage-dev.gisat.cz.conf">nginx.greengage-dev.gisat.cz.conf</a>.</p>
 </li>
 </ol>
 <h2 id="deployment">Deployment</h2>
@@ -300,22 +313,16 @@
 <h3 id="deployment-steps">Deployment Steps</h3>
 <ol>
 <li>Clone Repository: Clone the repository containing the Docker Compose file and other necessary deployment scripts.
-    git clone <repository-url>
-    cd <repository-directory></li>
+   git clone <repository-url>
+   cd <repository-directory></li>
 <li>Configure Environment: Set up the environment variables as per your specific deployment requirements. This may include database connections, service endpoints, and other critical settings.</li>
 <li>Run Docker Compose: Use Docker Compose to build and start the containers. This can typically be done with a single command:
-    docker-compose up -d
-This command will download the required Docker images, create containers, and start the services defined in the docker-compose.yml file.</li>
+   docker-compose up -d
+   This command will download the required Docker images, create containers, and start the services defined in the docker-compose.yml file.</li>
 <li>Verify Deployment: Once the containers are up and running, verify the deployment by accessing the UrbanTEP/VISAT application through a web browser.</li>
+<li>Upload the data and corresponding metadata configurations to the be-gisdata and be-metadata microservices. After a successful deployment, the OpenAPI documentation is available at be-gisdata/openapi and be-metadata/openapi.</li>
 </ol>
 <p>Ensure all services are functioning as expected and that there are no connectivity issues between the microservices.</p>
-<h3 id="post-deployment-configuration">Post-Deployment Configuration</h3>
-<p>After successfully deploying UrbanTEP/VISAT, perform any necessary post-deployment configurations. This may include:</p>
-<ul>
-<li>Setting up additional user accounts and permissions.</li>
-<li>Integrating with other systems or databases.</li>
-<li>Configuring backups and data retention policies.</li>
-</ul>
 <h3 id="updating-the-application">Updating the Application</h3>
 <p>To update UrbanTEP/VISAT, pull the latest Docker images and re-run the Docker Compose:</p>
 <pre><code>docker-compose pull
@@ -330,13 +337,16 @@ docker-compose up -d --force-recreate
 <li>Incompatibilities between different versions of Docker images.</li>
 </ul>
 <p>For detailed troubleshooting, refer to the specific error messages in the logs and the UrbanTEP/VISAT documentation.</p>
+<p>You can also email GISAT for assistance: <a href="mailto:martin.babic@gisat.cz">martin.babic@gisat.cz</a>.</p>
 <h2 id="security">Security</h2>
-<p>All data transfer occurs over secure HTTPS connections, and authorization is implemented following OAuth 2.0 standards, ensuring robust security and privacy measures.</p>
-<h2 id="scalability-performance">Scalability &amp; Performance</h2>
-<p>The platform is designed to be scalable, with the ability to handle increasing data volumes, concurrent users, and system load. It is adaptable to different user needs and project requirements, whether deployed on a local machine, a demo environment, or production-like environments.</p>
+<p>All data transfer occurs over secure HTTPS connections.</p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../data-model/" class="btn btn-neutral float-left" title="Data Model"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../examples/" class="btn btn-neutral float-right" title="Examples">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -358,6 +368,10 @@ docker-compose up -d --force-recreate
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../data-model/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../examples/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

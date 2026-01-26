@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Keycloak Integration Guide for Third-Party Services - GREENGAGE Documentation</title>
+    <title>User Guide - GREENGAGE Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Keycloak Integration Guide for Third-Party Services";
-        var mkdocs_page_input_path = "tools/keycloak/integration.md";
+        var mkdocs_page_name = "User Guide";
+        var mkdocs_page_input_path = "tools/urbantep-visat/user-guide.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -63,20 +63,20 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Tools</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" >Backbone</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" >Keycloak</a>
     <ul>
-                <li class="toctree-l3"><a class="" href="..">Description</a>
+                <li class="toctree-l3"><a class="" href="../../keycloak">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="" href=".">Integration</a>
+                <li class="toctree-l3"><a class="" href="../../keycloak/integration">Integration</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" >Examples</a>
     <ul>
-                <li class="toctree-l4"><a class="" href="../examples#nodejs">Node</a>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#nodejs">Node</a>
                 </li>
-                <li class="toctree-l4"><a class="" href="../examples#python">Python</a>
+                <li class="toctree-l4"><a class="" href="../../keycloak/examples#python">Python</a>
                 </li>
     </ul>
                 </li>
@@ -170,19 +170,33 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Data analysis and insights generation</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" >UrbanTEP / VISAT</a>
-    <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../../urbantep-visat/">Description</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Data analysis and insights generation</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" >UrbanTEP / VISAT</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../">Description</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../urbantep-visat/user-guide/">User Guide</a>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">User Guide</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#who-this-is-for">Who this is for</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#quick-start">Quick start</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#core-workflows">Core workflows</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#map-tools-and-interaction">Map tools and interaction</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#downloading-and-sharing">Downloading and sharing</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#tips-for-effective-use">Tips for effective use</a>
+    </li>
+    </ul>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../urbantep-visat/data-model/">Data Model</a>
+                <li class="toctree-l3"><a class="reference internal" href="../data-model/">Data Model</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../urbantep-visat/deployment/">Deployment</a>
+                <li class="toctree-l3"><a class="reference internal" href="../deployment/">Deployment</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../urbantep-visat/examples/">Examples</a>
+                <li class="toctree-l3"><a class="reference internal" href="../examples/">Examples</a>
                 </li>
     </ul>
                 </li>
@@ -269,7 +283,10 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Keycloak Integration Guide for Third-Party Services</li>
+          <li class="breadcrumb-item">Tools</li>
+          <li class="breadcrumb-item">Data analysis and insights generation</li>
+          <li class="breadcrumb-item">UrbanTEP / VISAT</li>
+      <li class="breadcrumb-item active">User Guide</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -278,48 +295,60 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="keycloak-integration-guide-for-third-party-services">Keycloak Integration Guide for Third-Party Services</h1>
-<p>To facilitate a centralized user management system, we are utilizing Keycloak as our identity and access management solution. To integrate your service with our Keycloak system, please follow the instructions below to request the necessary credentials.</p>
-<p><strong>Step 1: Requesting Client Credentials</strong></p>
+                <h1 id="urbantep-visat-user-guide">UrbanTEP / VISAT User Guide</h1>
+<h2 id="who-this-is-for">Who this is for</h2>
+<p>Citizen Observatories, NGOs, and community groups can use application to explore and interpret data, generate insights, and translate evidence into clear, visual, data-driven messages that land with policymakers and public officials.</p>
+<p>Public authorities, municipalities, and other institutions can use it to integrate multiple data sources, track indicators over time, and publish interactive dashboards and maps that support planning, reporting, and day-to-day decision-making. Urban planners and practitioners can go a level deeper, testing scenarios, evaluating interventions (e.g., mobility, green infrastructure), and grounding proposals in measurable trends.</p>
+<p>Researchers and scientists benefit from both sides of the pipeline: they can see how datasets are interpreted and communicated in real-world settings, while also accessing the underlying data to validate findings, reproduce results, and run independent analyses using their own methods.</p>
+<p>Data providers, project partners, and consultants can use the platform to curate and share datasets and outputs across teams, and to produce decision-support deliverables (dashboards, maps, briefings) tailored to specific stakeholders.</p>
+<h2 id="quick-start">Quick start</h2>
 <ul>
-<li>Send an email to greengage.admin@deusto.es with the subject line: "[GREENGAGE] Request for Keycloak Client Credentials".</li>
-<li>
-<p>In the body of the email, please provide the following information:</p>
-</li>
-<li>
-<p>Tool name:</p>
-</li>
-<li>Description: (no more than 200 characters):</li>
-<li>Contact name:(for technical propose)</li>
-<li>Contact email:(for technical propose)</li>
+<li>Access the app.</li>
+<li>Pick a story or open the explorer.</li>
+<li>Toggle layers, inspect tooltips, legends, charts, and download or share outputs as needed.</li>
 </ul>
-<p><strong>Step 2: Receiving Your Credentials</strong></p>
+<h2 id="core-workflows">Core workflows</h2>
+<h3 id="story-viewer">Story viewer</h3>
 <ul>
-<li>Upon receipt of your request, we will review the information and create a unique Client ID and Secret for your service.</li>
-<li>We will then send you an email with your Client ID and Secret, which you will use to configure the integration on your side.</li>
+<li>Narrative-led flow with side-panel text and a map canvas per chapter.</li>
+<li>Scroll to advance; the active chapter loads its dedicated map, layers, and legend.</li>
+<li>Use footer links to jump across chapters or exit to other stories/resources.</li>
 </ul>
-<p><strong>Step 3: Configuring Your Service</strong></p>
+<p><img alt="Story viewer example" src="../assets/userstory_example.png" /></p>
+<h3 id="explorer">Explorer</h3>
 <ul>
-<li>Once you have received your Client ID and Secret, incorporate these credentials into your service’s authentication module.</li>
-<li>Ensure that your service is set to communicate with our Keycloak server using the OpenID Connect protocol.</li>
-<li>You can add the following link <strong>https://[KEYCLOAK]/
-auth/realms/[REALM]/account</strong> in your system. To give your user access to the information managed by keycloak. Example https://auth1.demo.greengage-project.eu/auth/realms/greengage/account/</li>
+<li>Select pilot/thematic area to load relevant datasets.</li>
+<li>Pick a layer; the map, legend, and metadata/details panel update automatically.</li>
+<li>Adjust layer parameters (period, attribute, style) when available; switch opacity and visibility to compare variants.</li>
 </ul>
-<p><strong>Step 4: Testing the Integration</strong></p>
+<p><img alt="Explorer example" src="../assets/explorer_example.png" /></p>
+<h2 id="map-tools-and-interaction">Map tools and interaction</h2>
 <ul>
-<li>After configuring your service, conduct thorough testing to ensure that the authentication process works correctly.</li>
-<li>If you encounter any issues during testing, please reach out to us via email for support.</li>
+<li><strong>Layer control</strong>: toggle visibility, reorder if enabled, and adjust opacity per layer.</li>
+<li><strong>WMS Layers</strong>: display, and manage opacity for external sources (Copernicus products).</li>
+<li><strong>Legends</strong>: synced with active attributes; reflect breaks used in tooltips.</li>
+<li><strong>Tooltips</strong>: hover/click to inspect feature values; highlights show the selected feature.</li>
+<li><strong>Viewport</strong>: zoom/pan; multi-map “slider” mode can sync views for side-by-side comparisons.</li>
+<li><strong>Basemap &amp; styles</strong>: choose basemap where offered; switch styles for the same layer template if exposed.</li>
 </ul>
-<p>If you have any questions about Keycloak integration, please contact us at greengage.admin@deusto.es with the subject "[Greengage] Keycloak support request"</p>
-<p><strong>Important Notes:</strong></p>
+<h2 id="downloading-and-sharing">Downloading and sharing</h2>
 <ul>
-<li>Keep your Client Secret confidential. Do not share it with unauthorized personnel or services.</li>
-<li>If you believe your Client Secret has been compromised, contact us immediately to issue a new one.</li>
-<li>Adhere to all security best practices when implementing the integration to safeguard user data.</li>
+<li><strong>Exports</strong>: download data providers' reports. Expert users can also query the same datasets in the analytics stack via <a href="../../superset/usage/">Superset</a> or <a href="../../druid/usage/">Druid</a> for deeper analysis.</li>
+<li><strong>Sharing</strong>: copy deep links to current state.</li>
+</ul>
+<h2 id="tips-for-effective-use">Tips for effective use</h2>
+<ul>
+<li>Prefer explorer for ad-hoc analysis; use stories to guide non-technical audiences.</li>
+<li>When comparing time or scenarios, keep legends aligned and use synced views to avoid misinterpretation.</li>
+<li>Large layers may stream tiles progressively; wait for legends/tooltips to match the loaded style before capturing outputs.</li>
 </ul>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../" class="btn btn-neutral float-left" title="Description"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../data-model/" class="btn btn-neutral float-right" title="Data Model">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -341,6 +370,10 @@ auth/realms/[REALM]/account</strong> in your system. To give your user access to
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../data-model/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
