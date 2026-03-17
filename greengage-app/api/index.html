@@ -63,7 +63,7 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Tools</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" >Backbone</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" >Keycloak</a>
@@ -118,8 +118,8 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Data crowdsourcing and capture</a>
-    <ul>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Data crowdsourcing and capture</a>
+    <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" >MODE</a>
     <ul>
                 <li class="toctree-l3"><a class="" href="../../tools/mode">Description</a>
@@ -154,16 +154,38 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" >Greengage App</a>
-    <ul>
-                <li class="toctree-l3"><a class="" href="../../tools/greengage-app-api">Description</a>
+                <li class="toctree-l2 current"><a class="reference internal current" >GREENGAGE App</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../">Overview</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" >Examples</a>
-    <ul>
-                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/client-js">clientJs</a>
+                <li class="toctree-l3"><a class="reference internal" href="../console/">Console</a>
                 </li>
-                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/restful-to-graphql">client Restful to graphql</a>
+                <li class="toctree-l3"><a class="reference internal" href="../how-to-guides/">How-to Guides</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../mobile-app/">iOS & Android App</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">API Reference</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#important-naming-convention">Important Naming Convention</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#authentication">Authentication</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#graphql-schema">GraphQL Schema</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#example-complete-workflow">Example: Complete Workflow</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#error-handling">Error Handling</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#rate-limiting">Rate Limiting</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#developer">Developer</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#webhooks">Webhooks</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#graphql-playground">GraphQL Playground</a>
+    </li>
     </ul>
                 </li>
     </ul>
@@ -242,127 +264,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../green-engine/installation/">Installation</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">GREENGAGE App</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../">Overview</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../console/">Console</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../how-to-guides/">How-to Guides</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../mobile-app/">iOS & Android App</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">API Reference</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#important-naming-convention">Important Naming Convention</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#authentication">Authentication</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#getting-a-token">Getting a Token</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#token-lifetime">Token Lifetime</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#refreshing-tokens">Refreshing Tokens</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#using-the-token">Using the Token</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#graphql-schema">GraphQL Schema</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#core-types">Core Types</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#city-observatory">City (Observatory)</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#user">User</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#mission">Mission</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#pointofinterest-poi">PointOfInterest (POI)</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#spot">Spot</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#survey">Survey</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#topic">Topic</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#queries">Queries</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#user-queries">User Queries</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#observatory-queries">Observatory Queries</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#mission-queries">Mission Queries</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#poi-queries">POI Queries</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#spot-queries">Spot Queries</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#mutations">Mutations</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#authentication_1">Authentication</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#profile-management">Profile Management</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#mission-operations">Mission Operations</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#survey-submission">Survey Submission</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#spot-operations">Spot Operations</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enums">Enums</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#geojson-support">GeoJSON Support</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#example-complete-workflow">Example: Complete Workflow</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#1-login-and-get-user-info">1. Login and Get User Info</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#2-get-available-observatories">2. Get Available Observatories</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#3-join-an-observatory">3. Join an Observatory</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#4-get-pois-and-missions">4. Get POIs and Missions</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#5-start-and-complete-a-mission">5. Start and Complete a Mission</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#error-handling">Error Handling</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#rate-limiting">Rate Limiting</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#developer">Developer</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#webhooks">Webhooks</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#example-implementation">Example Implementation</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#webhook-events">Webhook Events</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#graphql-playground">GraphQL Playground</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#interactive-explorer">Interactive Explorer</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#apollo-sandbox">Apollo Sandbox</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
-                  </li>
-              </ul>
       </div>
     </div>
     </nav>
@@ -377,6 +278,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tools</li>
+          <li class="breadcrumb-item">Data crowdsourcing and capture</li>
           <li class="breadcrumb-item">GREENGAGE App</li>
       <li class="breadcrumb-item active">API Reference</li>
     <li class="wy-breadcrumbs-aside">
@@ -1050,6 +953,7 @@ mutation {
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../mobile-app/" class="btn btn-neutral float-left" title="iOS & Android App"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../tools/urbantep-visat/" class="btn btn-neutral float-right" title="Description">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -1074,6 +978,8 @@ mutation {
     
       <span><a href="../mobile-app/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../../tools/urbantep-visat/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -63,7 +63,7 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Tools</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" >Backbone</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" >Keycloak</a>
@@ -118,8 +118,8 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Data crowdsourcing and capture</a>
-    <ul>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Data crowdsourcing and capture</a>
+    <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" >MODE</a>
     <ul>
                 <li class="toctree-l3"><a class="" href="../../tools/mode">Description</a>
@@ -154,17 +154,35 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" >Greengage App</a>
-    <ul>
-                <li class="toctree-l3"><a class="" href="../../tools/greengage-app-api">Description</a>
+                <li class="toctree-l2 current"><a class="reference internal current" >GREENGAGE App</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../">Overview</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" >Examples</a>
-    <ul>
-                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/client-js">clientJs</a>
+                <li class="toctree-l3"><a class="reference internal" href="../console/">Console</a>
                 </li>
-                <li class="toctree-l4"><a class="" href="../../tools/greengage-app-api/examples/restful-to-graphql">client Restful to graphql</a>
-                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">How-to Guides</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#create-an-observatory">Create an Observatory</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#create-a-task">Create a Task</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#delete-an-observatory">Delete an Observatory</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mission-templates">Mission Templates</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mission-scheduling">Mission Scheduling</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#create-news">Create News</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#send-communications">Send Communications</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#configure-webhooks">Configure Webhooks</a>
+    </li>
     </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../mobile-app/">iOS & Android App</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../api/">API Reference</a>
                 </li>
     </ul>
                 </li>
@@ -242,103 +260,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../green-engine/installation/">Installation</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">GREENGAGE App</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../">Overview</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../console/">Console</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">How-to Guides</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#create-an-observatory">Create an Observatory</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#first-time-setup">First-time Setup</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#define-the-observatory-region">Define the Observatory Region</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#create-additional-observatories">Create Additional Observatories</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#create-a-task">Create a Task</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#understanding-the-poi-concept">Understanding the POI Concept</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#step-1-navigate-to-tasks">Step 1: Navigate to Tasks</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#step-2-choose-or-create-a-poi">Step 2: Choose or Create a POI</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#step-3-define-your-task">Step 3: Define Your Task</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#task-types">Task Types</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#delete-an-observatory">Delete an Observatory</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#steps-to-delete">Steps to Delete</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mission-templates">Mission Templates</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#save-a-mission-as-template">Save a Mission as Template</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#create-mission-from-template">Create Mission from Template</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mission-scheduling">Mission Scheduling</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#create-a-schedule">Create a Schedule</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#schedule-options">Schedule Options</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enabledisable-schedules">Enable/Disable Schedules</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#calendar-view">Calendar View</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#create-news">Create News</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#create-a-news-article">Create a News Article</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#manage-news">Manage News</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#send-communications">Send Communications</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#send-a-notification">Send a Notification</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#recipient-options">Recipient Options</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#contact-spot-users">Contact Spot Users</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#communication-templates">Communication Templates</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#configure-webhooks">Configure Webhooks</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#create-a-webhook">Create a Webhook</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#supported-events">Supported Events</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#webhook-payload">Webhook Payload</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#view-webhook-logs">View Webhook Logs</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../mobile-app/">iOS & Android App</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../api/">API Reference</a>
-                  </li>
-              </ul>
       </div>
     </div>
     </nav>
@@ -353,6 +274,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tools</li>
+          <li class="breadcrumb-item">Data crowdsourcing and capture</li>
           <li class="breadcrumb-item">GREENGAGE App</li>
       <li class="breadcrumb-item active">How-to Guides</li>
     <li class="wy-breadcrumbs-aside">
