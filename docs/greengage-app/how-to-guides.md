@@ -11,7 +11,7 @@ A Citizen Observatory is the entry point for every mission and survey. It define
 If this is your first time in the console and your account hasn't been invited to any other observatory team, you will see only a "Create Observatory" button. The only thing you need to enter is the name of the observatory.
 
 <video autoplay muted loop controls width="100%">
-  <source src="../assets/greengage-app/console/videos/create-observatory.mp4" type="video/mp4">
+  <source src="/assets/greengage-app/console/videos/create-observatory.mp4" type="video/mp4">
 </video>
 
 ### Define the Observatory Region
@@ -26,10 +26,10 @@ To define the region:
 4. **Click Save** to confirm the boundaries
 
 !!! warning "Important"
-    If you don't save the region, your observatory will not have any boundaries, which means nothing will be loaded in the app.
+If you don't save the region, your observatory will not have any boundaries, which means nothing will be loaded in the app.
 
 <video autoplay muted loop controls width="100%">
-  <source src="../assets/greengage-app/console/videos/define-region.mp4" type="video/mp4">
+  <source src="/assets/greengage-app/console/videos/define-region.mp4" type="video/mp4">
 </video>
 
 ### Create Additional Observatories
@@ -37,11 +37,11 @@ To define the region:
 If you already have an observatory, you can create another one using the menu in the upper left corner:
 
 <video autoplay muted loop controls width="100%">
-  <source src="../assets/greengage-app/console/videos/create-observatory-menu.mp4" type="video/mp4">
+  <source src="/assets/greengage-app/console/videos/create-observatory-menu.mp4" type="video/mp4">
 </video>
 
 !!! tip
-    There is no limitation on how many observatories can be created.
+There is no limitation on how many observatories can be created.
 
 ---
 
@@ -68,35 +68,35 @@ Go to the "Tasks and Missions" section and click on "Create Task". A prompt will
 If you have not created a POI yet, you can do so during the task creation process by clicking "Create POI". A POI needs a location which can be easily defined via our map integration.
 
 <video autoplay muted loop controls width="100%">
-  <source src="../assets/greengage-app/console/videos/create-poi-via-task.mp4" type="video/mp4">
+  <source src="/assets/greengage-app/console/videos/create-poi-via-task.mp4" type="video/mp4">
 </video>
 
 ### Step 3: Define Your Task
 
 After defining the POI, the dialog will update with additional fields. The required fields are:
 
-| Field | Description |
-|-------|-------------|
-| **Type** | The purpose of the task |
+| Field        | Description                           |
+| ------------ | ------------------------------------- |
+| **Type**     | The purpose of the task               |
 | **Position** | Latitude and longitude (from the POI) |
 
 ### Task Types
 
 By choosing a type, you define the purpose of the task. The console supports a variety of task types:
 
-![Mission Types](../assets/greengage-app/console/images/mission-types.png)
+![Mission Types](/assets/greengage-app/console/images/mission-types.png)
 
-| Type | Description | App Support |
-|------|-------------|-------------|
-| **Survey** | Complete a questionnaire | Yes |
-| **MODE** | Transport mode detection | Yes |
-| **Walk** | Walking route task | Yes |
-| **Validation** | Validate existing data | Yes |
-| **Rating** | Rate a location or service | Partial |
-| **External** | Link to external service | Partial |
+| Type           | Description                | App Support |
+| -------------- | -------------------------- | ----------- |
+| **Survey**     | Complete a questionnaire   | Yes         |
+| **MODE**       | Transport mode detection   | Yes         |
+| **Walk**       | Walking route task         | Yes         |
+| **Validation** | Validate existing data     | Yes         |
+| **Rating**     | Rate a location or service | Partial     |
+| **External**   | Link to external service   | Partial     |
 
 !!! note
-    Depending on the task type, you may need to fill additional fields. For example, a Survey type requires you to set up a survey form.
+Depending on the task type, you may need to fill additional fields. For example, a Survey type requires you to set up a survey form.
 
 ---
 
@@ -105,7 +105,7 @@ By choosing a type, you define the purpose of the task. The console supports a v
 Sometimes you need to delete an observatory, for example after finishing a project or when testing is complete.
 
 !!! warning "Admin Only"
-    Deleting an observatory can only be done by an admin.
+Deleting an observatory can only be done by an admin.
 
 ### Steps to Delete
 
@@ -114,11 +114,11 @@ Sometimes you need to delete an observatory, for example after finishing a proje
 3. Find the delete option
 
 <video autoplay muted loop controls width="100%">
-  <source src="../assets/greengage-app/console/videos/delete-observatory.mp4" type="video/mp4">
+  <source src="/assets/greengage-app/console/videos/delete-observatory.mp4" type="video/mp4">
 </video>
 
 !!! danger "This action is permanent"
-    Deleting an observatory will remove all associated data including tasks, POIs, and user submissions.
+Deleting an observatory will remove all associated data including tasks, POIs, and user submissions.
 
 ---
 
@@ -146,7 +146,7 @@ The template will now be available in the Templates section.
 5. Click **Create**
 
 !!! tip
-    Templates are perfect for recurring mission types like daily surveys or weekly data collection tasks.
+Templates are perfect for recurring mission types like daily surveys or weekly data collection tasks.
 
 ---
 
@@ -168,11 +168,11 @@ Automate mission creation with the scheduling system to create recurring mission
 
 ### Schedule Options
 
-| Option | Description |
-|--------|-------------|
-| **Daily** | Create a new mission every day |
-| **Weekly** | Create missions on specific days of the week |
-| **Monthly** | Create missions on specific dates each month |
+| Option         | Description                                       |
+| -------------- | ------------------------------------------------- |
+| **Daily**      | Create a new mission every day                    |
+| **Weekly**     | Create missions on specific days of the week      |
+| **Monthly**    | Create missions on specific dates each month      |
 | **Auto-Close** | Automatically close missions after a set duration |
 
 ### Enable/Disable Schedules
@@ -214,7 +214,7 @@ Keep your participants informed with news articles that appear in the mobile app
 - **Preview** - See how the article will appear in the app
 
 !!! tip
-    Use news articles to announce new missions, share results, or thank participants for their contributions.
+Use news articles to announce new missions, share results, or thank participants for their contributions.
 
 ---
 
@@ -234,11 +234,11 @@ The communications system allows you to send messages and notifications to your 
 
 ### Recipient Options
 
-| Option | Description |
-|--------|-------------|
-| **All Users** | Send to everyone in the observatory |
-| **Active Users** | Only users who have been active recently |
-| **Specific Users** | Select individual recipients |
+| Option                   | Description                                  |
+| ------------------------ | -------------------------------------------- |
+| **All Users**            | Send to everyone in the observatory          |
+| **Active Users**         | Only users who have been active recently     |
+| **Specific Users**       | Select individual recipients                 |
 | **Mission Participants** | Users who participated in a specific mission |
 
 ### Contact Spot Users
@@ -278,14 +278,14 @@ Webhooks allow external systems to receive real-time notifications when events o
 
 ### Supported Events
 
-| Event | Trigger |
-|-------|---------|
+| Event                 | Trigger                         |
+| --------------------- | ------------------------------- |
 | **mission.completed** | When a user completes a mission |
-| **mission.started** | When a user starts a mission |
-| **spot.created** | When a new spot is created |
-| **spot.updated** | When a spot is modified |
-| **survey.submitted** | When a survey is submitted |
-| **poi.created** | When a new POI is created |
+| **mission.started**   | When a user starts a mission    |
+| **spot.created**      | When a new spot is created      |
+| **spot.updated**      | When a spot is modified         |
+| **survey.submitted**  | When a survey is submitted      |
+| **poi.created**       | When a new POI is created       |
 
 ### Webhook Payload
 
@@ -314,4 +314,4 @@ Debug webhook issues using the logs:
 4. See delivery status, response codes, and payloads
 
 !!! info "Example Implementation"
-    A reference implementation is available at [github.com/sushidev-team/greengage-webhook-example](https://github.com/sushidev-team/greengage-webhook-example)
+A reference implementation is available at [github.com/sushidev-team/greengage-webhook-example](https://github.com/sushidev-team/greengage-webhook-example)
