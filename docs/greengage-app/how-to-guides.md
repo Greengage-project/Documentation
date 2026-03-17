@@ -11,7 +11,7 @@ A Citizen Observatory is the entry point for every mission and survey. It define
 If this is your first time in the console and your account hasn't been invited to any other observatory team, you will see only a "Create Observatory" button. The only thing you need to enter is the name of the observatory.
 
 <video autoplay muted loop controls width="100%">
-  <source src="/assets/greengage-app/console/videos/create-observatory.mp4" type="video/mp4">
+  <source src="../../assets/greengage-app/console/videos/create-observatory.mp4" type="video/mp4">
 </video>
 
 ### Define the Observatory Region
@@ -29,7 +29,7 @@ To define the region:
 If you don't save the region, your observatory will not have any boundaries, which means nothing will be loaded in the app.
 
 <video autoplay muted loop controls width="100%">
-  <source src="/assets/greengage-app/console/videos/define-region.mp4" type="video/mp4">
+  <source src="../../assets/greengage-app/console/videos/define-region.mp4" type="video/mp4">
 </video>
 
 ### Create Additional Observatories
@@ -37,7 +37,7 @@ If you don't save the region, your observatory will not have any boundaries, whi
 If you already have an observatory, you can create another one using the menu in the upper left corner:
 
 <video autoplay muted loop controls width="100%">
-  <source src="/assets/greengage-app/console/videos/create-observatory-menu.mp4" type="video/mp4">
+  <source src="../../assets/greengage-app/console/videos/create-observatory-menu.mp4" type="video/mp4">
 </video>
 
 !!! tip
@@ -68,7 +68,7 @@ Go to the "Tasks and Missions" section and click on "Create Task". A prompt will
 If you have not created a POI yet, you can do so during the task creation process by clicking "Create POI". A POI needs a location which can be easily defined via our map integration.
 
 <video autoplay muted loop controls width="100%">
-  <source src="/assets/greengage-app/console/videos/create-poi-via-task.mp4" type="video/mp4">
+  <source src="../../assets/greengage-app/console/videos/create-poi-via-task.mp4" type="video/mp4">
 </video>
 
 ### Step 3: Define Your Task
@@ -84,7 +84,7 @@ After defining the POI, the dialog will update with additional fields. The requi
 
 By choosing a type, you define the purpose of the task. The console supports a variety of task types:
 
-![Mission Types](/assets/greengage-app/console/images/mission-types.png)
+![Mission Types](../../assets/greengage-app/console/images/mission-types.png)
 
 | Type           | Description                | App Support |
 | -------------- | -------------------------- | ----------- |
@@ -114,7 +114,7 @@ Deleting an observatory can only be done by an admin.
 3. Find the delete option
 
 <video autoplay muted loop controls width="100%">
-  <source src="/assets/greengage-app/console/videos/delete-observatory.mp4" type="video/mp4">
+  <source src="../../assets/greengage-app/console/videos/delete-observatory.mp4" type="video/mp4">
 </video>
 
 !!! danger "This action is permanent"
