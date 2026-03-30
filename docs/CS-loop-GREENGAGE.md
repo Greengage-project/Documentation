@@ -203,12 +203,12 @@ To close the CS loop and contribute towards the positive transformation of Deust
 
 5. The following datasets from this thematic co-exploration were uploaded into [Zenodo community for GREENGAGE]([https://zenodo.org/communities/greengage/) at the following [entry](https://zenodo.org/records/15195849)):
 
-   - Anonymized sociodemographic data of participants in the thematic co-exploration organized at University of Deusto's campus in Bilbao
-   - Anonymized dataset with aggregated survey answers for the 4 POIs defined at the campus of University of Deusto
-   - Dataset with all snapshots (photos) captured at different spots in the University of Deusto's campus
-   - Atmotube Pro sensors measurements during from 4 different devices (users) captured between 11:30 - 13:30 CET local time
-   - PRE (before the participation in the CS campaign) impact evaluation questionnaire answers and report
-   - POST (after the participation in the CS campaign) impact evaluation questionnaire answers and report. 
+    - Anonymized sociodemographic data of participants in the thematic co-exploration organized at University of Deusto's campus in Bilbao
+    - Anonymized dataset with aggregated survey answers for the 4 POIs defined at the campus of University of Deusto
+    - Dataset with all snapshots (photos) captured at different spots in the University of Deusto's campus
+    - Atmotube Pro sensors measurements during from 4 different devices (users) captured between 11:30 - 13:30 CET local time
+    - PRE (before the participation in the CS campaign) impact evaluation questionnaire answers and report
+    - POST (after the participation in the CS campaign) impact evaluation questionnaire answers and report. 
 
 <a id="fig-discourse"></a>
 ![Sociodemographic details participants in thematic co-exploration](./assets/Discourse.png) 
