@@ -63,7 +63,8 @@ This section showcases the process, tools and results obtained when applying the
 ![GREENGAGE's Collaborative Environment](./assets/colaborative-environment-spec.png) 
 
 
-A core aspect of every thematic co-exploration is the collaborative (co-design & co-creation) activities that participants take part in. For this use case, the following co-design and co-creation sessions were realized: 
+A core aspect of every thematic co-exploration is the collaborative (co-design & co-creation) activities that participants take part in. For this use case, the following co-design and co-creation sessions were realized:
+
 1. Initial training, specification of the thematic co-exploration, team and co-creation process setup;
 2. Crowdsourcing campaign and co-design of possible useful visualizations; 
 3. Collaborative reflection on the gathered data and analysis results; 
