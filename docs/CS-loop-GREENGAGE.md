@@ -33,8 +33,10 @@ These CS loop stages shown in [figure](#fig-citizenscience-loop) above are align
 	a) experiment specification;
 	b) tools’ resources selection;
 	c) tools resources customization and
-	d) tools resources testing.  
+	d) tools resources testing.
+
 - *Phase 3 – experimenting*: aligned with both the “data crowdsourcing” and “data analysis & interpretation” steps of a CS loop. It comprises the following activities: observers onboarding, observers training support, data collection, data combination, data analysis, data visualization and evaluation.
+  
 - *Phase 4 – sharing*: aligned with “feedback & learning” and “action & impact” stages of CS loop, comprising the following tasks defined in the GREENGAGE thematic co-exploration process, namely storytelling, policy advocacy and sustainability.
  
 Each phase is supported by GREENGAGE’s GREEN Engine infrastructure, named GREEN Engine, fully described at page [Citizen Observer journey](https://greengage-project.github.io/Documentation/thematic_coexploration_example/#citizen-observer-journey), which integrates various digital tools and knowledge assets to streamline the co-production process. The tools and knowledge assets created in GREENGAGE are categorized in the following areas of concern, where the names of the tools defined for each layer is indicated:
